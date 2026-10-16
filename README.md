@@ -15,10 +15,10 @@ Scan a barcode or receipt to add items automatically
 The UI runs on mock data. Backend, database, and AI integrations are planned for later sprints, see our [roadmap](#roadmap).
 
 ## Tech stack
-* Layer	Now (MVP prototype)	Planned.
-* Frontend	HTML, CSS, vanilla JavaScript (ES modules)	Possible migration to React + Vite.
-* Backend	none	Node.js + Express.
-* Database	JSON mock data	MySQL.
+* MVP prototype	Planned.
+* Frontend:	HTML, CSS, vanilla JavaScript (ES modules)	Possible migration to React + Vite.
+* Backend:	Node.js + Express.
+* Database:	JSON mock data	MySQL.
 * AI	mock suggestions	LLM API called from the server only.
 * Scanning	fake scan results	Barcode library, receipt OCR / vision model.
 * Tooling	ESLint, Prettier, Vitest	Docker Compose.
@@ -30,7 +30,7 @@ The UI runs on mock data. Backend, database, and AI integrations are planned for
 * Node.js 20 or newer (used for linting and tests only; the app itself needs no build step).
 * Run the prototype
 * bash
-* git clone https://github.com/Nearsitos/KookItUp.git
+* git clone https://github.com/Nearsitos/CookItUp.git
 * cd YOUR-REPO
 * npm install
 
