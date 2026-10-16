@@ -1,5 +1,7 @@
 # Getting Started: Your First Day
 
+# You all should know most of this but it is a good reference Claude AI generated
+
 Follow this once. After that, jump to [Daily workflow](#daily-workflow).
 
 ## 1. Install (one time, ~15 min)
@@ -25,14 +27,14 @@ Right-click `client/index.html` → **Open with Live Server**. You should see th
 
 ## 3. Know where things go
 
-| I'm working on... | I edit... |
-|---|---|
-| A screen | `client/js/views/` |
+| I'm working on...              | I edit...               |
+| ------------------------------ | ----------------------- |
+| A screen                       | `client/js/views/`      |
 | A reusable piece (card, badge) | `client/js/components/` |
-| Where data comes from | `client/js/services/` |
-| Styling | `client/css/` |
-| Fake data | `client/mock-data/` |
-| Helper logic (dates, matching) | `client/js/utils/` |
+| Where data comes from          | `client/js/services/`   |
+| Styling                        | `client/css/`           |
+| Fake data                      | `client/mock-data/`     |
+| Helper logic (dates, matching) | `client/js/utils/`      |
 
 **The one rule:** views never fetch data themselves. They ask a service. That way we can swap fake data for the real backend later without rewriting screens.
 
@@ -43,12 +45,14 @@ Right-click `client/index.html` → **Open with Live Server**. You should see th
 Every time you work, follow these five steps.
 
 **1. Start from the latest `main`**
+
 ```bash
 git checkout main
 git pull
 ```
 
 **2. Make a branch for your task** (one branch per issue)
+
 ```bash
 git checkout -b feature/inventory-view
 ```
@@ -56,6 +60,7 @@ git checkout -b feature/inventory-view
 **3. Build it.** Save often, and check it in the browser.
 
 **4. Check your work, then commit**
+
 ```bash
 npm run lint
 npm test
@@ -64,9 +69,11 @@ git commit -m "Add expiry badge to inventory card"
 ```
 
 **5. Push and open a pull request**
+
 ```bash
 git push -u origin feature/inventory-view
 ```
+
 Then click the link GitHub shows (or go to the repo → **Pull requests** → **New**). Write a sentence on what you did, add `Closes #12` (your issue number), and ask a teammate to review.
 
 Merge only when the green CI check passes and someone has reviewed it.
@@ -96,13 +103,13 @@ Then:
 
 ## When something goes wrong
 
-| Problem | Fix |
-|---|---|
-| Page is blank | Press F12 → **Console** tab and read the red error. Paste it into your AI or the team chat |
-| `import` / `fetch` errors | You opened the file directly. Use **Live Server** |
-| CI is red on my PR | Click **Details** on the failed check, read the message, run `npm run lint:fix` and `npm run format`, then push again |
-| "Merge conflict" | Don't panic and don't guess. Ask a teammate before resolving it |
-| Committed a secret by accident | Tell the team immediately. The key must be replaced, since deleting the file isn't enough |
+| Problem                        | Fix                                                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| Page is blank                  | Press F12 → **Console** tab and read the red error. Paste it into your AI or the team chat                            |
+| `import` / `fetch` errors      | You opened the file directly. Use **Live Server**                                                                     |
+| CI is red on my PR             | Click **Details** on the failed check, read the message, run `npm run lint:fix` and `npm run format`, then push again |
+| "Merge conflict"               | Don't panic and don't guess. Ask a teammate before resolving it                                                       |
+| Committed a secret by accident | Tell the team immediately. The key must be replaced, since deleting the file isn't enough                             |
 
 ## Cheat sheet
 

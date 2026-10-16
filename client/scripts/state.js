@@ -1,0 +1,1 @@
+//simple shared app state
