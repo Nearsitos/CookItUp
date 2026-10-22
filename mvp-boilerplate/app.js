@@ -78,9 +78,43 @@ function renderHeroCarousel() {
   const suggested = ranked.find((item) => item.hits.length > 0) || ranked[0];
   const image = suggested?.recipe.image || 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85';
   const slides = [
-    `<article class="featured-recipe"><div class="featured-photo" role="img" aria-label="Meal planning" style="background-image:url('${image}')"></div><div class="featured-copy"><div class="featured-kickers"><span class="pantry-match">YOUR PLANNED</span><span>Meal planning</span></div><h2>No meals planned yet</h2><p class="featured-ingredients">Plan recipes for the week and keep your household on the same page.</p><button class="button cook-button" data-go="recipes">Plan your first meal ↗</button></div></article>`,
-    suggested ? `<article class="featured-recipe"><div class="featured-photo" role="img" aria-label="${escapeHtml(suggested.recipe.name)}" style="background-image:url('${image}')"></div><div class="featured-copy"><div class="featured-kickers"><span class="pantry-match">${suggested.percent}% PANTRY MATCH</span><span>A suggestion</span></div><h2>${escapeHtml(suggested.recipe.name)}</h2><p class="ingredient-caption">KEY INGREDIENTS FROM YOUR PANTRY:</p><p class="featured-ingredients">${suggested.recipe.ingredients.map(escapeHtml).join(', ')}</p><div class="featured-meta"><span>◷ &nbsp;${suggested.recipe.time} mins</span><span>♧ &nbsp;2 portions</span><span>♨ &nbsp;480 kcal</span></div><button class="button cook-button" data-recipe="${escapeHtml(suggested.recipe.id)}">Let's Cook ↗</button></div></article>` : '<article class="featured-recipe"><div class="featured-empty">Add ingredients to see a recipe suggestion.</div></article>',
-    `<article class="featured-recipe future-slide"><div class="featured-photo" role="img" aria-label="Recipe ideas" style="background-image:url('${image}')"></div><div class="featured-copy"><div class="featured-kickers"><span class="pantry-match">MORE TO COME</span><span>CookItUp inspiration</span></div><h2>Your next idea is on its way.</h2><p class="featured-ingredients">This space is ready for another kind of cooking inspiration.</p><button class="button cook-button" data-go="recipes">Browse recipes ↗</button></div></article>`
+    `
+      <article class="featured-recipe">
+        <div class="featured-photo" role="img" aria-label="Meal planning" style="background-image:url('${image}')"></div>
+        <div class="featured-copy">
+          <div class="featured-kickers"><span class="pantry-match">YOUR PLANNED</span><span>Meal planning</span></div>
+          <h2>No meals planned yet</h2>
+          <p class="featured-ingredients">Plan recipes for the week and keep your household on the same page.</p>
+          <button class="button cook-button" data-go="recipes">Plan your first meal ↗</button>
+        </div>
+      </article>
+    `,
+    suggested
+      ? `
+        <article class="featured-recipe featured-recipe--suggested">
+          <div class="featured-photo" role="img" aria-label="${escapeHtml(suggested.recipe.name)}" style="background-image:url('${image}')"></div>
+          <div class="featured-copy">
+            <div class="featured-kickers"><span class="pantry-match">${suggested.percent}% PANTRY MATCH</span><span>A suggestion</span></div>
+            <h2>${escapeHtml(suggested.recipe.name)}</h2>
+            <p class="ingredient-caption">KEY INGREDIENTS FROM YOUR PANTRY:</p>
+            <p class="featured-ingredients">${suggested.recipe.ingredients.map(escapeHtml).join(', ')}</p>
+            <div class="featured-meta"><span>◷ &nbsp;${suggested.recipe.time} mins</span><span>♧ &nbsp;2 portions</span><span>♨ &nbsp;480 kcal</span></div>
+            <button class="button cook-button cook-button--compact" data-recipe="${escapeHtml(suggested.recipe.id)}">Let's Cook ↗</button>
+          </div>
+        </article>
+      `
+      : '<article class="featured-recipe"><div class="featured-empty">Add ingredients to see a recipe suggestion.</div></article>',
+    `
+      <article class="featured-recipe future-slide">
+        <div class="featured-photo" role="img" aria-label="Recipe ideas" style="background-image:url('${image}')"></div>
+        <div class="featured-copy">
+          <div class="featured-kickers"><span class="pantry-match">MORE TO COME</span><span>CookItUp inspiration</span></div>
+          <h2>Your next idea is on its way.</h2>
+          <p class="featured-ingredients">This space is ready for another kind of cooking inspiration.</p>
+          <button class="button cook-button" data-go="recipes">Browse recipes ↗</button>
+        </div>
+      </article>
+    `
   ];
   const track = $('#featured-track');
   track.innerHTML = slides.map((slide) => `<div class="hero-slide">${slide}</div>`).join('');
