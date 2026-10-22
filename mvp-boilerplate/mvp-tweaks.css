@@ -33,6 +33,7 @@
 
 .featured-recipe {
   width: 100%;
+  height: 215px;
 }
 
 .carousel-dots {
@@ -71,8 +72,7 @@
 }
 
 .featured-recipe--suggested {
-  height: auto;
-  min-height: 215px;
+  height: 215px;
 }
 
 .featured-recipe--suggested .featured-copy {
@@ -166,8 +166,8 @@ tr.just-added td {
 }
 
 @media (max-width: 760px) {
-  .featured-recipe--suggested {
-    min-height: 200px;
+  .featured-recipe {
+    height: 200px;
   }
 
   .featured-recipe--suggested .featured-copy {
@@ -203,8 +203,8 @@ tr.just-added td {
 }
 
 @media (max-width: 470px) {
-  .featured-recipe--suggested {
-    min-height: 0;
+  .featured-recipe {
+    height: 360px;
   }
 
   .featured-recipe--suggested .featured-copy {
