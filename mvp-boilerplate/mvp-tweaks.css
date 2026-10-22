@@ -1,6 +1,240 @@
-.nav-disabled{cursor:default;color:#566259;user-select:none}.nav-disabled:hover{background:transparent;color:#566259}
-.featured-wrap{overflow:hidden}.featured-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}.featured-track::-webkit-scrollbar{display:none}.hero-slide{flex:0 0 100%;min-width:100%;scroll-snap-align:start}.featured-recipe{width:100%}.carousel-dots{height:22px;align-items:center;gap:7px}.carousel-dot{border:0;padding:0;width:8px;height:8px;border-radius:20px;background:#cfd7ce;cursor:pointer;transition:width .2s,background .2s}.carousel-dot.selected{width:18px;background:#278d43}.carousel-dot:focus-visible{outline:2px solid #278d43;outline-offset:3px}.future-slide .featured-photo{filter:saturate(.7)}.future-slide .featured-copy{background:#fff}
-#recipe-dialog{width:min(1080px,calc(100vw - 48px));height:min(850px,calc(100vh - 48px));max-height:calc(100vh - 48px);overflow:auto;border-radius:16px}#recipe-dialog .recipe-detail{position:relative;min-height:100%;padding:30px 42px 42px}#recipe-dialog .close-detail{position:absolute;top:18px;right:18px;z-index:2;width:40px;height:40px;display:grid;place-items:center;background:#fff;border:1px solid #e5e9e1;border-radius:50%;box-shadow:0 2px 9px #18251b12;font-size:23px}#recipe-dialog .detail-photo{height:300px;margin:0 0 26px;border-radius:12px;background-size:cover;background-position:center}#recipe-dialog .recipe-detail h2{font-size:34px}#recipe-dialog .recipe-detail>p{font-size:15px;max-width:750px}#recipe-dialog .recipe-detail h3{font-size:21px}#recipe-dialog .detail-ingredients,#recipe-dialog .detail-steps{font-size:15px;line-height:1.9}
-tr.just-added td{background:#edf7ea;transition:background .3s}
-@media(max-width:760px){#recipe-dialog{width:calc(100vw - 20px);height:calc(100vh - 20px);max-height:calc(100vh - 20px)}#recipe-dialog .recipe-detail{padding:20px 22px 30px}#recipe-dialog .detail-photo{height:230px}#recipe-dialog .recipe-detail h2{font-size:27px}#recipe-dialog .recipe-detail>p{font-size:13px}#recipe-dialog .detail-ingredients,#recipe-dialog .detail-steps{font-size:13px}}
-@media(max-width:470px){.carousel-dot{width:7px;height:7px}.carousel-dot.selected{width:16px}#recipe-dialog{width:100vw;height:100dvh;max-height:100dvh;border-radius:0}#recipe-dialog .recipe-detail{padding:16px 18px 26px}#recipe-dialog .detail-photo{height:190px}}
+.nav-disabled {
+  cursor: default;
+  color: #566259;
+  user-select: none;
+}
+
+.nav-disabled:hover {
+  background: transparent;
+  color: #566259;
+}
+
+.featured-wrap {
+  overflow: hidden;
+}
+
+.featured-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.featured-track::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.featured-recipe {
+  width: 100%;
+}
+
+.carousel-dots {
+  height: 22px;
+  align-items: center;
+  gap: 7px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: #cfd7ce;
+  cursor: pointer;
+  transition: width 0.2s, background 0.2s;
+}
+
+.carousel-dot.selected {
+  width: 18px;
+  background: #278d43;
+}
+
+.carousel-dot:focus-visible {
+  outline: 2px solid #278d43;
+  outline-offset: 3px;
+}
+
+.future-slide .featured-photo {
+  filter: saturate(0.7);
+}
+
+.future-slide .featured-copy {
+  background: #fff;
+}
+
+.featured-recipe--suggested {
+  height: auto;
+  min-height: 215px;
+}
+
+.featured-recipe--suggested .featured-copy {
+  padding: 14px 20px;
+}
+
+.cook-button--compact {
+  min-height: 34px;
+  width: 80%;
+  padding: 8px 17px;
+  border: 0;
+  background: var(--green);
+  box-shadow: 0 3px 8px #24843e35;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: background-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.cook-button--compact:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+
+.cook-button--compact:focus-visible {
+  outline: 3px solid #24843e66;
+  outline-offset: 3px;
+}
+
+#recipe-dialog {
+  width: min(1080px, calc(100vw - 48px));
+  height: min(850px, calc(100vh - 48px));
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border-radius: 16px;
+}
+
+#recipe-dialog .recipe-detail {
+  position: relative;
+  min-height: 100%;
+  padding: 30px 42px 42px;
+}
+
+#recipe-dialog .close-detail {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid #e5e9e1;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 9px #18251b12;
+  font-size: 23px;
+}
+
+#recipe-dialog .detail-photo {
+  height: 300px;
+  margin: 0 0 26px;
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+}
+
+#recipe-dialog .recipe-detail h2 {
+  font-size: 34px;
+}
+
+#recipe-dialog .recipe-detail > p {
+  max-width: 750px;
+  font-size: 15px;
+}
+
+#recipe-dialog .recipe-detail h3 {
+  font-size: 21px;
+}
+
+#recipe-dialog .detail-ingredients,
+#recipe-dialog .detail-steps {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+tr.just-added td {
+  background: #edf7ea;
+  transition: background 0.3s;
+}
+
+@media (max-width: 760px) {
+  .featured-recipe--suggested {
+    min-height: 200px;
+  }
+
+  .featured-recipe--suggested .featured-copy {
+    padding: 12px;
+  }
+
+  #recipe-dialog {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    max-height: calc(100vh - 20px);
+  }
+
+  #recipe-dialog .recipe-detail {
+    padding: 20px 22px 30px;
+  }
+
+  #recipe-dialog .detail-photo {
+    height: 230px;
+  }
+
+  #recipe-dialog .recipe-detail h2 {
+    font-size: 27px;
+  }
+
+  #recipe-dialog .recipe-detail > p {
+    font-size: 13px;
+  }
+
+  #recipe-dialog .detail-ingredients,
+  #recipe-dialog .detail-steps {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 470px) {
+  .featured-recipe--suggested {
+    min-height: 0;
+  }
+
+  .featured-recipe--suggested .featured-copy {
+    padding: 16px;
+  }
+
+  .cook-button--compact {
+    width: 100%;
+  }
+
+  .carousel-dot {
+    width: 7px;
+  }
+
+  .carousel-dot.selected {
+    width: 16px;
+  }
+
+  #recipe-dialog {
+    width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+  }
+
+  #recipe-dialog .recipe-detail {
+    padding: 16px 18px 26px;
+  }
+
+  #recipe-dialog .detail-photo {
+    height: 190px;
+  }
+}
