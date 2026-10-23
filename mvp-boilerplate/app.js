@@ -156,7 +156,12 @@ function showToast(message) { const toast = $('#toast'); toast.textContent = mes
 function setPage(page) {
   state.page = page;
   document.querySelectorAll('.page').forEach((section) => section.classList.toggle('hidden', section.id !== `${page}-page`));
-  document.querySelectorAll('.nav-link[data-page]').forEach((link) => link.classList.toggle('active', link.dataset.page === page));
+  document.querySelectorAll('.nav-link[data-page]').forEach((link) => {
+    const isCurrent = link.dataset.page === page;
+    link.classList.toggle('active', isCurrent);
+    if (isCurrent) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  });
   history.replaceState(null, '', `#${page}`);
   render();
 }
@@ -196,7 +201,26 @@ document.addEventListener('keydown', (event) => {
     openAddDialog();
   }
 });
-$('.menu-button').addEventListener('click', () => document.body.classList.toggle('sidebar-collapsed'));
+const menuButton = $('.menu-button');
+function setMobileNavigationExpanded(expanded) {
+  document.body.classList.toggle('sidebar-expanded', expanded);
+  menuButton.setAttribute('aria-expanded', String(expanded));
+  menuButton.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} navigation`);
+}
+menuButton.addEventListener('click', () => {
+  setMobileNavigationExpanded(!document.body.classList.contains('sidebar-expanded'));
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && document.body.classList.contains('sidebar-expanded')) {
+    setMobileNavigationExpanded(false);
+    menuButton.focus();
+  }
+});
+document.querySelector('#primary-navigation').addEventListener('click', (event) => {
+  if (event.target.closest('[data-page]') && window.matchMedia('(max-width: 760px)').matches) {
+    setMobileNavigationExpanded(false);
+  }
+});
 $('#inventory-search').addEventListener('input', (event) => { state.search = event.target.value; renderInventory(); });
 $('#inventory-sort').addEventListener('change', (event) => { state.sort = event.target.value; renderInventory(); });
 $('#recipe-search').addEventListener('input', renderRecipes);

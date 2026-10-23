@@ -14,14 +14,14 @@
   <body>
     <div class="app-shell">
       <aside class="sidebar">
-        <a class="brand" href="#dashboard" aria-label="CookItUp home"><span class="brand-mark">♨</span><span>CookItUp</span></a>
-        <nav aria-label="Main navigation">
-          <a class="nav-link active" href="#dashboard" data-page="dashboard"><span>⊞</span> Dashboard</a>
-          <div class="nav-link nav-disabled" aria-disabled="true"><span>♙</span> Profile</div>
-          <div class="nav-link nav-disabled" aria-disabled="true"><span>♧</span> Household</div>
-          <a class="nav-link" href="#inventory" data-page="inventory"><span>▣</span> Inventory <span class="nav-count" id="nav-count">0</span></a>
-          <a class="nav-link" href="#settings" data-page="settings"><span>⚙</span> Settings</a>
-          <a class="nav-link nav-recipes" href="#recipes" data-page="recipes"><span>⌕</span> Find recipes</a>
+        <button class="menu-button" type="button" aria-label="Expand navigation" aria-controls="primary-navigation" aria-expanded="false">≡</button>
+        <nav id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-link active" href="#dashboard" data-page="dashboard" data-tooltip="Dashboard" aria-label="Dashboard" aria-current="page"><span aria-hidden="true">⊞</span><span class="nav-text">Dashboard</span></a>
+          <div class="nav-link nav-disabled" role="link" data-tooltip="Profile" aria-label="Profile" aria-disabled="true"><span aria-hidden="true">♙</span><span class="nav-text">Profile</span></div>
+          <div class="nav-link nav-disabled" role="link" data-tooltip="Household" aria-label="Household" aria-disabled="true"><span aria-hidden="true">♧</span><span class="nav-text">Household</span></div>
+          <a class="nav-link" href="#inventory" data-page="inventory" data-tooltip="Inventory" aria-label="Inventory"><span aria-hidden="true">▣</span><span class="nav-text">Inventory</span><span class="nav-count" id="nav-count">0</span></a>
+          <a class="nav-link" href="#settings" data-page="settings" data-tooltip="Settings" aria-label="Settings"><span aria-hidden="true">⚙</span><span class="nav-text">Settings</span></a>
+          <a class="nav-link nav-recipes" href="#recipes" data-page="recipes" data-tooltip="Find recipes" aria-label="Find recipes"><span aria-hidden="true">⌕</span><span class="nav-text">Find recipes</span></a>
         </nav>
         <div class="sidebar-bottom">
           <div class="profile"><div class="avatar">CR</div><div><strong>Christopher Rubio</strong><small>Household Manager</small></div></div>
@@ -29,7 +29,7 @@
       </aside>
 
       <main class="main-content">
-        <header class="topbar"><button class="menu-button" aria-label="Toggle navigation">≡</button><div class="global-search"><span>⌕</span><input type="search" placeholder="Search ingredients, recipes, or smart categories…" aria-label="Search everything" id="global-search" /></div><div class="top-actions"><button class="icon-button notification" aria-label="Notifications">♧</button><button class="avatar mini" aria-label="Christopher Rubio profile">CR</button></div></header>
+        <header class="topbar"><a class="brand topbar-brand" href="#dashboard" aria-label="CookItUp home"><span class="brand-mark" aria-hidden="true">♨</span><span>CookItUp</span></a><div class="global-search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Search ingredients, recipes, or smart categories…" aria-label="Search everything" id="global-search" /></div><div class="top-actions"><button class="icon-button notification" aria-label="Notifications">♧</button><button class="avatar mini" aria-label="Christopher Rubio profile">CR</button></div></header>
         <section class="page" id="dashboard-page">
           <h1 class="greeting">Hungry?</h1>
           <section class="featured-wrap" aria-label="Recipe highlights"><div class="featured-track" id="featured-track" aria-live="polite"></div><div class="carousel-dots" id="featured-dots" role="group" aria-label="Choose a highlight"></div></section>
