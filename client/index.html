@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <title>CookItUp — Your kitchen dashboard</title>
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Expand navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          ≡
+        </button>
+        <nav id="primary-navigation" aria-label="Main navigation">
+          <a
+            class="nav-link active"
+            href="#dashboard"
+            data-page="dashboard"
+            data-tooltip="Dashboard"
+            aria-label="Dashboard"
+            aria-current="page"
+            ><span aria-hidden="true">⊞</span
+            ><span class="nav-text">Dashboard</span></a
+          >
+          <div
+            class="nav-link nav-disabled"
+            role="link"
+            data-tooltip="Profile"
+            aria-label="Profile"
+            aria-disabled="true"
+          >
+            <span aria-hidden="true">♙</span
+            ><span class="nav-text">Profile</span>
+          </div>
+          <div
+            class="nav-link nav-disabled"
+            role="link"
+            data-tooltip="Household"
+            aria-label="Household"
+            aria-disabled="true"
+          >
+            <span aria-hidden="true">♧</span
+            ><span class="nav-text">Household</span>
+          </div>
+          <a
+            class="nav-link"
+            href="#inventory"
+            data-page="inventory"
+            data-tooltip="Inventory"
+            aria-label="Inventory"
+            ><span aria-hidden="true">▣</span
+            ><span class="nav-text">Inventory</span
+            ><span class="nav-count" id="nav-count">0</span></a
+          >
+          <a
+            class="nav-link"
+            href="#settings"
+            data-page="settings"
+            data-tooltip="Settings"
+            aria-label="Settings"
+            ><span aria-hidden="true">⚙</span
+            ><span class="nav-text">Settings</span></a
+          >
+          <a
+            class="nav-link nav-recipes"
+            href="#recipes"
+            data-page="recipes"
+            data-tooltip="Find recipes"
+            aria-label="Find recipes"
+            ><span aria-hidden="true">⌕</span
+            ><span class="nav-text">Find recipes</span></a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="profile">
+            <div class="avatar">CR</div>
+            <div>
+              <strong>Christopher Rubio</strong><small>Household Manager</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <a
+            class="brand topbar-brand"
+            href="#dashboard"
+            aria-label="CookItUp home"
+            ><span class="brand-mark" aria-hidden="true">♨</span
+            ><span>CookItUp</span></a
+          >
+          <div class="global-search">
+            <span aria-hidden="true">⌕</span
+            ><input
+              type="search"
+              placeholder="Search ingredients, recipes, or smart categories…"
+              aria-label="Search everything"
+              id="global-search"
+            />
+          </div>
+          <div class="top-actions">
+            <button class="icon-button notification" aria-label="Notifications">
+              ♧</button
+            ><button class="avatar mini" aria-label="Christopher Rubio profile">
+              CR
+            </button>
+          </div>
+        </header>
+        <section class="page" id="dashboard-page">
+          <h1 class="greeting">Hungry?</h1>
+          <section class="featured-wrap" aria-label="Recipe highlights">
+            <div
+              class="featured-track"
+              id="featured-track"
+              aria-live="polite"
+            ></div>
+            <div
+              class="carousel-dots"
+              id="featured-dots"
+              role="group"
+              aria-label="Choose a highlight"
+            ></div>
+          </section>
+          <div class="dashboard-title"><h2>Dashboard</h2></div>
+          <div class="dashboard-cards">
+            <article class="dashboard-card wide-card" data-go="inventory">
+              <span class="card-icon">⌑</span
+              ><span class="card-badge" id="shopping-badge"
+                >12 Items on List</span
+              >
+              <h3>Shopping List</h3>
+              <p>
+                There is a total of <span id="shopping-count">12</span> items in
+                your shopping list, your last update was 5 hours ago.
+              </p>
+            </article>
+            <article class="dashboard-card wide-card" data-go="recipes">
+              <span class="card-icon">⑂</span
+              ><span class="card-badge">0 Meals Planned</span>
+              <h3>Meal Plan</h3>
+              <p>
+                No meals are planned yet. Start with a recipe suggestion from
+                your pantry.
+              </p>
+            </article>
+            <article class="dashboard-card" data-go="inventory">
+              <span class="card-icon">⟳</span
+              ><span class="card-badge">3 Alerts</span>
+              <h3>Recent Updates</h3>
+              <p>
+                Sarah added 12 items yesterday. 3 items expiring within 48
+                hours.
+              </p>
+            </article>
+            <article
+              class="dashboard-card highlighted"
+              data-action="add-ingredient"
+              role="button"
+              tabindex="0"
+            >
+              <span class="card-icon">⊕</span>
+              <h3>Add/Remove Ingredients</h3>
+              <p>
+                Quickly scan barcodes, type in items, or manually adjust counts.
+              </p>
+            </article>
+            <article class="dashboard-card" data-go="inventory">
+              <span class="card-icon">▣</span
+              ><span class="card-badge" id="inventory-badge">42 Items</span>
+              <h3>Inventory</h3>
+              <p>
+                View your full digital stock across pantry, fridge, and spice
+                rack.
+              </p>
+            </article>
+            <article class="dashboard-card" data-go="settings">
+              <span class="card-icon">⛨</span>
+              <h3>Allergies &amp; Preferences</h3>
+              <p>
+                Manage dietary constraints (e.g. Gluten-Free, Vegan, Peanut
+                Allergy).
+              </p>
+            </article>
+            <article class="dashboard-card" data-go="recipes">
+              <span class="card-icon">▤</span
+              ><span class="card-badge" id="recipe-badge">14 Available</span>
+              <h3>Find Recipes</h3>
+              <p>
+                Discover dishes tailored to current ingredients to minimize food
+                waste.
+              </p>
+            </article>
+            <article class="dashboard-card" data-go="inventory">
+              <span class="card-icon">▣</span>
+              <h3>Smart Import</h3>
+              <p>
+                Upload video recipes, scan paper receipts, or integrate AI
+                helpers.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="page hidden" id="inventory-page">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">YOUR KITCHEN, ORGANIZED</p>
+              <h1>My inventory</h1>
+              <p class="lede">
+                Keep track of what’s on hand and find it when you need it.
+              </p>
+            </div>
+            <button class="button primary" id="open-add">
+              ＋ Add ingredient
+            </button>
+          </div>
+          <section class="panel table-panel">
+            <div class="inventory-toolbar">
+              <div class="search-box">
+                <span>⌕</span
+                ><input
+                  id="inventory-search"
+                  type="search"
+                  placeholder="Search ingredients…"
+                  aria-label="Search ingredients"
+                />
+              </div>
+              <label class="sort-control"
+                >Sort by
+                <select id="inventory-sort">
+                  <option value="name">Name (A–Z)</option>
+                  <option value="name-desc">Name (Z–A)</option>
+                  <option value="calories">Calories</option>
+                </select></label
+              >
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>INGREDIENT</th>
+                    <th>QUANTITY</th>
+                    <th>CALORIES</th>
+                    <th>SERVING SIZE</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="inventory-body"></tbody>
+              </table>
+              <div class="empty-state hidden" id="inventory-empty">
+                <span>◌</span><strong>No ingredients found</strong>
+                <p>Try another search or add an ingredient to your pantry.</p>
+              </div>
+            </div>
+            <div class="table-footer" id="inventory-footer"></div>
+          </section>
+          <div class="json-note">
+            <span>⌘</span>
+            <div>
+              <strong>Your inventory, your data.</strong>
+              <p>
+                This prototype keeps changes in memory while the page is open.
+                Import or export your pantry as JSON anytime.
+              </p>
+            </div>
+            <button class="text-button" id="export-json">Export JSON ↓</button
+            ><label class="text-button import-label"
+              >Import JSON ↑<input
+                type="file"
+                id="import-json"
+                accept="application/json,.json"
+                hidden
+            /></label>
+          </div>
+        </section>
+
+        <section class="page hidden" id="recipes-page">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">INSPIRED BY YOUR PANTRY</p>
+              <h1>Recipe ideas</h1>
+              <p class="lede">Simple recipes based on what you already have.</p>
+            </div>
+            <button class="button secondary" id="refresh-recipes">
+              ↻ Refresh ideas
+            </button>
+          </div>
+          <div class="filter-row">
+            <div class="search-box">
+              <span>⌕</span
+              ><input
+                id="recipe-search"
+                type="search"
+                placeholder="Search recipes or ingredients…"
+                aria-label="Search recipes"
+              />
+            </div>
+            <span class="match-caption" id="match-caption"></span>
+          </div>
+          <div class="recipe-grid" id="recipe-grid"></div>
+        </section>
+
+        <section class="page hidden" id="settings-page">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">MAKE YOURSELF AT HOME</p>
+              <h1>Settings</h1>
+              <p class="lede">A few preferences for your kitchen workspace.</p>
+            </div>
+          </div>
+          <div class="settings-list">
+            <article class="panel setting-item">
+              <div class="setting-icon">◐</div>
+              <div>
+                <strong>Dark mode</strong>
+                <p>Give your eyes a softer view. Coming soon.</p>
+              </div>
+              <span class="coming-soon">COMING SOON</span>
+            </article>
+            <article class="panel setting-item">
+              <div class="setting-icon">♙</div>
+              <div>
+                <strong>Household profiles</strong>
+                <p>Share a pantry with the people you cook for. Coming soon.</p>
+              </div>
+              <span class="coming-soon">COMING SOON</span>
+            </article>
+            <article class="panel setting-item">
+              <div class="setting-icon">♧</div>
+              <div>
+                <strong>Dietary preferences</strong>
+                <p>Get ideas that fit your way of eating. Coming soon.</p>
+              </div>
+              <span class="coming-soon">COMING SOON</span>
+            </article>
+            <article class="panel setting-item">
+              <div class="setting-icon">⌁</div>
+              <div>
+                <strong>Account & sign in</strong>
+                <p>Accounts are not connected in this prototype.</p>
+              </div>
+              <span class="coming-soon">FUTURE FEATURE</span>
+            </article>
+          </div>
+        </section>
+        <footer class="app-footer">
+          Made for good food and a little less waste <span>✳</span>
+        </footer>
+      </main>
+    </div>
+    <dialog id="ingredient-dialog">
+      <form id="ingredient-form" method="dialog">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">ADD TO YOUR KITCHEN</p>
+            <h2>New ingredient</h2>
+          </div>
+          <button
+            class="icon-button"
+            type="button"
+            id="close-dialog"
+            aria-label="Close"
+          >
+            ×
+          </button>
+        </div>
+        <p class="form-hint">
+          Add an item from the starter list or enter your own.
+        </p>
+        <label class="field full-field"
+          >Ingredient name<input
+            name="name"
+            id="food-name"
+            required
+            placeholder="e.g. Avocado"
+            list="food-suggestions" /><datalist id="food-suggestions"></datalist
+        ></label>
+        <div class="form-row">
+          <label class="field"
+            >Quantity<input
+              name="quantity"
+              type="number"
+              min="0.1"
+              step="any"
+              value="1"
+              required /></label
+          ><label class="field"
+            >Serving size (g)<input
+              name="servingSize"
+              type="number"
+              min="1"
+              step="any"
+              value="100"
+              required
+          /></label>
+        </div>
+        <label class="field full-field"
+          >Calories per serving<input
+            name="calories"
+            type="number"
+            min="0"
+            step="any"
+            value="100"
+            required
+        /></label>
+        <div class="form-error" id="form-error" role="alert"></div>
+        <div class="dialog-actions">
+          <button type="button" class="button secondary" id="cancel-dialog">
+            Cancel</button
+          ><button type="submit" class="button primary">Add ingredient</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="recipe-dialog">
+      <div id="recipe-detail" class="recipe-detail"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
