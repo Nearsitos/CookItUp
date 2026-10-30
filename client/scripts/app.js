@@ -1,3 +1,5 @@
+import { daysUntil, expiryStatus } from "./utils/dates.js";
+console.log(daysUntil("2026-11-01"), expiryStatus(daysUntil("2026-11-01")));
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",
