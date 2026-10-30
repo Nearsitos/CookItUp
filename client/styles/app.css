@@ -676,6 +676,19 @@ td:first-child {
   font-size: 15px;
 }
 
+.edit-item {
+  border: 0;
+  background: transparent;
+  color: #adb4ac;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.edit-item:hover {
+  color: #334237;
+}
+
 .delete-item {
   border: 0;
   background: transparent;

@@ -158,6 +158,7 @@ const fallbackRecipes = [
   },
 ];
 let toastTimer;
+let editingItemId = null;
 
 async function loadData() {
   let starterLoaded = false;
@@ -345,7 +346,7 @@ function renderInventory() {
   $("#inventory-body").innerHTML = items
     .map(
       (item) =>
-        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
     )
     .join("");
   $("#inventory-empty").classList.toggle("hidden", items.length > 0);
@@ -408,10 +409,29 @@ function setPage(page) {
   render();
 }
 function openAddDialog() {
+  editingItemId = null;
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
   $("#food-name").focus();
+  $("#dialog-title").textContent = "New ingredient";
 }
+
+function openEditDialog(id) {
+  const item = state.inventory.find((item) => item.id === id);
+  if (!item) return;
+
+  editingItemId = id;
+
+  $("#food-name").value = item.name;
+  $('[name="quantity"]').value = item.quantity;
+  $('[name="servingSize"]').value = item.servingSize;
+  $('[name="calories"]').value = item.calories;
+  $("#form-error").textContent = "";
+  $("#ingredient-dialog").showModal();
+  $("#food-name").focus();
+  $("#dialog-title").textContent = "Edit ingredient";
+}
+
 function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
@@ -437,6 +457,10 @@ document.addEventListener("click", (event) => {
   }
   const recipeCard = event.target.closest("[data-recipe]");
   if (recipeCard) openRecipe(recipeCard.dataset.recipe);
+  const edit = event.target.closest("[data-edit]");
+  if (edit) {
+    openEditDialog(edit.dataset.edit);
+  }
   const remove = event.target.closest("[data-remove]");
   if (remove) {
     state.inventory = state.inventory.filter(
@@ -539,6 +563,23 @@ $("#ingredient-form").addEventListener("submit", (event) => {
     $("#form-error").textContent = "Enter an ingredient name.";
     return;
   }
+
+if(editingItemId) {
+  const item = state.inventory.find((item) => item.id === editingItemId);
+  item.name = name;
+  item.quantity = Number(form.get("quantity"));
+  item.calories = Number(form.get("calories"));
+  item.servingSize = Number(form.get("servingSize"));
+
+  editingItemId = null;
+  saveInventory();
+  $("#ingredient-dialog").close();
+  event.currentTarget.reset();
+  render();
+  showToast(`${name} updated.`);
+  return;
+}
+
   const existing = state.inventory.find(
     (item) => normalized(item.name) === normalized(name),
   );
