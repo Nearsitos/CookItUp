@@ -3,12 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="theme-color" content="#f4f5f0" />
+    <script>
+      // Apply the saved (or system) theme before the page paints, so dark-mode
+      // users don't see a white flash. The settings toggle lives in app.js.
+      (function () {
+        var saved = null;
+        try {
+          saved = localStorage.getItem("cookitup-theme");
+        } catch (e) {}
+        var dark = saved
+          ? saved === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
     <title>CookItUp — Your kitchen dashboard</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/dietary.js" defer></script>
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="app-shell">
       <aside class="sidebar">
         <button
@@ -90,11 +106,12 @@
         </div>
       </aside>
 
-      <main class="main-content">
+      <main class="main-content" id="main-content">
         <header class="topbar">
           <a
             class="brand topbar-brand"
             href="#dashboard"
+            data-page="dashboard"
             aria-label="CookItUp home"
             ><span class="brand-mark" aria-hidden="true">♨</span
             ><span>CookItUp</span></a
@@ -133,7 +150,7 @@
           </section>
           <div class="dashboard-title"><h2>Dashboard</h2></div>
           <div class="dashboard-cards">
-            <article class="dashboard-card wide-card" data-go="inventory">
+            <article class="dashboard-card wide-card" role="link" tabindex="0" data-go="inventory">
               <span class="card-icon">⌑</span
               ><span class="card-badge" id="shopping-badge"
                 >12 Items on List</span
@@ -144,7 +161,7 @@
                 your shopping list, your last update was 5 hours ago.
               </p>
             </article>
-            <article class="dashboard-card wide-card" data-go="recipes">
+            <article class="dashboard-card wide-card" role="link" tabindex="0" data-go="recipes">
               <span class="card-icon">⑂</span
               ><span class="card-badge">0 Meals Planned</span>
               <h3>Meal Plan</h3>
@@ -153,7 +170,7 @@
                 your pantry.
               </p>
             </article>
-            <article class="dashboard-card" data-go="inventory">
+            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
               <span class="card-icon">⟳</span
               ><span class="card-badge">3 Alerts</span>
               <h3>Recent Updates</h3>
@@ -174,7 +191,7 @@
                 Quickly scan barcodes, type in items, or manually adjust counts.
               </p>
             </article>
-            <article class="dashboard-card" data-go="inventory">
+            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
               <span class="card-icon">▣</span
               ><span class="card-badge" id="inventory-badge">42 Items</span>
               <h3>Inventory</h3>
@@ -183,15 +200,16 @@
                 rack.
               </p>
             </article>
-            <article class="dashboard-card" data-go="settings">
-              <span class="card-icon">⛨</span>
+            <article class="dashboard-card" role="link" tabindex="0" data-go="preferences">
+              <span class="card-icon">⛨</span
+              ><span class="card-badge hidden" id="prefs-badge">0 Active</span>
               <h3>Allergies &amp; Preferences</h3>
               <p>
                 Manage dietary constraints (e.g. Gluten-Free, Vegan, Peanut
                 Allergy).
               </p>
             </article>
-            <article class="dashboard-card" data-go="recipes">
+            <article class="dashboard-card" role="link" tabindex="0" data-go="recipes">
               <span class="card-icon">▤</span
               ><span class="card-badge" id="recipe-badge">14 Available</span>
               <h3>Find Recipes</h3>
@@ -200,7 +218,7 @@
                 waste.
               </p>
             </article>
-            <article class="dashboard-card" data-go="inventory">
+            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
               <span class="card-icon">▣</span>
               <h3>Smart Import</h3>
               <p>
@@ -279,7 +297,7 @@
                 type="file"
                 id="import-json"
                 accept="application/json,.json"
-                hidden
+                class="visually-hidden"
             /></label>
           </div>
         </section>
@@ -307,6 +325,7 @@
             </div>
             <span class="match-caption" id="match-caption"></span>
           </div>
+          <div class="pref-notice hidden" id="recipe-pref-notice"></div>
           <div class="recipe-grid" id="recipe-grid"></div>
         </section>
 
@@ -322,10 +341,18 @@
             <article class="panel setting-item">
               <div class="setting-icon">◐</div>
               <div>
-                <strong>Dark mode</strong>
-                <p>Give your eyes a softer view. Coming soon.</p>
+                <strong id="dark-mode-label">Dark mode</strong>
+                <p>Give your eyes a softer view for late-night cooking.</p>
               </div>
-              <span class="coming-soon">COMING SOON</span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  role="switch"
+                  id="dark-mode-toggle"
+                  aria-labelledby="dark-mode-label"
+                />
+                <span class="switch-track" aria-hidden="true"></span>
+              </label>
             </article>
             <article class="panel setting-item">
               <div class="setting-icon">♙</div>
@@ -339,9 +366,13 @@
               <div class="setting-icon">♧</div>
               <div>
                 <strong>Dietary preferences</strong>
-                <p>Get ideas that fit your way of eating. Coming soon.</p>
+                <p id="diet-setting-summary">
+                  Get ideas that fit your way of eating.
+                </p>
               </div>
-              <span class="coming-soon">COMING SOON</span>
+              <button class="button secondary setting-action" data-go="preferences">
+                Manage
+              </button>
             </article>
             <article class="panel setting-item">
               <div class="setting-icon">⌁</div>
@@ -352,6 +383,57 @@
               <span class="coming-soon">FUTURE FEATURE</span>
             </article>
           </div>
+        </section>
+        <section class="page hidden" id="preferences-page">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">
+                <a href="#settings" class="crumb-link" data-page="settings"
+                  >SETTINGS</a
+                >
+                · YOUR WAY OF EATING
+              </p>
+              <h1>Allergies &amp; preferences</h1>
+              <p class="lede">
+                Tell CookItUp what you eat, and suggestions will fit you.
+              </p>
+            </div>
+            <button class="button secondary" id="clear-preferences">
+              Clear all
+            </button>
+          </div>
+          <section class="panel pref-panel" aria-labelledby="allergy-heading">
+            <div class="pref-panel-heading">
+              <h2 id="allergy-heading">Allergies</h2>
+              <p>
+                Recipes with these are hidden and marked in red if you choose
+                to show them.
+              </p>
+            </div>
+            <div class="chip-grid" id="allergy-options"></div>
+          </section>
+          <section class="panel pref-panel" aria-labelledby="diet-heading">
+            <div class="pref-panel-heading">
+              <h2 id="diet-heading">Diets</h2>
+              <p>
+                Recipes that don't fit are hidden from Recipe ideas. You can
+                still show them there, tagged with what doesn't fit.
+              </p>
+            </div>
+            <div class="chip-grid chip-grid--diets" id="diet-options"></div>
+          </section>
+          <div class="json-note pref-summary" aria-live="polite">
+            <span>✳</span>
+            <div>
+              <strong id="pref-summary-title"></strong>
+              <p id="pref-summary"></p>
+            </div>
+            <button class="text-button" data-go="recipes">See recipes →</button>
+          </div>
+          <p class="pref-disclaimer">
+            CookItUp checks ingredient names automatically and can miss things.
+            With a serious allergy, always check the labels on what you buy.
+          </p>
         </section>
         <footer class="app-footer">
           Made for good food and a little less waste <span>✳</span>

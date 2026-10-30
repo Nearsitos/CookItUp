@@ -51,7 +51,7 @@
     "time": 10,
     "category": "Lunch",
     "description": "Creamy avocado, a tangy yogurt drizzle, and bright lemon on toast.",
-    "ingredients": ["Avocado", "Greek yogurt", "Lemon"],
+    "ingredients": ["Avocado", "Greek yogurt", "Lemon", "Bread"],
     "steps": [
       "Toast your favorite bread.",
       "Mash avocado with a squeeze of lemon, salt, and pepper.",

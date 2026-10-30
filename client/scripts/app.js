@@ -22,8 +22,11 @@ const state = {
   search: "",
   sort: "name",
   heroSlide: 1,
+  prefs: emptyPreferences(),
+  showHiddenRecipes: false,
 };
 const storageKey = "cookitup-mvp-inventory";
+const preferencesKey = "cookitup-preferences";
 const fallbackInventory = [
   {
     id: "food-1",
@@ -136,7 +139,7 @@ const fallbackRecipes = [
     time: 10,
     category: "Lunch",
     description: "Creamy avocado, tangy yogurt, and bright lemon on toast.",
-    ingredients: ["Avocado", "Greek yogurt", "Lemon"],
+    ingredients: ["Avocado", "Greek yogurt", "Lemon", "Bread"],
     steps: [
       "Toast bread.",
       "Mash avocado with lemon.",
@@ -161,6 +164,7 @@ let toastTimer;
 
 async function loadData() {
   let starterLoaded = false;
+  state.prefs = loadPreferences();
   try {
     const [inventoryResponse, recipesResponse] = await Promise.all([
       fetch("./data/inventory.json"),
@@ -205,6 +209,44 @@ function saveInventory() {
   }
 }
 
+// --- Dietary preferences: saved per browser, like the inventory. ----------
+function loadPreferences() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(preferencesKey));
+    const known = (list, options) =>
+      Array.isArray(list)
+        ? list.filter((id) => options.some((option) => option.id === id))
+        : [];
+    return {
+      diets: known(saved?.diets, DIETS),
+      allergies: known(saved?.allergies, ALLERGENS),
+    };
+  } catch {
+    return emptyPreferences();
+  }
+}
+function savePreferences() {
+  try {
+    localStorage.setItem(preferencesKey, JSON.stringify(state.prefs));
+  } catch {
+    /* Preferences still apply for this session without browser storage. */
+  }
+}
+function preferenceCount() {
+  return state.prefs.diets.length + state.prefs.allergies.length;
+}
+function preferenceSummary() {
+  const parts = [];
+  if (state.prefs.diets.length)
+    parts.push(state.prefs.diets.map(dietLabel).join(", "));
+  if (state.prefs.allergies.length)
+    parts.push(
+      `avoiding ${state.prefs.allergies.map((id) => allergenLabel(id).toLowerCase()).join(", ")}`,
+    );
+  const text = parts.join(" · ");
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 function emojiFor(name) {
   return foodEmojis[name.toLowerCase()] || foodEmojis.default;
 }
@@ -231,32 +273,66 @@ function recipeMatch(recipe) {
     percent: Math.round((hits.length / recipe.ingredients.length) * 100),
   };
 }
+// Every recipe, with its pantry match and dietary check. Recipes that fit the
+// user's preferences come first, then diet conflicts, then allergen hits.
 function rankedRecipes() {
   return [...state.recipes]
-    .map((recipe) => ({ recipe, ...recipeMatch(recipe) }))
+    .map((recipe) => ({
+      recipe,
+      ...recipeMatch(recipe),
+      diet: checkRecipe(recipe, state.prefs),
+    }))
     .sort(
       (a, b) =>
+        Number(a.diet.hidden) - Number(b.diet.hidden) ||
+        Number(a.diet.flagged) - Number(b.diet.flagged) ||
         b.percent - a.percent ||
         a.missing - b.missing ||
         a.recipe.time - b.recipe.time,
     );
+}
+// Recipes that are safe for the user's allergies.
+function allowedRecipes() {
+  return rankedRecipes().filter((item) => !item.diet.hidden);
+}
+function dietFlagsHtml(diet) {
+  return [
+    ...diet.allergens.map(
+      (id) =>
+        `<span class="diet-flag diet-flag--allergen">⚠ Contains ${escapeHtml(allergenLabel(id).toLowerCase())}</span>`,
+    ),
+    ...diet.dietConflicts.map(
+      (id) =>
+        `<span class="diet-flag diet-flag--diet">Not ${escapeHtml(dietLabel(id).toLowerCase())}</span>`,
+    ),
+  ].join("");
 }
 
 function render() {
   renderDashboard();
   renderInventory();
   renderRecipes();
+  renderPreferences();
   $("#nav-count").textContent = state.inventory.length;
 }
 function renderDashboard() {
   $("#inventory-badge").textContent = `${state.inventory.length} Items`;
   $("#recipe-badge").textContent =
-    `${rankedRecipes().filter((item) => item.hits.length > 0).length} Available`;
+    `${rankedRecipes().filter((item) => item.diet.fits && item.hits.length > 0).length} Available`;
+  const count = preferenceCount();
+  const prefsBadge = $("#prefs-badge");
+  prefsBadge.textContent = `${count} Active`;
+  prefsBadge.classList.toggle("hidden", count === 0);
   renderHeroCarousel();
 }
 function renderHeroCarousel() {
-  const ranked = rankedRecipes();
-  const suggested = ranked.find((item) => item.hits.length > 0) || ranked[0];
+  // Never suggest a recipe with the user's allergens; prefer ones that also
+  // fit their diet.
+  const ranked = allowedRecipes();
+  const suggested =
+    ranked.find((item) => item.hits.length > 0 && !item.diet.flagged) ||
+    ranked.find((item) => item.hits.length > 0) ||
+    ranked[0];
   const image =
     suggested?.recipe.image ||
     "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85";
@@ -277,7 +353,7 @@ function renderHeroCarousel() {
         <article class="featured-recipe featured-recipe--suggested">
           <div class="featured-photo" role="img" aria-label="${escapeHtml(suggested.recipe.name)}" style="background-image:url('${image}')"></div>
           <div class="featured-copy">
-            <div class="featured-kickers"><span class="pantry-match">${suggested.percent}% PANTRY MATCH</span><span>A suggestion</span></div>
+            <div class="featured-kickers"><span class="pantry-match">${suggested.percent}% PANTRY MATCH</span><span>A suggestion</span>${dietFlagsHtml(suggested.diet)}</div>
             <h2>${escapeHtml(suggested.recipe.name)}</h2>
             <p class="ingredient-caption">KEY INGREDIENTS FROM YOUR PANTRY:</p>
             <p class="featured-ingredients">${suggested.recipe.ingredients.map(escapeHtml).join(", ")}</p>
@@ -286,7 +362,11 @@ function renderHeroCarousel() {
           </div>
         </article>
       `
-      : '<article class="featured-recipe"><div class="featured-empty">Add ingredients to see a recipe suggestion.</div></article>',
+      : `<article class="featured-recipe"><div class="featured-empty">${
+          state.recipes.length
+            ? "No recipes fit your allergies yet. Check back as more recipes are added."
+            : "Add ingredients to see a recipe suggestion."
+        }</div></article>`,
     `
       <article class="featured-recipe future-slide">
         <div class="featured-photo" role="img" aria-label="Recipe ideas" style="background-image:url('${image}')"></div>
@@ -310,25 +390,43 @@ function renderHeroCarousel() {
     )
     .join("");
   track.scrollLeft = track.clientWidth * state.heroSlide;
+  syncHeroControls();
 }
 function selectHeroSlide(index) {
   const track = $("#featured-track");
   if (!track) return;
   state.heroSlide = Math.max(0, Math.min(2, index));
+  heroScrollTarget = state.heroSlide;
   track.scrollTo({
     left: track.clientWidth * state.heroSlide,
     behavior: "smooth",
   });
-  updateHeroDots();
+  syncHeroControls();
 }
+// While a dot-triggered smooth scroll is running, ignore the in-between
+// scroll positions so the selection doesn't flicker back.
+let heroScrollTarget = null;
 function updateHeroDots() {
   const track = $("#featured-track");
-  if (track?.clientWidth)
-    state.heroSlide = Math.round(track.scrollLeft / track.clientWidth);
+  if (track?.clientWidth) {
+    const visible = Math.round(track.scrollLeft / track.clientWidth);
+    if (heroScrollTarget !== null && visible !== heroScrollTarget) return;
+    heroScrollTarget = null;
+    state.heroSlide = visible;
+  }
+  syncHeroControls();
+}
+function syncHeroControls() {
   document.querySelectorAll(".carousel-dot").forEach((dot, index) => {
     const selected = index === state.heroSlide;
     dot.classList.toggle("selected", selected);
     dot.setAttribute("aria-current", selected ? "true" : "false");
+    // Roving tabindex: Tab lands on the current dot; arrow keys move between.
+    dot.tabIndex = selected ? 0 : -1;
+  });
+  // Off-screen slides are inert so Tab can't land on their hidden buttons.
+  document.querySelectorAll(".hero-slide").forEach((slide, index) => {
+    slide.inert = index !== state.heroSlide;
   });
 }
 function renderInventory() {
@@ -354,21 +452,98 @@ function renderInventory() {
 }
 function renderRecipes() {
   const query = normalized($("#recipe-search").value);
-  const recipes = rankedRecipes().filter(({ recipe }) =>
+  const matching = rankedRecipes().filter(({ recipe }) =>
     normalized(
       `${recipe.name} ${recipe.category} ${recipe.ingredients.join(" ")}`,
     ).includes(query),
   );
+  // Only recipes that fit every preference show by default. "Show them"
+  // brings the rest back, tagged with what doesn't fit.
+  const outside = matching.filter((item) => !item.diet.fits);
+  const recipes = state.showHiddenRecipes
+    ? matching
+    : matching.filter((item) => item.diet.fits);
   $("#match-caption").textContent =
-    `${recipes.length} recipe${recipes.length === 1 ? "" : "s"} · sorted by pantry match`;
+    `${recipes.length} recipe${recipes.length === 1 ? "" : "s"} · sorted by pantry match${preferenceCount() ? " and your preferences" : ""}`;
+  renderRecipeNotice(outside);
   $("#recipe-grid").innerHTML =
     recipes
       .map(
-        ({ recipe, hits, missing, percent }) =>
-          `<article class="recipe-card" data-recipe="${escapeHtml(recipe.id)}"><div class="recipe-cover" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"}')"><span class="recipe-badge">${missing ? `${missing} to get` : "Ready to make"}</span></div><div class="recipe-body"><h3>${escapeHtml(recipe.name)}</h3><p>${escapeHtml(recipe.description)}</p><div class="recipe-tags"><span>${recipe.time} min · ${escapeHtml(recipe.category)}</span><span class="tag-score">${hits.length}/${recipe.ingredients.length} ingredients</span></div></div></article>`,
+        ({ recipe, hits, missing, diet }) =>
+          `<article class="recipe-card${diet.hidden ? " recipe-card--allergen" : ""}" data-recipe="${escapeHtml(recipe.id)}" role="button" tabindex="0" aria-label="${escapeHtml(recipe.name)}${diet.hidden || diet.flagged ? ` (${[...diet.allergens.map((id) => `contains ${allergenLabel(id).toLowerCase()}`), ...diet.dietConflicts.map((id) => `not ${dietLabel(id).toLowerCase()}`)].join(", ")})` : ""}, ${missing ? `${missing} to get` : "ready to make"}"><div class="recipe-cover" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"}')"><span class="recipe-badge">${missing ? `${missing} to get` : "Ready to make"}</span></div><div class="recipe-body"><h3>${escapeHtml(recipe.name)}</h3><p>${escapeHtml(recipe.description)}</p>${diet.hidden || diet.flagged ? `<div class="diet-flags">${dietFlagsHtml(diet)}</div>` : ""}<div class="recipe-tags"><span>${recipe.time} min · ${escapeHtml(recipe.category)}</span><span class="tag-score">${hits.length}/${recipe.ingredients.length} ingredients</span></div></div></article>`,
       )
       .join("") ||
-    '<div class="panel"><strong>No recipes match that search.</strong><p class="lede">Try another name or ingredient.</p></div>';
+    (outside.length
+      ? '<div class="panel"><strong>None of these recipes fit your preferences yet.</strong><p class="lede">Use “Show them” above to see them anyway.</p></div>'
+      : '<div class="panel"><strong>No recipes match that search.</strong><p class="lede">Try another name or ingredient.</p></div>');
+}
+// The strip above the recipe grid: what's filtered, and the show/hide option.
+function renderRecipeNotice(outside) {
+  const notice = $("#recipe-pref-notice");
+  if (!preferenceCount()) {
+    notice.classList.add("hidden");
+    return;
+  }
+  const count = outside.length;
+  const allergenCount = outside.filter((item) => item.diet.hidden).length;
+  const dietCount = count - allergenCount;
+  // e.g. "2 don't fit your diet, 1 has your allergens"
+  const reasons = [
+    dietCount
+      ? `${dietCount} ${dietCount === 1 ? "doesn't" : "don't"} fit your diet`
+      : "",
+    allergenCount
+      ? `${allergenCount} ${allergenCount === 1 ? "has" : "have"} your allergens`
+      : "",
+  ]
+    .filter(Boolean)
+    .join(", ");
+  let message;
+  let action = "";
+  if (count && !state.showHiddenRecipes) {
+    message = `<strong>${count} recipe${count === 1 ? " is" : "s are"} hidden</strong> (${reasons}).`;
+    action = `<button class="text-button" data-action="toggle-hidden-recipes">Show them</button>`;
+  } else if (count) {
+    message = `<strong>Showing ${count} recipe${count === 1 ? "" : "s"} outside your preferences</strong>, tagged with what doesn't fit.`;
+    action = `<button class="text-button" data-action="toggle-hidden-recipes">Hide them</button>`;
+  } else {
+    message = `<strong>Matched to your preferences:</strong> ${escapeHtml(preferenceSummary())}.`;
+  }
+  notice.innerHTML = `<span class="pref-notice-icon" aria-hidden="true">⛨</span><p>${message}</p>${action}<button class="text-button" data-go="preferences">Edit</button>`;
+  notice.classList.remove("hidden");
+}
+// --- Preferences page --------------------------------------------------------
+// The checkboxes are built once; render only syncs their state, so keyboard
+// focus isn't lost when a preference changes.
+function buildPreferenceOptions() {
+  const option = (kind, item, extra = "") =>
+    `<label class="chip chip--${kind}"><input type="checkbox" data-pref-kind="${kind}" value="${item.id}" /><span class="chip-face"><span class="chip-check" aria-hidden="true"></span><span class="chip-text"><strong>${escapeHtml(item.label)}</strong>${extra}</span></span></label>`;
+  $("#allergy-options").innerHTML = ALLERGENS.map((item) =>
+    option("allergies", item),
+  ).join("");
+  $("#diet-options").innerHTML = DIETS.map((item) =>
+    option("diets", item, `<small>${escapeHtml(item.hint)}</small>`),
+  ).join("");
+}
+function renderPreferences() {
+  document.querySelectorAll("[data-pref-kind]").forEach((input) => {
+    input.checked = state.prefs[input.dataset.prefKind].includes(input.value);
+  });
+  const all = rankedRecipes();
+  const hidden = all.filter((item) => item.diet.hidden).length;
+  const flagged = all.filter((item) => item.diet.flagged).length;
+  const fits = all.length - hidden - flagged;
+  const count = preferenceCount();
+  $("#pref-summary-title").textContent = count
+    ? preferenceSummary()
+    : "No preferences set yet";
+  $("#pref-summary").textContent = count
+    ? `${fits} of ${all.length} recipes fit you${flagged ? `; ${flagged} ${flagged === 1 ? "doesn't" : "don't"} fit your diet` : ""}${hidden ? `; ${hidden} ${hidden === 1 ? "has" : "have"} your allergens` : ""}.`
+    : `All ${all.length} recipes are shown. Pick anything that applies to you above.`;
+  $("#clear-preferences").disabled = count === 0;
+  $("#diet-setting-summary").textContent = count
+    ? preferenceSummary()
+    : "Get ideas that fit your way of eating.";
 }
 function formatNumber(value) {
   return Number(value || 0).toLocaleString(undefined, {
@@ -391,7 +566,9 @@ function showToast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
 }
-function setPage(page) {
+// moveFocus: when the user navigates, put focus on the new page's heading so
+// keyboard and screen-reader users start at the top of the content.
+function setPage(page, { moveFocus = false } = {}) {
   state.page = page;
   document
     .querySelectorAll(".page")
@@ -399,13 +576,22 @@ function setPage(page) {
       section.classList.toggle("hidden", section.id !== `${page}-page`),
     );
   document.querySelectorAll(".nav-link[data-page]").forEach((link) => {
-    const isCurrent = link.dataset.page === page;
+    const isCurrent =
+      link.dataset.page === (page === "preferences" ? "settings" : page);
     link.classList.toggle("active", isCurrent);
     if (isCurrent) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
   });
   history.replaceState(null, "", `#${page}`);
   render();
+  if (moveFocus) focusPageHeading();
+}
+function focusPageHeading() {
+  const heading = $(`#${state.page}-page h1`);
+  if (!heading) return;
+  heading.tabIndex = -1;
+  heading.focus();
+  scrollTo({ top: 0 });
 }
 function openAddDialog() {
   $("#form-error").textContent = "";
@@ -416,8 +602,30 @@ function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
   const { hits, missing } = recipeMatch(recipe);
+  const diet = checkRecipe(recipe, state.prefs);
+  const dietWarning =
+    diet.hidden || diet.flagged
+      ? `<div class="diet-flags diet-flags--detail">${dietFlagsHtml(diet)}</div>`
+      : "";
+  const ingredientLine = (ingredient) => {
+    const mark = availableNames().has(normalized(ingredient)) ? "✓" : "○";
+    const note = diet.ingredientNotes.get(ingredient);
+    const flags = note
+      ? [
+          ...note.allergens.map(
+            (id) =>
+              `<span class="ingredient-flag ingredient-flag--allergen">⚠ ${escapeHtml(allergenLabel(id).toLowerCase())}</span>`,
+          ),
+          ...note.diets.map(
+            (id) =>
+              `<span class="ingredient-flag ingredient-flag--diet">not ${escapeHtml(dietLabel(id).toLowerCase())}</span>`,
+          ),
+        ].join("")
+      : "";
+    return `${mark} ${escapeHtml(ingredient)}${flags}`;
+  };
   $("#recipe-detail").innerHTML =
-    `<button class="icon-button close-detail" aria-label="Close">×</button><div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div><p class="eyebrow">${escapeHtml(recipe.category)} · ${recipe.time} MINUTES</p><h2>${escapeHtml(recipe.name)}</h2><p>${escapeHtml(recipe.description)}</p><p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p><h3>Ingredients</h3><ul class="detail-ingredients">${recipe.ingredients.map((ingredient) => `<li>${availableNames().has(normalized(ingredient)) ? "✓" : "○"} ${escapeHtml(ingredient)}</li>`).join("")}</ul><h3>Method</h3><ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
+    `<button class="icon-button close-detail" aria-label="Close">×</button><div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div><p class="eyebrow">${escapeHtml(recipe.category)} · ${recipe.time} MINUTES</p><h2>${escapeHtml(recipe.name)}</h2><p>${escapeHtml(recipe.description)}</p>${dietWarning}<p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p><h3>Ingredients</h3><ul class="detail-ingredients">${recipe.ingredients.map((ingredient) => `<li>${ingredientLine(ingredient)}</li>`).join("")}</ul><h3>Method</h3><ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
   $("#recipe-dialog").showModal();
 }
 
@@ -425,10 +633,10 @@ document.addEventListener("click", (event) => {
   const nav = event.target.closest("[data-page]");
   if (nav) {
     event.preventDefault();
-    setPage(nav.dataset.page);
+    setPage(nav.dataset.page, { moveFocus: true });
   }
   const go = event.target.closest("[data-go]");
-  if (go) setPage(go.dataset.go);
+  if (go) setPage(go.dataset.go, { moveFocus: true });
   const slide = event.target.closest("[data-slide]");
   if (slide) selectHeroSlide(Number(slide.dataset.slide));
   if (event.target.closest('[data-action="add-ingredient"]')) {
@@ -439,25 +647,60 @@ document.addEventListener("click", (event) => {
   if (recipeCard) openRecipe(recipeCard.dataset.recipe);
   const remove = event.target.closest("[data-remove]");
   if (remove) {
+    // Remember the row position so focus can move to the next row's button
+    // instead of being lost when this row disappears.
+    const buttons = [...document.querySelectorAll("[data-remove]")];
+    const index = buttons.indexOf(remove);
     state.inventory = state.inventory.filter(
       (item) => item.id !== remove.dataset.remove,
     );
     saveInventory();
     render();
+    const remaining = document.querySelectorAll("[data-remove]");
+    (remaining[Math.min(index, remaining.length - 1)] || $("#inventory-search")).focus();
     showToast("Ingredient removed from your pantry.");
   }
   if (event.target.closest(".close-detail")) $("#recipe-dialog").close();
+  if (event.target.closest('[data-action="toggle-hidden-recipes"]')) {
+    state.showHiddenRecipes = !state.showHiddenRecipes;
+    renderRecipes();
+    // The notice is re-drawn, so put focus back on the (relabelled) button.
+    $('[data-action="toggle-hidden-recipes"]')?.focus();
+  }
 });
 $("#featured-track").addEventListener("scroll", updateHeroDots, {
   passive: true,
 });
+// Cards that act as links or buttons (role="link"/"button" with tabindex)
+// aren't native controls, so give them the same keys: Enter for both, and
+// Space for buttons. They then run through the click handler above.
+// Checkboxes only toggle on Space by default. Our dark-mode switch and the
+// diet/allergy options look like buttons, so let Enter toggle them as well.
 document.addEventListener("keydown", (event) => {
-  const addCard = event.target.closest('[data-action="add-ingredient"]');
-  if (addCard && (event.key === "Enter" || event.key === " ")) {
+  if (
+    event.key === "Enter" &&
+    event.target.matches('.switch input[type="checkbox"], .chip input[type="checkbox"]')
+  ) {
     event.preventDefault();
-    setPage("inventory");
-    openAddDialog();
+    event.target.click(); // toggles it and fires the usual change event
   }
+});
+document.addEventListener("keydown", (event) => {
+  const control = event.target.closest('[tabindex="0"][role="button"], [tabindex="0"][role="link"]');
+  if (!control || control !== event.target) return;
+  const isButton = control.getAttribute("role") === "button";
+  if (event.key === "Enter" || (isButton && event.key === " ")) {
+    event.preventDefault();
+    control.click();
+  }
+});
+// Arrow keys move between the carousel dots.
+$("#featured-dots").addEventListener("keydown", (event) => {
+  const step = { ArrowRight: 1, ArrowLeft: -1 }[event.key];
+  if (!step || !event.target.matches(".carousel-dot")) return;
+  event.preventDefault();
+  selectHeroSlide(state.heroSlide + step);
+  document.querySelectorAll(".carousel-dot")[state.heroSlide]?.focus();
 });
 const menuButton = $(".menu-button");
 function setMobileNavigationExpanded(expanded) {
@@ -635,9 +878,78 @@ $("#food-suggestions").innerHTML = [
 ]
   .map((name) => `<option value="${name}"></option>`)
   .join("");
+// --- Dark mode -------------------------------------------------------------
+// The inline script in index.html sets data-theme on load; this keeps the
+// settings switch in sync and saves the user's choice.
+const themeKey = "cookitup-theme";
+const darkModeToggle = $("#dark-mode-toggle");
+const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+function applyTheme(theme, { animate = false } = {}) {
+  const root = document.documentElement;
+  if (animate) {
+    root.classList.add("theme-transition");
+    setTimeout(() => root.classList.remove("theme-transition"), 300);
+  }
+  root.dataset.theme = theme;
+  darkModeToggle.checked = theme === "dark";
+  const bg = getComputedStyle(root).getPropertyValue("--bg").trim();
+  $('meta[name="theme-color"]').setAttribute("content", bg);
+}
+
+function savedTheme() {
+  try {
+    return localStorage.getItem(themeKey);
+  } catch {
+    return null;
+  }
+}
+
+applyTheme(document.documentElement.dataset.theme || "light");
+
+darkModeToggle.addEventListener("change", () => {
+  const theme = darkModeToggle.checked ? "dark" : "light";
+  try {
+    localStorage.setItem(themeKey, theme);
+  } catch {
+    // Storage can be blocked (private mode); the theme still applies for now.
+  }
+  applyTheme(theme, { animate: true });
+});
+
+// Follow the operating system until the user picks a theme themselves.
+systemDark.addEventListener("change", (event) => {
+  if (!savedTheme()) applyTheme(event.matches ? "dark" : "light", { animate: true });
+});
+
+buildPreferenceOptions();
+$(".skip-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  focusPageHeading();
+});
+$("#preferences-page").addEventListener("change", (event) => {
+  const input = event.target.closest("[data-pref-kind]");
+  if (!input) return;
+  const list = state.prefs[input.dataset.prefKind];
+  state.prefs[input.dataset.prefKind] = input.checked
+    ? [...list, input.value]
+    : list.filter((id) => id !== input.value);
+  savePreferences();
+  render();
+});
+$("#clear-preferences").addEventListener("click", () => {
+  state.prefs = emptyPreferences();
+  savePreferences();
+  render();
+  $("[data-pref-kind]").focus(); // the button is now disabled
+  showToast("Preferences cleared.");
+});
+
 const initialPage = location.hash.slice(1);
 loadData().then(() => {
-  if (["dashboard", "inventory", "recipes", "settings"].includes(initialPage))
+  if (["dashboard", "inventory", "recipes", "settings", "preferences"].includes(
+      initialPage,
+    ))
     setPage(initialPage);
 });
 
