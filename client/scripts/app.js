@@ -336,17 +336,20 @@ function renderInventory() {
   const search = normalized(state.search);
   const items = state.inventory
     .filter((item) => normalized(item.name).includes(search))
-    .sort((a, b) =>
-      state.sort === "calories"
-        ? Number(a.calories) - Number(b.calories)
-        : state.sort === "name-desc"
-          ? b.name.localeCompare(a.name)
-          : a.name.localeCompare(b.name),
-    );
+    .sort((a, b) => {
+      if (state.sort === "calories") {
+        if (a.calories === null || a.calories === undefined) return 1;
+        if (b.calories === null || b.calories === undefined) return -1;
+        return Number(a.calories) - Number(b.calories);
+      }
+      return state.sort === "name-desc"
+        ? b.name.localeCompare(a.name)
+        : a.name.localeCompare(b.name);
+    });
   $("#inventory-body").innerHTML = items
     .map(
       (item) =>
-        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
     )
     .join("");
   $("#inventory-empty").classList.toggle("hidden", items.length > 0);
@@ -375,6 +378,14 @@ function formatNumber(value) {
   return Number(value || 0).toLocaleString(undefined, {
     maximumFractionDigits: 1,
   });
+}
+function optionalNumber(raw) {
+  if (raw === "" || raw === null || raw === undefined) return null;
+  const value = Number(raw);
+  return Number.isFinite(value) ? value : null;
+}
+function formatOptional(value, unit) {
+  return value === null || value === undefined ? "—" : `${formatNumber(value)} ${unit}`;
 }
 function escapeHtml(value) {
   return String(value).replace(
@@ -424,8 +435,8 @@ function openEditDialog(id) {
 
   $("#food-name").value = item.name;
   $('[name="quantity"]').value = item.quantity;
-  $('[name="servingSize"]').value = item.servingSize;
-  $('[name="calories"]').value = item.calories;
+  $('[name="servingSize"]').value = item.servingSize ?? "";
+  $('[name="calories"]').value = item.calories ?? "";
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
   $("#food-name").focus();
@@ -568,8 +579,8 @@ if(editingItemId) {
   const item = state.inventory.find((item) => item.id === editingItemId);
   item.name = name;
   item.quantity = Number(form.get("quantity"));
-  item.calories = Number(form.get("calories"));
-  item.servingSize = Number(form.get("servingSize"));
+  item.calories = optionalNumber(form.get("calories"));
+  item.servingSize = optionalNumber(form.get("servingSize"));
 
   editingItemId = null;
   saveInventory();
@@ -591,8 +602,8 @@ if(editingItemId) {
       id: `food-${Date.now()}`,
       name,
       quantity: Number(form.get("quantity")),
-      calories: Number(form.get("calories")),
-      servingSize: Number(form.get("servingSize")),
+      calories: optionalNumber(form.get("calories")),
+      servingSize: optionalNumber(form.get("servingSize")),
       unit: "qty",
     });
   saveInventory();
