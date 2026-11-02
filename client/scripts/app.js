@@ -333,6 +333,25 @@ function updateHeroDots() {
     dot.setAttribute("aria-current", selected ? "true" : "false");
   });
 }
+
+function expiryBadge(item){
+  if (!item.expiryDate){
+    return `<span class="expiry-badge expiry-badge--none">No date</span>`;
+  }
+  const days = daysUntil(item.expiryDate);
+  const status = expiryStatus(days);
+
+  let label;
+  if (days < -1) label = `Expired ${-days} days ago`;
+  else if (days === -1) label = "Expired yesterday";
+  else if (days === 0) label = "Expires today";
+  else if (days === 1) label = "Expires tomorrow";
+  else label = `${days} days left`;
+
+  return `<span class="expiry-badge expiry-badge--${status}">${label}</span>`;
+}
+
+
 function renderInventory() {
   const search = normalized(state.search);
   const items = state.inventory
@@ -347,7 +366,7 @@ function renderInventory() {
   $("#inventory-body").innerHTML = items
     .map(
       (item) =>
-        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td>${expiryBadge(item)}</td><td><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
     )
     .join("");
   $("#inventory-empty").classList.toggle("hidden", items.length > 0);
