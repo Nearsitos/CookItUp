@@ -1,3 +1,5 @@
+import { daysUntil, expiryStatus } from "./utils/dates.js";
+console.log(daysUntil("2026-11-01"), expiryStatus(daysUntil("2026-11-01")));
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",
@@ -430,6 +432,25 @@ function syncHeroControls() {
     slide.inert = index !== state.heroSlide;
   });
 }
+
+function expiryBadge(item){
+  if (!item.expiryDate){
+    return `<span class="expiry-badge expiry-badge--none">No date</span>`;
+  }
+  const days = daysUntil(item.expiryDate);
+  const status = expiryStatus(days);
+
+  let label;
+  if (days < -1) label = `Expired ${-days} days ago`;
+  else if (days === -1) label = "Expired yesterday";
+  else if (days === 0) label = "Expires today";
+  else if (days === 1) label = "Expires tomorrow";
+  else label = `${days} days left`;
+
+  return `<span class="expiry-badge expiry-badge--${status}">${label}</span>`;
+}
+
+
 function renderInventory() {
   const search = normalized(state.search);
   const items = state.inventory

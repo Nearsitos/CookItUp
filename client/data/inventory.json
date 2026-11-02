@@ -5,7 +5,8 @@
     "quantity": 2,
     "calories": 160,
     "servingSize": 100,
-    "unit": "piece"
+    "unit": "piece",
+    "expiryDate": "2026-11-01"
   },
   {
     "id": "food-2",
@@ -13,7 +14,8 @@
     "quantity": 1,
     "calories": 23,
     "servingSize": 100,
-    "unit": "bag"
+    "unit": "bag",
+    "expiryDate": "2026-11-02"
   },
   {
     "id": "food-3",
@@ -21,7 +23,8 @@
     "quantity": 6,
     "calories": 72,
     "servingSize": 50,
-    "unit": "piece"
+    "unit": "piece",
+    "expiryDate": "2026-11-07"
   },
   {
     "id": "food-4",
@@ -29,7 +32,8 @@
     "quantity": 1,
     "calories": 264,
     "servingSize": 100,
-    "unit": "block"
+    "unit": "block",
+    "expiryDate": "2026-11-07"
   },
   {
     "id": "food-5",
@@ -37,7 +41,8 @@
     "quantity": 1,
     "calories": 97,
     "servingSize": 100,
-    "unit": "tub"
+    "unit": "tub",
+    "expiryDate": "2026-10-28"
   },
   {
     "id": "food-6",
@@ -45,7 +50,8 @@
     "quantity": 2,
     "calories": 29,
     "servingSize": 100,
-    "unit": "piece"
+    "unit": "piece",
+    "expiryDate": "2026-11-07"
   },
   {
     "id": "food-7",
@@ -53,7 +59,8 @@
     "quantity": 1,
     "calories": 131,
     "servingSize": 100,
-    "unit": "box"
+    "unit": "box",
+    "expiryDate": "2026-11-07"
   },
   {
     "id": "food-8",
@@ -61,8 +68,7 @@
     "quantity": 4,
     "calories": 18,
     "servingSize": 100,
-    "unit": "piece"
+    "unit": "piece",
+    "expiryDate": null
   }
 ]
-
-
