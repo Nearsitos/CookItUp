@@ -801,6 +801,19 @@ td:first-child {
   font-size: 15px;
 }
 
+.edit-item {
+  border: 0;
+  background: transparent;
+  color: #adb4ac;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.edit-item:hover {
+  color: #334237;
+}
+
 .delete-item {
   border: 0;
   background: transparent;
@@ -2756,6 +2769,35 @@ tr.just-added td {
   #recipe-dialog .detail-photo {
     height: 190px;
   }
+}
+/* Styles for badges */
+.expiry-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.expiry-badge--expired {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.expiry-badge--soon {
+  background: var(--yellow);
+  color: var(--yellow-text);
+}
+
+.expiry-badge--fresh {
+  background: var(--accent-soft);
+  color: var(--green-text);
+}
+
+.expiry-badge--none {
+  background: var(--surface);
+  color: var(--muted);
 }
 
 /* --- Dietary preferences ------------------------------------------------- */

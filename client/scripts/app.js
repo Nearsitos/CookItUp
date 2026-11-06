@@ -1,3 +1,10 @@
+import {
+  daysUntil,
+  expiryStatus,
+  expiryLabel,
+  isISODate,
+  compareExpiry,
+} from "./utils/dates.js";
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",
@@ -170,6 +177,7 @@ const fallbackRecipes = [
   },
 ];
 let toastTimer;
+let editingItemId = null;
 
 async function loadData() {
   let starterLoaded = false;
@@ -346,6 +354,7 @@ function render() {
 }
 function renderDashboard() {
   $("#inventory-badge").textContent = `${state.inventory.length} Items`;
+  renderExpiryCard();
   $("#recipe-badge").textContent =
     `${rankedRecipes().filter((item) => item.diet.fits && item.hits.length > 0).length} Available`;
   const count = preferenceCount();
@@ -516,19 +525,60 @@ function syncHeroControls() {
   $("#featured-status").textContent =
     `${slideLabels[state.heroSlide]} · ${state.heroSlide + 1} of ${slideLabels.length}`;
 }
+
+function expiryBadge(item){
+  if (!item.expiryDate){
+    return `<span class="expiry-badge expiry-badge--none">No date</span>`;
+  }
+  const days = daysUntil(item.expiryDate);
+  return `<span class="expiry-badge expiry-badge--${expiryStatus(days)}">${expiryLabel(days)}</span>`;
+}
+
+// Items in stock that have expired or expire within 3 days.
+function expiryAlerts() {
+  const counts = { expired: 0, soon: 0 };
+  for (const item of state.inventory) {
+    if (!item.expiryDate || Number(item.quantity) <= 0) continue;
+    const status = expiryStatus(daysUntil(item.expiryDate));
+    if (status in counts) counts[status] += 1;
+  }
+  return counts;
+}
+function renderExpiryCard() {
+  const { expired, soon } = expiryAlerts();
+  const total = expired + soon;
+  const plural = (n) => `${n} item${n === 1 ? "" : "s"}`;
+  $("#expiry-alert-badge").textContent = total
+    ? `${total} Alert${total === 1 ? "" : "s"}`
+    : "All fresh";
+  const parts = [];
+  if (expired) parts.push(`${plural(expired)} expired`);
+  if (soon) parts.push(`${plural(soon)} expiring within 3 days`);
+  $("#expiry-summary").textContent = total
+    ? `${parts.join(", ")}. Use them first or clear them out.`
+    : "Nothing is expiring soon. Add expiry dates to keep track.";
+}
+
+
 function renderInventory() {
   const search = normalized(state.search);
   const items = state.inventory
     .filter((item) =>
       normalized(`${item.name} ${inventoryCategory(item)}`).includes(search),
     )
-    .sort((a, b) =>
-      state.sort === "calories"
-        ? Number(a.calories) - Number(b.calories)
-        : state.sort === "name-desc"
-          ? b.name.localeCompare(a.name)
-          : a.name.localeCompare(b.name),
-    );
+    .sort((a, b) => {
+      if (state.sort === "expiry") {
+        return compareExpiry(a.expiryDate, b.expiryDate) || a.name.localeCompare(b.name);
+      }
+      if (state.sort === "calories") {
+        if (a.calories == null) return 1;
+        if (b.calories == null) return -1;
+        return Number(a.calories) - Number(b.calories);
+      }
+      return state.sort === "name-desc"
+        ? b.name.localeCompare(a.name)
+        : a.name.localeCompare(b.name);
+    });
   const groups = inventoryCategories
     .map((category) => ({
       category,
@@ -538,10 +588,10 @@ function renderInventory() {
   $("#inventory-body").innerHTML = groups
     .map(
       ({ category, items: categoryItems }) =>
-        `<tr class="inventory-category-row"><th colspan="5" scope="rowgroup"><span>${category}</span><span class="category-count">${categoryItems.length} ${categoryItems.length === 1 ? "item" : "items"}</span></th></tr>${categoryItems
+        `<tr class="inventory-category-row"><th colspan="6" scope="rowgroup"><span>${category}</span><span class="category-count">${categoryItems.length} ${categoryItems.length === 1 ? "item" : "items"}</span></th></tr>${categoryItems
           .map(
             (item) =>
-              `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatNumber(item.calories)} kcal</td><td>${formatNumber(item.servingSize)} g</td><td><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+              `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td>${expiryBadge(item)}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
           )
           .join("")}`,
     )
@@ -650,6 +700,14 @@ function formatNumber(value) {
     maximumFractionDigits: 1,
   });
 }
+function optionalNumber(raw) {
+  if (raw === "" || raw === null || raw === undefined) return null;
+  const value = Number(raw);
+  return Number.isFinite(value) ? value : null;
+}
+function formatOptional(value, unit) {
+  return value === null || value === undefined ? "—" : `${formatNumber(value)} ${unit}`;
+}
 function escapeHtml(value) {
   return String(value).replace(
     /[&<>"']/g,
@@ -695,10 +753,33 @@ function focusPageHeading() {
   scrollTo({ top: 0 });
 }
 function openAddDialog() {
+  editingItemId = null;
+  $("#ingredient-form").reset();
+  $("#ingredient-submit").textContent = "Add ingredient";
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
   $("#food-name").focus();
+  $("#dialog-title").textContent = "New ingredient";
 }
+
+function openEditDialog(id) {
+  const item = state.inventory.find((item) => item.id === id);
+  if (!item) return;
+
+  editingItemId = id;
+
+  $("#food-name").value = item.name;
+  $('[name="quantity"]').value = item.quantity;
+  $('[name="servingSize"]').value = item.servingSize ?? "";
+  $('[name="calories"]').value = item.calories ?? "";
+  $('[name="expiryDate"]').value = item.expiryDate ?? "";
+  $("#ingredient-submit").textContent = "Save changes";
+  $("#form-error").textContent = "";
+  $("#ingredient-dialog").showModal();
+  $("#food-name").focus();
+  $("#dialog-title").textContent = "Edit ingredient";
+}
+
 function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
@@ -788,6 +869,10 @@ document.addEventListener("click", (event) => {
   }
   const recipeCard = event.target.closest("[data-recipe]");
   if (recipeCard) openRecipe(recipeCard.dataset.recipe);
+  const edit = event.target.closest("[data-edit]");
+  if (edit) {
+    openEditDialog(edit.dataset.edit);
+  }
   const remove = event.target.closest("[data-remove]");
   if (remove) {
     // Remember the row position so focus can move to the next row's button
@@ -899,21 +984,48 @@ $("#ingredient-form").addEventListener("submit", (event) => {
     $("#form-error").textContent = "Enter an ingredient name.";
     return;
   }
+  const expiryDate = String(form.get("expiryDate") || "").trim() || null;
+  if (expiryDate && !isISODate(expiryDate)) {
+    $("#form-error").textContent = "Enter a valid expiry date.";
+    return;
+  }
+
+if(editingItemId) {
+  const item = state.inventory.find((item) => item.id === editingItemId);
+  item.name = name;
+  item.quantity = Number(form.get("quantity"));
+  item.calories = optionalNumber(form.get("calories"));
+  item.servingSize = optionalNumber(form.get("servingSize"));
+  item.expiryDate = expiryDate;
+
+  editingItemId = null;
+  saveInventory();
+  $("#ingredient-dialog").close();
+  event.currentTarget.reset();
+  render();
+  showToast(`${name} updated.`);
+  return;
+}
+
   const existing = state.inventory.find(
     (item) => normalized(item.name) === normalized(name),
   );
-  if (existing)
+  if (existing) {
     existing.quantity =
       Number(existing.quantity) + Number(form.get("quantity"));
-  else
+    // Mixed batches: track the one that goes off first.
+    if (expiryDate && compareExpiry(expiryDate, existing.expiryDate) < 0)
+      existing.expiryDate = expiryDate;
+  } else
     state.inventory.push({
       id: `food-${Date.now()}`,
       name,
       category: $("#food-category").value,
       quantity: Number(form.get("quantity")),
-      calories: Number(form.get("calories")),
-      servingSize: Number(form.get("servingSize")),
+      calories: optionalNumber(form.get("calories")),
+      servingSize: optionalNumber(form.get("servingSize")),
       unit: "qty",
+      expiryDate,
     });
   saveInventory();
   const addedId =
@@ -969,6 +1081,7 @@ $("#import-json").addEventListener("change", async (event) => {
       calories: Number(item.calories),
       servingSize: Number(item.servingSize),
       unit: String(item.unit || "qty"),
+      expiryDate: isISODate(item.expiryDate) ? item.expiryDate : null,
     }));
     saveInventory();
     $("#inventory-search").value = "";
