@@ -1,0 +1,68 @@
+[
+  {
+    "id": "food-1",
+    "name": "Avocado",
+    "quantity": 2,
+    "calories": 160,
+    "servingSize": 100,
+    "unit": "piece"
+  },
+  {
+    "id": "food-2",
+    "name": "Baby spinach",
+    "quantity": 1,
+    "calories": 23,
+    "servingSize": 100,
+    "unit": "bag"
+  },
+  {
+    "id": "food-3",
+    "name": "Eggs",
+    "quantity": 6,
+    "calories": 72,
+    "servingSize": 50,
+    "unit": "piece"
+  },
+  {
+    "id": "food-4",
+    "name": "Feta cheese",
+    "quantity": 1,
+    "calories": 264,
+    "servingSize": 100,
+    "unit": "block"
+  },
+  {
+    "id": "food-5",
+    "name": "Greek yogurt",
+    "quantity": 1,
+    "calories": 97,
+    "servingSize": 100,
+    "unit": "tub"
+  },
+  {
+    "id": "food-6",
+    "name": "Lemon",
+    "quantity": 2,
+    "calories": 29,
+    "servingSize": 100,
+    "unit": "piece"
+  },
+  {
+    "id": "food-7",
+    "name": "Pasta",
+    "quantity": 1,
+    "calories": 131,
+    "servingSize": 100,
+    "unit": "box"
+  },
+  {
+    "id": "food-8",
+    "name": "Tomatoes",
+    "quantity": 4,
+    "calories": 18,
+    "servingSize": 100,
+    "unit": "piece"
+  }
+]
+
+

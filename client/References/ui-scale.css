@@ -1,0 +1,443 @@
+/* Comfortable sizing pass: the reference is dense, but this MVP should read clearly. */
+.sidebar {
+  width: 220px;
+  padding: 24px 18px 16px;
+}
+.brand {
+  font-size: 18px;
+  padding: 0 8px 34px;
+  gap: 9px;
+}
+.brand-mark {
+  width: 29px;
+  height: 29px;
+  font-size: 19px;
+}
+.sidebar nav {
+  gap: 5px;
+}
+.nav-link {
+  height: 40px;
+  border-radius: 8px;
+  gap: 11px;
+  padding: 0 11px;
+  font-size: 13px;
+}
+.nav-link > span:first-child {
+  font-size: 17px;
+  width: 18px;
+}
+.nav-count {
+  font-size: 10px;
+  padding: 3px 7px;
+}
+.profile {
+  padding: 14px 3px 2px;
+  gap: 9px;
+}
+.profile .avatar {
+  width: 31px;
+  height: 31px;
+  font-size: 10px;
+}
+.profile strong {
+  font-size: 11px;
+  max-width: 128px;
+}
+.profile small {
+  font-size: 10px;
+  margin-top: 3px;
+}
+.main-content {
+  margin-left: 220px;
+  padding: 0 42px 22px;
+}
+.topbar {
+  height: 66px;
+  margin-bottom: 18px;
+}
+.menu-button {
+  width: 32px;
+  height: 32px;
+  font-size: 19px;
+}
+.global-search {
+  height: 36px;
+  width: min(470px, 58%);
+  gap: 9px;
+  padding: 0 13px;
+}
+.global-search span {
+  font-size: 19px;
+}
+.global-search input {
+  font-size: 12px;
+}
+.top-actions {
+  gap: 13px;
+}
+.notification {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+}
+.avatar.mini {
+  width: 32px;
+  height: 32px;
+  font-size: 10px;
+}
+.greeting {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+.featured-wrap {
+  margin-bottom: 20px;
+}
+.featured-recipe {
+  height: 215px;
+  grid-template-columns: 31% 1fr;
+  border-radius: 14px;
+}
+.featured-copy {
+  padding: 22px 25px 18px;
+}
+.featured-kickers {
+  gap: 10px;
+  font-size: 11px;
+}
+.pantry-match {
+  padding: 5px 8px;
+  font-size: 9px;
+}
+.featured-copy h2 {
+  font-size: 21px;
+  margin: 9px 0 12px;
+}
+.ingredient-caption {
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+.featured-ingredients {
+  font-size: 12px;
+  margin-bottom: 11px;
+}
+.featured-meta {
+  gap: 22px;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+.cook-button {
+  font-size: 11px;
+  padding: 8px 16px;
+}
+.carousel-dots {
+  height: 13px;
+}
+.carousel-dots span {
+  width: 5px;
+  height: 5px;
+}
+.dashboard-title {
+  margin: 17px 0 12px;
+}
+.dashboard-title h2 {
+  font-size: 21px;
+}
+.dashboard-cards {
+  gap: 14px 16px;
+}
+.dashboard-card {
+  min-height: 125px;
+  border-radius: 14px;
+  padding: 17px 18px 14px;
+}
+.dashboard-card.wide-card {
+  min-height: 125px;
+}
+.card-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+.card-badge {
+  right: 15px;
+  top: 18px;
+  padding: 4px 7px;
+  font-size: 9px;
+}
+.dashboard-card h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.dashboard-card p {
+  font-size: 11px;
+  line-height: 1.45;
+}
+.page-heading h1 {
+  font-size: 34px;
+}
+.page-heading .lede {
+  font-size: 15px;
+}
+.button {
+  font-size: 14px;
+  padding: 13px 18px;
+}
+.recipe-cover {
+  height: 160px;
+}
+.recipe-body {
+  padding: 17px;
+}
+.recipe-body h3 {
+  font-size: 20px;
+}
+.recipe-body p {
+  font-size: 13px;
+  min-height: 40px;
+}
+.recipe-tags span {
+  font-size: 11px;
+}
+.recipe-badge {
+  font-size: 11px;
+}
+.table-panel {
+  font-size: 14px;
+}
+.inventory-toolbar {
+  padding: 20px 23px;
+}
+.search-box {
+  height: 44px;
+  padding: 0 14px;
+}
+.search-box input {
+  font-size: 14px;
+}
+.sort-control,
+.sort-control select {
+  font-size: 12px;
+}
+th {
+  font-size: 11px;
+  padding: 16px 21px;
+}
+td {
+  font-size: 14px;
+  padding: 16px 21px;
+}
+.dialog-heading h2 {
+  font-size: 30px;
+}
+.form-hint {
+  font-size: 14px;
+}
+.field {
+  font-size: 13px;
+}
+.field input {
+  height: 46px;
+  font-size: 14px;
+}
+.dialog-actions .button {
+  font-size: 13px;
+}
+@media (max-width: 1050px) and (min-width: 761px) {
+  .sidebar {
+    width: 200px;
+  }
+  .main-content {
+    margin-left: 200px;
+    padding: 0 28px 18px;
+  }
+  .featured-recipe {
+    height: 195px;
+  }
+  .dashboard-card {
+    padding: 14px;
+    min-height: 120px;
+  }
+  .dashboard-card p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .sidebar {
+    width: 68px;
+    padding: 14px 8px;
+  }
+  .brand {
+    justify-content: center;
+    padding: 0 0 28px;
+    font-size: 0;
+  }
+  .brand > span:last-child {
+    display: none;
+  }
+  .brand-mark {
+    width: 29px;
+    height: 29px;
+  }
+  .nav-link {
+    height: 40px;
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+  .nav-link > span:first-child {
+    font-size: 17px;
+  }
+  .nav-count,
+  .profile > div:not(.avatar) {
+    display: none;
+  }
+  .profile {
+    justify-content: center;
+  }
+  .main-content {
+    margin-left: 68px;
+    padding: 0 16px 16px;
+  }
+  .topbar {
+    height: 58px;
+  }
+  .greeting {
+    font-size: 24px;
+  }
+  .featured-recipe {
+    height: 175px;
+    grid-template-columns: 35% 1fr;
+  }
+  .featured-copy {
+    padding: 12px;
+  }
+  .featured-copy h2 {
+    font-size: 16px;
+  }
+  .featured-kickers {
+    font-size: 9px;
+  }
+  .featured-ingredients {
+    font-size: 10px;
+  }
+  .featured-meta {
+    gap: 9px;
+    font-size: 9px;
+  }
+  .dashboard-title h2 {
+    font-size: 19px;
+  }
+  .dashboard-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .dashboard-card {
+    grid-column: span 1;
+    min-height: 120px;
+    padding: 13px;
+  }
+  .dashboard-card.wide-card {
+    grid-column: span 2;
+  }
+  .dashboard-card h3 {
+    font-size: 13px;
+  }
+  .dashboard-card p {
+    font-size: 10px;
+  }
+  .card-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .card-badge {
+    font-size: 8px;
+  }
+  .page-heading h1 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 470px) {
+  .main-content {
+    padding: 0 11px;
+  }
+  .topbar {
+    gap: 8px;
+  }
+  .global-search {
+    width: 52%;
+    height: 33px;
+  }
+  .global-search input {
+    font-size: 10px;
+  }
+  .featured-recipe {
+    height: auto;
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+  .featured-photo {
+    height: 145px;
+  }
+  .featured-copy {
+    padding: 16px;
+  }
+  .featured-copy h2 {
+    font-size: 18px;
+  }
+  .featured-meta {
+    font-size: 9px;
+  }
+  .dashboard-cards {
+    gap: 8px;
+  }
+  .dashboard-card {
+    min-height: 125px;
+    padding: 11px;
+  }
+  .dashboard-card p {
+    font-size: 9px;
+  }
+  .card-badge {
+    right: 8px;
+    top: 13px;
+    font-size: 7px;
+  }
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 761px) {
+  body.sidebar-collapsed .sidebar {
+    width: 68px;
+    padding: 14px 8px;
+  }
+  body.sidebar-collapsed .brand {
+    justify-content: center;
+    padding: 0 0 28px;
+    font-size: 0;
+  }
+  body.sidebar-collapsed .brand > span:last-child {
+    display: none;
+  }
+  body.sidebar-collapsed .nav-link {
+    font-size: 0;
+    justify-content: center;
+    padding: 0;
+  }
+  body.sidebar-collapsed .nav-link > span:first-child {
+    font-size: 17px;
+  }
+  body.sidebar-collapsed .nav-count,
+  body.sidebar-collapsed .profile > div:not(.avatar) {
+    display: none;
+  }
+  body.sidebar-collapsed .profile {
+    justify-content: center;
+  }
+  body.sidebar-collapsed .main-content {
+    margin-left: 68px;
+  }
+}
