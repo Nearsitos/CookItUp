@@ -35,7 +35,7 @@ const state = {
   recipes: [],
   page: "dashboard",
   search: "",
-  sort: "name",
+  sort: "expiry", // most expired first by default
   heroSlide: 1,
   prefs: emptyPreferences(),
   showHiddenRecipes: false,
@@ -770,6 +770,39 @@ function openAddDialog() {
   $("#dialog-title").textContent = "New ingredient";
 }
 
+// Ask "Are you sure?" before deleting an ingredient. Only removes it if the
+// user clicks Delete; Cancel or Escape leaves it alone.
+function confirmRemove(button) {
+  const id = button.dataset.remove;
+  const item = state.inventory.find((entry) => entry.id === id);
+  const dialog = $("#confirm-delete-dialog");
+  $("#confirm-delete-message").textContent = item
+    ? `${item.name} will be removed from your pantry.`
+    : "This ingredient will be removed from your pantry.";
+  dialog.returnValue = "";
+  dialog.addEventListener(
+    "close",
+    () => {
+      if (dialog.returnValue !== "confirm") {
+        button.focus();
+        return;
+      }
+      // Remember the row position so focus can move to the next row's button
+      // instead of being lost when this row disappears.
+      const buttons = [...document.querySelectorAll("[data-remove]")];
+      const index = buttons.indexOf(button);
+      state.inventory = state.inventory.filter((entry) => entry.id !== id);
+      saveInventory();
+      render();
+      const remaining = document.querySelectorAll("[data-remove]");
+      (remaining[Math.min(index, remaining.length - 1)] || $("#inventory-search")).focus();
+      showToast("Ingredient removed from your pantry.");
+    },
+    { once: true },
+  );
+  dialog.showModal();
+}
+
 function openEditDialog(id) {
   const item = state.inventory.find((item) => item.id === id);
   if (!item) return;
@@ -882,20 +915,7 @@ document.addEventListener("click", (event) => {
     openEditDialog(edit.dataset.edit);
   }
   const remove = event.target.closest("[data-remove]");
-  if (remove) {
-    // Remember the row position so focus can move to the next row's button
-    // instead of being lost when this row disappears.
-    const buttons = [...document.querySelectorAll("[data-remove]")];
-    const index = buttons.indexOf(remove);
-    state.inventory = state.inventory.filter(
-      (item) => item.id !== remove.dataset.remove,
-    );
-    saveInventory();
-    render();
-    const remaining = document.querySelectorAll("[data-remove]");
-    (remaining[Math.min(index, remaining.length - 1)] || $("#inventory-search")).focus();
-    showToast("Ingredient removed from your pantry.");
-  }
+  if (remove) confirmRemove(remove);
   if (event.target.closest(".close-detail")) $("#recipe-dialog").close();
   if (event.target.closest('[data-action="toggle-hidden-recipes"]')) {
     state.showHiddenRecipes = !state.showHiddenRecipes;

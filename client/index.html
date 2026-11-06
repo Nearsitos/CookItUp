@@ -252,9 +252,9 @@
               <label class="sort-control"
                 >Sort by
                 <select id="inventory-sort">
+                  <option value="expiry" selected>Expiring soonest</option>
                   <option value="name">Name (A–Z)</option>
                   <option value="name-desc">Name (Z–A)</option>
-                  <option value="expiry">Expiring soonest</option>
                   <option value="calories">Calories</option>
                 </select></label
               >
@@ -517,6 +517,26 @@
     </dialog>
     <dialog id="recipe-dialog">
       <div id="recipe-detail" class="recipe-detail"></div>
+    </dialog>
+    <dialog id="confirm-delete-dialog" aria-labelledby="confirm-delete-title">
+      <form method="dialog">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">REMOVE FROM YOUR KITCHEN</p>
+            <h2 id="confirm-delete-title">Are you sure?</h2>
+          </div>
+        </div>
+        <p class="form-hint" id="confirm-delete-message">
+          This ingredient will be removed from your pantry.
+        </p>
+        <div class="dialog-actions">
+          <button type="submit" class="button secondary" value="cancel" autofocus>
+            Cancel</button
+          ><button type="submit" class="button danger" value="confirm">
+            Delete
+          </button>
+        </div>
+      </form>
     </dialog>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>

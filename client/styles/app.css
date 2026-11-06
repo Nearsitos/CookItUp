@@ -441,6 +441,15 @@ h1 em {
   color: var(--on-accent);
 }
 
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.danger:hover {
+  filter: brightness(0.92);
+}
+
 .primary:hover {
   background: var(--green-dark);
 }
