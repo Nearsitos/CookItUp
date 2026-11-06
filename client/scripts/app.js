@@ -5,6 +5,14 @@ import {
   isISODate,
   compareExpiry,
 } from "./utils/dates.js";
+import {
+  ALLERGENS,
+  DIETS,
+  allergenLabel,
+  checkRecipe,
+  dietLabel,
+  emptyPreferences,
+} from "./dietary.js";
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",

@@ -7,7 +7,7 @@
 // Known starter ingredients are listed explicitly; anything else (ingredients
 // users type in) falls back to keyword matching on the name.
 
-const DIETS = [
+export const DIETS = [
   {
     id: "vegetarian",
     label: "Vegetarian",
@@ -40,7 +40,7 @@ const DIETS = [
   },
 ];
 
-const ALLERGENS = [
+export const ALLERGENS = [
   { id: "peanuts", label: "Peanuts" },
   { id: "tree-nuts", label: "Tree nuts" },
   { id: "dairy", label: "Dairy" },
@@ -99,14 +99,14 @@ function ingredientTags(name) {
   return tags;
 }
 
-function emptyPreferences() {
+export function emptyPreferences() {
   return { diets: [], allergies: [] };
 }
 
 // Checks one recipe against the user's preferences.
 // Returns which allergens it contains, which diets it breaks, and, per
 // ingredient, what the problem is (for the notes in the recipe dialog).
-function checkRecipe(recipe, prefs) {
+export function checkRecipe(recipe, prefs) {
   const allergens = new Set();
   const dietConflicts = new Set();
   const ingredientNotes = new Map(); // ingredient -> { allergens, diets }
@@ -140,9 +140,9 @@ function checkRecipe(recipe, prefs) {
   };
 }
 
-function allergenLabel(id) {
+export function allergenLabel(id) {
   return ALLERGENS.find((item) => item.id === id)?.label.split(" /")[0] || id;
 }
-function dietLabel(id) {
+export function dietLabel(id) {
   return DIETS.find((item) => item.id === id)?.label || id;
 }
