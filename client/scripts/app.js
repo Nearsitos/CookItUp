@@ -593,6 +593,13 @@ function renderInventory() {
       items: items.filter((item) => inventoryCategory(item) === category),
     }))
     .filter((group) => group.items.length);
+  // When sorting by expiry, put the category with the most expired item at
+  // the top (each group's items are already sorted, so [0] is its oldest).
+  if (state.sort === "expiry") {
+    groups.sort((a, b) =>
+      compareExpiry(a.items[0].expiryDate, b.items[0].expiryDate),
+    );
+  }
   $("#inventory-body").innerHTML = groups
     .map(
       ({ category, items: categoryItems }) =>
