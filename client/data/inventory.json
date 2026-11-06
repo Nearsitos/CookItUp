@@ -2,6 +2,7 @@
   {
     "id": "food-1",
     "name": "Avocado",
+    "category": "Produce",
     "quantity": 2,
     "calories": 160,
     "servingSize": 100,
@@ -11,6 +12,7 @@
   {
     "id": "food-2",
     "name": "Baby spinach",
+    "category": "Greens",
     "quantity": 1,
     "calories": 23,
     "servingSize": 100,
@@ -20,6 +22,7 @@
   {
     "id": "food-3",
     "name": "Eggs",
+    "category": "Meats & Protein",
     "quantity": 6,
     "calories": 72,
     "servingSize": 50,
@@ -29,6 +32,7 @@
   {
     "id": "food-4",
     "name": "Feta cheese",
+    "category": "Dairy",
     "quantity": 1,
     "calories": 264,
     "servingSize": 100,
@@ -38,6 +42,7 @@
   {
     "id": "food-5",
     "name": "Greek yogurt",
+    "category": "Dairy",
     "quantity": 1,
     "calories": 97,
     "servingSize": 100,
@@ -47,6 +52,7 @@
   {
     "id": "food-6",
     "name": "Lemon",
+    "category": "Produce",
     "quantity": 2,
     "calories": 29,
     "servingSize": 100,
@@ -56,6 +62,7 @@
   {
     "id": "food-7",
     "name": "Pasta",
+    "category": "Grains",
     "quantity": 1,
     "calories": 131,
     "servingSize": 100,
@@ -65,6 +72,7 @@
   {
     "id": "food-8",
     "name": "Tomatoes",
+    "category": "Produce",
     "quantity": 4,
     "calories": 18,
     "servingSize": 100,

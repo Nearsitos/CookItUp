@@ -5,6 +5,14 @@ import {
   isISODate,
   compareExpiry,
 } from "./utils/dates.js";
+import {
+  ALLERGENS,
+  DIETS,
+  allergenLabel,
+  checkRecipe,
+  dietLabel,
+  emptyPreferences,
+} from "./dietary.js";
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",
@@ -34,6 +42,15 @@ const state = {
 };
 const storageKey = "cookitup-mvp-inventory";
 const preferencesKey = "cookitup-preferences";
+const inventoryCategories = [
+  "Meats & Protein",
+  "Greens",
+  "Grains",
+  "Dairy",
+  "Produce",
+  "Seasonings",
+  "Other",
+];
 const fallbackInventory = [
   {
     id: "food-1",
@@ -263,6 +280,26 @@ function normalized(value) {
     .trim()
     .toLowerCase();
 }
+function inventoryCategory(item) {
+  const explicit = inventoryCategories.find(
+    (category) => normalized(category) === normalized(item.category),
+  );
+  if (explicit) return explicit;
+  const name = normalized(typeof item === "string" ? item : item.name);
+  if (/\b(chicken|beef|pork|turkey|bacon|sausage|fish|salmon|tuna|shrimp|meat|egg|eggs)\b/.test(name))
+    return "Meats & Protein";
+  if (/\b(spinach|lettuce|kale|arugula|chard|collard|greens)\b/.test(name))
+    return "Greens";
+  if (/\b(pasta|rice|quinoa|oats|bread|flour|barley|couscous|grain|cereal)\b/.test(name))
+    return "Grains";
+  if (/\b(cheese|milk|yogurt|butter|cream|dairy)\b/.test(name))
+    return "Dairy";
+  if (/\b(salt|black pepper|white pepper|peppercorn|spice|seasoning|garlic|basil|oregano|paprika|cumin|thyme|rosemary|cilantro|parsley|chili|oil|vinegar|sauce)\b/.test(name))
+    return "Seasonings";
+  if (/\b(avocado|tomato|tomatoes|lemon|lime|onion|potato|carrot|apple|banana|pepper|peppers|broccoli|cucumber|fruit|vegetable)\b/.test(name))
+    return "Produce";
+  return "Other";
+}
 function availableNames() {
   return new Set(
     state.inventory
@@ -366,7 +403,7 @@ function renderHeroCarousel() {
             <h2>${escapeHtml(suggested.recipe.name)}</h2>
             <p class="ingredient-caption">KEY INGREDIENTS FROM YOUR PANTRY:</p>
             <p class="featured-ingredients">${suggested.recipe.ingredients.map(escapeHtml).join(", ")}</p>
-            <div class="featured-meta"><span>◷ &nbsp;${suggested.recipe.time} mins</span><span>♧ &nbsp;2 portions</span><span>♨ &nbsp;480 kcal</span></div>
+            <div class="featured-meta"><span>◷ &nbsp;${suggested.recipe.time} mins</span><span>♧ &nbsp;${Number(suggested.recipe.servings || 2)} portions</span><span>♨ &nbsp;${formatNumber(Number(suggested.recipe.calories || 400))} kcal</span></div>
             <button class="button cook-button cook-button--compact" data-recipe="${escapeHtml(suggested.recipe.id)}">Let's Cook ↗</button>
           </div>
         </article>
@@ -395,13 +432,14 @@ function renderHeroCarousel() {
   $("#featured-dots").innerHTML = slides
     .map(
       (_, index) =>
-        `<button type="button" class="carousel-dot${index === state.heroSlide ? " selected" : ""}" data-slide="${index}" aria-label="Show highlight ${index + 1}" aria-current="${index === state.heroSlide ? "true" : "false"}"></button>`,
+        `<button type="button" class="carousel-dot${index === state.heroSlide ? " selected" : ""}" data-slide="${index}" aria-label="Show highlight ${index + 1}" aria-current="${index === state.heroSlide ? "true" : "false"}"><span class="carousel-dot-fill" aria-hidden="true"></span></button>`,
     )
     .join("");
   track.scrollLeft = track.clientWidth * state.heroSlide;
   syncHeroControls();
+  resetHeroAutoplayProgress();
 }
-function selectHeroSlide(index) {
+function selectHeroSlide(index, { resetProgress = true, userInitiated = false } = {}) {
   const track = $("#featured-track");
   if (!track) return;
   state.heroSlide = Math.max(0, Math.min(2, index));
@@ -411,21 +449,76 @@ function selectHeroSlide(index) {
     behavior: "smooth",
   });
   syncHeroControls();
+  if (userInitiated) {
+    heroResumeAt = Date.now() + 20000;
+    resetHeroAutoplayProgress();
+  } else if (resetProgress) {
+    resetHeroAutoplayProgress();
+  }
 }
-// While a dot-triggered smooth scroll is running, ignore the in-between
+// While a control-triggered smooth scroll is running, ignore the in-between
 // scroll positions so the selection doesn't flicker back.
 let heroScrollTarget = null;
+const HERO_SLIDE_COUNT = 3;
+const HERO_AUTOPLAY_SECONDS = 7;
+let heroElapsedSeconds = 0;
+let heroResumeAt = 0;
+let heroAutoplayTimer = null;
+function updateHeroProgress(reset = false) {
+  const fills = [...document.querySelectorAll(".carousel-dot-fill")];
+  if (!fills.length) return;
+  const percent = (heroElapsedSeconds / HERO_AUTOPLAY_SECONDS) * 100;
+  if (reset) {
+    fills.forEach((fill) => {
+      fill.style.transition = "none";
+      fill.style.width = "0%";
+    });
+    fills[state.heroSlide]?.getBoundingClientRect();
+    fills.forEach((fill) => { fill.style.transition = ""; });
+  } else {
+    fills.forEach((fill, index) => {
+      fill.style.width = index === state.heroSlide ? `${percent}%` : "0%";
+    });
+  }
+}
+function resetHeroAutoplayProgress() {
+  heroElapsedSeconds = 0;
+  updateHeroProgress(true);
+}
+function startHeroAutoplay() {
+  if (heroAutoplayTimer) clearInterval(heroAutoplayTimer);
+  heroAutoplayTimer = setInterval(() => {
+    if (
+      Date.now() < heroResumeAt ||
+      document.hidden ||
+      state.page !== "dashboard" ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) return;
+    heroElapsedSeconds += 1;
+    updateHeroProgress();
+    if (heroElapsedSeconds >= HERO_AUTOPLAY_SECONDS) {
+      selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, { resetProgress: false });
+      resetHeroAutoplayProgress();
+    }
+  }, 1000);
+}
 function updateHeroDots() {
   const track = $("#featured-track");
   if (track?.clientWidth) {
     const visible = Math.round(track.scrollLeft / track.clientWidth);
     if (heroScrollTarget !== null && visible !== heroScrollTarget) return;
     heroScrollTarget = null;
+    const changed = visible !== state.heroSlide;
     state.heroSlide = visible;
+    if (changed) {
+      heroResumeAt = Date.now() + 20000;
+      resetHeroAutoplayProgress();
+    }
   }
   syncHeroControls();
 }
 function syncHeroControls() {
+  const slideLabels = ["Your planned", "A suggestion", "More to come"];
   document.querySelectorAll(".carousel-dot").forEach((dot, index) => {
     const selected = index === state.heroSlide;
     dot.classList.toggle("selected", selected);
@@ -437,6 +530,8 @@ function syncHeroControls() {
   document.querySelectorAll(".hero-slide").forEach((slide, index) => {
     slide.inert = index !== state.heroSlide;
   });
+  $("#featured-status").textContent =
+    `${slideLabels[state.heroSlide]} · ${state.heroSlide + 1} of ${slideLabels.length}`;
 }
 
 function expiryBadge(item){
@@ -476,32 +571,42 @@ function renderExpiryCard() {
 function renderInventory() {
   const search = normalized(state.search);
   const items = state.inventory
-    .filter((item) => normalized(item.name).includes(search))
+    .filter((item) =>
+      normalized(`${item.name} ${inventoryCategory(item)}`).includes(search),
+    )
     .sort((a, b) => {
       if (state.sort === "expiry") {
-        return (
-          compareExpiry(a.expiryDate, b.expiryDate) ||
-          a.name.localeCompare(b.name)
-        );
+        return compareExpiry(a.expiryDate, b.expiryDate) || a.name.localeCompare(b.name);
       }
       if (state.sort === "calories") {
-        if (a.calories === null || a.calories === undefined) return 1;
-        if (b.calories === null || b.calories === undefined) return -1;
+        if (a.calories == null) return 1;
+        if (b.calories == null) return -1;
         return Number(a.calories) - Number(b.calories);
       }
       return state.sort === "name-desc"
         ? b.name.localeCompare(a.name)
         : a.name.localeCompare(b.name);
     });
-  $("#inventory-body").innerHTML = items
+  const groups = inventoryCategories
+    .map((category) => ({
+      category,
+      items: items.filter((item) => inventoryCategory(item) === category),
+    }))
+    .filter((group) => group.items.length);
+  $("#inventory-body").innerHTML = groups
     .map(
-      (item) =>
-        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td>${expiryBadge(item)}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+      ({ category, items: categoryItems }) =>
+        `<tr class="inventory-category-row"><th colspan="6" scope="rowgroup"><span>${category}</span><span class="category-count">${categoryItems.length} ${categoryItems.length === 1 ? "item" : "items"}</span></th></tr>${categoryItems
+          .map(
+            (item) =>
+              `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td>${expiryBadge(item)}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+          )
+          .join("")}`,
     )
     .join("");
   $("#inventory-empty").classList.toggle("hidden", items.length > 0);
   $("#inventory-footer").textContent =
-    `Showing ${items.length} of ${state.inventory.length} ingredients`;
+    `Showing ${items.length} of ${state.inventory.length} ingredients in ${groups.length} ${groups.length === 1 ? "category" : "categories"}`;
 }
 function renderRecipes() {
   const query = normalized($("#recipe-search").value);
@@ -627,6 +732,7 @@ function showToast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
 }
+const primaryNavigation = $("#primary-navigation");
 // moveFocus: when the user navigates, put focus on the new page's heading so
 // keyboard and screen-reader users start at the top of the content.
 function setPage(page, { moveFocus = false } = {}) {
@@ -636,7 +742,7 @@ function setPage(page, { moveFocus = false } = {}) {
     .forEach((section) =>
       section.classList.toggle("hidden", section.id !== `${page}-page`),
     );
-  document.querySelectorAll(".nav-link[data-page]").forEach((link) => {
+  primaryNavigation.querySelectorAll(".nav-link[data-page]").forEach((link) => {
     const isCurrent =
       link.dataset.page === (page === "preferences" ? "settings" : page);
     link.classList.toggle("active", isCurrent);
@@ -686,6 +792,13 @@ function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
   const { hits, missing } = recipeMatch(recipe);
+  const pantry = availableNames();
+  const ingredientsOnHand = recipe.ingredients.filter((item) =>
+    pantry.has(normalized(item)),
+  );
+  const ingredientsToGet = recipe.ingredients.filter(
+    (item) => !pantry.has(normalized(item)),
+  );
   const diet = checkRecipe(recipe, state.prefs);
   const dietWarning =
     diet.hidden || diet.flagged
@@ -708,8 +821,43 @@ function openRecipe(id) {
       : "";
     return `${mark} ${escapeHtml(ingredient)}${flags}`;
   };
+  const ingredientList = (ingredients, className = "") =>
+    `<ul class="detail-ingredients ${className}">${ingredients
+      .map((ingredient) => `<li>${ingredientLine(ingredient)}</li>`)
+      .join("")}</ul>`;
+  const missingIngredientsSection = ingredientsToGet.length
+    ? `<section class="recipe-section recipe-section--missing">
+        <h3>Missing ingredients</h3>
+        ${ingredientList(ingredientsToGet, "ingredient-list--missing")}
+      </section>`
+    : "";
+  const servingCount = Number(recipe.servings || 2);
+  const calorieCount = Number(recipe.calories || 400);
   $("#recipe-detail").innerHTML =
-    `<button class="icon-button close-detail" aria-label="Close">×</button><div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div><p class="eyebrow">${escapeHtml(recipe.category)} · ${recipe.time} MINUTES</p><h2>${escapeHtml(recipe.name)}</h2><p>${escapeHtml(recipe.description)}</p>${dietWarning}<p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p><h3>Ingredients</h3><ul class="detail-ingredients">${recipe.ingredients.map((ingredient) => `<li>${ingredientLine(ingredient)}</li>`).join("")}</ul><h3>Method</h3><ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
+    `<button class="icon-button close-detail" aria-label="Close recipe">×</button>
+      <div class="recipe-visual">
+        <div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1100&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div>
+        <span class="recipe-time-badge">◷ &nbsp;${recipe.time} minutes</span>
+        <div class="recipe-photo-meta"><span>♧ &nbsp;${servingCount} servings</span><span>♨ &nbsp;${formatNumber(calorieCount)} kcal</span></div>
+      </div>
+      <div class="recipe-content">
+        <header class="recipe-summary">
+          <p class="eyebrow">${escapeHtml(recipe.category)}</p>
+          <h2>${escapeHtml(recipe.name)}</h2>
+          <p>${escapeHtml(recipe.description)}</p>
+          <p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p>
+          ${dietWarning}
+        </header>
+        <section class="recipe-section">
+          <h3>Ingredients</h3>
+          ${ingredientsOnHand.length ? ingredientList(ingredientsOnHand, "ingredient-list--available") : '<p class="ingredient-empty">None of these ingredients are in your inventory yet.</p>'}
+        </section>
+        ${missingIngredientsSection}
+        <section class="recipe-section recipe-section--steps">
+          <h3>Steps</h3>
+          <ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
+        </section>
+      </div>`;
   $("#recipe-dialog").showModal();
 }
 
@@ -722,7 +870,7 @@ document.addEventListener("click", (event) => {
   const go = event.target.closest("[data-go]");
   if (go) setPage(go.dataset.go, { moveFocus: true });
   const slide = event.target.closest("[data-slide]");
-  if (slide) selectHeroSlide(Number(slide.dataset.slide));
+  if (slide) selectHeroSlide(Number(slide.dataset.slide), { userInitiated: true });
   if (event.target.closest('[data-action="add-ingredient"]')) {
     setPage("inventory");
     openAddDialog();
@@ -759,6 +907,13 @@ document.addEventListener("click", (event) => {
 $("#featured-track").addEventListener("scroll", updateHeroDots, {
   passive: true,
 });
+$("#featured-previous").addEventListener("click", () => {
+  selectHeroSlide((state.heroSlide - 1 + HERO_SLIDE_COUNT) % HERO_SLIDE_COUNT, { userInitiated: true });
+});
+$("#featured-next").addEventListener("click", () => {
+  selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, { userInitiated: true });
+});
+startHeroAutoplay();
 // Cards that act as links or buttons (role="link"/"button" with tabindex)
 // aren't native controls, so give them the same keys: Enter for both, and
 // Space for buttons. They then run through the click handler above.
@@ -787,42 +942,9 @@ $("#featured-dots").addEventListener("keydown", (event) => {
   const step = { ArrowRight: 1, ArrowLeft: -1 }[event.key];
   if (!step || !event.target.matches(".carousel-dot")) return;
   event.preventDefault();
-  selectHeroSlide(state.heroSlide + step);
+  selectHeroSlide(state.heroSlide + step, { userInitiated: true });
   document.querySelectorAll(".carousel-dot")[state.heroSlide]?.focus();
 });
-const menuButton = $(".menu-button");
-function setMobileNavigationExpanded(expanded) {
-  document.body.classList.toggle("sidebar-expanded", expanded);
-  menuButton.setAttribute("aria-expanded", String(expanded));
-  menuButton.setAttribute(
-    "aria-label",
-    `${expanded ? "Collapse" : "Expand"} navigation`,
-  );
-}
-menuButton.addEventListener("click", () => {
-  setMobileNavigationExpanded(
-    !document.body.classList.contains("sidebar-expanded"),
-  );
-});
-document.addEventListener("keydown", (event) => {
-  if (
-    event.key === "Escape" &&
-    document.body.classList.contains("sidebar-expanded")
-  ) {
-    setMobileNavigationExpanded(false);
-    menuButton.focus();
-  }
-});
-document
-  .querySelector("#primary-navigation")
-  .addEventListener("click", (event) => {
-    if (
-      event.target.closest("[data-page]") &&
-      window.matchMedia("(max-width: 760px)").matches
-    ) {
-      setMobileNavigationExpanded(false);
-    }
-  });
 $("#inventory-search").addEventListener("input", (event) => {
   state.search = event.target.value;
   renderInventory();
@@ -906,6 +1028,7 @@ if(editingItemId) {
     state.inventory.push({
       id: `food-${Date.now()}`,
       name,
+      category: $("#food-category").value,
       quantity: Number(form.get("quantity")),
       calories: optionalNumber(form.get("calories")),
       servingSize: optionalNumber(form.get("servingSize")),
@@ -961,6 +1084,7 @@ $("#import-json").addEventListener("change", async (event) => {
     state.inventory = imported.map((item, index) => ({
       id: String(item.id || `import-${Date.now()}-${index}`),
       name: String(item.name).trim(),
+      category: inventoryCategory(item),
       quantity: Number(item.quantity),
       calories: Number(item.calories),
       servingSize: Number(item.servingSize),
@@ -994,12 +1118,15 @@ $("#food-suggestions").innerHTML = [
 ]
   .map((name) => `<option value="${name}"></option>`)
   .join("");
+$("#food-name").addEventListener("input", (event) => {
+  $("#food-category").value = inventoryCategory(event.target.value);
+});
 // --- Dark mode -------------------------------------------------------------
 // The inline script in index.html sets data-theme on load; this keeps the
 // settings switch in sync and saves the user's choice.
 const themeKey = "cookitup-theme";
 const darkModeToggle = $("#dark-mode-toggle");
-const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+const sidebarThemeToggle = $("#sidebar-theme-toggle");
 
 function applyTheme(theme, { animate = false } = {}) {
   const root = document.documentElement;
@@ -1009,6 +1136,10 @@ function applyTheme(theme, { animate = false } = {}) {
   }
   root.dataset.theme = theme;
   darkModeToggle.checked = theme === "dark";
+  sidebarThemeToggle.classList.toggle("is-dark", theme === "dark");
+  const nextThemeLabel = theme === "dark" ? "Turn on light mode" : "Turn on dark mode";
+  sidebarThemeToggle.setAttribute("aria-label", nextThemeLabel);
+  sidebarThemeToggle.title = nextThemeLabel;
   const bg = getComputedStyle(root).getPropertyValue("--bg").trim();
   $('meta[name="theme-color"]').setAttribute("content", bg);
 }
@@ -1021,21 +1152,23 @@ function savedTheme() {
   }
 }
 
-applyTheme(document.documentElement.dataset.theme || "light");
+applyTheme(savedTheme() === "dark" ? "dark" : "light");
 
 darkModeToggle.addEventListener("change", () => {
-  const theme = darkModeToggle.checked ? "dark" : "light";
+  setTheme(darkModeToggle.checked ? "dark" : "light");
+});
+
+function setTheme(theme) {
   try {
     localStorage.setItem(themeKey, theme);
   } catch {
     // Storage can be blocked (private mode); the theme still applies for now.
   }
   applyTheme(theme, { animate: true });
-});
+}
 
-// Follow the operating system until the user picks a theme themselves.
-systemDark.addEventListener("change", (event) => {
-  if (!savedTheme()) applyTheme(event.matches ? "dark" : "light", { animate: true });
+sidebarThemeToggle.addEventListener("click", () => {
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
 });
 
 buildPreferenceOptions();
