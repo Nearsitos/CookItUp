@@ -2783,6 +2783,26 @@ tr.just-added td {
   white-space: nowrap;
 }
 
+.expiry-badge--expired {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.expiry-badge--soon {
+  background: var(--yellow);
+  color: var(--yellow-text);
+}
+
+.expiry-badge--fresh {
+  background: var(--accent-soft);
+  color: var(--green-text);
+}
+
+.expiry-badge--none {
+  background: var(--surface);
+  color: var(--muted);
+}
+
 /* --- Dietary preferences ------------------------------------------------- */
 
 .crumb-link {

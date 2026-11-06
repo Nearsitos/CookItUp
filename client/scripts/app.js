@@ -1,5 +1,10 @@
-import { daysUntil, expiryStatus } from "./utils/dates.js";
-console.log(daysUntil("2026-11-01"), expiryStatus(daysUntil("2026-11-01")));
+import {
+  daysUntil,
+  expiryStatus,
+  expiryLabel,
+  isISODate,
+  compareExpiry,
+} from "./utils/dates.js";
 const foodEmojis = {
   avocado: "◉",
   "baby spinach": "❧",
@@ -320,6 +325,7 @@ function render() {
 }
 function renderDashboard() {
   $("#inventory-badge").textContent = `${state.inventory.length} Items`;
+  renderExpiryCard();
   $("#recipe-badge").textContent =
     `${rankedRecipes().filter((item) => item.diet.fits && item.hits.length > 0).length} Available`;
   const count = preferenceCount();
@@ -438,16 +444,32 @@ function expiryBadge(item){
     return `<span class="expiry-badge expiry-badge--none">No date</span>`;
   }
   const days = daysUntil(item.expiryDate);
-  const status = expiryStatus(days);
+  return `<span class="expiry-badge expiry-badge--${expiryStatus(days)}">${expiryLabel(days)}</span>`;
+}
 
-  let label;
-  if (days < -1) label = `Expired ${-days} days ago`;
-  else if (days === -1) label = "Expired yesterday";
-  else if (days === 0) label = "Expires today";
-  else if (days === 1) label = "Expires tomorrow";
-  else label = `${days} days left`;
-
-  return `<span class="expiry-badge expiry-badge--${status}">${label}</span>`;
+// Items in stock that have expired or expire within 3 days.
+function expiryAlerts() {
+  const counts = { expired: 0, soon: 0 };
+  for (const item of state.inventory) {
+    if (!item.expiryDate || Number(item.quantity) <= 0) continue;
+    const status = expiryStatus(daysUntil(item.expiryDate));
+    if (status in counts) counts[status] += 1;
+  }
+  return counts;
+}
+function renderExpiryCard() {
+  const { expired, soon } = expiryAlerts();
+  const total = expired + soon;
+  const plural = (n) => `${n} item${n === 1 ? "" : "s"}`;
+  $("#expiry-alert-badge").textContent = total
+    ? `${total} Alert${total === 1 ? "" : "s"}`
+    : "All fresh";
+  const parts = [];
+  if (expired) parts.push(`${plural(expired)} expired`);
+  if (soon) parts.push(`${plural(soon)} expiring within 3 days`);
+  $("#expiry-summary").textContent = total
+    ? `${parts.join(", ")}. Use them first or clear them out.`
+    : "Nothing is expiring soon. Add expiry dates to keep track.";
 }
 
 
@@ -456,6 +478,12 @@ function renderInventory() {
   const items = state.inventory
     .filter((item) => normalized(item.name).includes(search))
     .sort((a, b) => {
+      if (state.sort === "expiry") {
+        return (
+          compareExpiry(a.expiryDate, b.expiryDate) ||
+          a.name.localeCompare(b.name)
+        );
+      }
       if (state.sort === "calories") {
         if (a.calories === null || a.calories === undefined) return 1;
         if (b.calories === null || b.calories === undefined) return -1;
@@ -468,7 +496,7 @@ function renderInventory() {
   $("#inventory-body").innerHTML = items
     .map(
       (item) =>
-        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
+        `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td>${expiryBadge(item)}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
     )
     .join("");
   $("#inventory-empty").classList.toggle("hidden", items.length > 0);
@@ -628,6 +656,8 @@ function focusPageHeading() {
 }
 function openAddDialog() {
   editingItemId = null;
+  $("#ingredient-form").reset();
+  $("#ingredient-submit").textContent = "Add ingredient";
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
   $("#food-name").focus();
@@ -644,6 +674,8 @@ function openEditDialog(id) {
   $('[name="quantity"]').value = item.quantity;
   $('[name="servingSize"]').value = item.servingSize ?? "";
   $('[name="calories"]').value = item.calories ?? "";
+  $('[name="expiryDate"]').value = item.expiryDate ?? "";
+  $("#ingredient-submit").textContent = "Save changes";
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
   $("#food-name").focus();
@@ -838,6 +870,11 @@ $("#ingredient-form").addEventListener("submit", (event) => {
     $("#form-error").textContent = "Enter an ingredient name.";
     return;
   }
+  const expiryDate = String(form.get("expiryDate") || "").trim() || null;
+  if (expiryDate && !isISODate(expiryDate)) {
+    $("#form-error").textContent = "Enter a valid expiry date.";
+    return;
+  }
 
 if(editingItemId) {
   const item = state.inventory.find((item) => item.id === editingItemId);
@@ -845,6 +882,7 @@ if(editingItemId) {
   item.quantity = Number(form.get("quantity"));
   item.calories = optionalNumber(form.get("calories"));
   item.servingSize = optionalNumber(form.get("servingSize"));
+  item.expiryDate = expiryDate;
 
   editingItemId = null;
   saveInventory();
@@ -858,10 +896,13 @@ if(editingItemId) {
   const existing = state.inventory.find(
     (item) => normalized(item.name) === normalized(name),
   );
-  if (existing)
+  if (existing) {
     existing.quantity =
       Number(existing.quantity) + Number(form.get("quantity"));
-  else
+    // Mixed batches: track the one that goes off first.
+    if (expiryDate && compareExpiry(expiryDate, existing.expiryDate) < 0)
+      existing.expiryDate = expiryDate;
+  } else
     state.inventory.push({
       id: `food-${Date.now()}`,
       name,
@@ -869,6 +910,7 @@ if(editingItemId) {
       calories: optionalNumber(form.get("calories")),
       servingSize: optionalNumber(form.get("servingSize")),
       unit: "qty",
+      expiryDate,
     });
   saveInventory();
   const addedId =
@@ -923,6 +965,7 @@ $("#import-json").addEventListener("change", async (event) => {
       calories: Number(item.calories),
       servingSize: Number(item.servingSize),
       unit: String(item.unit || "qty"),
+      expiryDate: isISODate(item.expiryDate) ? item.expiryDate : null,
     }));
     saveInventory();
     $("#inventory-search").value = "";

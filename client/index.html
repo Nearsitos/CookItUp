@@ -21,7 +21,7 @@
     <title>CookItUp — Your kitchen dashboard</title>
     <link rel="stylesheet" href="styles/app.css" />
     <script src="scripts/dietary.js" defer></script>
-    <script src="scripts/app.js" defer></script>
+    <script type="module" src="scripts/app.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -172,12 +172,9 @@
             </article>
             <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
               <span class="card-icon">⟳</span
-              ><span class="card-badge">3 Alerts</span>
-              <h3>Recent Updates</h3>
-              <p>
-                Sarah added 12 items yesterday. 3 items expiring within 48
-                hours.
-              </p>
+              ><span class="card-badge" id="expiry-alert-badge">0 Alerts</span>
+              <h3>Expiring Soon</h3>
+              <p id="expiry-summary">Checking your pantry…</p>
             </article>
             <article
               class="dashboard-card highlighted"
@@ -258,6 +255,7 @@
                 <select id="inventory-sort">
                   <option value="name">Name (A–Z)</option>
                   <option value="name-desc">Name (Z–A)</option>
+                  <option value="expiry">Expiring soonest</option>
                   <option value="calories">Calories</option>
                 </select></label
               >
@@ -494,11 +492,16 @@
             step="any"
             placeholder="100"
         /></label>
+        <label class="field full-field"
+          >Expiry date (optional)<input name="expiryDate" type="date"
+        /></label>
         <div class="form-error" id="form-error" role="alert"></div>
         <div class="dialog-actions">
           <button type="button" class="button secondary" id="cancel-dialog">
             Cancel</button
-          ><button type="submit" class="button primary">Add ingredient</button>
+          ><button type="submit" class="button primary" id="ingredient-submit">
+            Add ingredient
+          </button>
         </div>
       </form>
     </dialog>
