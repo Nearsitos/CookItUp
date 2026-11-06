@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f4f5f0" />
     <script>
-      // Apply the saved (or system) theme before the page paints, so dark-mode
-      // users don't see a white flash. The settings toggle lives in app.js.
+      // Apply the saved theme before the page paints. Light mode is the
+      // default; the Settings switch controls dark mode explicitly.
       (function () {
         var saved = null;
         try {
           saved = localStorage.getItem("cookitup-theme");
         } catch (e) {}
-        var dark = saved
-          ? saved === "dark"
-          : window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.dataset.theme = dark ? "dark" : "light";
+        document.documentElement.dataset.theme =
+          saved === "dark" ? "dark" : "light";
       })();
     </script>
     <title>CookItUp — Your kitchen dashboard</title>
@@ -27,15 +25,9 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="app-shell">
       <aside class="sidebar">
-        <button
-          class="menu-button"
-          type="button"
-          aria-label="Expand navigation"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-        >
-          ≡
-        </button>
+        <a class="sidebar-logo" href="#dashboard" data-page="dashboard" aria-label="CookItUp home">
+          <span aria-hidden="true">♨</span>
+        </a>
         <nav id="primary-navigation" aria-label="Main navigation">
           <a
             class="nav-link active"
@@ -86,17 +78,18 @@
             ><span aria-hidden="true">⚙</span
             ><span class="nav-text">Settings</span></a
           >
-          <a
-            class="nav-link nav-recipes"
-            href="#recipes"
-            data-page="recipes"
-            data-tooltip="Find recipes"
-            aria-label="Find recipes"
-            ><span aria-hidden="true">⌕</span
-            ><span class="nav-text">Find recipes</span></a
-          >
         </nav>
         <div class="sidebar-bottom">
+          <button
+            class="sidebar-theme-toggle"
+            id="sidebar-theme-toggle"
+            type="button"
+            aria-label="Turn on dark mode"
+            title="Turn on dark mode"
+          >
+            <span class="theme-moon" aria-hidden="true">☾</span>
+            <span class="theme-sun" aria-hidden="true">☼</span>
+          </button>
           <div class="profile">
             <div class="avatar">CR</div>
             <div>
@@ -139,14 +132,21 @@
             <div
               class="featured-track"
               id="featured-track"
-              aria-live="polite"
+              aria-live="off"
             ></div>
-            <div
-              class="carousel-dots"
-              id="featured-dots"
-              role="group"
-              aria-label="Choose a highlight"
-            ></div>
+            <div class="carousel-controls">
+              <div class="carousel-control-row">
+                <button class="carousel-arrow" id="featured-previous" type="button" aria-label="Previous highlight">‹</button>
+                <div
+                  class="carousel-dots"
+                  id="featured-dots"
+                  role="group"
+                  aria-label="Choose a highlight"
+                ></div>
+                <button class="carousel-arrow" id="featured-next" type="button" aria-label="Next highlight">›</button>
+              </div>
+              <span class="carousel-status" id="featured-status" aria-live="polite"></span>
+            </div>
           </section>
           <div class="dashboard-title"><h2>Dashboard</h2></div>
           <div class="dashboard-cards">
@@ -287,8 +287,8 @@
             <div>
               <strong>Your inventory, your data.</strong>
               <p>
-                This prototype keeps changes in memory while the page is open.
-                Import or export your pantry as JSON anytime.
+                Ingredients are grouped by food type. Changes save in this
+                browser, and you can import or export your pantry as JSON.
               </p>
             </div>
             <button class="text-button" id="export-json">Export JSON ↓</button
@@ -342,7 +342,7 @@
               <div class="setting-icon">◐</div>
               <div>
                 <strong id="dark-mode-label">Dark mode</strong>
-                <p>Give your eyes a softer view for late-night cooking.</p>
+                <p>Turn dark mode on or off anytime.</p>
               </div>
               <label class="switch">
                 <input
@@ -467,6 +467,17 @@
             placeholder="e.g. Avocado"
             list="food-suggestions" /><datalist id="food-suggestions"></datalist
         ></label>
+        <label class="field full-field"
+          >Food type<select name="category" id="food-category" required>
+            <option>Meats &amp; Protein</option>
+            <option>Greens</option>
+            <option>Grains</option>
+            <option>Dairy</option>
+            <option>Produce</option>
+            <option>Seasonings</option>
+            <option selected>Other</option>
+          </select></label
+        >
         <div class="form-row">
           <label class="field"
             >Quantity<input
