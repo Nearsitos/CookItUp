@@ -259,25 +259,7 @@
                 </select></label
               >
             </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>INGREDIENT</th>
-                    <th>QUANTITY</th>
-                    <th>CALORIES</th>
-                    <th>SERVING SIZE</th>
-                    <th>EXPIRES</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="inventory-body"></tbody>
-              </table>
-              <div class="empty-state hidden" id="inventory-empty">
-                <span>◌</span><strong>No ingredients found</strong>
-                <p>Try another search or add an ingredient to your pantry.</p>
-              </div>
-            </div>
+            <div class="inventory-grid" id="inventory-grid"></div>
             <div class="table-footer" id="inventory-footer"></div>
           </section>
           <div class="json-note">
@@ -285,8 +267,9 @@
             <div>
               <strong>Your inventory, your data.</strong>
               <p>
-                Ingredients are grouped by food type. Changes save in this
-                browser, and you can import or export your pantry as JSON.
+                Ingredients are grouped by where you store them. Changes save
+                in this browser, and you can import or export your pantry as
+                JSON.
               </p>
             </div>
             <button class="text-button" id="export-json">Export JSON ↓</button
@@ -466,7 +449,7 @@
             list="food-suggestions" /><datalist id="food-suggestions"></datalist
         ></label>
         <label class="field full-field"
-          >Food type<select name="category" id="food-category" required>
+          >Food type (optional)<select name="category" id="food-category">
             <option>Meats &amp; Protein</option>
             <option>Greens</option>
             <option>Grains</option>
@@ -476,17 +459,44 @@
             <option selected>Other</option>
           </select></label
         >
+        <label class="field full-field"
+          >Storage location (optional)<select name="storage" id="food-storage">
+            <option value="fridge">Refrigerated</option>
+            <option value="freezer">Frozen</option>
+            <option value="pantry">Room temperature</option>
+            <option value="other" selected>Other</option>
+          </select></label
+        >
         <div class="form-row">
           <label class="field"
-            >Quantity<input
-              name="quantity"
-              type="number"
-              min="0.1"
-              step="any"
-              value="1"
-              required /></label
+            >Quantity (optional)
+            <div class="quantity-stepper">
+              <button
+                type="button"
+                class="qty-step"
+                data-step="-1"
+                aria-label="Decrease quantity"
+              >
+                −
+              </button>
+              <input
+                name="quantity"
+                type="number"
+                min="0.1"
+                step="any"
+                value="1"
+              />
+              <button
+                type="button"
+                class="qty-step"
+                data-step="1"
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div></label
           ><label class="field"
-            >Serving size (g)<input
+            >Serving size (g) (optional)<input
               name="servingSize"
               type="number"
               min="1"
@@ -495,7 +505,7 @@
           /></label>
         </div>
         <label class="field full-field"
-          >Calories per serving<input
+          >Calories per serving (optional)<input
             name="calories"
             type="number"
             min="0"

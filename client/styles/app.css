@@ -27,6 +27,8 @@
   --cover-b: #f7f2e7;
   --peach: #fbefe8;
   --yellow: #f8f1d9;
+  --slate: #eef2f4;
+  --taupe: #efece6;
 
   /* lines */
   --line: #e3e8e0;
@@ -54,6 +56,8 @@
   --on-accent: #fff;
   --peach-text: #ba8368;
   --yellow-text: #aa914a;
+  --slate-text: #4f6672;
+  --taupe-text: #6b6358;
   --danger: #b45143;
   --danger-soft: #f9ebe7;
 
@@ -85,6 +89,8 @@
   --cover-b: #2a271e;
   --peach: #33251e;
   --yellow: #2e291a;
+  --slate: #202b30;
+  --taupe: #2b2822;
 
   --line: #2a332d;
   --line-soft: #222a24;
@@ -109,6 +115,8 @@
   --on-accent: #fff;
   --peach-text: #e2a688;
   --yellow-text: #d8bd6f;
+  --slate-text: #8fb0c0;
+  --taupe-text: #c2b6a6;
   --danger: #e57d6d;
   --danger-soft: #3a2420;
 
@@ -766,50 +774,6 @@ h1 em {
   outline: none;
 }
 
-.table-wrap {
-  overflow-x: auto;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 640px;
-}
-
-th {
-  text-align: left;
-  padding: 13px 18px;
-  color: var(--muted-3);
-  background: var(--surface-soft);
-  font-size: 9px;
-  letter-spacing: 0.9px;
-  font-weight: 600;
-}
-
-td {
-  padding: 13px 18px;
-  border-top: 1px solid var(--line-soft);
-  font-size: 11px;
-  color: var(--muted);
-}
-
-td:first-child {
-  color: var(--ink-2);
-  font-weight: 600;
-}
-
-.table-food {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.table-food .food-emoji {
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
 .edit-item {
   border: 0;
   background: transparent;
@@ -842,27 +806,260 @@ td:first-child {
   font-size: 10px;
 }
 
-.empty-state {
-  text-align: center;
-  padding: 45px 15px;
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 18px;
 }
 
-.empty-state > span {
-  font-size: 27px;
-  color: var(--sage-light);
+@media (max-width: 760px) {
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.empty-state strong {
-  display: block;
+.storage-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 1px 2px var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  transition:
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.storage-card:hover {
+  box-shadow: 0 8px 20px var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.storage-card--fridge {
+  --storage-accent: var(--green);
+  --storage-soft: var(--accent-soft);
+  --storage-text: var(--green-text);
+}
+
+.storage-card--freezer {
+  --storage-accent: var(--slate-text);
+  --storage-soft: var(--slate);
+  --storage-text: var(--slate-text);
+}
+
+.storage-card--pantry {
+  --storage-accent: var(--peach-text);
+  --storage-soft: var(--peach);
+  --storage-text: var(--peach-text);
+}
+
+.storage-card--other {
+  --storage-accent: var(--taupe-text);
+  --storage-soft: var(--taupe);
+  --storage-text: var(--taupe-text);
+}
+
+.storage-card-bar {
+  height: 4px;
+  background: var(--storage-accent);
+}
+
+.storage-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px 6px;
+}
+
+.storage-card-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.storage-card-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 0.75px solid var(--storage-accent);
+  color: var(--storage-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.storage-card-title h2 {
+  margin: 0;
   font:
-    600 17px "Playfair Display",
-    serif;
-  margin: 10px;
+    700 17px "DM Sans",
+    sans-serif;
+  letter-spacing: -0.1px;
+  color: var(--ink);
 }
 
-.empty-state p {
-  font-size: 11px;
+.storage-card-count {
+  font:
+    500 14px "DM Sans",
+    sans-serif;
+  color: var(--muted-2);
+  white-space: nowrap;
+  flex: none;
+}
+
+.storage-card-items {
+  padding: 0 18px;
+}
+
+.storage-row {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -8px;
+  border-bottom: 1px solid var(--line-soft);
+  border-radius: 9px;
+}
+
+.storage-row:last-child {
+  border-bottom: 0;
+}
+
+.storage-row:hover .storage-row-content {
+  background: var(--surface-soft);
+}
+
+.storage-row-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) minmax(0, 92px) minmax(0, 56px) minmax(0, 44px);
+  align-items: center;
+  gap: 6px;
+  padding: 9px 8px;
+  background: var(--paper);
+  transition: background 0.12s ease;
+}
+
+.storage-row-swipe-actions {
+  display: none;
+}
+
+.storage-row-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.storage-row-emoji {
+  font-size: 15px;
+  line-height: 1;
+  flex: none;
+}
+
+.storage-row-name span {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.storage-row-expiry {
+  display: flex;
+  justify-content: center;
+}
+
+.storage-row-qty {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.storage-row-qty small {
+  font-size: 10px;
   color: var(--muted-3);
+  margin-left: 2px;
+}
+
+.storage-row-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+.storage-card-empty {
+  margin: 4px 0;
+  padding: 16px 0;
+  font-size: 12px;
+  color: var(--muted-3);
+  text-align: center;
+}
+
+.storage-card-add {
+  align-self: stretch;
+  margin: 8px 18px 16px;
+  border: 0;
+  background: none;
+  padding: 8px 0;
+  font:
+    600 12px "DM Sans",
+    sans-serif;
+  color: var(--green-text);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Narrow (phone) screens: the row's edit/delete icons step aside for a left
+   swipe, Gmail/Mail-style — the icons stay the only way in everywhere else,
+   since a mouse never fires the touch events the swipe relies on. */
+@media (max-width: 760px) {
+  .storage-row-content {
+    grid-template-columns: minmax(60px, 1fr) minmax(0, 92px) minmax(0, 64px);
+    touch-action: pan-y;
+  }
+
+  .storage-row-actions {
+    display: none;
+  }
+
+  .storage-row-swipe-actions {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    justify-content: flex-end;
+  }
+
+  .storage-swipe-edit,
+  .storage-swipe-delete {
+    width: 56px;
+    border: 0;
+    color: #fff;
+    font:
+      600 11px "DM Sans",
+      sans-serif;
+    cursor: pointer;
+  }
+
+  .storage-swipe-edit {
+    background: var(--slate-text);
+  }
+
+  .storage-swipe-delete {
+    background: var(--danger);
+  }
 }
 
 .json-note {
@@ -1141,6 +1338,7 @@ dialog form {
 .field {
   display: grid;
   gap: 7px;
+  min-width: 0;
   color: var(--muted);
   font-size: 10px;
   font-weight: 600;
@@ -1160,6 +1358,58 @@ dialog form {
 
 .field input:focus {
   border-color: var(--accent-border);
+}
+
+.field input.is-estimated {
+  border-style: dashed;
+  color: var(--sage-muted);
+}
+
+.quantity-stepper {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  gap: 6px;
+}
+
+.quantity-stepper input {
+  width: auto;
+  min-width: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.quantity-stepper input::-webkit-inner-spin-button,
+.quantity-stepper input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-stepper input {
+  -moz-appearance: textfield;
+}
+
+.qty-step {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-soft);
+  color: var(--ink-2);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.qty-step:hover {
+  background: var(--surface);
 }
 
 .full-field {
@@ -2498,7 +2748,7 @@ td {
   line-height: 1.9;
 }
 
-tr.just-added td {
+.storage-row.just-added {
   background: var(--row-added);
   transition: background 0.3s;
 }
@@ -2783,10 +3033,11 @@ tr.just-added td {
 .expiry-badge {
   display: inline-block;
   font-size: 10px;
-  font-weight: 600;
-  padding: 5px 8px;
+  font-weight: 500;
+  padding: 4px 8px;
   border-radius: 20px;
-  white-space: nowrap;
+  text-align: center;
+  line-height: 1.3;
 }
 
 .expiry-badge--expired {
@@ -3178,28 +3429,6 @@ tr.just-added td {
 }
 .dashboard-card p {
   margin-bottom: 0;
-}
-.inventory-category-row th {
-  padding: 13px 18px;
-  border-top: 1px solid var(--line);
-  background: var(--surface-soft);
-  color: var(--ink-2);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-align: left;
-}
-.inventory-category-row:first-child th {
-  border-top: 0;
-}
-.inventory-category-row th > span:first-child {
-  display: inline-block;
-  margin-right: 10px;
-}
-.category-count {
-  color: var(--muted-2);
-  font-size: 11px;
-  font-weight: 500;
 }
 .field select {
   width: 100%;
