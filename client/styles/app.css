@@ -441,6 +441,15 @@ h1 em {
   color: var(--on-accent);
 }
 
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.danger:hover {
+  filter: brightness(0.92);
+}
+
 .primary:hover {
   background: var(--green-dark);
 }
@@ -1488,7 +1497,7 @@ body {
   border: 0;
 }
 .menu-button {
-  width: 24px;
+  width: 52px;
   height: 24px;
   border: 1px solid var(--line);
   background: var(--paper);
@@ -1746,9 +1755,6 @@ body {
 .app-footer {
   font-size: 8px;
   padding: 25px 0 5px;
-}
-.nav-recipes {
-  display: flex;
 }
 .featured-empty {
   display: grid;
@@ -2773,6 +2779,35 @@ tr.just-added td {
     height: 190px;
   }
 }
+/* Styles for badges */
+.expiry-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.expiry-badge--expired {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.expiry-badge--soon {
+  background: var(--yellow);
+  color: var(--yellow-text);
+}
+
+.expiry-badge--fresh {
+  background: var(--accent-soft);
+  color: var(--green-text);
+}
+
+.expiry-badge--none {
+  background: var(--surface);
+  color: var(--muted);
+}
 
 /* --- Dietary preferences ------------------------------------------------- */
 
@@ -3115,4 +3150,693 @@ tr.just-added td {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Sprint 3 recipe layout, inventory groups, and navigation control. */
+.carousel-controls {
+  display: grid;
+  justify-items: center;
+  gap: 0;
+}
+.carousel-dots {
+  height: 22px;
+}
+.carousel-status {
+  color: var(--muted-2);
+  font-size: 11px;
+  line-height: 1.2;
+}
+.dashboard-cards {
+  align-items: stretch;
+  grid-auto-rows: minmax(125px, auto);
+}
+.dashboard-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dashboard-card p {
+  margin-bottom: 0;
+}
+.inventory-category-row th {
+  padding: 13px 18px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-soft);
+  color: var(--ink-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: left;
+}
+.inventory-category-row:first-child th {
+  border-top: 0;
+}
+.inventory-category-row th > span:first-child {
+  display: inline-block;
+  margin-right: 10px;
+}
+.category-count {
+  color: var(--muted-2);
+  font-size: 11px;
+  font-weight: 500;
+}
+.field select {
+  width: 100%;
+  height: 46px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+#recipe-dialog {
+  overflow: hidden;
+}
+#recipe-dialog .recipe-detail {
+  display: grid;
+  height: 100%;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 30px;
+  padding: 24px;
+  overflow: hidden;
+}
+#recipe-dialog .recipe-visual {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+#recipe-dialog .detail-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  background-position: center;
+  background-size: cover;
+}
+.recipe-time-badge,
+.recipe-photo-meta span {
+  border: 1px solid #ffffff75;
+  border-radius: 7px;
+  background: #fff;
+  color: #28352c;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px 12px;
+  box-shadow: 0 2px 12px #10181024;
+}
+.recipe-time-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.recipe-photo-meta {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.recipe-content {
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 5px 26px 20px 0;
+  scrollbar-gutter: stable;
+}
+#recipe-dialog .close-detail {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+}
+.recipe-summary {
+  padding: 2px 42px 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.recipe-summary .eyebrow {
+  margin-bottom: 8px;
+}
+#recipe-dialog .recipe-summary h2 {
+  margin: 0 0 9px;
+  color: var(--ink);
+  font-size: 30px;
+  line-height: 1.15;
+}
+.recipe-summary > p:not(.eyebrow):not(.match-caption) {
+  margin-bottom: 10px;
+  color: var(--muted-2);
+  font-size: 14px;
+}
+.recipe-summary .match-caption {
+  margin: 0;
+  font-size: 12px;
+}
+.recipe-summary .diet-flags--detail {
+  margin: 10px 0 0;
+}
+.recipe-section {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+#recipe-dialog .recipe-section h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 17px;
+}
+#recipe-dialog .detail-ingredients,
+#recipe-dialog .detail-steps {
+  margin: 0;
+  padding-left: 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+#recipe-dialog .detail-ingredients {
+  list-style: none;
+}
+.ingredient-list--available li,
+.ingredient-list--missing li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+.ingredient-list--available li:last-child,
+.ingredient-list--missing li:last-child {
+  border-bottom: 0;
+}
+.ingredient-list--available li {
+  color: var(--ink-2);
+}
+.ingredient-list--available li::first-letter {
+  color: var(--green);
+}
+.recipe-section--missing h3,
+.ingredient-list--missing li {
+  color: var(--danger);
+}
+.recipe-section--missing {
+  border-left: 3px solid var(--danger);
+  padding-left: 13px;
+  background: linear-gradient(90deg, var(--danger-soft), transparent 88%);
+}
+.ingredient-empty,
+.ingredient-ready {
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 13px;
+}
+.ingredient-ready {
+  color: var(--green-text);
+}
+.recipe-section--steps {
+  border-bottom: 0;
+}
+#recipe-dialog .detail-steps {
+  padding-left: 22px;
+}
+#recipe-dialog .detail-steps li {
+  padding: 0 0 7px 4px;
+}
+
+@media (min-width: 761px) {
+  .menu-button {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    margin: 0 0 24px;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .menu-brand-mark {
+    color: var(--green);
+    font-size: 20px;
+  }
+  body.sidebar-collapsed .sidebar {
+    width: 68px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  body.sidebar-collapsed .nav-link {
+    position: relative;
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+  body.sidebar-collapsed .profile > div:not(.avatar),
+  body.sidebar-collapsed .nav-count {
+    display: none;
+  }
+  body.sidebar-collapsed .nav-link .nav-text {
+    max-width: 0;
+    opacity: 0;
+  }
+  body.sidebar-collapsed .nav-link > span:first-child {
+    font-size: 17px;
+  }
+  body.sidebar-collapsed .profile {
+    justify-content: center;
+  }
+  body.sidebar-collapsed .menu-button {
+    align-self: center;
+  }
+  body.sidebar-collapsed .main-content {
+    margin-left: 68px;
+  }
+  body.sidebar-collapsed .nav-link[data-tooltip]::after {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: calc(100% + 9px);
+    padding: 6px 9px;
+    border-radius: 5px;
+    background: var(--toast-bg);
+    color: var(--on-accent);
+    content: attr(data-tooltip);
+    font-size: 11px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+  }
+  body.sidebar-collapsed .nav-link[data-tooltip]:hover::after,
+  body.sidebar-collapsed .nav-link[data-tooltip]:focus-visible::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 760px) {
+  #recipe-dialog .recipe-detail {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(190px, 32vh) minmax(0, 1fr);
+    gap: 0;
+    padding: 12px;
+  }
+  #recipe-dialog .recipe-content {
+    padding: 20px 12px 24px 4px;
+  }
+  #recipe-dialog .close-detail {
+    top: 20px;
+    right: 20px;
+  }
+  .recipe-time-badge,
+  .recipe-photo-meta span {
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+}
+
+/* Sidebar collapses to its logo mark; the mark crossfades with the menu icon. */
+.sidebar {
+  transition:
+    width 0.24s ease,
+    padding 0.24s ease;
+}
+.main-content {
+  transition: margin-left 0.24s ease;
+}
+.menu-button {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.menu-icon,
+.menu-brand-mark {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition:
+    opacity 0.18s ease,
+    transform 0.24s ease;
+}
+.menu-icon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+.menu-brand-mark {
+  color: var(--green);
+  opacity: 0;
+  transform: rotate(-35deg) scale(0.65);
+}
+.menu-button.is-expanded .menu-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.65);
+}
+.menu-button.is-expanded .menu-brand-mark {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+.nav-link .nav-text {
+  display: inline-block;
+  max-width: 150px;
+  overflow: hidden;
+  opacity: 1;
+  white-space: nowrap;
+  transition:
+    max-width 0.24s ease,
+    opacity 0.16s ease;
+}
+@media (max-width: 760px) {
+  .nav-link .nav-text {
+    max-width: 0;
+    opacity: 0;
+  }
+  body.sidebar-expanded .nav-link .nav-text {
+    max-width: 150px;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar,
+  .main-content,
+  .menu-icon,
+  .menu-brand-mark,
+  .nav-link .nav-text {
+    transition: none !important;
+  }
+}
+
+/* Keep the search centered between the main content edges, independent of
+   the unequal logo and account controls on either side. */
+.topbar {
+  position: relative;
+}
+.topbar > .global-search {
+  position: absolute;
+  left: 50%;
+  width: min(480px, 54%);
+  margin: 0;
+  flex: 0 1 auto;
+  transform: translateX(-50%);
+}
+@media (max-width: 760px) {
+  .topbar > .global-search {
+    position: static;
+    width: auto;
+    margin: 0;
+    flex: 1 1 auto;
+    transform: none;
+  }
+}
+
+/* Keep the full CookItUp wordmark visible in both sidebar states. */
+.topbar-brand {
+  gap: 12px;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+}
+.topbar-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 26px;
+}
+body.sidebar-collapsed .topbar-brand {
+  justify-content: flex-start;
+  padding: 0;
+  font-size: 24px;
+}
+body.sidebar-collapsed .topbar-brand > span:last-child {
+  display: inline;
+  font-size: inherit;
+}
+body.sidebar-collapsed .topbar-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+}
+.sidebar {
+  transition:
+    width 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    padding 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sidebar-logo {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  margin: 0 0 22px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--green);
+  text-decoration: none;
+}
+.sidebar-logo span {
+  font-size: 23px;
+  line-height: 1;
+}
+.sidebar-logo:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+.main-content {
+  transition: margin-left 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (min-width: 761px) and (max-width: 900px) {
+  .topbar > .global-search {
+    width: min(400px, 44%);
+  }
+}
+@media (max-width: 760px) {
+  .topbar-brand {
+    gap: 7px;
+    font-size: 18px;
+    letter-spacing: -0.35px;
+  }
+  .topbar-brand .brand-mark,
+  body.sidebar-collapsed .topbar-brand .brand-mark {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  body.sidebar-collapsed .topbar-brand {
+    font-size: 18px;
+  }
+}
+
+/* A compact moon/sun action sits immediately above the profile divider. */
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+}
+.sidebar-theme-toggle {
+  position: relative;
+  align-self: flex-end;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin: 0 0 6px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+.sidebar-theme-toggle:hover,
+.sidebar-theme-toggle:focus-visible {
+  border-color: var(--line);
+  background: var(--surface-2);
+  color: var(--green-text);
+}
+.sidebar-theme-toggle span {
+  position: absolute;
+  font-size: 25px;
+  line-height: 1;
+  transition: opacity 220ms ease, transform 320ms cubic-bezier(.2,.8,.2,1);
+}
+.sidebar-theme-toggle .theme-moon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+.sidebar-theme-toggle .theme-sun {
+  opacity: 0;
+  transform: rotate(-80deg) scale(.45);
+}
+.sidebar-theme-toggle.is-dark .theme-moon {
+  opacity: 0;
+  transform: rotate(80deg) scale(.45);
+}
+.sidebar-theme-toggle.is-dark .theme-sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+@media (max-width: 760px) {
+  .sidebar-logo {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar nav .nav-link,
+  .sidebar nav .nav-link > span:first-child {
+    transition: none !important;
+  }
+}
+body.sidebar-collapsed .sidebar-theme-toggle {
+  align-self: center;
+}
+@media (max-width: 760px) {
+  .sidebar-theme-toggle {
+    align-self: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-theme-toggle,
+  .sidebar-theme-toggle span {
+    transition: none !important;
+  }
+}
+
+/* This MVP uses the compact icon rail as its only sidebar layout. */
+.sidebar {
+  width: 68px;
+  padding: 14px 8px;
+  border-right: 1px solid var(--line);
+  background: var(--paper);
+}
+.sidebar-logo {
+  align-self: center;
+  margin-bottom: 20px;
+}
+.sidebar nav {
+  overflow: visible;
+}
+.sidebar nav .nav-link {
+  width: 100%;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  font-size: 0;
+}
+.sidebar nav .nav-link .nav-text {
+  display: none;
+}
+.sidebar nav .nav-link > span:first-child {
+  width: 18px;
+  flex: 0 0 18px;
+  font-size: 17px;
+}
+.sidebar nav .nav-count,
+.sidebar .profile > div:not(.avatar) {
+  display: none;
+}
+.sidebar .profile {
+  justify-content: center;
+}
+.sidebar-theme-toggle {
+  align-self: center;
+}
+.main-content {
+  margin-left: 68px;
+}
+.sidebar nav .nav-link[data-tooltip]::after {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: calc(100% + 9px);
+  padding: 6px 9px;
+  border-radius: 5px;
+  background: var(--toast-bg);
+  color: var(--on-accent);
+  content: attr(data-tooltip);
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 150ms ease;
+}
+.sidebar nav .nav-link[data-tooltip]:hover::after,
+.sidebar nav .nav-link[data-tooltip]:focus-visible::after {
+  opacity: 1;
+}
+
+/* Dashboard highlight carousel: manual controls and a seven-second timer. */
+.carousel-controls {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  margin-top: 4px;
+}
+.carousel-control-row {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.carousel-control-row .carousel-dots {
+  display: flex;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.carousel-arrow {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+.carousel-arrow {
+  font-size: 22px;
+  line-height: 1;
+}
+.carousel-arrow:hover {
+  border-color: var(--green);
+  background: var(--accent-soft);
+  color: var(--green-text);
+}
+.carousel-arrow:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+.carousel-control-row .carousel-dot.selected {
+  width: 28px;
+  height: 8px;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+}
+.carousel-control-row .carousel-dot-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: #24843e;
+  transition: width 1s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-arrow,
+  .carousel-dot-fill {
+    transition: none;
+  }
 }
