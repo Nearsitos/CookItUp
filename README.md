@@ -101,6 +101,13 @@ Views call services. Services decide where data comes from. Today services read 
 
 **MAIN SHOULD ALWAYS WORK!**.
 
+## Raspberry Pi prototype host
+
+The app and starter Express/MySQL backend can be hosted on a Raspberry Pi using
+Docker Compose. See the [Raspberry Pi setup guide](docs/raspberry-pi-setup.md)
+for deployment and private team testing. The backend currently provides the
+web app and a database health check; inventory endpoints are still planned.
+
 If you decide to work with AI coding assistants; Paste this into your assistant at the start of your session:
 ```
 This is a vanilla HTML/CSS/JS project using ES modules, no build step. Follow the structure in README.md. Views call services; services handle data. Never put API keys in client code. Match existing code style. Keep changes small and focused on one feature. Do not add new libraries without asking.
