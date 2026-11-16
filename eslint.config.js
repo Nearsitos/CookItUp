@@ -19,11 +19,11 @@ export default [
 
   // Server code and root config files (Node)
   {
-    files: ["server/**/*.js", "*.js"],
+    files: ["server/**/*.js", "spikes/backend-api/**/*.js", "*.js"],
     languageOptions: {
       ecmaVersion: 2023,
       sourceType: "module",
-      globals: { ...globals.node },
+      globals: { ...globals.node, structuredClone: "readonly" },
     },
   },
 
