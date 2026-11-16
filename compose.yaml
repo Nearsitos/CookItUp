@@ -3,12 +3,13 @@ services:
     image: mysql:8.4
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: ${DB_NAME:-kookitup}
+      MYSQL_DATABASE: ${DB_NAME:-food_app}
       MYSQL_USER: ${DB_USER:-kookitup}
       MYSQL_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
     volumes:
       - mysql-data:/var/lib/mysql
+      - ./server/db/init:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
       interval: 10s
@@ -23,7 +24,8 @@ services:
       PORT: 3000
       DB_HOST: db
       DB_PORT: 3306
-      DB_NAME: ${DB_NAME:-kookitup}
+      DB_NAME: ${DB_NAME:-food_app}
+      DEFAULT_USER_ID: ${DEFAULT_USER_ID:-1}
       DB_USER: ${DB_USER:-kookitup}
       DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
     depends_on:

@@ -9,8 +9,8 @@ food-app/
 │
 ├── docs/
 │   ├── architecture.md        # How the pieces fit together
-│   ├── api-contract.md        # Planned endpoints (see below)
-│   └── database-schema.sql    # Draft MySQL tables
+│   ├── api-contract.md        # Implemented inventory endpoint contract
+│   └── database-schema.sql    # Link to server/db initialization schema
 │
 ├── client/                    # Everything the browser loads
 │   ├── index.html             # App shell + navigation
@@ -45,9 +45,12 @@ food-app/
 │   │   └── scan-results.json
 │   └── assets/                # Images, icons
 │
-└── server/                    # Empty for now, ready for later sprints
-    ├── README.md              # Notes on planned stack
-    ├── routes/                # inventory, recipes, scan, auth
-    ├── services/              # aiService, ocrService, etc.
-    ├── db/                    # Connection + migrations
-    └── app.js
+└── server/                    # Express API and MySQL backend
+    ├── routes/inventory.js    # Inventory CRUD endpoints
+    ├── db/pool.js             # MySQL connection pool
+    ├── db/init/               # Workbench schema + prototype seed values
+    └── app.js                 # API and static frontend host
+
+The backend inventory API is implemented, but the current browser UI still
+loads inventory from starter data and browser storage. Connecting the UI to
+`/api/inventory` is a follow-up task.

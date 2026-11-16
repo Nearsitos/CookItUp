@@ -11,8 +11,9 @@ Respect diet preferences and restrictions (allergies, vegetarian, etc.)
 Use context such as "quick dinner" or "meal prep" to shape suggestions
 Scan a barcode or receipt to add items automatically
 
-## Status: MVP prototype (Sprint 1).
-The UI runs on mock data. Backend, database, and AI integrations are planned for later sprints, see our [roadmap](#roadmap).
+## Status: MVP prototype (Sprint 2 backend in progress).
+The UI still uses starter data and browser storage. A starter Express API and
+MySQL inventory backend are now available; see our [roadmap](#roadmap).
 
 ## Tech stack
 * MVP prototype	Planned.
@@ -81,7 +82,7 @@ client/
 │   └── utils/          Pure helper functions (tested)
 ├── mock-data/          JSON used until the backend exists
 └── assets/
-server/                 Planned backend (routes, services, db)
+server/                 Express API, MySQL pool, routes, schema initialization
 docs/                   Architecture, API contract, DB schema
 ```
 
@@ -120,7 +121,7 @@ Ask the assistant to explain anything you don't understand.
 ## Roadmap
 The following items I plan to fix, improve, and/or add to this project in the future:
  * Sprint 1: App shell, inventory view, preferences form, mock recipe suggestions, scan UI with fake results
- * Sprint 2: Backend skeleton, MySQL schema, real inventory CRUD
+ * Sprint 2: Backend skeleton, MySQL schema, inventory CRUD
  * Sprint 3: AI recipe endpoint using inventory, expiry, and preferences
  * Sprint 4: Real barcode scanning, then receipt OCR
 

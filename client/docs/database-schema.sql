@@ -1,1 +1,3 @@
-//Placeholder
+-- The authoritative MySQL Workbench forward-engineering schema is maintained
+-- at server/db/init/001_food_app_schema.sql so Docker can initialize new DBs.
+-- This placeholder file remains to preserve existing documentation links.

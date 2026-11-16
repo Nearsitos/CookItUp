@@ -64,13 +64,16 @@ cp .env.example .env
 nano .env
 ```
 
-Replace both example passwords with different, long random values. Save the
-file and keep it private: `.env` is ignored by Git. Do not use real personal
+Replace both example passwords with different, long random values. Keep
+`DB_NAME=food_app` and `DEFAULT_USER_ID=1`. Save the file and keep it private:
+`.env` is ignored by Git. Do not use real personal
 data for a prototype test database.
 
 ## 4. Start the app and database
 
-From the repository root:
+On the first start, MySQL creates the `food_app` database, loads the schema,
+and seeds one prototype user. This initialization happens only when the MySQL
+data volume is empty. From the repository root:
 
 ```bash
 docker compose up -d --build
@@ -127,7 +130,8 @@ docker compose down              # stop services; database volume remains
 The MySQL data is stored in a Docker volume and persists across container
 rebuilds. Back it up before changing or replacing the Pi. `docker compose down
 -v` deletes the database volume; avoid it unless you intentionally want to
-erase the prototype database.
+erase the prototype database. Schema changes added later will need an explicit
+migration for an already initialized volume; the init script will not rerun.
 
 ## AI HAT+ 2: optional future backend feature
 
@@ -152,7 +156,7 @@ memory separately before adding it to the team's user-test deployment.
 
 ## Current backend scope
 
-The starter backend serves the existing frontend and has a database-aware
-health endpoint. Inventory CRUD and schema migrations still need to be built;
-the SQL file in `client/docs/` is currently a draft placeholder. Until those
-features are added, the UI's data services still use mock data.
+The API supports inventory list, create, update, and soft-delete operations.
+The existing UI still reads from local starter data and browser storage; it is
+not yet connected to the API. All remote testers currently use one shared
+prototype account, so keep access limited to your private Tailscale network.
