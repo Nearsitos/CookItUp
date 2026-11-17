@@ -3840,3 +3840,59 @@ body.sidebar-collapsed .sidebar-theme-toggle {
     transition: none;
   }
 }
+
+
+.custom-allergy-form {
+  margin-top: 18px;
+}
+
+.custom-allergy-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  margin-bottom: 6px;
+}
+
+.custom-allergy-row {
+  display: flex;
+  gap: 8px;
+  max-width: 420px;
+}
+
+.custom-allergy-row input {
+  flex: 1;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 13px "DM Sans", sans-serif;
+}
+.custom-allergy-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.custom-allergy {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 6px 6px 12px;
+  border-radius: 999px;
+  background: var(--danger-soft);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.custom-allergy .delete-item {
+  color: inherit;
+  padding: 0 4px;
+  line-height: 1;
+}

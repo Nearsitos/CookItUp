@@ -270,16 +270,21 @@ function savePreferences() {
   }
 }
 function preferenceCount() {
-  return state.prefs.diets.length + state.prefs.allergies.length;
+  return (
+    state.prefs.diets.length +
+    state.prefs.allergies.length +
+    (state.prefs.customAllergies || []).length
+  );
 }
 function preferenceSummary() {
   const parts = [];
   if (state.prefs.diets.length)
     parts.push(state.prefs.diets.map(dietLabel).join(", "));
-  if (state.prefs.allergies.length)
-    parts.push(
-      `avoiding ${state.prefs.allergies.map((id) => allergenLabel(id).toLowerCase()).join(", ")}`,
-    );
+  const avoiding = [
+    ...state.prefs.allergies.map((id) => allergenLabel(id).toLowerCase()),
+    ...(state.prefs.customAllergies || []),
+  ];
+  if (avoiding.length) parts.push(`avoiding ${avoiding.join(", ")}`);
   const text = parts.join(" · ");
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
@@ -1267,6 +1272,19 @@ $("#custom-allergy-form").addEventListener("submit", (event) =>{
   input.value = "";
   error.textContent = "";
   input.focus();
+});
+
+$("#custom-allergy-list").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-remove-allergy]");
+  if (!button) return; // the click wasn't on a × button
+
+  const term = button.dataset.removeAllergy;
+  state.prefs.customAllergies = state.prefs.customAllergies.filter(
+    (item) => item !== term,
+  );
+  savePreferences();
+  render();
+  $("#custom-allergy-input").focus();
 });
 
 const initialPage = location.hash.slice(1);
