@@ -1,6 +1,5 @@
 /* CookItUp MVP styles. Consolidated from the sprint #2 reference layers. */
 
-
 /* --- styles.css --- */
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
@@ -818,7 +817,6 @@ td:first-child {
   cursor: pointer;
 }
 
-
 .edit-item:hover {
   color: #334237;
 }
@@ -1402,8 +1400,6 @@ dialog form {
   }
 }
 
-
-
 /* --- cookitup.css --- */
 
 /* Reference styling for the CookItUp Figma dashboard. */
@@ -1880,8 +1876,6 @@ body {
   }
 }
 
-
-
 /* --- ui-scale.css --- */
 
 /* Comfortable sizing pass: the reference is dense, but this MVP should read clearly. */
@@ -2327,8 +2321,6 @@ td {
     margin-left: 68px;
   }
 }
-
-
 
 /* --- mvp-tweaks.css --- */
 
@@ -3651,7 +3643,10 @@ body.sidebar-collapsed .topbar-brand .brand-mark {
   background: transparent;
   color: var(--ink-2);
   cursor: pointer;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
 }
 .sidebar-theme-toggle:hover,
 .sidebar-theme-toggle:focus-visible {
@@ -3663,7 +3658,9 @@ body.sidebar-collapsed .topbar-brand .brand-mark {
   position: absolute;
   font-size: 25px;
   line-height: 1;
-  transition: opacity 220ms ease, transform 320ms cubic-bezier(.2,.8,.2,1);
+  transition:
+    opacity 220ms ease,
+    transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .sidebar-theme-toggle .theme-moon {
   opacity: 1;
@@ -3671,11 +3668,11 @@ body.sidebar-collapsed .topbar-brand .brand-mark {
 }
 .sidebar-theme-toggle .theme-sun {
   opacity: 0;
-  transform: rotate(-80deg) scale(.45);
+  transform: rotate(-80deg) scale(0.45);
 }
 .sidebar-theme-toggle.is-dark .theme-moon {
   opacity: 0;
-  transform: rotate(80deg) scale(.45);
+  transform: rotate(80deg) scale(0.45);
 }
 .sidebar-theme-toggle.is-dark .theme-sun {
   opacity: 1;
@@ -3804,7 +3801,10 @@ body.sidebar-collapsed .sidebar-theme-toggle {
   background: var(--paper);
   color: var(--ink-2);
   cursor: pointer;
-  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease;
 }
 .carousel-arrow {
   font-size: 22px;
@@ -3841,7 +3841,6 @@ body.sidebar-collapsed .sidebar-theme-toggle {
   }
 }
 
-
 .custom-allergy-form {
   margin-top: 18px;
 }
@@ -3868,7 +3867,9 @@ body.sidebar-collapsed .sidebar-theme-toggle {
   border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
-  font: 13px "DM Sans", sans-serif;
+  font:
+    13px "DM Sans",
+    sans-serif;
 }
 .custom-allergy-list {
   list-style: none;
