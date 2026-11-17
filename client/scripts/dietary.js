@@ -100,7 +100,7 @@ function ingredientTags(name) {
 }
 
 export function emptyPreferences() {
-  return { diets: [], allergies: [] };
+  return { diets: [], allergies: [], customAllergies: [] };
 }
 
 // Checks one recipe against the user's preferences.
@@ -113,8 +113,13 @@ export function checkRecipe(recipe, prefs) {
 
   for (const ingredient of recipe.ingredients) {
     const tags = ingredientTags(ingredient);
+    const name = ingredient.toLowerCase();
+    const customHits = (prefs.customAllergies || []).filter((term) => name.includes(term));
     const note = {
-      allergens: prefs.allergies.filter((allergy) => tags.has(allergy)),
+      allergens: [
+        ...prefs.allergies.filter((allergy) => tags.has(allergy)),
+        ...customHits,
+      ],
       diets: prefs.diets.filter((dietId) =>
         DIETS.find((item) => item.id === dietId)?.excludes.some((tag) =>
           tags.has(tag),

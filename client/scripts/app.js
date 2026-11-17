@@ -242,9 +242,21 @@ function loadPreferences() {
       Array.isArray(list)
         ? list.filter((id) => options.some((option) => option.id === id))
         : [];
+    const cleanCustom = (list) =>
+      Array.isArray(list)
+        ?[
+          ...new Set(
+            list
+            .filter((entry) => typeof entry === "string")
+            .map((entry) => entry.trim().toLowerCase())
+            .filter((entry) => entry.length > 0),
+          ),
+        ]
+        : [];
     return {
       diets: known(saved?.diets, DIETS),
       allergies: known(saved?.allergies, ALLERGENS),
+      customAllergies: cleanCustom(saved?.customAllergies)
     };
   } catch {
     return emptyPreferences();
@@ -690,7 +702,20 @@ function buildPreferenceOptions() {
     option("diets", item, `<small>${escapeHtml(item.hint)}</small>`),
   ).join("");
 }
+function renderCustomAllergies() {
+  $("#custom-allergy-list").innerHTML = state.prefs.customAllergies
+    .map(
+      (term) =>
+        `<li class="custom-allergy">
+          <span>${escapeHtml(term)}</span>
+          <button type="button" class="delete-item" data-remove-allergy="${escapeHtml(term)}" aria-label="Remove ${escapeHtml(term)}">×</button>
+         </li>`,
+    )
+    .join("");
+}
+
 function renderPreferences() {
+  renderCustomAllergies();
   document.querySelectorAll("[data-pref-kind]").forEach((input) => {
     input.checked = state.prefs[input.dataset.prefKind].includes(input.value);
   });
@@ -1219,6 +1244,29 @@ $("#clear-preferences").addEventListener("click", () => {
   render();
   $("[data-pref-kind]").focus(); // the button is now disabled
   showToast("Preferences cleared.");
+});
+$("#custom-allergy-form").addEventListener("submit", (event) =>{
+  event.preventDefault();
+  const input = $("#custom-allergy-input");
+  const error = $("#custom-allergy-error");
+  const term = input.value.trim().toLowerCase();
+
+  if(!term) {
+    error.textContent = "Type an allergy first.";
+    return;
+  }
+
+  if(state.prefs.customAllergies.includes(term)){
+    error.textContent = `${term} is already on your list.`
+    return;
+  }
+
+  state.prefs.customAllergies.push(term);
+  savePreferences();
+  render();
+  input.value = "";
+  error.textContent = "";
+  input.focus();
 });
 
 const initialPage = location.hash.slice(1);

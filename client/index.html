@@ -409,6 +409,21 @@
               </p>
             </div>
             <div class="chip-grid" id="allergy-options"></div>
+            <form class="custom-allergy-form" id="custom-allergy-form">
+              <label for="custom-allergy-input">Add another allergy</label>
+              <div class="custom-allergy-row">
+                <input 
+                  type="text"
+                  id="custom-allergy-input"
+                  placeholder="e.g. mango"
+                  maxlength="40"
+                  autocomplete="off"
+                />
+                <button type="submit" class="button secondary">Add</button>
+              </div>
+              <p class="form-error" id="custom-allergy-error" aria-live="polite"></p>              
+            </form>
+            <ul class="custom-allergy-list" id="custom-allergy-list"></ul>
           </section>
           <section class="panel pref-panel" aria-labelledby="diet-heading">
             <div class="pref-panel-heading">
