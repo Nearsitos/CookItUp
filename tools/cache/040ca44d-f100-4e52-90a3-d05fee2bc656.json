@@ -1,0 +1,555 @@
+{
+  "data": {
+    "id": "040ca44d-f100-4e52-90a3-d05fee2bc656",
+    "name": "Osaka-Style Okonomiyaki With Pork Belly",
+    "description": "Golden cabbage pancakes have tender, fluffy centers and crisp-edged pork belly. Glossy savory-sweet sauce, creamy mayonnaise and smoky bonito flakes finish this satisfying Japanese dinner.",
+    "category": "Dinner",
+    "cuisine": "Japanese",
+    "difficulty": "Easy",
+    "tags": [
+      "Dinner",
+      "Japanese",
+      "cabbage",
+      "pork belly",
+      "pancake",
+      "griddled"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT20M",
+      "total_time": "PT45M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [],
+      "not_suitable_for": [
+        "People with wheat allergies",
+        "People with egg allergies",
+        "People with fish allergies",
+        "People with soy allergies when soy is present in the dashi, sauce or mayonnaise; check product labels"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store pancakes without toppings when possible. Refrigerate in shallow airtight containers within 2 hours of cooking, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Keep at 4°C (40°F) or below.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze promptly cooled, untopped pancakes individually in airtight freezer containers. Thaw overnight in the refrigerator.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat in a covered skillet over medium-low heat, turning once, until the center reaches 74°C (165°F). Uncover briefly to crisp the surface, then add toppings.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Vegetable peeler",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine grater",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Two nonstick skillets with lids, each at least 24 cm wide",
+        "required": true,
+        "alternative": "A large griddle with enough space for two pancakes and a heatproof cooking dome"
+      },
+      {
+        "name": "Two wide spatulas",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Thin-probe instant-read thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plates",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Airtight storage containers",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Cabbage Pancakes",
+        "items": [
+          {
+            "name": "green cabbage",
+            "quantity": 350,
+            "unit": "g",
+            "preparation": "washed and thoroughly dried",
+            "notes": "Edible weight after removing the tough core and damaged outer leaves.",
+            "substitutions": [],
+            "ingredient_id": "7b59e88f-7df0-522b-a246-8f1e39ea2d5b",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "green onions",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Edible weight after trimming roots.",
+            "substitutions": [],
+            "ingredient_id": "937ef238-2647-595c-9607-21e727817870",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "nagaimo",
+            "quantity": 60,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Japanese mountain yam; weigh after peeling.",
+            "substitutions": [],
+            "ingredient_id": "d2ddd2d5-96e7-492b-835f-94fb90148e1f",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "all-purpose flour",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "11e03c79-4bf6-47ed-babb-753b1a9789c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dashi",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "cool",
+            "notes": "Prepared, unsalted bonito-and-kelp stock, not concentrated stock powder.",
+            "substitutions": [],
+            "ingredient_id": "653522df-4ea0-4be2-a0fa-739e2c3e5b09",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "eggs",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Weigh without shells; approximately 2 large eggs.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pork and Griddling",
+        "items": [
+          {
+            "name": "pork belly",
+            "quantity": 160,
+            "unit": "g",
+            "preparation": "raw, thinly sliced",
+            "notes": "Boneless, skinless edible weight; use uncured slices 2–3 mm thick, cut to fit across the pancakes.",
+            "substitutions": [],
+            "ingredient_id": "1111622f-e56f-46a1-8a0e-4da145faec3e",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Divide equally between the two skillets for shallow surface cooking.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Finishing Toppings",
+        "items": [
+          {
+            "name": "okonomiyaki sauce",
+            "quantity": 60,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Prepared Japanese savory-sweet pancake sauce.",
+            "substitutions": [],
+            "ingredient_id": "dc5f73f5-cdb0-4445-b27b-9bb3b6686e09",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "japanese mayonnaise",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use commercially prepared mayonnaise made with pasteurized egg.",
+            "substitutions": [],
+            "ingredient_id": "552d3269-1621-4f2c-be9f-5e867c4a2255",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "bonito flakes",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Ready-to-eat shaved katsuobushi.",
+            "substitutions": [],
+            "ingredient_id": "4c63ed66-00d6-4e2c-85b4-ea6ae38f0516",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "aonori",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Dried green seaweed flakes.",
+            "substitutions": [],
+            "ingredient_id": "93fedaa7-5830-4657-bfb6-9ffcb582d849",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Chop the cabbage into pieces about 5 mm wide and finely slice the green onions on the cutting board.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Finely grate the peeled nagaimo into the mixing bowl.",
+        "structured": {
+          "action": "GRATE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Nagaimo becomes slippery and sticky when grated; use a secure grip and keep fingertips clear of the grater."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Whisk the flour, dashi, eggs and salt into the grated nagaimo just until no dry flour remains.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "A thick batter with no dry flour pockets.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Rest the batter for 10 minutes to hydrate the flour.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Preheat both skillets over medium heat with 5 g oil in each. For a temperature-controlled griddle, use approximately 180°C (356°F).",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The oil flows easily but does not smoke.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Fold the cabbage and green onions into the rested batter with the mixing spoon until lightly coated throughout.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Cook immediately after folding to limit water release from the cabbage."
+        ]
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "Shape half the mixture in each skillet into a pancake approximately 18 cm across and 2 cm thick, gently bringing the edges together without compressing the center.",
+        "structured": {
+          "action": "SHAPE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "assemble",
+        "text": "Arrange 80 g pork belly over each pancake in a single layer with minimal overlap. Use tongs for the raw pork; wash hands and clean the tongs and any surfaces that contact raw meat before handling cooked food.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Griddle the pancakes undisturbed for about 5 minutes, until the undersides are golden and the edges hold together.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Golden undersides and set edges.",
+            "tactile": "A spatula slides beneath each pancake without the mixture spreading."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Cook the pork sides by turning each pancake with two wide spatulas, covering the skillets and reducing the heat to medium-low for about 7 minutes. Clean utensils that touched uncooked batter or pork before using them again.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "The pork is browned and the pancake sides look set.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep the pancakes loose and thick; pressing them squeezes out moisture and makes the centers dense."
+        ]
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Finish cooking uncovered, pork side up, for about 2 minutes. Insert the thermometer horizontally into each pancake: the egg-containing center must reach at least 71°C (160°F), and the thickest pork must reach at least 63°C (145°F). Continue over low heat if needed until both readings are reached.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "No wet batter remains in the center; the pork has browned edges.",
+            "tactile": "The center feels softly springy rather than liquid."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "finish",
+        "text": "Rest the cooked pancakes on serving plates for at least 3 minutes before cutting, following the required rest for the pork.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "finish",
+        "text": "Garnish each pancake with half the okonomiyaki sauce, mayonnaise, aonori and bonito flakes, spreading the sauce across the pork and drizzling the mayonnaise over it.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The outside browns before the center cooks.",
+        "likely_cause": "The heat is too high or the pancake is thicker than 2 cm.",
+        "prevention": "Keep the thickness even and reduce the heat for the covered cooking stage.",
+        "fix": "Cover and continue over low heat, checking every 2 minutes until the center reaches 71°C (160°F) and the pork reaches at least 63°C (145°F). Rest for 3 minutes before cutting."
+      },
+      {
+        "symptom": "The pancake breaks during flipping.",
+        "likely_cause": "The underside has not set, the cabbage pieces are too large or the pancake lacks support.",
+        "prevention": "Chop the cabbage finely, wait for a firm golden underside and support the pancake with two wide spatulas.",
+        "fix": "Push the pieces gently together and continue cooking until set and safely cooked; cover small cracks with the finishing sauce."
+      }
+    ],
+    "chef_notes": [
+      "Dry cabbage thoroughly before chopping; excess surface water thins the batter and weakens the pancake.",
+      "Grated nagaimo gives the center a light, tender texture without requiring a long batter rest.",
+      "Keep pork slices thin and mostly separate so they brown evenly against the cooking surface.",
+      "The center temperature, pork temperature and resting instructions follow the applicable egg-dish and whole-cut pork guidance from [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Okonomiyaki is a representative dish of Osaka and the Kansai region's flour-based food culture, with cabbage mixed into batter before griddling. It became widely recognized throughout Japan as an Osaka specialty during the late 1950s and 1960s, according to [Japan's Ministry of Agriculture, Forestry and Fisheries](https://www.maff.go.jp/e/policies/market/kryouri/searchmenu/5798/index.html).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 793.54,
+        "protein_g": 29.24,
+        "carbohydrates_g": 65,
+        "fat_g": 46.25,
+        "saturated_fat_g": 9.95,
+        "trans_fat_g": 0.14,
+        "monounsaturated_fat_g": 19.59,
+        "polyunsaturated_fat_g": 9.76,
+        "fiber_g": 6.73,
+        "sugar_g": 14.82,
+        "sodium_mg": 1132.8,
+        "cholesterol_mg": 256.9,
+        "potassium_mg": 1012.44,
+        "calcium_mg": 143.89,
+        "iron_mg": 4.92,
+        "magnesium_mg": 81.78,
+        "phosphorus_mg": 398.8,
+        "zinc_mg": 3.03,
+        "vitamin_a_mcg": 131.33,
+        "vitamin_c_mg": 75.54,
+        "vitamin_d_mcg": 1.56,
+        "vitamin_e_mg": 4.24,
+        "vitamin_k_mcg": 149.83,
+        "vitamin_b6_mg": 0.7,
+        "vitamin_b12_mcg": 2.2,
+        "thiamin_mg": 0.93,
+        "riboflavin_mg": 0.72,
+        "niacin_mg": 9.91,
+        "folate_mcg": 204.75,
+        "water_g": 351.74,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 41,
+    "monthly_limit": 50,
+    "daily_remaining": 41,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 9,
+    "detail_limit": 50,
+    "detail_remaining": 41,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

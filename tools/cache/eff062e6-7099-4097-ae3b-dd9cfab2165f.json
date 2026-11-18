@@ -1,0 +1,454 @@
+{
+  "data": {
+    "id": "eff062e6-7099-4097-ae3b-dd9cfab2165f",
+    "name": "Tacos de Nopales",
+    "description": "Tender cactus strips mingle with sweet onions, juicy tomatoes and bright serrano heat inside warm corn tortillas. Fresh cilantro and lime sharpen the savory filling, balancing its gentle tang and earthy flavor.",
+    "category": "Lunch",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Mexican",
+      "Quick",
+      "cactus",
+      "tacos",
+      "sautéed",
+      "vegetarian"
+    ],
+    "meta": {
+      "active_time": "PT30M",
+      "passive_time": "PT0M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "2 servings, 3 tacos each",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store filling separately from tortillas in shallow, covered containers at 4°C (40°F) or below. Refrigerate within 2 hours, or within 1 hour when the ambient temperature exceeds 32°C (90°F). [FoodSafety.gov storage guidance](https://www.foodsafety.gov/keep-food-safe/4-steps-to-food-safety).",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze the cooled filling separately in an airtight container at -18°C (0°F) or below for best quality. Thaw overnight in the refrigerator; the cactus and tomatoes will soften.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat the filling in a skillet over medium-low heat, stirring frequently, until it reaches 74°C (165°F) throughout on a food thermometer. Warm tortillas separately before filling. [FoodSafety.gov minimum temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide, heavy skillet, approximately 30–32 cm",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Comal or second skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen towel",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Food thermometer",
+        "required": false,
+        "alternative": "Use a food thermometer when reheating stored filling."
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Cactus Filling",
+        "items": [
+          {
+            "name": "nopales",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "fresh, washed and fully despined",
+            "notes": "Edible weight after removal of spines, tiny bristles and tough paddle bases. Buy cleaned, tender cactus paddles to keep preparation within 30 minutes.",
+            "substitutions": [],
+            "ingredient_id": "7c44e064-2801-410d-a401-ae6497b623dd",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "white onion",
+            "quantity": 80,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Edible weight after removing the skin and root.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "roma tomato",
+            "quantity": 180,
+            "unit": "g",
+            "preparation": "washed and cored",
+            "notes": "Edible weight; keep the flesh, seeds and juices.",
+            "substitutions": [],
+            "ingredient_id": "15f7fcd0-6094-4322-90b3-d25eae059040",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "serrano pepper",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "washed and stemmed",
+            "notes": "Edible weight. For milder heat, remove the seeds and pale internal ribs before weighing.",
+            "substitutions": [],
+            "ingredient_id": "6a646318-3d5c-494b-97fe-6869490329d6",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use 2 g with the cactus and the remaining 1 g with the tomatoes.",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Tortillas and Finish",
+        "items": [
+          {
+            "name": "corn tortillas",
+            "quantity": 180,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Six small tortillas weighing 30 g each. Choose gluten-free tortillas made without animal ingredients.",
+            "substitutions": [],
+            "ingredient_id": "da963b85-8f0b-4c36-b9b1-c31e17b488ae",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cilantro",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": "washed",
+            "notes": "Edible leaves and tender stems.",
+            "substitutions": [],
+            "ingredient_id": "90d50243-5217-4e50-836c-b2f624e2b58b",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lime juice",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "freshly squeezed",
+            "notes": "Weigh the juice without seeds or peel.",
+            "substitutions": [],
+            "ingredient_id": "531b7deb-b63c-41c9-8c01-b7bec6fcd2d0",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Slice the cleaned nopales into strips approximately 5 mm wide and 4 cm long on the cutting board.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Inspect purchased cleaned paddles for remaining spines or tiny bristles before handling."
+        ]
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Dice the onion into 5 mm pieces and the tomatoes into 1 cm pieces, keeping them separate.",
+        "structured": {
+          "action": "DICE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Finely chop the serrano, garlic and cilantro, keeping the cilantro separate for finishing.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Wash your hands with soap after handling the serrano and avoid touching your eyes."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Heat the olive oil in the wide skillet over medium-high heat for approximately 1 minute, aiming for a pan surface near 180°C (356°F); the oil should shimmer without smoking.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The oil shimmers gently without producing smoke.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Sauté the cactus strips with 2 g salt for 8–10 minutes, uncovered, turning occasionally with the spatula. Continue until the released liquid has mostly evaporated and the strips are tender with a slight bite.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "The cactus turns olive green, with little pooled liquid and a few lightly browned edges.",
+            "tactile": "A strip bends easily and offers only slight resistance when bitten."
+          }
+        },
+        "tips": [
+          "Some slippery liquid is normal at first. Keep the pan uncovered so it can evaporate."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Sauté the onion, serrano and garlic with the cactus over medium heat for 3 minutes, stirring frequently, until the onion softens and the garlic smells fragrant.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The onion edges become translucent and the garlic remains pale.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Sauté the tomatoes and remaining 1 g salt with the cactus mixture for 4 minutes, until the tomatoes soften and their juices lightly coat the strips without pooling.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The filling is moist and glossy, with softened tomato pieces and no watery puddle.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "During the final 3 minutes of the filling's cooking time, warm the tortillas in pairs on a dry comal or second skillet over medium heat, approximately 180°C (356°F), for about 30 seconds per side. Use tongs to turn them.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Small toasted spots appear without the edges becoming crisp.",
+            "tactile": "The tortillas are warm and flexible enough to fold."
+          }
+        },
+        "tips": [
+          "Keep warmed tortillas wrapped in the clean kitchen towel while the remaining tortillas heat."
+        ]
+      },
+      {
+        "step_number": 9,
+        "phase": "finish",
+        "text": "Mix the lime juice and cilantro into the filling off the heat for about 30 seconds.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "assemble",
+        "text": "Divide the filling evenly among the six warm tortillas, folding each around the cactus strips for immediate serving.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The cactus filling is excessively slippery or watery.",
+        "likely_cause": "The pan is crowded, the heat is too low or the cactus liquid has not evaporated before the tomatoes are added.",
+        "prevention": "Use the specified wide skillet, cook uncovered and wait until most cactus liquid evaporates before adding the other vegetables.",
+        "fix": "Cook uncovered over medium-high heat for a few extra minutes, stirring frequently, until excess liquid evaporates. This may extend the total cooking time."
+      },
+      {
+        "symptom": "The tortillas crack when folded.",
+        "likely_cause": "They are insufficiently warmed or have dried out from prolonged toasting.",
+        "prevention": "Warm briefly until flexible and keep covered with a clean kitchen towel.",
+        "fix": "Stack the warm tortillas inside the towel for 1 minute so their trapped steam softens them, then fill promptly."
+      }
+    ],
+    "chef_notes": [
+      "Choose young, thin cactus paddles; mature paddles can remain fibrous even after their surface softens.",
+      "Uniform, narrow strips cook quickly and fit neatly inside small tortillas.",
+      "Cook the cactus before adding tomatoes so its released liquid can evaporate without overcooking the tomato flesh.",
+      "Add lime and cilantro off the heat to preserve their fresh aroma.",
+      "Fill tortillas just before eating to preserve their flexibility and prevent sogginess."
+    ],
+    "cultural_context": "Nopales are cactus paddles used in Mexican home cooking, including preparations sautéed until their released liquid evaporates. The onion, tomato and green chile combination is commonly described as a la mexicana, and makes a flavorful filling for corn tortillas. [Mexican cactus preparation](https://www.casademexico.es/noticia/receta/nopales-a-la-mexicana/), [a la mexicana tradition](https://www.mexicoinmykitchen.com/nopales-easy-mexican-recipe/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 334.82,
+        "protein_g": 9.36,
+        "carbohydrates_g": 55.98,
+        "fat_g": 10.53,
+        "saturated_fat_g": 1.53,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 6.18,
+        "polyunsaturated_fat_g": 2.27,
+        "fiber_g": 12.21,
+        "sugar_g": 7.53,
+        "sodium_mg": 673.67,
+        "cholesterol_mg": 0,
+        "potassium_mg": 1008.19,
+        "calcium_mg": 428.34,
+        "iron_mg": 2.83,
+        "magnesium_mg": 186.08,
+        "phosphorus_mg": 356.6,
+        "zinc_mg": 1.98,
+        "vitamin_a_mcg": 99.78,
+        "vitamin_c_mg": 40.24,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 1.98,
+        "vitamin_k_mcg": 35.47,
+        "vitamin_b6_mg": 0.53,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.17,
+        "riboflavin_mg": 0.19,
+        "niacin_mg": 2.9,
+        "folate_mcg": 36.06,
+        "water_g": 366.68,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 12,
+    "monthly_limit": 50,
+    "daily_remaining": 12,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 38,
+    "detail_limit": 50,
+    "detail_remaining": 12,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

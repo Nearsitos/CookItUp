@@ -1,0 +1,548 @@
+{
+  "data": {
+    "id": "e66fc3d5-043c-44e2-8f66-e0d4ee25a046",
+    "name": "Mee Kati",
+    "description": "Thin rice noodles glisten with creamy coconut sauce, tangy tamarind and savory fermented soybean paste. Tender tofu, fragrant shallots and golden omelet ribbons make a comforting Thai breakfast.",
+    "category": "Breakfast",
+    "cuisine": "Thai",
+    "difficulty": "Easy",
+    "tags": [
+      "Breakfast",
+      "Thai",
+      "Quick",
+      "rice noodles",
+      "coconut milk",
+      "tofu",
+      "simmered"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT5M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Dairy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergy",
+        "People with soy allergy",
+        "People with wheat allergy or celiac disease unless the fermented soybean paste is certified gluten-free",
+        "People with coconut allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Transfer leftovers into shallow containers and refrigerate within 2 hours, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Store at 4°C (40°F) or below, with omelet strips separate if practical.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended because the fine noodles soften and the coconut sauce may separate.",
+        "duration": null
+      },
+      "reheating": "Reheat gently in a covered skillet, stirring carefully, until the noodles, tofu and omelet reach 74°C (165°F) throughout. Add a little water if needed to loosen the sauce.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large heatproof bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Colander",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large nonstick skillet with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Flexible spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving bowls",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Noodles",
+        "items": [
+          {
+            "name": "thin rice vermicelli",
+            "quantity": 140,
+            "unit": "g",
+            "preparation": "dry",
+            "notes": "Use fine Thai sen mee with a warm-water soaking time of approximately 10 minutes; thicker rice noodles require a different schedule.",
+            "substitutions": [],
+            "ingredient_id": "d4369732-e234-4f15-98f0-1189e0fb71ba",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Noodle soaking water, discarded",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1500,
+            "unit": "g",
+            "preparation": "warm",
+            "notes": "For submerging and softening the noodles; drain and discard after soaking.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      },
+      {
+        "group_name": "Coconut, Tamarind And Tofu Sauce",
+        "items": [
+          {
+            "name": "coconut milk",
+            "quantity": 250,
+            "unit": "g",
+            "preparation": "full-fat, unsweetened",
+            "notes": "Stir the coconut cream and liquid together before weighing.",
+            "substitutions": [],
+            "ingredient_id": "1a4192d7-51c1-42ec-a9b4-a4798715ebc7",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "firm tofu",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "drained",
+            "notes": "Edible weight after draining; plain firm or firm yellow tofu works well.",
+            "substitutions": [],
+            "ingredient_id": "35ac0b00-5c3a-40cc-bf3a-93c2e458798f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "thai fermented soybean paste",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use tao jiew, also sold as yellow soybean sauce. Stir before weighing and choose a product without fish or shellfish ingredients. Some brands contain wheat.",
+            "substitutions": [],
+            "ingredient_id": "d7acc608-c58d-4115-aadd-35af0937ea55",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "tamarind puree",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "seedless, unsweetened",
+            "notes": "Use spoonable, single-strength puree, not a highly concentrated tamarind extract.",
+            "substitutions": [],
+            "ingredient_id": "74548eaf-19a5-4b0c-9145-b436b67af21f",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "palm sugar",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "finely shaved",
+            "notes": null,
+            "substitutions": [
+              "15 g light brown sugar"
+            ],
+            "ingredient_id": "b467254f-1257-48f5-bcd9-06b650634f7a",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "shallot",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Edible weight without skin.",
+            "substitutions": [],
+            "ingredient_id": "fdfc0723-3dbf-44af-b667-f5e4bd6005a8",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Edible weight without skin.",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 80,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Added to the sauce and served with the noodles.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For sauteing the shallot and garlic.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Omelet And Garnish",
+        "items": [
+          {
+            "name": "egg",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Weight without shells; approximately 2 large eggs.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For coating the skillet when cooking the omelet.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic chives",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "washed and trimmed",
+            "notes": "Edible weight after removing damaged ends.",
+            "substitutions": [],
+            "ingredient_id": "b1c8230c-d016-4eb4-9cb6-f7ce1fcac012",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Soak the rice vermicelli in the large heatproof bowl with the 1500 g soaking water at approximately 50°C (122°F) for 10 minutes, or according to the package, until flexible but still slightly firm. Complete the vegetable preparation while they soak.",
+        "structured": {
+          "action": "SOAK",
+          "temperature": {
+            "celsius": 50,
+            "fahrenheit": 122
+          },
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Strands bend easily but retain a slightly firm center."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Cut the shallot into thin slices, the garlic into fine pieces, the tofu into 1 cm cubes and the garlic chives into 3 cm lengths using the knife and cutting board.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Drain the softened noodles thoroughly in the colander, discarding the soaking water.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Beat the eggs in the small bowl with the fork until the whites and yolks are evenly combined.",
+        "structured": {
+          "action": "BEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Cook the beaten eggs in the large nonstick skillet with the 5 g omelet oil over medium-low heat, tilting the skillet to form a thin layer. Use the spatula to turn the omelet once its underside sets, and continue until both sides are set and its center reaches 71°C (160°F), about 3 minutes.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The omelet is lightly golden with no wet or translucent egg.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Rest the cooked omelet on the plate while you prepare the sauce.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Saute the shallot and garlic in the same skillet with the remaining 5 g oil over medium-low heat for 2 minutes, stirring with the spatula until fragrant and softened.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The shallot becomes translucent and the garlic remains pale.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Stir the coconut milk, fermented soybean paste, tamarind puree, palm sugar, tofu and 80 g sauce water into the aromatics until evenly combined.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Simmer the sauce gently for 5 minutes, stirring occasionally, until the sugar dissolves and the tofu is hot throughout, reaching 74°C (165°F) in the center of a cube.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 74,
+            "fahrenheit": 165
+          },
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Small bubbles rise around the edges and the sauce lightly coats the spatula.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "Slice the rested omelet into narrow ribbons on the cutting board while the sauce simmers.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Fold the drained noodles and garlic chives through the gently simmering sauce for 2–3 minutes with the spatula, until the noodles are tender and evenly coated.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The noodles are glossy, with a little loose sauce remaining.",
+            "tactile": "A sampled noodle is tender without a hard center."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "assemble",
+        "text": "Divide the sauced noodles and tofu between two serving bowls and arrange the omelet ribbons on top. Serve immediately.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The noodles clump together and the sauce looks dry.",
+        "likely_cause": "The noodles absorbed the sauce during prolonged cooking or standing.",
+        "prevention": "Stop cooking as soon as the noodles become tender, leave a little loose sauce in the skillet and serve promptly.",
+        "fix": "Fold in warm water in 15 g additions over low heat until the strands loosen and become glossy."
+      },
+      {
+        "symptom": "The noodles break into short pieces.",
+        "likely_cause": "They were soaked until fully soft or stirred vigorously.",
+        "prevention": "Drain while slightly firm and use gentle lifting and folding motions in the sauce.",
+        "fix": "Stop stirring and portion carefully; broken strands cannot be restored."
+      }
+    ],
+    "chef_notes": [
+      "Thai tao jiew supplies the sauce's fermented, savory depth. Stir the jar before weighing so the beans and salty liquid are evenly distributed.",
+      "Single-strength tamarind puree gives rounded acidity; highly concentrated extracts can overwhelm the coconut milk at the same weight.",
+      "Fine rice noodles continue absorbing liquid after cooking, so finish with a little more sauce than you want on the plate.",
+      "Cook the omelet to 71°C (160°F) and reheat leftovers to 74°C (165°F), following [FoodSafety.gov minimum-temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Mee kati is a Thai rice-vermicelli dish with coconut milk, and versions vary in their sauce, toppings and presentation. Some versions serve the coconut sauce separately or use pink-colored noodles; tofu and omelet also appear in vegetarian preparations. [Thai Food Made Easy](https://thaifoodmadeeasy.com/mee-ka-ti/)",
+    "nutrition": {
+      "per_serving": {
+        "calories": 791.38,
+        "protein_g": 22.78,
+        "carbohydrates_g": 84.55,
+        "fat_g": 40.92,
+        "saturated_fat_g": 26.45,
+        "trans_fat_g": 0.04,
+        "monounsaturated_fat_g": 7.28,
+        "polyunsaturated_fat_g": 4.42,
+        "fiber_g": 6.58,
+        "sugar_g": 15.49,
+        "sodium_mg": 791.3,
+        "cholesterol_mg": 186,
+        "potassium_mg": 727.41,
+        "calcium_mg": 253.35,
+        "iron_mg": 7.94,
+        "magnesium_mg": 123.75,
+        "phosphorus_mg": 473.55,
+        "zinc_mg": 5.06,
+        "vitamin_a_mcg": 109.8,
+        "vitamin_c_mg": 6.03,
+        "vitamin_d_mcg": 1,
+        "vitamin_e_mg": 1.89,
+        "vitamin_k_mcg": 28.53,
+        "vitamin_b6_mg": 0.35,
+        "vitamin_b12_mcg": 0.46,
+        "thiamin_mg": 0.19,
+        "riboflavin_mg": 0.36,
+        "niacin_mg": 1.5,
+        "folate_mcg": 78.55,
+        "water_g": 277.88,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 44,
+    "monthly_limit": 50,
+    "daily_remaining": 44,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 6,
+    "detail_limit": 50,
+    "detail_remaining": 44,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

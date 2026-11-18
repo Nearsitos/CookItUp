@@ -1,0 +1,379 @@
+{
+  "data": {
+    "id": "065b4cb0-b862-46db-baad-dc027274afba",
+    "name": "Silky Spanish Chorizo And Tomato Pasta",
+    "description": "A rapid, fiercely flavorful weeknight pasta dish harnessing the smoky power of cured Spanish chorizo, caramelized tomato paste, and a glossy, emulsified pan sauce.",
+    "category": "Dinner",
+    "cuisine": "Spanish",
+    "difficulty": "Easy",
+    "tags": [
+      "Spanish",
+      "Pastas",
+      "Chorizo",
+      "Dinner",
+      "Quick",
+      "Weeknight"
+    ],
+    "meta": {
+      "active_time": "PT20M",
+      "passive_time": "PT0M",
+      "total_time": "PT20M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 350
+    },
+    "dietary": {
+      "flags": [
+        "Nut-Free",
+        "Egg-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store in an airtight container.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended as the pasta texture will degrade and the emulsified sauce may break.",
+        "duration": null
+      },
+      "reheating": "Reheat gently on the stovetop with a splash of water, tossing constantly to reform the sauce emulsion.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large pot",
+        "required": true,
+        "alternative": "Dutch oven"
+      },
+      {
+        "name": "Deep skillet",
+        "required": true,
+        "alternative": "Large saute pan"
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": "Wooden spoon"
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pasta & Base",
+        "items": [
+          {
+            "name": "dry rigatoni pasta",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Penne or ziti also work well",
+            "substitutions": [],
+            "ingredient_id": "c3d19c9d-f603-44a1-b9e4-cbff540218ef",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cured spanish chorizo",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "sliced into half-moons",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ba36466-6cde-4383-b18e-d7c982b046a3",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "extra virgin olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Aromatics & Sauce",
+        "items": [
+          {
+            "name": "garlic",
+            "quantity": 4,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 12g total",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "tomato paste",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "41400e7f-7a06-42d2-a625-072c380d60b2",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "smoked paprika",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Pimenton de la Vera preferred",
+            "substitutions": [
+              "sweet paprika"
+            ],
+            "ingredient_id": "f4c3bdd7-6528-40d2-84b3-a6325df15e8e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red pepper flakes",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1f6019e9-c5ca-4eda-a3f9-e8df6535e5eb",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "dry white wine",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "dry sherry",
+              "chicken broth"
+            ],
+            "ingredient_id": "25f8b8d9-a4ae-44e7-b5ed-f1535c9b8fc2",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "reserved pasta water",
+            "quantity": 120,
+            "unit": "ml",
+            "preparation": "hot and starchy",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "52e7e8d1-3737-410a-8018-22d0b768cbd5",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Garnish",
+        "items": [
+          {
+            "name": "manchego cheese",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "finely grated",
+            "notes": null,
+            "substitutions": [
+              "parmesan cheese",
+              "pecorino romano"
+            ],
+            "ingredient_id": "07b8c956-5844-45ae-9de2-125008e22fc4",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh parsley",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "finely chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "3f818392-5426-4c7d-93de-f2451df41f2f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Bring a large pot of heavily salted water to a rolling boil (100°C/212°F). Cook the pasta 1 minute shy of al dente according to package directions. Scoop out and reserve at least 120ml of the starchy pasta water before draining the noodles.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Pasta should offer a slight resistance when bitten"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Meanwhile, place a deep skillet over medium heat. Add the olive oil and sliced chorizo. Sauté until the chorizo releases its vibrant red, smoky fat and begins to crisp slightly at the edges.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Fat rendered into the pan is deep red; chorizo edges are crisped",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Add the minced garlic, smoked paprika, and optional red pepper flakes to the skillet. Stir constantly and cook until highly fragrant, being careful not to let the garlic brown.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Garlic is softened but not browned",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Stir in the tomato paste. Cook, stirring frequently, until the paste darkens from bright red to a deep brick color and begins to stick slightly to the bottom of the pan.",
+        "structured": {
+          "action": "CARAMELIZE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Tomato paste deepens to a rust color",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Pour the dry white wine into the skillet to deglaze the pan. Use a wooden spoon or tongs to scrape up any browned bits stuck to the bottom. Let the liquid simmer until reduced by half.",
+        "structured": {
+          "action": "DEGLAZE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Liquid volume is visibly halved and slightly thickened",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Add the drained, hot pasta and half of the reserved pasta water to the skillet. Toss vigorously over medium heat until the starchy water and chorizo fat emulsify into a silky, glossy sauce that clings heavily to the noodles. Add more pasta water 15ml at a time if the pan seems dry.",
+        "structured": {
+          "action": "EMULSIFY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Sauce becomes opaque, completely unified, and glossy on the pasta surface",
+            "tactile": "Pasta feels coated and slippery, not dry or oily"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "finish",
+        "text": "Remove the skillet from the heat. Portion the pasta into warm bowls, then top generously with the finely grated Manchego cheese and fresh chopped parsley. Serve immediately.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Sauce looks oily, greasy, or has separated into clear fat and water.",
+        "likely_cause": "Insufficient starch from the pasta water or not enough physical agitation to create a stable emulsion.",
+        "prevention": "Always use very starchy pasta water (scooped near the end of the pasta cooking time) and toss the pasta vigorously in the pan over heat.",
+        "fix": "Add another 15ml to 30ml of hot pasta water and toss rapidly over medium-low heat until the liquid and fat bind back together."
+      }
+    ],
+    "chef_notes": [
+      "Ensure you are purchasing dry-cured Spanish chorizo, such as Cantimpalo style, rather than raw Mexican chorizo. Raw chorizo will completely disintegrate in the pan, ruining the intended textural contrast.",
+      "The step of caramelizing the tomato paste, known as pincage, is non-negotiable. It removes the raw, metallic tin flavor and exponentially deepens the umami foundation of the quick pan sauce.",
+      "Pasta water is an active ingredient, not just a byproduct. Its concentrated starch content is the mechanical key to binding the rendered chorizo fat into a creamy sauce without using heavy cream.",
+      "For an extra layer of authentic Spanish complexity, substitute the dry white wine with a dry Amontillado or Fino sherry."
+    ],
+    "cultural_context": "While pasta is fundamentally Italian, this dish borrows heavily from the Spanish culinary lexicon. The flavor profile is anchored in traditional Spanish sofrito components, leaning heavily on the country's iconic pimenton and cured pork. It represents a functional modern Mediterranean fusion, combining the rapid comfort of a weeknight pasta with the rustic, robust tapas flavors of the Iberian Peninsula.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 704.1,
+        "protein_g": 28.44,
+        "carbohydrates_g": 80.02,
+        "fat_g": 28.13,
+        "saturated_fat_g": 4.7,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 2.92,
+        "polyunsaturated_fat_g": 1,
+        "fiber_g": 4.16,
+        "sugar_g": 4.44,
+        "sodium_mg": 263.63,
+        "cholesterol_mg": null,
+        "potassium_mg": 537.67,
+        "calcium_mg": 98.39,
+        "iron_mg": 4.54,
+        "magnesium_mg": 65.44,
+        "phosphorus_mg": 241.89,
+        "zinc_mg": 2.81,
+        "vitamin_a_mcg": 32.74,
+        "vitamin_c_mg": 7.02,
+        "vitamin_d_mcg": null,
+        "vitamin_e_mg": 0.82,
+        "vitamin_k_mcg": 43.87,
+        "vitamin_b6_mg": 0.2,
+        "vitamin_b12_mcg": null,
+        "thiamin_mg": 0.9,
+        "riboflavin_mg": 0.41,
+        "niacin_mg": 7.3,
+        "folate_mcg": 241.29,
+        "water_g": 66.13,
+        "alcohol_g": 1.55,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 31,
+    "monthly_limit": 50,
+    "daily_remaining": 31,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 19,
+    "detail_limit": 50,
+    "detail_remaining": 31,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

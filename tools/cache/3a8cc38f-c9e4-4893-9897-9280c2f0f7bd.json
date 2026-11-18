@@ -1,0 +1,557 @@
+{
+  "data": {
+    "id": "3a8cc38f-c9e4-4893-9897-9280c2f0f7bd",
+    "name": "Vietnamese Chicken Rice Porridge",
+    "description": "Silky jasmine rice porridge meets tender poached chicken in a clear, savory broth, while fresh ginger, scallion whites, and bright green tops add crisp fragrance.",
+    "category": "Breakfast",
+    "cuisine": "Vietnamese",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Breakfast",
+      "Vietnamese",
+      "chicken",
+      "rice",
+      "poached"
+    ],
+    "meta": {
+      "active_time": "PT30M",
+      "passive_time": "PT27M",
+      "total_time": "PT57M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 425
+    },
+    "dietary": {
+      "flags": [
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free"
+      ],
+      "not_suitable_for": [
+        "People with fish or anchovy allergies"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Cool the porridge and chicken promptly in shallow, covered containers and refrigerate within 2 hours at 4°C/39°F or below. Use within 3 days.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze in airtight portions for up to 1 month. Thaw in the refrigerator; the rice texture may become softer.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat only the portion needed, stirring until steaming throughout and the center reaches 74°C/165°F. Add a splash of hot water or broth if the porridge has thickened.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "large lidded saucepan",
+        "required": true,
+        "alternative": "Dutch oven"
+      },
+      {
+        "name": "cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "instant-read thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "fine-mesh sieve",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "heatproof bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "two forks",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "heatproof spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "ladle",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "4 serving bowls",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Chicken",
+        "items": [
+          {
+            "name": "boneless skinless chicken thighs",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "raw, cut into 3 cm pieces",
+            "notes": "Raw poultry. Keep separate from the cooked rice, vegetables, and garnishes.",
+            "substitutions": [],
+            "ingredient_id": "cae035b7-2e8f-4489-838b-c57b9a527ea7",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Cooked rice",
+        "items": [
+          {
+            "name": "cooked jasmine rice",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "plain, fully cooked, and cooled",
+            "notes": "This is intentionally a cooked-weight measurement taken after steaming; it is not a dry-rice measurement.",
+            "substitutions": [],
+            "ingredient_id": "f1bfb972-0927-4c0f-a0ca-fd9a34c580e4",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Poaching liquid",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1200,
+            "unit": "ml",
+            "preparation": "cold",
+            "notes": "After poaching, strain the liquid and reserve 1,000 ml for the porridge; discard excess and sediment.",
+            "substitutions": [],
+            "ingredient_id": "de973e91-f602-4c8c-b99f-9aaf5b5ac726",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Aromatics and seasonings",
+        "items": [
+          {
+            "name": "fresh ginger",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "peeled and minced",
+            "notes": "Divide into two 10 g portions, one for the poaching liquid and one for finishing.",
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "rinsed and thinly sliced",
+            "notes": "Use 20 g of the whites in the broth, 5 g of the greens in the finished porridge, and 5 g of the greens as garnish.",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fish sauce",
+            "quantity": 25,
+            "unit": "ml",
+            "preparation": "regular",
+            "notes": "Use 20 ml in the broth and 5 ml to finish the porridge.",
+            "substitutions": [],
+            "ingredient_id": "c49d0fb1-76dd-4870-aca3-981bb58b5ab2",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "white sugar",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": "granulated",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine sea salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "fine-grained",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2b98d5ee-4c3d-49da-b6eb-db09f63408d4",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "ground black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": "freshly ground",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Weigh 500 g of raw chicken thighs and 400 g of fully cooked, cooled jasmine rice. Keep the chicken and rice in separate containers until needed.",
+        "structured": {
+          "action": "MEASURE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Cut the chicken into evenly sized 3 cm pieces. Use the cutting board and knife for the raw poultry at this stage, keep the chicken and its juices away from all other ingredients, and wash hands after handling it.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The pieces are approximately 3 cm across and similar in size.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Wash and sanitize the cutting board and knife, then mince the fresh ginger finely.",
+        "structured": {
+          "action": "MINCE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The ginger is finely minced with no large pieces remaining.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Slice the rinsed scallions thinly, placing 20 g of the whites, 5 g of the greens, and 5 g of the greens for garnish into separate piles.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Combine 1,200 ml of water with 20 ml of fish sauce, the sugar, salt, 10 g of minced ginger, and the 20 g of scallion whites in the saucepan.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Cover the saucepan and bring the seasoned liquid to a full boil over high heat, about 100°C/212°F.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Large bubbles rise rapidly across the surface.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Add the chicken, cover, and lower the heat to a gentle simmer at approximately 85-93°C/185-199°F. Poach for 12 minutes, then verify that the thickest piece reaches 74°C/165°F in the center; if necessary, continue in 2-minute increments and recheck.",
+        "structured": {
+          "action": "POACH",
+          "temperature": {
+            "celsius": 90,
+            "fahrenheit": 194
+          },
+          "duration": "PT12M",
+          "doneness_cues": {
+            "visual": "The chicken is opaque throughout and the juices run clear.",
+            "tactile": "The thickest piece registers 74°C/165°F at its center."
+          }
+        },
+        "tips": [
+          "If the liquid boils vigorously, lower the heat immediately to prevent the chicken from toughening."
+        ]
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Lift the chicken from the saucepan with the tongs, place it in a clean heatproof bowl, and let it rest uncovered for 3 minutes.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Strain the poaching liquid through the fine-mesh sieve into a clean saucepan, discarding foam and sediment. Reserve 1,000 ml of the strained liquid.",
+        "structured": {
+          "action": "STRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The liquid is clear without floating foam or sediment.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "Shred the rested chicken with two forks, working with the grain and leaving the pieces slightly irregular for a tender, spoonable texture.",
+        "structured": {
+          "action": "SHRED",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "The chicken is separated into fine, moist strands without being overworked.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Add the 400 g of cooked jasmine rice and 1,000 ml of reserved broth to the saucepan. Bring the mixture to a gentle simmer, about 95°C/203°F.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 95,
+            "fahrenheit": 203
+          },
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "cook",
+        "text": "Simmer the porridge uncovered for 12 minutes, stirring with the heatproof spoon every 3 minutes so the rice softens and releases its starch.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 95,
+            "fahrenheit": 203
+          },
+          "duration": "PT12M",
+          "doneness_cues": {
+            "visual": "Most rice grains have softened and the porridge resembles loose cream.",
+            "tactile": "The mixture gently flows from the spoon while remaining slightly cohesive."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "cook",
+        "text": "Reduce the heat and continue simmering for 5 minutes at approximately 94°C/201°F, stirring frequently until the porridge thickens and becomes creamy.",
+        "structured": {
+          "action": "REDUCE",
+          "temperature": {
+            "celsius": 94,
+            "fahrenheit": 201
+          },
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "The porridge coats the spoon lightly and no thin liquid remains at the edges.",
+            "tactile": "The consistency is creamy but still able to flow."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "finish",
+        "text": "Remove the porridge from the heat. Add the remaining 10 g of minced ginger, 5 g of scallion greens, remaining 5 ml of fish sauce, and black pepper, then stir to distribute them evenly.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 15,
+        "phase": "assemble",
+        "text": "Divide the shredded chicken among 4 serving bowls. Ladle over the hot porridge, scatter with the reserved scallion greens, and serve immediately.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The porridge remains watery and runs off the spoon.",
+        "likely_cause": "Too much broth was used, or the porridge was not reduced sufficiently.",
+        "prevention": "Measure the reserved broth accurately and simmer uncovered before reducing as directed.",
+        "fix": "Continue simmering over low heat, stirring frequently, until the porridge reaches a creamy consistency."
+      },
+      {
+        "symptom": "The porridge has a scorched flavor or browned at the bottom.",
+        "likely_cause": "The heat was too high or the porridge was not stirred often enough during reduction.",
+        "prevention": "Maintain a gentle simmer and stir from the bottom every few minutes.",
+        "fix": "Cannot be fixed if scorched; transfer the unaffected porridge to a clean saucepan and discard every scorched portion."
+      },
+      {
+        "symptom": "The chicken is dry or tough after shredding.",
+        "likely_cause": "The chicken may have simmered beyond the time needed to reach 74°C/165°F.",
+        "prevention": "Use evenly sized pieces and begin checking the thickest piece near the end of the poaching time.",
+        "fix": "Cannot fully restore tenderness; shred the chicken coarsely and moisten it with hot broth before serving."
+      },
+      {
+        "symptom": "The center of a chicken piece measures below 74°C/165°F.",
+        "likely_cause": "The pieces varied in thickness or the simmering heat was too gentle.",
+        "prevention": "Cut uniform 3 cm pieces and verify the temperature in the thickest piece.",
+        "fix": "Return the affected pieces to the simmering broth, cook in 2-minute increments, and recheck until they reach 74°C/165°F."
+      }
+    ],
+    "chef_notes": [
+      "The 400 g rice quantity is intentionally measured after cooking so both the broth ratio and nutrition calculation use the same physical state.",
+      "Keep the heat gentle during both simmering and reduction; aggressive boiling can scorch the starch and make the chicken tough.",
+      "Check the thickest chicken piece rather than the liquid temperature because the required 74°C/165°F applies to the poultry itself.",
+      "For the smoothest texture, shred the chicken just before assembling and avoid grinding it into fine paste."
+    ],
+    "cultural_context": "Cháo gà, literally chicken porridge, is a common Vietnamese home breakfast and comfort food in which rice is cooked until its starch gives the broth a soft, creamy body. Families vary the seasonings, but fresh ginger and scallions are classic accents that brighten the mild, savory dish.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 293.33,
+        "protein_g": 28,
+        "carbohydrates_g": 30.69,
+        "fat_g": 5.67,
+        "saturated_fat_g": 1.53,
+        "trans_fat_g": 0.03,
+        "monounsaturated_fat_g": 1.9,
+        "polyunsaturated_fat_g": 1.55,
+        "fiber_g": 0.76,
+        "sugar_g": 1.54,
+        "sodium_mg": 813.56,
+        "cholesterol_mg": 117.5,
+        "potassium_mg": 385.34,
+        "calcium_mg": 55.03,
+        "iron_mg": 2.54,
+        "magnesium_mg": 59.5,
+        "phosphorus_mg": 285.81,
+        "zinc_mg": 2.26,
+        "vitamin_a_mcg": 15.32,
+        "vitamin_c_mg": 1.69,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 0.32,
+        "vitamin_k_mcg": 19.57,
+        "vitamin_b6_mg": 0.53,
+        "vitamin_b12_mcg": 0.91,
+        "thiamin_mg": 0.26,
+        "riboflavin_mg": 0.26,
+        "niacin_mg": 8.59,
+        "folate_mcg": 72.83,
+        "water_g": 426.35,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 28,
+    "monthly_limit": 50,
+    "daily_remaining": 28,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 22,
+    "detail_limit": 50,
+    "detail_remaining": 28,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

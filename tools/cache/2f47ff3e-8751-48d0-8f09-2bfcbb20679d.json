@@ -1,0 +1,474 @@
+{
+  "data": {
+    "id": "2f47ff3e-8751-48d0-8f09-2bfcbb20679d",
+    "name": "Vibrant Black Rice and Lentil Spinach Salad",
+    "description": "A nutrient-dense, visually striking salad pairing nutty black rice and earthy green lentils over crisp baby spinach, tossed in a zesty herb and spice vinaigrette.",
+    "category": "Salad",
+    "cuisine": "Mediterranean",
+    "difficulty": "Easy",
+    "tags": [
+      "Mediterranean",
+      "Lunch",
+      "Appetizer",
+      "Main Course",
+      "Fall",
+      "Spring",
+      "Summer",
+      "Winter",
+      "High Fiber",
+      "Low Cholesterol",
+      "Low Sugar",
+      "Kosher",
+      "Halal",
+      "Plant-Based"
+    ],
+    "meta": {
+      "active_time": "PT20M",
+      "passive_time": "PT45M",
+      "total_time": "PT1H5M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 315
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store the dressed grain mixture separate from the fresh spinach to prevent wilting.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing destroys the texture of the fresh vegetables and spinach.",
+        "duration": null
+      },
+      "reheating": null,
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Small saucepan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Medium saucepan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine mesh sieve",
+        "required": true,
+        "alternative": "Colander"
+      },
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": "Fork"
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Grains & Legumes",
+        "items": [
+          {
+            "name": "black rice",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "rinsed well",
+            "notes": "Forbidden rice",
+            "substitutions": [],
+            "ingredient_id": "0a27d624-e71f-4259-af5a-85a9bea244d8",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "french green lentils",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "rinsed and sorted",
+            "notes": "Puy or Beluga lentils are best for holding shape",
+            "substitutions": [],
+            "ingredient_id": "9d0cf008-6bd6-4b89-8d98-88621c6f81e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 550,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "250ml for rice, 300ml for lentils",
+            "substitutions": [],
+            "ingredient_id": "52e7e8d1-3737-410a-8018-22d0b768cbd5",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Salad Base & Vegetables",
+        "items": [
+          {
+            "name": "baby spinach",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "washed and dried",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "4734440a-226d-4d26-a110-3ed5c3bde93f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cherry tomatoes",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "halved",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1d174190-f1f3-41c8-aeac-587898aefbf2",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "english cucumber",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "diced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "457adec2-3e06-4efe-a26e-9e6ea9f84924",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red onion",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": "finely diced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Herb & Spice Dressing",
+        "items": [
+          {
+            "name": "extra virgin olive oil",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": 45,
+            "unit": "ml",
+            "preparation": "freshly squeezed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "84822702-05df-495b-91a5-3fe45e48c8d9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 4g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh parsley",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "finely chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "3f818392-5426-4c7d-93de-f2451df41f2f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh mint",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "finely chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "17abecc0-a2a0-4478-8486-57b46e4305c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cumin",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground coriander",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "225e04a2-508a-4752-ac80-1f8437a6c970",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "plus extra for cooking water",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "freshly cracked",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Place black rice in a fine mesh sieve and rinse under cold water until the water runs clear. Repeat this process with the green lentils in a separate batch.",
+        "structured": {
+          "action": "STRAIN",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "In a small saucepan, combine the rinsed black rice, 250ml of water, and a pinch of salt. Bring to a boil at 100°C/212°F, then reduce heat to low, cover, and simmer for 30 minutes until tender and liquid is absorbed.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT30M",
+          "doneness_cues": {
+            "visual": "All water should be absorbed",
+            "tactile": "Rice should be tender but still have a slight chew"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "In a medium saucepan, bring 300ml of water to a boil. Add the rinsed lentils, reduce heat to a gentle simmer, and cook uncovered for 20 to 25 minutes until tender but firm. Drain any excess water.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT25M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Tender to the bite, not mushy or chalky"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Spread the cooked black rice and lentils onto a baking sheet or wide plate. Let them cool to room temperature for about 15 minutes to prevent wilting the fresh vegetables later.",
+        "structured": {
+          "action": "COOL",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "While grains are cooling, prepare the vegetables. Halve the cherry tomatoes, dice the English cucumber, finely dice the red onion, and chop the parsley and mint.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "In a small mixing bowl, combine olive oil, lemon juice, minced garlic, ground cumin, ground coriander, kosher salt, and black pepper. Whisk vigorously until the dressing is fully emulsified.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Opaque and slightly thickened",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "In a large mixing bowl, combine the cooled rice, lentils, cherry tomatoes, cucumber, red onion, parsley, and mint. Pour the dressing over the top and toss gently until all ingredients are evenly coated.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Divide the washed baby spinach evenly among four serving plates or bowls. Spoon the dressed grain and vegetable mixture generously over the center of the spinach beds.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Lentils turned into a mushy paste",
+        "likely_cause": "Overcooked or boiled too vigorously, causing the skins to split",
+        "prevention": "Simmer very gently and check for doneness 5 minutes before the suggested time",
+        "fix": "Cannot be fixed for a salad structure, but the batch can be repurposed by blending into a healthy dip"
+      },
+      {
+        "symptom": "Dressing separates after sitting",
+        "likely_cause": "Oil and acid emulsion broke due to lack of a strong binding agent",
+        "prevention": "Whisk vigorously while slowly streaming in the oil to form a tighter emulsion",
+        "fix": "Add a teaspoon of warm water or a small dab of Dijon mustard and re-whisk vigorously"
+      },
+      {
+        "symptom": "Salad is gummy or sticky",
+        "likely_cause": "Black rice was not rinsed thoroughly before cooking, leaving excess surface starch",
+        "prevention": "Rinse rice under cold water until it runs completely clear",
+        "fix": "Cannot be fixed"
+      }
+    ],
+    "chef_notes": [
+      "Dressing the rice and lentils while they are just slightly warmer than room temperature allows them to absorb the lemon and garlic flavors more deeply.",
+      "French green lentils (Puy) or Beluga lentils are strictly preferred over brown or red lentils for salads because they possess a thicker skin that retains its structural integrity after boiling.",
+      "Black rice releases a dark pigment when cooking. Keeping it somewhat separated from the other ingredients until assembly prevents the cucumber and onion from taking on a purple hue too early.",
+      "To tame the bite of the raw red onion, you can soak the diced pieces in the lemon juice for 10 minutes before whisking in the oil for the dressing."
+    ],
+    "cultural_context": "This vibrant dish represents a modern Mediterranean approach to plant-based eating. It combines antioxidant-rich black rice, historically revered in Ancient China as 'forbidden rice', with staple rustic legumes and the bright, herbaceous flavor profiles typical of Levantine and Southern European cuisines.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 353.39,
+        "protein_g": 10.69,
+        "carbohydrates_g": 43.48,
+        "fat_g": 16.59,
+        "saturated_fat_g": 2.19,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 11.16,
+        "polyunsaturated_fat_g": 1.84,
+        "fiber_g": 6.44,
+        "sugar_g": 4.09,
+        "sodium_mg": 563.61,
+        "cholesterol_mg": 0,
+        "potassium_mg": 589.59,
+        "calcium_mg": 89.25,
+        "iron_mg": 4.34,
+        "magnesium_mg": 57.6,
+        "phosphorus_mg": 178.69,
+        "zinc_mg": 1.25,
+        "vitamin_a_mcg": 199.57,
+        "vitamin_c_mg": 23.77,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 3.13,
+        "vitamin_k_mcg": 259.97,
+        "vitamin_b6_mg": 0.27,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.28,
+        "riboflavin_mg": 0.16,
+        "niacin_mg": 1.1,
+        "folate_mcg": 208.24,
+        "water_g": 237.23,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 34,
+    "monthly_limit": 50,
+    "daily_remaining": 34,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 16,
+    "detail_limit": 50,
+    "detail_remaining": 34,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

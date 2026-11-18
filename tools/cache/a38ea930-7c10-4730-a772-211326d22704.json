@@ -1,0 +1,665 @@
+{
+  "data": {
+    "id": "a38ea930-7c10-4730-a772-211326d22704",
+    "name": "Cochinita Pibil Tacos With Homemade Achiote Paste",
+    "description": "Tender pork glows brick red beneath a fragrant achiote and sour-orange sauce. Banana leaves lend a delicate herbal aroma, while warm corn tortillas and crisp pickled red onion balance the rich filling.",
+    "category": "Breakfast",
+    "cuisine": "Mexican",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Breakfast",
+      "Mexican",
+      "pork",
+      "achiote",
+      "marinated",
+      "slow-roasted",
+      "tacos",
+      "banana leaves",
+      "sour orange"
+    ],
+    "meta": {
+      "active_time": "PT45M",
+      "passive_time": "PT6H20M",
+      "total_time": "PT7H5M",
+      "overnight_required": false,
+      "yields": "8 servings of 3 tacos",
+      "yield_count": 8,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store pork with its cooking juices in shallow, covered containers at 4°C/40°F or below. Refrigerate within 2 hours of cooking, or within 1 hour when the surrounding temperature exceeds 32°C/90°F. Keep pickled onions and tortillas in separate containers; assemble tacos immediately before eating.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze the cooked pork with its juices in airtight portions. Freeze tortillas separately according to their package directions. Prepare fresh pickled onions for serving.",
+        "duration": "P2M"
+      },
+      "reheating": "Thaw frozen pork in the refrigerator. Reheat with its juices in a covered oven-safe pot at 160°C/320°F until the center reaches 74°C/165°F. Warm tortillas separately and add chilled pickled onions after reheating.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small blender",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large covered nonreactive container",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small covered nonreactive bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large oven-safe pot with a tight-fitting lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Two forks",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen towel",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Oven",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Refrigerator",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pork",
+        "items": [
+          {
+            "name": "pork shoulder",
+            "quantity": 1200,
+            "unit": "g",
+            "preparation": "raw, boneless and skinless",
+            "notes": "Weigh the edible meat and attached fat after removing bones, skin and any thick external fat cap. All of this prepared pork is cooked and served with its juices.",
+            "substitutions": [],
+            "ingredient_id": "675f61d4-26e1-4874-a3e8-5f97ff94fb88",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Homemade Achiote Paste and Sour-Orange Marinade",
+        "items": [
+          {
+            "name": "ground annatto",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use finely ground pure achiote seeds. These form the base of the homemade achiote paste.",
+            "substitutions": [],
+            "ingredient_id": "b001cd34-7021-45da-bcc3-3e6212ffec6d",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "sour orange juice",
+            "quantity": 250,
+            "unit": "g",
+            "preparation": "strained",
+            "notes": "Use unsweetened sour orange juice, also called naranja agria. Weigh the juice without seeds or peel; divide into 75 g for the paste and 175 g for thinning it.",
+            "substitutions": [],
+            "ingredient_id": "ec21ccae-6d21-44c1-89cb-280a536e0bce",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 14,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried mexican oregano",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "687f54eb-e811-4e5e-ac2e-e2735458480c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cumin",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cinnamon",
+            "quantity": 0.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "a789fa1a-78af-4718-b6f8-1a3bb6a6c92d",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cloves",
+            "quantity": 0.3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "7b3bf68a-3ae9-4dad-91f4-6c7a14ec5e0e",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pickled Red Onion and Its Serving Dressing",
+        "items": [
+          {
+            "name": "red onion",
+            "quantity": 240,
+            "unit": "g",
+            "preparation": "peeled, ends removed",
+            "notes": "Weight is the edible portion before slicing.",
+            "substitutions": [],
+            "ingredient_id": "43f5c652-4572-5e96-b4ef-24ba9b41905a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sour orange juice",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "strained",
+            "notes": "The pickling juice is served as a tart dressing with the onions; do not drain it away.",
+            "substitutions": [],
+            "ingredient_id": "e6b36d5b-9d27-4fcf-a72b-742ce766570e",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "habanero pepper",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": "stem and seeds removed",
+            "notes": "Weigh the edible flesh. This small amount gives the onion dressing noticeable heat.",
+            "substitutions": [],
+            "ingredient_id": "d2aaa034-ef3c-422c-9ea1-0539e2314d18",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Tortillas",
+        "items": [
+          {
+            "name": "corn tortillas",
+            "quantity": 600,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use 24 small tortillas weighing 25 g each, made with corn, water and lime. Choose labeled gluten-free tortillas.",
+            "substitutions": [],
+            "ingredient_id": "e4851c10-fac7-49df-940b-b3674f3bb451",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Banana-Leaf Wrapping",
+        "items": [
+          {
+            "name": "banana leaves",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "cleaned and thawed",
+            "notes": "Use two large food-grade sheets, each approximately 45 cm long, sufficient to line the pot and fold completely over the pork. They are inedible wrappers and are removed before serving.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Blend the ground annatto, garlic, salt, oregano, cumin, black pepper, cinnamon, cloves and 75 g of the marinade's sour orange juice in the small blender until a thick, smooth achiote paste forms.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The paste is uniformly brick red with no visible garlic pieces.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Blend the remaining 175 g marinade juice into the achiote paste until evenly combined.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Cut the pork shoulder into approximately 6 cm chunks on the cutting board. Do not wash raw pork. After handling it, wash hands and thoroughly clean the knife, board and any surfaces touched by raw meat before preparing the onion topping.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Marinate the pork in all of the achiote mixture in the large covered nonreactive container for 2 hours in the refrigerator at 4°C/40°F or below. Keep the container below ready-to-eat foods. All marinade will cook with the pork.",
+        "structured": {
+          "action": "MARINATE",
+          "temperature": {
+            "celsius": 4,
+            "fahrenheit": 39
+          },
+          "duration": "PT2H",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Slice the red onion into thin half-moons on the cleaned cutting board while the pork marinates.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Mince the habanero finely. Avoid touching your eyes and wash your hands thoroughly after handling it.",
+        "structured": {
+          "action": "MINCE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "Mix the onion, habanero, 100 g sour orange juice and 3 g salt in the small nonreactive bowl until the onion is evenly coated.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "prep",
+        "text": "Chill the covered onion mixture at 4°C/40°F or below until serving, allowing at least 1 hour for pickling. This waiting time overlaps the pork preparation and roasting.",
+        "structured": {
+          "action": "CHILL",
+          "temperature": {
+            "celsius": 4,
+            "fahrenheit": 39
+          },
+          "duration": "PT1H",
+          "doneness_cues": {
+            "visual": "The onion becomes brighter pink.",
+            "tactile": "The slices bend easily while retaining a little crunch."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "prep",
+        "text": "Preheat the oven to 150°C/300°F during the final 20 minutes of marinating.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 150,
+            "fahrenheit": 302
+          },
+          "duration": "PT20M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "Warm each banana leaf in the dry skillet over medium heat, moving it with tongs for approximately 15 to 30 seconds per section, until flexible. Avoid scorching.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The leaves become glossy and slightly darker.",
+            "tactile": "They fold without splitting."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "assemble",
+        "text": "Assemble the roasting parcel in the oven-safe pot: overlap the banana leaves across the bottom with generous overhang, place the pork and all marinade inside, fold the leaves over the filling and fit the lid tightly.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "cook",
+        "text": "Roast the covered pork at 150°C/300°F for approximately 4 hours, checking tenderness after 3 hours 30 minutes. The thickest pieces should reach approximately 93°C/200°F and separate easily under a fork. Whole-cut pork must reach at least 63°C/145°F followed by a 3-minute rest for safety; this preparation cooks substantially further for tenderness. If still firm, continue covered in 20-minute increments.",
+        "structured": {
+          "action": "ROAST",
+          "temperature": {
+            "celsius": 150,
+            "fahrenheit": 302
+          },
+          "duration": "PT4H",
+          "doneness_cues": {
+            "visual": "The pork sits in abundant reddish cooking juices.",
+            "tactile": "A fork enters with almost no resistance and the meat separates easily."
+          }
+        },
+        "tips": [
+          "Open the lid and leaves away from your face to release steam safely.",
+          "The total recipe time is an estimate; tenderness determines the final roasting time."
+        ]
+      },
+      {
+        "step_number": 13,
+        "phase": "finish",
+        "text": "Rest the pork in the covered pot for 20 minutes outside the oven.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT20M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "finish",
+        "text": "Remove the banana leaves with tongs, allowing their clinging cooking juices to drip back into the pot. Discard the leaves.",
+        "structured": {
+          "action": "REMOVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 15,
+        "phase": "finish",
+        "text": "Shred all the pork with two forks directly into its cooking juices, leaving some larger, tender pieces.",
+        "structured": {
+          "action": "SHRED",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 16,
+        "phase": "finish",
+        "text": "Warm the tortillas in batches in the dry skillet over medium heat for approximately 20 to 30 seconds per side. Keep the warmed tortillas folded inside the clean kitchen towel.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "A few light toasted spots appear.",
+            "tactile": "The tortillas are soft and flexible."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 17,
+        "phase": "assemble",
+        "text": "Assemble 24 tacos by dividing the pork, cooking juices, pickled onions and their tart dressing evenly among the warm tortillas. Serve 3 tacos per person immediately.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The pork is cooked but remains difficult to shred.",
+        "likely_cause": "The shoulder's connective tissue has not softened sufficiently.",
+        "prevention": "Use shoulder with some attached fat, keep the pot tightly covered and judge doneness by tenderness as well as temperature.",
+        "fix": "Refold the leaves, cover tightly and continue roasting at 150°C/300°F in 20-minute increments until a fork enters easily."
+      },
+      {
+        "symptom": "The achiote sauce feels gritty.",
+        "likely_cause": "The annatto was coarsely ground or the paste was insufficiently blended.",
+        "prevention": "Buy finely ground annatto and blend the concentrated paste thoroughly before adding the remaining juice.",
+        "fix": "Before adding raw pork, blend the marinade again until smoother. Once cooked, fine particles may soften further when the shredded meat rests in its juices, but coarse grit cannot be fully corrected."
+      }
+    ],
+    "chef_notes": [
+      "Homemade achiote paste preserves the characteristic annatto flavor while letting you control salt and the balance of warm spices.",
+      "Sour orange supplies the defining acidity. Use unsweetened naranja agria juice rather than a bottled marinade containing extra salt and seasonings.",
+      "A snug pot and tightly folded banana leaves keep the meat surrounded by fragrant steam. Banana-leaf wrapping and sour-orange seasoning are established features of the dish; see the Smithsonian's [cochinita pibil preparation](https://americanhistory.si.edu/sites/default/files/file-uploader/RecipeSmoked%20Cochinita%20PibilCooking%20Up%20History_9-17-2022.pdf).",
+      "For breakfast service, cook the pork the previous day, cool it promptly in shallow containers and reheat it with its juices. The 74°C/165°F reheating target follows [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Cochinita pibil belongs to the cooking traditions of Mexico's Yucatán Peninsula. Its banana-leaf wrapping and slow cooking reflect Maya pit-cooking techniques, adapted here to a covered household oven.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 570.27,
+        "protein_g": 31.25,
+        "carbohydrates_g": 46.05,
+        "fat_g": 29.24,
+        "saturated_fat_g": 9.68,
+        "trans_fat_g": 0.17,
+        "monounsaturated_fat_g": 12.59,
+        "polyunsaturated_fat_g": 3.88,
+        "fiber_g": 5.93,
+        "sugar_g": 6.2,
+        "sodium_mg": 932.56,
+        "cholesterol_mg": 106.5,
+        "potassium_mg": 804.45,
+        "calcium_mg": 180.47,
+        "iron_mg": 3.31,
+        "magnesium_mg": 91.9,
+        "phosphorus_mg": 534.48,
+        "zinc_mg": 5.02,
+        "vitamin_a_mcg": 9.76,
+        "vitamin_c_mg": 25.9,
+        "vitamin_d_mcg": 2.55,
+        "vitamin_e_mg": 1.02,
+        "vitamin_k_mcg": 2.29,
+        "vitamin_b6_mg": 0.85,
+        "vitamin_b12_mcg": 1.11,
+        "thiamin_mg": 1.3,
+        "riboflavin_mg": 0.5,
+        "niacin_mg": 7.17,
+        "folate_mcg": 114.07,
+        "water_g": 196.95,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 14,
+    "monthly_limit": 50,
+    "daily_remaining": 14,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 36,
+    "detail_limit": 50,
+    "detail_remaining": 14,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

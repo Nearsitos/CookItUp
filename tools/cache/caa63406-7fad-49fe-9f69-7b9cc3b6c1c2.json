@@ -1,0 +1,412 @@
+{
+  "data": {
+    "id": "caa63406-7fad-49fe-9f69-7b9cc3b6c1c2",
+    "name": "New York-Style Smoked Salmon Bagel",
+    "description": "A toasted, chewy bagel layered with tangy whipped cream cheese, silky cold-smoked salmon, briny capers, crisp red onion, and fragrant fresh dill. Bright, savory, and ready in minutes for a satisfying breakfast.",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "tags": [
+      "Breakfast",
+      "American",
+      "Quick",
+      "Bagel",
+      "Salmon",
+      "Cream Cheese",
+      "Brunch",
+      "Pescatarian"
+    ],
+    "meta": {
+      "active_time": "PT10M",
+      "passive_time": "PT0M",
+      "total_time": "PT10M",
+      "overnight_required": false,
+      "yields": "2 bagel sandwiches",
+      "yield_count": 2,
+      "serving_size_g": 230
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Nut-Free",
+        "Soy-Free",
+        "Peanut-Free"
+      ],
+      "not_suitable_for": [
+        "Pregnant persons should consult guidelines on cold-smoked fish",
+        "Anyone with a fish or dairy allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Assemble just before eating. Store leftover smoked salmon separately, tightly covered, for up to 1 day. Do not store assembled bagels as the bread will become soggy.",
+        "duration": "P1D"
+      },
+      "freezer": {
+        "duration": null
+      },
+      "reheating": "Not applicable; bagels are toasted fresh and assembled immediately.",
+      "does_not_keep": true
+    },
+    "equipment": [
+      {
+        "name": "Toaster",
+        "required": true,
+        "alternative": "Toaster oven or oven broiler set to 200°C (400°F)"
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Hand whisk or fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small offset spatula or butter knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Sharp knife",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Bagels",
+        "items": [
+          {
+            "name": "new york-style bagel",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "plain, sesame, or everything",
+            "notes": "about 100-110 g each, 200-220 g total; purchased weight equals edible weight",
+            "substitutions": [],
+            "ingredient_id": "47ac204a-3e44-4cb1-9750-392f992b87ef",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Whipped Cream Cheese",
+        "items": [
+          {
+            "name": "full-fat cream cheese",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "cold from refrigerator",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "262c67de-76a4-4444-8c02-30ad4a179459",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Toppings",
+        "items": [
+          {
+            "name": "cold-smoked salmon",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": "sliced, patted dry",
+            "notes": "60 g per bagel sandwich, 120 g total",
+            "substitutions": [
+              "Hot-smoked salmon flakes"
+            ],
+            "ingredient_id": "d0057ee5-8c84-4dab-a313-f1edae152313",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "capers",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": "drained, lightly patted dry",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e7301d2c-b906-4ef8-917e-787be0b25880",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red onion",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "peeled and very thinly sliced, about 1/4 of a small onion",
+            "notes": null,
+            "substitutions": [
+              "Sliced shallot",
+              "Pickled red onion"
+            ],
+            "ingredient_id": "b485248e-8d22-41c1-837f-005bf390e419",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh dill",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "stems removed, fronds lightly packed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "4be2b047-475d-4c84-82d5-4883298c6121",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lemon",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "cut into wedges, for serving",
+            "notes": "about 60 g per whole lemon",
+            "substitutions": [],
+            "ingredient_id": "186d8ea2-6ba8-4954-aef6-4172231c9c2c",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "flaky sea salt",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "freshly ground black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "If the bagels are not pre-sliced, place each one on a cutting board and, using a sharp knife held parallel to the work surface, slice horizontally through the center to create two even halves. Set aside.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Peel the red onion. Cut it in half from root to tip, lay one half flat, and slice it as thinly as possible into half-moons; you will need about 15 g (roughly 2 tablespoons) per sandwich. Set aside.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Place 100 g of cold cream cheese in a small mixing bowl. Using a hand whisk or fork, beat vigorously for 30-60 seconds until the cream cheese is smooth, aerated, and spreadable, with a soft whipped texture.",
+        "structured": {
+          "action": "WHIP",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Toast all four bagel halves cut-side up in a toaster until the cut surface is golden and the interior is warmed through, about 2-3 minutes. If using an oven, place halves cut-side up on a sheet pan at 200°C (400°F) for 4-5 minutes.",
+        "structured": {
+          "action": "BAKE",
+          "temperature": {
+            "celsius": 200,
+            "fahrenheit": 392
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Cut surface is pale gold with lightly browned edges",
+            "tactile": "Surface is crisp when tapped, interior is warm and springy"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "assemble",
+        "text": "Place the four toasted bagel halves on the cutting board, cut-side up. Using a small offset spatula, spread 25 g of the whipped cream cheese in an even layer over the cut surface of each half, using all 100 g total.",
+        "structured": {
+          "action": "SPREAD",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Lay 60 g of smoked salmon on the cream cheese of each bottom bagel half, draping and folding the slices so they cover the surface and slightly overhang the edges. The total amount of salmon used across both sandwiches is 120 g.",
+        "structured": {
+          "action": "LAYER",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "Divide the thinly sliced red onion (about 15 g) over the salmon on each bottom half, followed by 4 g of drained capers per sandwich. Season lightly with flaky sea salt and a few grinds of black pepper, if using.",
+        "structured": {
+          "action": "TOP",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Tuck 1 g of fresh dill fronds on top of the onion and capers on each sandwich. Place the top bagel half over the fillings, press gently to set, and serve immediately with a lemon wedge on the side for squeezing over just before eating.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Bagel is tough or chewy rather than crisp-edged and yielding",
+        "likely_cause": "Bagel was sliced too early and dried out, or toasted too briefly",
+        "prevention": "Slice and toast the bagel just before assembling",
+        "fix": "Return the cut halves to the toaster or a 200°C (400°F) oven for an additional 1-2 minutes until the surface is golden and the interior is hot"
+      },
+      {
+        "symptom": "Cream cheese is lumpy or hard to spread, tearing the bagel",
+        "likely_cause": "Cream cheese was too cold or was not whipped enough",
+        "prevention": "Whip the cream cheese until smooth before spreading, or let it sit at room temperature for 10-15 minutes first",
+        "fix": "Return the cream cheese to the bowl and whisk again until pliable; if the bagel is already torn, use that half as the bottom"
+      },
+      {
+        "symptom": "Bagel becomes soggy if not eaten right away",
+        "likely_cause": "Moisture from salmon, onion, and cream cheese soaked into the warm crumb",
+        "prevention": "Assemble the sandwich only when ready to eat; serve components separately for guests who want to build their own",
+        "fix": "Cannot be fixed once soggy; the bagel must be re-toasted if reheated, but the toppings will not recover their original texture"
+      },
+      {
+        "symptom": "Salmon tastes overly salty or fishy",
+        "likely_cause": "Cured salmon varies widely in saltiness, or capers added excess brine",
+        "prevention": "Taste a small piece of salmon first and rinse capers under cool water to remove excess brine",
+        "fix": "Rinse the salmon briefly under cold water, pat very dry, and proceed; the flavor will be milder but acceptable"
+      }
+    ],
+    "chef_notes": [
+      "For the best texture contrast, ensure the bagel is still hot from the toaster when you spread the cream cheese; the warmth slightly softens the cheese so it melts into the crumb without tearing the surface.",
+      "Patting the smoked salmon dry with paper towels before assembling prevents a watery sandwich and lets the fish flavor lead rather than the moisture.",
+      "A microplane zester over a whole lemon will yield finer, more aromatic zest than cutting wedges if you prefer to layer lemon into the schmear; save the wedges for finishing.",
+      "If you cannot find cold-smoked salmon, hot-smoked salmon broken into rough flakes offers a meatier, flakier texture that pairs especially well with everything bagels."
+    ],
+    "cultural_context": "The smoked salmon bagel is a hallmark of New York City Jewish deli culture, popularized by Jewish immigrants in the early 20th century who combined Old World smoked fish traditions with the dense, chewy New York bagel developed by Eastern European bakers. It remains a defining breakfast and brunch staple of American urban cuisine, prized for its balance of rich dairy, briny fish, and a sturdy, caraway- or sesame-flecked bread base.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 538.51,
+        "protein_g": 25.83,
+        "carbohydrates_g": 62.29,
+        "fat_g": 21.34,
+        "saturated_fat_g": 11.07,
+        "trans_fat_g": 0.61,
+        "monounsaturated_fat_g": 6.1,
+        "polyunsaturated_fat_g": 1.94,
+        "fiber_g": 3.04,
+        "sugar_g": 12.04,
+        "sodium_mg": 2090.01,
+        "cholesterol_mg": 64.3,
+        "potassium_mg": 364.72,
+        "calcium_mg": 302.17,
+        "iron_mg": 4.71,
+        "magnesium_mg": 52.53,
+        "phosphorus_mg": 266.85,
+        "zinc_mg": 1.38,
+        "vitamin_a_mcg": 174.18,
+        "vitamin_c_mg": 17.88,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 8.36,
+        "vitamin_k_mcg": 3.13,
+        "vitamin_b6_mg": 0.32,
+        "vitamin_b12_mcg": 2.07,
+        "thiamin_mg": 0.64,
+        "riboflavin_mg": 0.55,
+        "niacin_mg": 7.73,
+        "folate_mcg": 125.66,
+        "water_g": 149.81,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 17,
+    "monthly_limit": 50,
+    "daily_remaining": 17,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 33,
+    "detail_limit": 50,
+    "detail_remaining": 17,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

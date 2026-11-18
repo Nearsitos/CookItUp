@@ -1,0 +1,439 @@
+{
+  "data": {
+    "id": "6e997e00-890a-4fc9-9322-31af474c3592",
+    "name": "Hu Ta Zi",
+    "description": "These soft Beijing-style zucchini pancakes have delicate golden patches, tender green shreds and a gentle scallion aroma. A sharp garlic-vinegar dip brightens their mild, savory flavor.",
+    "category": "Breakfast",
+    "cuisine": "Chinese",
+    "difficulty": "Easy",
+    "tags": [
+      "Breakfast",
+      "Chinese",
+      "Quick",
+      "zucchini",
+      "eggs",
+      "flour",
+      "pan-frying"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT5M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "2 servings, 3 pancakes each",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Dairy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergy",
+        "People with wheat allergy or celiac disease",
+        "People with soy allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate pancakes and dipping sauce separately in covered containers within 2 hours of cooking, or within 1 hour above 32°C (90°F). Keep at 4°C (40°F) or below.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled pancakes with parchment between layers in an airtight container. Prepare fresh dipping sauce when serving.",
+        "duration": "P1M"
+      },
+      "reheating": "Thaw frozen pancakes overnight in the refrigerator. Reheat in a covered skillet over medium-low heat, turning as needed, until the centers reach 74°C (165°F).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Coarse box grater",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small dipping bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "30 cm nonstick skillet with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Thin spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read thermometer with thin probe",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Airtight storage containers",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Parchment paper",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pancakes",
+        "items": [
+          {
+            "name": "zucchini",
+            "quantity": 350,
+            "unit": "g",
+            "preparation": "washed, ends trimmed, skin on",
+            "notes": "Edible weight after trimming; choose young zucchini with tender seeds.",
+            "substitutions": [],
+            "ingredient_id": "c34b610f-8869-4d77-a9b3-e01849d703b5",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "eggs",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Weight without shells; approximately 2 large eggs.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "all-purpose flour",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "11e03c79-4bf6-47ed-babb-753b1a9789c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "finely sliced",
+            "notes": "Edible weight after removing roots; use white and green parts.",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground white pepper",
+            "quantity": 0.3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "cdc9ddd1-ed48-431b-a39c-171f424578c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For lightly oiling the skillet; use 6 g for each of three batches.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Garlic-Vinegar Dip",
+        "items": [
+          {
+            "name": "chinese black vinegar",
+            "quantity": 24,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use Chinkiang vinegar.",
+            "substitutions": [],
+            "ingredient_id": "463e4615-fc8f-46c5-918e-cb03b4a5883c",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "light soy sauce",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "842fbf4e-86a9-487d-bc27-8ee03b469b2e",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "peeled and finely minced",
+            "notes": "Edible weight without skin.",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Coarsely grate the zucchini directly into the large mixing bowl.",
+        "structured": {
+          "action": "GRATE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Mix the salt into the shredded zucchini until evenly distributed.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Rest the salted zucchini for 5 minutes, keeping all the released liquid in the bowl.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "The shreds look glossy and a little liquid collects beneath them.",
+            "tactile": "The zucchini becomes flexible."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Mix the minced garlic, black vinegar and light soy sauce in the small dipping bowl.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Mix the eggs, flour, sliced scallions and white pepper into the zucchini and its liquid just until no dry flour remains. The batter should fall from the spoon in soft, moist mounds that spread with gentle pressure.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "A soft batter surrounds the zucchini shreds without dry flour pockets.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Do not squeeze or drain the zucchini; its juice supplies the batter's moisture."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Preheat the skillet over medium heat for about 2 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Pan-fry the batter in three batches of two pancakes, using 6 g oil per batch. Spoon one-sixth of the batter per pancake into the skillet and spread each to about 12 cm wide and 6–8 mm thick. Cook for about 3 minutes on the first side and 2 minutes after turning with the spatula. Each pancake must reach 71°C (160°F) in the center, checked by inserting the thermometer sideways. Reduce the heat if the surfaces brown before the centers set.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": "Both sides have golden patches and the centers contain no glossy, wet batter.",
+            "tactile": "The pancakes remain soft but hold together when lifted."
+          }
+        },
+        "tips": [
+          "Stir the remaining batter briefly between batches to redistribute any released zucchini juice.",
+          "The temperature given is the minimum internal temperature, not the skillet temperature."
+        ]
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Serve three warm pancakes per person on the serving plate with the garlic-vinegar dip alongside.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The pancakes tear when turned.",
+        "likely_cause": "The first side has not set, or the pancakes are too large.",
+        "prevention": "Keep each pancake about 12 cm wide and wait until the underside is golden and the edges look set.",
+        "fix": "Cook the first side for another 30–60 seconds, then slide a thin spatula fully underneath before turning."
+      },
+      {
+        "symptom": "The outside browns while the middle stays wet.",
+        "likely_cause": "The skillet is too hot or the batter was spread too thickly.",
+        "prevention": "Use medium heat and keep the pancakes 6–8 mm thick.",
+        "fix": "Lower the heat and continue cooking, turning as needed, until the centers reach 71°C (160°F) and no wet batter remains."
+      }
+    ],
+    "chef_notes": [
+      "Young zucchini provides tender shreds and avoids the spongy seed cavity found in oversized specimens.",
+      "Keeping the salted zucchini juice gives the pancakes their characteristic soft texture without added water.",
+      "Mix only until the flour disappears; prolonged stirring can make the pancakes chewy.",
+      "Cook the egg batter to 71°C (160°F), and reheat leftovers to 74°C (165°F). [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Hu Ta Zi, also written hutazi or 糊塌子, is a northern Chinese home-style pancake especially associated with Beijing. Shredded zucchini, eggs and flour form its simple batter, and vinegar-based dipping sauces complement its gentle flavor. [Chinese zucchini pancake background](https://omnivorescookbook.com/chinese-zucchini-pancakes/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 377.98,
+        "protein_g": 14.32,
+        "carbohydrates_g": 46.72,
+        "fat_g": 14.87,
+        "saturated_fat_g": 2.44,
+        "trans_fat_g": 0.06,
+        "monounsaturated_fat_g": 7.6,
+        "polyunsaturated_fat_g": 3.87,
+        "fiber_g": 3.42,
+        "sugar_g": 4.96,
+        "sodium_mg": 890.56,
+        "cholesterol_mg": 186,
+        "potassium_mg": 633.25,
+        "calcium_mg": 76.11,
+        "iron_mg": 4.11,
+        "magnesium_mg": 56.26,
+        "phosphorus_mg": 239.25,
+        "zinc_mg": 1.69,
+        "vitamin_a_mcg": 101.25,
+        "vitamin_c_mg": 33.55,
+        "vitamin_d_mcg": 1,
+        "vitamin_e_mg": 2.38,
+        "vitamin_k_mcg": 30.06,
+        "vitamin_b6_mg": 0.43,
+        "vitamin_b12_mcg": 0.46,
+        "thiamin_mg": 0.5,
+        "riboflavin_mg": 0.65,
+        "niacin_mg": 3.99,
+        "folate_mcg": 162.57,
+        "water_g": 231.3,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 40,
+    "monthly_limit": 50,
+    "daily_remaining": 40,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 10,
+    "detail_limit": 50,
+    "detail_remaining": 40,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

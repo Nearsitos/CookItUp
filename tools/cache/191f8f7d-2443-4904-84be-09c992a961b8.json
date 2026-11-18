@@ -1,0 +1,419 @@
+{
+  "data": {
+    "id": "191f8f7d-2443-4904-84be-09c992a961b8",
+    "name": "Grilled Salmon Ochazuke With Sencha",
+    "description": "Tender flakes of grilled salmon crown warm Japanese rice with crisp nori and toasted sesame. Hot sencha brings a grassy aroma and gentle astringency to this light, savory bowl.",
+    "category": "Lunch",
+    "cuisine": "Japanese",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Japanese",
+      "Quick",
+      "salmon",
+      "rice",
+      "green tea",
+      "grilled"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT10M",
+      "total_time": "PT25M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": [
+        "People with fish allergy",
+        "People with sesame allergy",
+        "People avoiding caffeine"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store rice and salmon separately from tea and dry toppings. Cool promptly in shallow containers and refrigerate within 1 hour at 4°C (40°F) or below. Eat within 24 hours. Assembled bowls soften quickly and are best eaten immediately.",
+        "duration": "P1D"
+      },
+      "freezer": {
+        "notes": "Freezing the assembled dish is not recommended because the rice becomes waterlogged and the nori loses its texture.",
+        "duration": null
+      },
+      "reheating": "Reheat stored rice and salmon separately until each reaches 74°C (165°F) throughout. Add freshly heated green tea and dry toppings immediately before serving. Hot tea alone is not a reliable way to reheat refrigerated leftovers.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Ridged grill pan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Stovetop",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fish spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Plate for raw salmon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean plate for cooked salmon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Microwave-safe bowl with vented lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Microwave",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small saucepan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving bowls",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spoon",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Grilled Salmon",
+        "items": [
+          {
+            "name": "salmon",
+            "quantity": 240,
+            "unit": "g",
+            "preparation": "raw, skinless and boneless",
+            "notes": "Edible flesh weight; use two 120 g portions approximately 2 cm thick.",
+            "substitutions": [],
+            "ingredient_id": "a865649b-5d8f-4c22-b13b-81902cb59891",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For lightly coating the salmon before grilling.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use unsalted salmon so this seasoning amount remains appropriate.",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Rice, Tea and Toppings",
+        "items": [
+          {
+            "name": "cooked short-grain white rice",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "plain, steamed",
+            "notes": "Prepared weight. Use freshly cooked warm rice or promptly refrigerated rice no more than 24 hours old. The total recipe time assumes the rice is already cooked.",
+            "substitutions": [],
+            "ingredient_id": "42191006-b93b-4545-b829-d651feddfce1",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "brewed green tea",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "unsweetened sencha, strained",
+            "notes": "Prepared beverage weight after removing the leaves. Use regular caffeinated sencha; the served infusion contains caffeine. The total recipe time assumes the tea is already brewed.",
+            "substitutions": [],
+            "ingredient_id": "392c01df-9631-5b95-b8b1-3f5ec00e1a1a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "nori",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "plain toasted, torn into small pieces",
+            "notes": "Choose unseasoned nori.",
+            "substitutions": [],
+            "ingredient_id": "08dcecae-6056-4769-ae7b-54155808d0c3",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "sesame seeds",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": "toasted",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "f9ac565c-bf29-463d-93f6-d0d93d91cdeb",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Preheat the grill pan over medium heat for about 4 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Coat the salmon evenly with the oil and salt on the plate for raw salmon. Wash your hands after handling the fish, and keep the raw-fish plate away from the rice, toppings and cooked salmon.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Grill the salmon for approximately 4–5 minutes per side, turning with the fish spatula, until the thickest part reaches 63°C (145°F). Wash the spatula after its last contact with undercooked fish before using it to remove the cooked salmon.",
+        "structured": {
+          "action": "GRILL",
+          "temperature": {
+            "celsius": 63,
+            "fahrenheit": 145
+          },
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "The flesh is opaque and separates into moist flakes; the surface has light grill marks.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Check the temperature through the side of each portion so the thermometer tip reaches its center."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "If using refrigerated rice, reheat it in the microwave-safe bowl under its vented lid, using short intervals and stirring between them, until it reaches 74°C (165°F) throughout, approximately 3–4 minutes. Freshly cooked rice can be used while still hot.",
+        "structured": {
+          "action": "STEAM",
+          "temperature": {
+            "celsius": 74,
+            "fahrenheit": 165
+          },
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "Steam rises throughout the rice with no cool clumps.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Do this while the salmon grills."
+        ]
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Warm the brewed sencha in the small saucepan to approximately 80°C (176°F), without boiling.",
+        "structured": {
+          "action": "TEMPER",
+          "temperature": {
+            "celsius": 80,
+            "fahrenheit": 176
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Warm the tea while the salmon finishes cooking."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Flake the cooked salmon into bite-size pieces with the fork on the clean plate, checking for and removing any remaining pin bones.",
+        "structured": {
+          "action": "SHRED",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "Divide the hot rice between the serving bowls and arrange equal portions of salmon, nori and sesame seeds over each.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Pour half the hot green tea around the rice in each bowl and serve immediately.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The tea tastes bitter and overwhelms the salmon.",
+        "likely_cause": "The sencha was brewed too strongly or left in contact with the leaves too long.",
+        "prevention": "Use a light, freshly strained sencha infusion and warm it gently without boiling.",
+        "fix": "Before assembling the bowls, replace the bitter tea with the same weight of more gently brewed sencha."
+      },
+      {
+        "symptom": "The salmon is dry.",
+        "likely_cause": "The portions were thin or cooked well beyond their safe temperature.",
+        "prevention": "Use evenly thick portions and check the center temperature near the end of grilling.",
+        "fix": "Flake the salmon into smaller pieces and moisten it with the hot tea when serving; lost moisture cannot be fully restored."
+      }
+    ],
+    "chef_notes": [
+      "Keep the salmon flakes fairly large so their moist centers contrast with the individual rice grains.",
+      "Add the nori immediately before pouring the tea; its toasted aroma fades as it sits in liquid.",
+      "Regular brewed sencha contains caffeine even after its leaves are removed. Caffeine content varies with the tea and brewing method. See the [IFIC caffeine reference](https://ific.org/resources/caffeine-calculator/).",
+      "Cook fresh salmon to 63°C (145°F), and reheat leftover salmon and rice to 74°C (165°F), following [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Ochazuke is a Japanese rice dish served with hot tea or dashi and savory toppings, often enjoyed as a simple meal or a meal's closing course. Salmon, nori and sesame are familiar toppings, as described in [Just One Cookbook's ochazuke guide](https://www.justonecookbook.com/ochazuke/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 567.7,
+        "protein_g": 30.08,
+        "carbohydrates_g": 58.62,
+        "fat_g": 22.94,
+        "saturated_fat_g": 3.21,
+        "trans_fat_g": 0.01,
+        "monounsaturated_fat_g": 11.29,
+        "polyunsaturated_fat_g": 7.55,
+        "fiber_g": 1.58,
+        "sugar_g": 0.12,
+        "sodium_mg": 451.33,
+        "cholesterol_mg": 96.22,
+        "potassium_mg": 651.53,
+        "calcium_mg": 43.11,
+        "iron_mg": 3.89,
+        "magnesium_mg": 63.39,
+        "phosphorus_mg": 364.54,
+        "zinc_mg": 1.56,
+        "vitamin_a_mcg": 54.2,
+        "vitamin_c_mg": 2.1,
+        "vitamin_d_mcg": 8.4,
+        "vitamin_e_mg": 2.17,
+        "vitamin_k_mcg": 5.93,
+        "vitamin_b6_mg": 0.78,
+        "vitamin_b12_mcg": 6.93,
+        "thiamin_mg": 0.52,
+        "riboflavin_mg": 0.35,
+        "niacin_mg": 12.07,
+        "folate_mcg": 148.34,
+        "water_g": 463.75,
+        "alcohol_g": 0,
+        "caffeine_mg": 30
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 18,
+    "monthly_limit": 50,
+    "daily_remaining": 18,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 32,
+    "detail_limit": 50,
+    "detail_remaining": 18,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

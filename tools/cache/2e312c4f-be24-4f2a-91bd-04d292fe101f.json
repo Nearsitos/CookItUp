@@ -1,0 +1,402 @@
+{
+  "data": {
+    "id": "2e312c4f-be24-4f2a-91bd-04d292fe101f",
+    "name": "Tortang Talong With Rice",
+    "description": "Smoky, tender eggplant nestles inside a golden egg coating with lightly crisp edges. Steamed white rice balances the savory omelet and makes this simple Filipino lunch satisfying.",
+    "category": "Lunch",
+    "cuisine": "Filipino",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Filipino",
+      "Quick",
+      "eggplant",
+      "egg",
+      "charred",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT24M",
+      "passive_time": "PT3M",
+      "total_time": "PT27M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Cool leftover omelets and rice promptly in separate shallow containers and refrigerate within 1 hour at 4°C (40°F) or below. Use within 24 hours.",
+        "duration": "P1D"
+      },
+      "freezer": {
+        "notes": "Freeze promptly cooled omelets and rice in separate airtight containers. The eggplant becomes softer after thawing. Thaw in the refrigerator.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat omelets in a covered skillet over medium-low heat and rice in a covered microwave-safe container until both reach 74°C (165°F) throughout. Reheat only once. Safe reheating temperature follows [FoodSafety.gov guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Gas stovetop with two burners",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Long metal tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Shallow dish",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "30 cm nonstick skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plates",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Eggplant Omelets",
+        "items": [
+          {
+            "name": "chinese eggplant",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "whole, slender, washed and dried",
+            "notes": "Edible flesh weight, excluding skin and stems. Buy approximately 350 g whole eggplants, usually 2 slender eggplants, for an estimated 300 g edible portion before cooking moisture loss. Keep them whole with stems attached for charring.",
+            "substitutions": [],
+            "ingredient_id": "77c14307-dacf-4ab2-85d1-3594bff0ec99",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "egg",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Weigh without shells; approximately 2 large eggs.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 1.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground black pepper",
+            "quantity": 0.3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use the full amount as a thin layer for pan-frying both omelets together.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "To Serve",
+        "items": [
+          {
+            "name": "cooked white rice",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "hot and ready to serve",
+            "notes": "Cooked weight. Have freshly cooked rice ready before starting; the recipe timing assumes cooked rice is available.",
+            "substitutions": [],
+            "ingredient_id": "ff22fec5-ced8-4a33-b712-da79fcb4d681",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Char the whole eggplants directly over two medium gas flames, one per burner, turning frequently with long metal tongs for about 10 minutes. Continue until the skin is blackened all around and the flesh collapses under gentle pressure.",
+        "structured": {
+          "action": "GRILL",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "Skin is blistered and blackened on every side.",
+            "tactile": "The thickest part feels completely soft when gently pressed with tongs."
+          }
+        },
+        "tips": [
+          "Keep the stems away from the flame and use the tongs to support the eggplants."
+        ]
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Cool the eggplants on a large plate for 3 minutes, until comfortable to handle.",
+        "structured": {
+          "action": "COOL",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Peel away the charred skins with your fingers, leaving the stems attached and the flesh intact.",
+        "structured": {
+          "action": "PEEL",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The blackened skin is removed, exposing tender flesh.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Avoid rinsing the peeled flesh; water dilutes its smoky flavor."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Flatten each peeled eggplant with a fork into a broad fan about 1 cm thick, keeping the flesh connected at the stem.",
+        "structured": {
+          "action": "SHAPE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Beat the eggs, salt and black pepper together in the shallow dish with the fork until evenly blended.",
+        "structured": {
+          "action": "BEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Dip both flattened eggplants into the beaten egg, turning gently to coat both sides and working the egg into the fork marks.",
+        "structured": {
+          "action": "DREDGE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Heat the canola oil in the 30 cm nonstick skillet over medium heat for about 1 minute, until shimmering without smoking.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The oil flows easily and shimmers.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Pan-fry both coated eggplants side by side, distributing all remaining beaten egg over their surfaces. Cook for about 3 minutes per side, turning with the wide spatula once the undersides hold together. The egg must be fully set and the thickest egg-coated portion must reach 71°C (160°F), checked with the food thermometer.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "Both sides are golden brown, with set centers and lightly crisp edges.",
+            "tactile": "The egg coating holds together when lifted with the spatula."
+          }
+        },
+        "tips": [
+          "The specified temperature is the internal doneness target, not the skillet temperature.",
+          "If the coating browns before the center reaches 71°C (160°F), lower the heat and continue cooking."
+        ]
+      },
+      {
+        "step_number": 9,
+        "phase": "finish",
+        "text": "Serve one eggplant omelet on each serving plate with 150 g hot cooked rice. Leave the stems uneaten.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The eggplant remains firm after its skin blackens.",
+        "likely_cause": "The flame is too strong or the eggplant is too thick.",
+        "prevention": "Choose slender eggplants and turn them frequently over medium flames.",
+        "fix": "Before peeling, continue charring over a lower flame until the thickest section yields easily to the tongs."
+      },
+      {
+        "symptom": "The omelet tears when flipped.",
+        "likely_cause": "The underside has not set, or the flattened eggplant is insufficiently supported.",
+        "prevention": "Let the first side form a firm golden coating and use a wide spatula.",
+        "fix": "Push the pieces together gently and finish cooking until the egg is fully set and reaches 71°C (160°F)."
+      }
+    ],
+    "chef_notes": [
+      "Slender eggplants soften quickly and flatten into an even layer that cooks consistently.",
+      "Keep the stem attached to preserve the traditional shape, but support the tender flesh when moving it.",
+      "Fork marks give the beaten egg small channels to settle into, helping the coating cling.",
+      "Use a skillet large enough to hold both flattened eggplants without overlap so they brown evenly within the stated time."
+    ],
+    "cultural_context": "Tortang talong is a Filipino eggplant omelet commonly eaten with rice for breakfast or lunch. Its characteristic preparation keeps the eggplant whole through charring before flattening and coating it in egg, as described by [Panlasang Pinoy](https://panlasangpinoy.com/filipino-vegetable-food-eggplant-omelet-tortang-talong-recipe/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 348.58,
+        "protein_g": 11.82,
+        "carbohydrates_g": 51.58,
+        "fat_g": 10.45,
+        "saturated_fat_g": 2.1,
+        "trans_fat_g": 0.04,
+        "monounsaturated_fat_g": 5.16,
+        "polyunsaturated_fat_g": 2.6,
+        "fiber_g": 5.14,
+        "sugar_g": 5.56,
+        "sodium_mg": 366.53,
+        "cholesterol_mg": 186,
+        "potassium_mg": 467.06,
+        "calcium_mg": 57.35,
+        "iron_mg": 3.04,
+        "magnesium_mg": 45.27,
+        "phosphorus_mg": 199.74,
+        "zinc_mg": 1.62,
+        "vitamin_a_mcg": 81.54,
+        "vitamin_c_mg": 3.3,
+        "vitamin_d_mcg": 1,
+        "vitamin_e_mg": 1.91,
+        "vitamin_k_mcg": 9.21,
+        "vitamin_b6_mg": 0.34,
+        "vitamin_b12_mcg": 0.45,
+        "thiamin_mg": 0.32,
+        "riboflavin_mg": 0.31,
+        "niacin_mg": 3.23,
+        "folate_mcg": 143.53,
+        "water_g": 279.17,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 46,
+    "monthly_limit": 50,
+    "daily_remaining": 46,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 4,
+    "detail_limit": 50,
+    "detail_remaining": 46,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

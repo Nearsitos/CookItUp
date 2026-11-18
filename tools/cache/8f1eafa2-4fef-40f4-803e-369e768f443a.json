@@ -1,0 +1,427 @@
+{
+  "data": {
+    "id": "8f1eafa2-4fef-40f4-803e-369e768f443a",
+    "name": "Warming Spiced Sweet Potato and Red Lentil Soup",
+    "description": "A deeply comforting, velvety soup balancing the natural earthy sweetness of root vegetables with warm, aromatic spices. Perfectly thick and nourishing, offering a smooth texture with a gentle, lingering heat.",
+    "category": "Soup",
+    "cuisine": "British",
+    "difficulty": "Easy",
+    "tags": [
+      "British",
+      "Soup",
+      "Sweet Potato",
+      "Lentils",
+      "Vegetarian",
+      "Vegan",
+      "Easy",
+      "Winter",
+      "Comfort Food",
+      "Healthy"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT25M",
+      "total_time": "PT40M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 420
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store in an airtight container. The soup will thicken as it cools.",
+        "duration": "P4D"
+      },
+      "freezer": {
+        "notes": "Leave 2cm of headspace in the container as the liquid will expand when frozen.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat gently in a saucepan over medium-low heat. Add a splash of water or vegetable stock to loosen the consistency if it has thickened during storage.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large saucepan or Dutch oven",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Immersion blender",
+        "required": true,
+        "alternative": "Stand blender"
+      },
+      {
+        "name": "Wooden spoon",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Aromatics and Base",
+        "items": [
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "yellow onion",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "diced",
+            "notes": "about 150g",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 3,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 9g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "peeled and finely grated",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Spices",
+        "items": [
+          {
+            "name": "ground cumin",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground coriander",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "225e04a2-508a-4752-ac80-1f8437a6c970",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground turmeric",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1ee1ad9b-8638-45be-82a4-683925a61d05",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red chilli flakes",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "fc0b80e8-d1dc-4e69-a42d-0789346d4eb8",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Bulk Ingredients",
+        "items": [
+          {
+            "name": "sweet potato",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "peeled and cut into 2cm cubes",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c656d81f-a846-4e2a-bf00-8d3efd325b60",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red split lentils",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "rinsed thoroughly in cold water and drained",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "9d0cf008-6bd6-4b89-8d98-88621c6f81e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "vegetable stock",
+            "quantity": 1000,
+            "unit": "ml",
+            "preparation": "hot",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "93b5bf35-1f82-4ec2-a12c-5d219f15f241",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Finishing",
+        "items": [
+          {
+            "name": "salt",
+            "quantity": null,
+            "unit": null,
+            "preparation": null,
+            "notes": "to taste, at least 3g depending on the saltiness of the stock",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": null,
+            "unit": null,
+            "preparation": null,
+            "notes": "freshly ground, to taste",
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": "freshly squeezed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "84822702-05df-495b-91a5-3fe45e48c8d9",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Heat the olive oil in a large saucepan or Dutch oven over a medium heat until shimmering.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Add the diced onion to the pan and cook for 5 to 7 minutes, stirring occasionally, until softened and translucent.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Onion is pale and translucent, not browned",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Stir in the minced garlic, grated ginger, cumin, coriander, turmeric, and chilli flakes. Cook for 1 minute until highly fragrant.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Spices coat the onions and release a strong aroma",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the cubed sweet potato and rinsed red lentils to the pan, tossing them in the spiced onion mixture. Pour in the hot vegetable stock and bring the liquid to a rolling boil at 100 degrees Celsius or 212 degrees Fahrenheit.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Reduce the heat to medium-low, partially cover the pan with a lid, and allow the soup to bubble gently for 20 to 25 minutes.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT25M",
+          "doneness_cues": {
+            "visual": "Lentils have completely broken down into a mush",
+            "tactile": "Sweet potato cubes mash effortlessly when pressed against the side of the pot with a spoon"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "finish",
+        "text": "Remove the pan from the heat. Carefully submerge the immersion blender into the liquid and process until completely smooth and velvety.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Uniform, bright orange puree with no large chunks remaining",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "If using a stand blender, allow the soup to cool slightly and blend in batches to avoid steam buildup blowing the lid off."
+        ]
+      },
+      {
+        "step_number": 7,
+        "phase": "finish",
+        "text": "Taste the soup and stir in salt, freshly ground black pepper, and the fresh lemon juice if using. Ladle into warm bowls to serve.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Soup is too thick and resembles a puree or mash rather than a liquid",
+        "likely_cause": "The red lentils absorbed more liquid than anticipated or the soup simmered too vigorously causing excessive evaporation",
+        "prevention": "Ensure the pan is partially covered during the simmer phase to trap moisture",
+        "fix": "Stir in additional hot water or vegetable stock in 50ml increments over low heat until the desired consistency is reached"
+      },
+      {
+        "symptom": "The soup tastes bland despite following the spice measurements",
+        "likely_cause": "The vegetable stock lacked adequate sodium or the spices were stale",
+        "prevention": "Use fresh spices and a high-quality, flavorful vegetable stock",
+        "fix": "Add more salt in small pinches, and stir in the optional lemon juice. Acid brightens earthy root vegetables and amplifies existing flavors"
+      }
+    ],
+    "chef_notes": [
+      "Always rinse red split lentils thoroughly under cold running water until the water runs clear. This removes natural saponins and dusty residue which can make the soup foam excessively or taste mildly bitter.",
+      "Do not skip the step of blooming the spices in the hot oil. Fat-soluble flavor compounds in the cumin, coriander, and turmeric open up dramatically when toasted, resulting in a deeper, more complex final bowl.",
+      "The squeeze of fresh lemon juice at the end is technically optional but highly recommended. Earthy ingredients like sweet potato and lentils can taste flat without a hit of acid to provide balance and high notes.",
+      "This recipe benefits significantly from resting. Making it a day in advance allows the spices to meld and intensify. It will thicken in the fridge, so be prepared to loosen it with a splash of water upon reheating."
+    ],
+    "cultural_context": "While the combination of lentils and warming spices draws heavy inspiration from South Asian dal and Middle Eastern cooking, this specific iteration of spiced root vegetable and lentil soup has become a modern British staple. It is a fixture in contemporary cafes and home kitchens across the United Kingdom, celebrated as an affordable, hearty, and deeply comforting remedy to cold, damp winter weather.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 313.48,
+        "protein_g": 13.51,
+        "carbohydrates_g": 57.99,
+        "fat_g": 5.09,
+        "saturated_fat_g": 0.67,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 3.07,
+        "polyunsaturated_fat_g": 0.7,
+        "fiber_g": 9.17,
+        "sugar_g": 7.82,
+        "sodium_mg": 1124.16,
+        "cholesterol_mg": 0,
+        "potassium_mg": 907.93,
+        "calcium_mg": 97.26,
+        "iron_mg": 4.79,
+        "magnesium_mg": 62.8,
+        "phosphorus_mg": 190.5,
+        "zinc_mg": 1.82,
+        "vitamin_a_mcg": 892.88,
+        "vitamin_c_mg": 12.43,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 1.21,
+        "vitamin_k_mcg": 7.1,
+        "vitamin_b6_mg": 0.56,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.46,
+        "riboflavin_mg": 0.18,
+        "niacin_mg": 1.86,
+        "folate_mcg": 202.22,
+        "water_g": 141.13,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 22,
+    "monthly_limit": 50,
+    "daily_remaining": 22,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 28,
+    "detail_limit": 50,
+    "detail_remaining": 22,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

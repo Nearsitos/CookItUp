@@ -1,0 +1,369 @@
+{
+  "data": {
+    "id": "05294ab7-2295-44aa-9663-e633d3e32fb4",
+    "name": "Warm Spanish-Style Potato and Chorizo Spinach Salad",
+    "description": "A robust and comforting warm salad where crispy, smoky chorizo and tender waxy potatoes meet fresh baby spinach, all tossed in a vibrant pan-drippings vinaigrette.",
+    "category": "Salad",
+    "cuisine": "Spanish",
+    "difficulty": "Easy",
+    "tags": [
+      "salad",
+      "spinach",
+      "chorizo",
+      "potatoes",
+      "warm salad",
+      "quick meal",
+      "tapas-inspired",
+      "rustic"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT15M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 215
+    },
+    "dietary": {
+      "flags": [
+        "Gluten-Free",
+        "Dairy-Free",
+        "Nut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Not recommended for storage as the dressed spinach will become overly soggy and unappetizing.",
+        "duration": null
+      },
+      "freezer": {
+        "notes": "Do not freeze fresh greens.",
+        "duration": null
+      },
+      "reheating": null,
+      "does_not_keep": true
+    },
+    "equipment": [
+      {
+        "name": "Saucepan",
+        "required": true,
+        "alternative": "Medium pot"
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Skillet",
+        "required": true,
+        "alternative": "Frying pan"
+      },
+      {
+        "name": "Slotted spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": "Fork"
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Salad Base",
+        "items": [
+          {
+            "name": "baby potatoes",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "halved",
+            "notes": "Waxy varieties like baby red or chat potatoes work best",
+            "substitutions": [],
+            "ingredient_id": "5bf06478-4785-465e-9842-f70a24e22054",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cured spanish chorizo",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "sliced into 5mm coins",
+            "notes": "Ensure it is the firm, cured variety, not raw Mexican chorizo",
+            "substitutions": [],
+            "ingredient_id": "8ba36466-6cde-4383-b18e-d7c982b046a3",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "baby spinach",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "washed and spun thoroughly dry",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "4734440a-226d-4d26-a110-3ed5c3bde93f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red onion",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "thinly sliced",
+            "notes": "about 100g",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 3g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Warm Vinaigrette",
+        "items": [
+          {
+            "name": "extra virgin olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "Adjust depending on how much oil the chorizo releases",
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sherry vinegar",
+            "quantity": 20,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "red wine vinegar",
+              "apple cider vinegar"
+            ],
+            "ingredient_id": "9e1b7e74-fdcb-4836-8349-4f7ad86d62df",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dijon mustard",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "ae60af51-f87a-4c0e-9f21-e14266340838",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Adjust to taste depending on the saltiness of the chorizo",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": "freshly cracked",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Place the halved potatoes in a saucepan and cover completely with cold water. Bring to a boil at 100°C/212°F over high heat, then reduce to a simmer. Cook until easily pierced with a fork, about 10 to 12 minutes. Drain well and set aside.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Potatoes should yield easily with zero resistance when pierced with a fork"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "While the potatoes cook, use a chef's knife to slice the chorizo, thinly slice the red onion, and mince the garlic. Place the dried baby spinach in a large mixing bowl.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Heat a dry skillet over medium heat. Add the sliced chorizo and fry until the edges are crispy and the deeply red, paprika-infused oils have released into the pan. Use a slotted spoon to transfer the crispy chorizo to the mixing bowl with the spinach, leaving the rendered fat in the skillet.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Chorizo edges darken and crisp up, leaving a bright red oil in the pan",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "If substituting with raw, fresh chorizo instead of cured, ensure the meat reaches a safe internal temperature of 71°C/160°F."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the sliced red onion to the rendered chorizo fat in the skillet. Sauté until the onions are softened and slightly translucent. Add the minced garlic and cook for an additional 60 seconds until highly fragrant.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "Onions are soft and translucent, lightly tinted red from the oil",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Remove the skillet from the direct heat source. Immediately pour in the sherry vinegar to deglaze the pan, using a whisk to scrape up any browned bits from the bottom. Whisk in the Dijon mustard, olive oil, kosher salt, and black pepper until a warm, emulsified dressing forms.",
+        "structured": {
+          "action": "DEGLAZE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": null
+        },
+        "tips": [
+          "Removing the pan from the heat prevents the vinegar from evaporating too violently."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Add the warm boiled potatoes to the mixing bowl with the spinach and chorizo. Pour the warm vinaigrette from the skillet directly over the ingredients. Gently toss everything together until the spinach is glossy and slightly wilted from the heat of the potatoes and dressing. Serve immediately.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Spinach leaves are glossy and just beginning to collapse, but still bright green",
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Spinach completely collapses into a mushy, dark green paste",
+        "likely_cause": "The salad was mixed inside the hot skillet, or the dressing/potatoes were scalding hot when tossed",
+        "prevention": "Always toss warm salads in a separate room-temperature mixing bowl rather than the cooking vessel",
+        "fix": "Cannot be fixed"
+      },
+      {
+        "symptom": "Dressing is overly greasy and separates",
+        "likely_cause": "The chorizo released an excessive amount of oil, throwing off the vinegar-to-oil ratio",
+        "prevention": "Measure the rendered fat in the pan; if it exceeds 2 tablespoons, discard the excess before making the dressing",
+        "fix": "Whisk in an additional splash of sherry vinegar or a teaspoon of water to help re-emulsify the fats"
+      }
+    ],
+    "chef_notes": [
+      "Waxy potatoes are absolutely crucial here; starchy varieties like Russets will crumble and turn the dressing into a cloudy paste when tossed.",
+      "The residual heat of the pan is all you need to deglaze and form the dressing. Boiling the vinegar will destroy its delicate fruit notes.",
+      "Spinach holds water. Ensure your spinach is completely dry before assembling, otherwise the excess water will dilute the pan dressing.",
+      "The salt level depends heavily on the brand of cured chorizo you purchase. Always taste a piece of the crispy chorizo before adding the final measured salt to the dressing."
+    ],
+    "cultural_context": "Warm salads and the robust trio of potato, pork, and paprika have deep, historical roots across the Iberian peninsula. This dish draws direct inspiration from traditional Spanish tapas, elevating humble, rustic ingredients into a cohesive and satisfying meal. The pan-drippings vinaigrette mimics the resourceful, waste-nothing techniques used in rural Spanish kitchens, capturing every bit of the heavily spiced, rendered fat.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 284.6,
+        "protein_g": 13.12,
+        "carbohydrates_g": 17.36,
+        "fat_g": 18.47,
+        "saturated_fat_g": 2.09,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 2.8,
+        "polyunsaturated_fat_g": 0.53,
+        "fiber_g": 3.93,
+        "sugar_g": 1.25,
+        "sodium_mg": 394.03,
+        "cholesterol_mg": null,
+        "potassium_mg": 712.16,
+        "calcium_mg": 77.37,
+        "iron_mg": 4.62,
+        "magnesium_mg": 59.02,
+        "phosphorus_mg": 83.27,
+        "zinc_mg": 1,
+        "vitamin_a_mcg": 176.07,
+        "vitamin_c_mg": 24.06,
+        "vitamin_d_mcg": null,
+        "vitamin_e_mg": 1.32,
+        "vitamin_k_mcg": 183.94,
+        "vitamin_b6_mg": 0.36,
+        "vitamin_b12_mcg": null,
+        "thiamin_mg": 0.07,
+        "riboflavin_mg": 0.12,
+        "niacin_mg": 1.35,
+        "folate_mcg": 94.74,
+        "water_g": 147.14,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 35,
+    "monthly_limit": 50,
+    "daily_remaining": 35,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 15,
+    "detail_limit": 50,
+    "detail_remaining": 35,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

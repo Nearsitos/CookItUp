@@ -1,0 +1,437 @@
+{
+  "data": {
+    "id": "2be2ee7c-ad61-4466-9f9d-6f6afb9aa7d3",
+    "name": "Chorizo and Potato Tacos",
+    "description": "Warm corn tortillas cradle spicy, crumbled Mexican chorizo and tender potato cubes with lightly golden edges. Fresh onion, cilantro and lime bring crunch and brightness to the rich filling.",
+    "category": "Dinner",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "tags": [
+      "Dinner",
+      "Mexican",
+      "Quick",
+      "chorizo",
+      "potatoes",
+      "tortillas",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT24M",
+      "passive_time": "PT6M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings, 3 tacos each",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [],
+      "not_suitable_for": [
+        "People with allergies to ingredients declared on the chorizo or tortilla packaging"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store filling separately from tortillas and fresh toppings. Refrigerate in shallow, covered containers within 2 hours of cooking, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Keep at 4°C (40°F) or colder.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled filling in airtight containers at -18°C (0°F) or colder for best quality. Potatoes may soften after thawing. Thaw overnight in the refrigerator.",
+        "duration": "P2M"
+      },
+      "reheating": "Reheat filling in a covered skillet over medium-low heat, stirring frequently, until it reaches 74°C (165°F) throughout. Warm tortillas separately and add fresh toppings after reheating.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Medium saucepan with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Colander",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Comal or second skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen towel",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plates",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Taco Filling",
+        "items": [
+          {
+            "name": "yellow potatoes",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "scrubbed and trimmed",
+            "notes": "Edible weight after trimming; the thin skins stay on.",
+            "substitutions": [],
+            "ingredient_id": "167cc239-8f97-4774-b14d-aa2cc2effbfb",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh mexican pork chorizo",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "raw, casing removed",
+            "notes": "Weigh after removing the casing. Use soft, fresh Mexican chorizo that crumbles during cooking.",
+            "substitutions": [],
+            "ingredient_id": "4c22d1fc-f8d9-4e7e-9035-4b2c79ea6f5a",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "white onion",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Edible weight; use 60 g in the filling and reserve 40 g for topping.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sunflower oil",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For sautéing the filling.",
+            "substitutions": [],
+            "ingredient_id": "2bba572f-a72b-4a66-b9d4-ed999bc704ef",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine salt",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": "A modest starting amount because chorizo is already seasoned; reduce if your chorizo is particularly salty.",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Tortillas and Fresh Toppings",
+        "items": [
+          {
+            "name": "corn tortillas",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Choose 12 small tortillas weighing approximately 25 g each.",
+            "substitutions": [],
+            "ingredient_id": "da963b85-8f0b-4c36-b9b1-c31e17b488ae",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cilantro",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "washed and dried",
+            "notes": "Edible leaves and tender stems.",
+            "substitutions": [],
+            "ingredient_id": "90d50243-5217-4e50-836c-b2f624e2b58b",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lime juice",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "freshly squeezed",
+            "notes": "Weigh the juice without seeds or peel.",
+            "substitutions": [],
+            "ingredient_id": "531b7deb-b63c-41c9-8c01-b7bec6fcd2d0",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Potato Boiling Water, Discarded After Cooking",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1200,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For boiling the diced potatoes; drain and discard after cooking.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Bring the water to a boil in the covered saucepan over high heat. Prepare the vegetables while it heats.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Large bubbles rise continuously across the water.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Dice the potatoes into uniform 1 cm cubes on the cutting board.",
+        "structured": {
+          "action": "DICE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Finely chop the onion and cilantro, keeping them separate. Reserve 40 g of the onion for topping.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Simmer the potatoes in the boiling water, uncovered, for 7–9 minutes, until a knife enters a cube easily but the cubes still hold their shape. Cook the chorizo during this time.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "The potato cubes remain intact.",
+            "tactile": "A knife slides into the center without a hard or crunchy core."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Sauté the chorizo and remaining 60 g onion with the sunflower oil in the large skillet over medium-high heat for 8–10 minutes. Break the chorizo into small crumbles with the spatula and stir frequently. Cook until the pork reaches at least 71°C (160°F), checking several thick clusters with the thermometer without touching the pan.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT9M",
+          "doneness_cues": {
+            "visual": "The onion is softened and the chorizo forms small crumbles with some browned edges.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep raw chorizo and its packaging away from the prepared toppings. Wash hands with soap and water after handling raw meat, and clean any contaminated surfaces and utensils before they contact ready-to-eat food.",
+          "The stated temperature is the minimum internal temperature of the pork, not the skillet temperature."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Drain the tender potatoes in the colander, discarding the cooking water. Let steam escape for 1 minute so the surfaces dry.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The potatoes have no visible surface water.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Pan-fry the drained potatoes and salt with the cooked chorizo for 4 minutes over medium-high heat. Spread the filling across the skillet and turn gently with the spatula, allowing brief pauses between turns.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The potatoes are coated with red chorizo seasoning and have a few golden edges.",
+            "tactile": "Potato centers are tender and the filling is moist without being watery."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Warm the tortillas on the dry comal over medium-high heat for approximately 20–30 seconds per side, working in batches that fit without overlapping. Turn with tongs and keep the warmed tortillas wrapped in the clean kitchen towel.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "A few light toasted spots appear.",
+            "tactile": "The tortillas are hot and flexible enough to fold without cracking."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "assemble",
+        "text": "Divide the hot filling among the 12 tortillas on serving plates. Top with the reserved onion, cilantro and lime juice, then serve immediately.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Potatoes remain firm inside while the chorizo starts to scorch.",
+        "likely_cause": "The potato cubes were cut too large or drained before their centers became tender.",
+        "prevention": "Cut uniform 1 cm cubes and check a cube with a knife before draining.",
+        "fix": "Reduce the skillet heat to low and continue cooking, turning frequently, until the potatoes soften. This may extend the cooking time."
+      },
+      {
+        "symptom": "The filling becomes a soft mash.",
+        "likely_cause": "The potatoes were overboiled or stirred too vigorously.",
+        "prevention": "Drain as soon as the centers are tender and fold gently during pan-frying.",
+        "fix": "Spread the filling across the skillet and let excess moisture evaporate briefly. Serve as a softer taco filling; the cubes cannot be restored."
+      }
+    ],
+    "chef_notes": [
+      "Use fresh Mexican chorizo for its crumbly texture and chile seasoning; cured Spanish chorizo produces a different filling.",
+      "Thin-skinned yellow potatoes hold their shape well while their centers become creamy.",
+      "Letting drained potatoes steam briefly helps their surfaces fry instead of releasing water into the skillet.",
+      "Heat the boiling water while chopping and cook the chorizo while the potatoes simmer to keep dinner within 30 minutes."
+    ],
+    "cultural_context": "Papas con chorizo pairs potatoes with seasoned Mexican sausage and is a familiar taco filling in Mexican cooking. Corn tortillas carry the rich filling, while fresh toppings provide brightness and contrast.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 586.17,
+        "protein_g": 20.86,
+        "carbohydrates_g": 62.21,
+        "fat_g": 29.4,
+        "saturated_fat_g": 9.19,
+        "trans_fat_g": 0.13,
+        "monounsaturated_fat_g": 11.52,
+        "polyunsaturated_fat_g": 6.74,
+        "fiber_g": 7.91,
+        "sugar_g": 2.91,
+        "sodium_mg": 929.13,
+        "cholesterol_mg": 63,
+        "potassium_mg": 1043.58,
+        "calcium_mg": 104.12,
+        "iron_mg": 3.47,
+        "magnesium_mg": 106.83,
+        "phosphorus_mg": 465.85,
+        "zinc_mg": 3.11,
+        "vitamin_a_mcg": 12.79,
+        "vitamin_c_mg": 29.74,
+        "vitamin_d_mcg": 1.5,
+        "vitamin_e_mg": 1.38,
+        "vitamin_k_mcg": 14.38,
+        "vitamin_b6_mg": 0.89,
+        "vitamin_b12_mcg": 2,
+        "thiamin_mg": 0.39,
+        "riboflavin_mg": 0.41,
+        "niacin_mg": 8,
+        "folate_mcg": 30.33,
+        "water_g": 220.74,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 13,
+    "monthly_limit": 50,
+    "daily_remaining": 13,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 37,
+    "detail_limit": 50,
+    "detail_remaining": 13,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

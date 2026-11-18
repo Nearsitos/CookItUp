@@ -1,0 +1,329 @@
+{
+  "data": {
+    "id": "01ee4148-44a8-41a1-b2dd-32839677d233",
+    "name": "Bocadillo de Tortilla Francesa",
+    "description": "A warm, tender plain omelet nestles inside a crusty bread roll, bringing together golden eggs, fragrant olive oil and a crisp crust for a simple, satisfying Spanish breakfast.",
+    "category": "Breakfast",
+    "cuisine": "Spanish",
+    "difficulty": "Easy",
+    "tags": [
+      "Breakfast",
+      "Spanish",
+      "Quick",
+      "eggs",
+      "bread",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT12M",
+      "passive_time": "PT0M",
+      "total_time": "PT12M",
+      "overnight_required": false,
+      "yields": "1 sandwich",
+      "yield_count": 1,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Dairy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergy",
+        "People with wheat allergy or celiac disease"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Best eaten freshly assembled. Refrigerate leftover omelet in a covered container within 2 hours, or within 1 hour above 32°C (90°F), at 4°C (40°F) or below. Store bread separately to preserve its texture.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing the assembled sandwich is not recommended because the bread softens and the omelet can become rubbery.",
+        "duration": null
+      },
+      "reheating": "Reheat the omelet gently in a covered skillet until its center reaches 74°C (165°F), then place it in the bread.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serrated knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "20 cm nonstick skillet with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Flexible spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read thermometer",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Sandwich",
+        "items": [
+          {
+            "name": "crusty white bread roll",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": null,
+            "notes": "One small baguette-style roll made with wheat flour, water, yeast and salt; choose bread without milk or butter.",
+            "substitutions": [],
+            "ingredient_id": "220e72f0-6562-405e-a9dd-1ab595829eb6",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "egg",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "shells removed",
+            "notes": "Approximately 2 large eggs; weigh the edible contents without shells.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For cooking the omelet in a lightly coated skillet.",
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 0.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Split the bread roll lengthwise with the serrated knife on the cutting board, leaving one long edge attached as a hinge.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Beat the weighed eggs and salt in the mixing bowl with the fork until the whites and yolks are evenly combined.",
+        "structured": {
+          "action": "BEAT",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Uniform yellow mixture without distinct strands of egg white.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Heat the olive oil in the nonstick skillet over medium-low heat for about 1 minute, until it flows easily across the base without smoking.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Cook the beaten eggs in the skillet for about 2 minutes, gently drawing the set edges inward with the spatula and tilting the skillet so liquid egg fills the gaps.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The underside is set and pale golden, while the top remains slightly moist.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Fold the omelet into thirds with the spatula to make an elongated shape that fits the bread.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Continue cooking over low heat for approximately 1–2 minutes, turning once, until the center reaches 71°C (160°F) on the instant-read thermometer and no liquid egg remains.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The omelet is fully set with no wet egg in the center.",
+            "tactile": "Tender and gently springy."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "Slide the freshly cooked omelet into the split roll and close the bread gently around it.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Eat immediately while the omelet is warm and the crust is crisp."
+        ]
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The omelet browns before its center is cooked.",
+        "likely_cause": "The skillet is too hot or the folded omelet is too thick.",
+        "prevention": "Use medium-low heat initially and low heat after folding; spread the eggs evenly before they set.",
+        "fix": "Lower the heat and cover the skillet briefly, checking frequently until the center reaches 71°C (160°F)."
+      },
+      {
+        "symptom": "The omelet feels dry or rubbery.",
+        "likely_cause": "It cooked too long after reaching its safe temperature.",
+        "prevention": "Check the center promptly after folding and assemble as soon as it reaches 71°C (160°F).",
+        "fix": "The texture cannot be reversed; serve promptly before it dries further."
+      }
+    ],
+    "chef_notes": [
+      "A small skillet gives the omelet enough thickness to stay tender while fitting neatly inside the roll.",
+      "Beat only until combined; excessive aeration makes the omelet puff and then collapse.",
+      "Choose a roll with a crisp, thin crust and a soft interior so the bread does not overwhelm the eggs.",
+      "Cook egg dishes to 71°C (160°F) and reheat leftovers to 74°C (165°F), following [FoodSafety.gov guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "In Spanish cooking, tortilla francesa is a beaten-egg omelet commonly cooked in olive oil. Tucking it into a split bread roll makes a simple bocadillo suited to an everyday breakfast or quick meal, as illustrated by this [Spanish recipe reference](https://nutrium.com/p/jesuszubiri/recipes/523830).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 497.2,
+        "protein_g": 23.46,
+        "carbohydrates_g": 52.76,
+        "fat_g": 20.98,
+        "saturated_fat_g": 5.2,
+        "trans_fat_g": 0.04,
+        "monounsaturated_fat_g": 9.19,
+        "polyunsaturated_fat_g": 4.95,
+        "fiber_g": 2,
+        "sugar_g": 5.92,
+        "sodium_mg": 803.1,
+        "cholesterol_mg": 376,
+        "potassium_mg": 277.09,
+        "calcium_mg": 234.17,
+        "iron_mg": 5.5,
+        "magnesium_mg": 38.01,
+        "phosphorus_mg": 320,
+        "zinc_mg": 2.28,
+        "vitamin_a_mcg": 161,
+        "vitamin_c_mg": 0.2,
+        "vitamin_d_mcg": 2,
+        "vitamin_e_mg": 2.05,
+        "vitamin_k_mcg": 13.91,
+        "vitamin_b6_mg": 0.27,
+        "vitamin_b12_mcg": 1.02,
+        "thiamin_mg": 0.57,
+        "riboflavin_mg": 0.83,
+        "niacin_mg": 5.44,
+        "folate_mcg": 148,
+        "water_g": 104.64,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 43,
+    "monthly_limit": 50,
+    "daily_remaining": 43,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 7,
+    "detail_limit": 50,
+    "detail_remaining": 43,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

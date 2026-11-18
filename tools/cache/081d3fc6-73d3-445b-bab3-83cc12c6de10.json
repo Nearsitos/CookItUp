@@ -1,0 +1,409 @@
+{
+  "data": {
+    "id": "081d3fc6-73d3-445b-bab3-83cc12c6de10",
+    "name": "High-Protein Chicken Rice Bowl",
+    "description": "A macro-friendly, savory chicken and rice bowl featuring tender seared chicken breast, crisp-tender vibrant broccoli, and fluffy jasmine rice coated in a quick garlic-soy glaze.",
+    "category": "Lunch",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "tags": [
+      "Meal Prep",
+      "High-Protein",
+      "Quick",
+      "Macro-Friendly",
+      "Weeknight Meal"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT15M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "2 bowls",
+      "yield_count": 2,
+      "serving_size_g": 380
+    },
+    "dietary": {
+      "flags": [
+        "Dairy-Free",
+        "Nut-Free"
+      ],
+      "not_suitable_for": [
+        "Infants under 12 months (honey)"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store components in airtight containers. If meal prepping, cool completely before covering to prevent condensation.",
+        "duration": "P4D"
+      },
+      "freezer": {
+        "notes": "Rice and chicken freeze well. Broccoli may become slightly softer upon thawing.",
+        "duration": "P1M"
+      },
+      "reheating": "Microwave on high for 2 to 3 minutes with a damp paper towel over the bowl to re-steam the rice.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Small saucepan with tight-fitting lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large skillet",
+        "required": true,
+        "alternative": "Wok"
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": "Fork"
+      },
+      {
+        "name": "Spatula",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Rice Base",
+        "items": [
+          {
+            "name": "jasmine rice",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "rinsed until water runs clear",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "4ce295ad-83ad-4439-abac-431a91c9689c",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "water",
+            "quantity": 150,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "for cooking the rice",
+            "substitutions": [],
+            "ingredient_id": "de973e91-f602-4c8c-b99f-9aaf5b5ac726",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Protein and Vegetables",
+        "items": [
+          {
+            "name": "chicken breast",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "boneless, skinless, cut into 2.5cm cubes",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "84f11528-1b8c-4fd6-9d83-7a5e431959cc",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "broccoli",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "cut into bite-sized florets",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8229dcea-493c-43eb-b888-737ecd27bcbf",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Garlic-Soy Glaze",
+        "items": [
+          {
+            "name": "soy sauce",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "tamari"
+            ],
+            "ingredient_id": "ab99a024-9474-40da-abfb-36a47a65232b",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "honey",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "maple syrup"
+            ],
+            "ingredient_id": "97be7b4a-7a8c-4f99-b1be-874b267b8c22",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 6g total",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "peeled and finely grated",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "toasted sesame oil",
+            "quantity": 5,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "73fe6c0a-e6cb-452a-bc1e-46848b6bf538",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Garnish",
+        "items": [
+          {
+            "name": "sesame seeds",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "0edc9256-6bac-4718-9f80-12351b1bc941",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Combine the rinsed jasmine rice, water, and kosher salt in the small saucepan. Bring to a rapid boil over high heat, then immediately reduce the heat to the lowest setting. Cover with the tight-fitting lid and simmer for 15 minutes. Remove from heat and let rest covered until assembly.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": "Water is fully absorbed",
+            "tactile": "Rice grains are tender but retain structure"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "While the rice is cooking, prepare the glaze. In a small mixing bowl, whisk together the soy sauce, honey, minced garlic, grated ginger, and toasted sesame oil until fully combined.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Heat the olive oil in a large skillet over medium-high heat. Once the oil is shimmering (around 190°C/375°F), add the diced chicken breast in a single layer. Sear without moving for 3 minutes to develop a crust, then toss with a spatula and continue cooking until browned and the internal temperature reaches a safe 74°C/165°F.",
+        "structured": {
+          "action": "SEAR",
+          "temperature": {
+            "celsius": 190,
+            "fahrenheit": 374
+          },
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Golden brown exterior, no pink remaining inside",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Pat the raw chicken dry with a paper towel before adding it to the skillet to ensure a proper sear rather than steaming."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the broccoli florets directly to the skillet with the chicken, along with a splash of water (about 15ml). Immediately cover the skillet to trap the steam. Cook until the broccoli turns bright green and becomes crisp-tender.",
+        "structured": {
+          "action": "STEAM",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Vibrant emerald green color",
+            "tactile": "A fork easily pierces the stem with slight resistance"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "finish",
+        "text": "Remove the lid from the skillet. Pour the prepared glaze over the chicken and broccoli. Toss constantly with a spatula for 1 to 2 minutes as the liquid reduces into a sticky, glossy sauce that coats the ingredients evenly.",
+        "structured": {
+          "action": "REDUCE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Sauce clings to the back of a spoon and leaves a clear trail when scraped across the pan",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Fluff the rested rice with a fork and divide it evenly between two serving bowls. Top with the glazed chicken and broccoli mixture, pouring any remaining sauce from the skillet over the top. Garnish with sesame seeds.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Chicken breast is dry and tough",
+        "likely_cause": "The chicken was overcooked past its ideal internal temperature",
+        "prevention": "Cut the chicken into uniform pieces so they cook evenly, and use a meat thermometer to pull them exactly at 74°C/165°F",
+        "fix": "Toss thoroughly in the extra pan glaze to coat the meat and add artificial juiciness"
+      },
+      {
+        "symptom": "Broccoli is mushy and drab olive in color",
+        "likely_cause": "Steamed for too long or left sitting in residual heat",
+        "prevention": "Only steam for 2 to 3 minutes and uncover immediately when vibrant green",
+        "fix": "Cannot be fixed"
+      },
+      {
+        "symptom": "Rice is gummy or mushy",
+        "likely_cause": "Excess surface starch was not rinsed off, or too much water was added",
+        "prevention": "Rinse rice thoroughly under cold water until it runs clear, and measure water accurately",
+        "fix": "Spread the rice out on a baking sheet to allow steam to escape and surface moisture to evaporate slightly"
+      }
+    ],
+    "chef_notes": [
+      "Rinsing the jasmine rice is non-negotiable; it removes the excess surface starch that causes grains to stick together and become gummy.",
+      "For maximum browning on the chicken, ensure your skillet is preheated properly before adding the meat. Crowding the pan will drop the temperature and cause the chicken to boil in its own juices.",
+      "Cut the broccoli florets into uniform sizes so they steam evenly alongside the chicken. Smaller florets mean faster cooking, keeping you strictly under the 30-minute target.",
+      "If you are preparing this for meal prep to eat later in the week, slightly undercook the broccoli so it retains a crisp texture when reheated in the microwave."
+    ],
+    "cultural_context": "The chicken and rice bowl is a staple of modern fitness and meal-prep culture, heavily influenced by traditional Japanese donburi and Hawaiian plate lunches. By combining lean proteins, complex carbohydrates, and a simple soy-based glaze, it delivers practical, macronutrient-balanced nutrition without sacrificing umami-rich flavors. It represents a practical, globalized approach to everyday home cooking.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 481.2,
+        "protein_g": 53.49,
+        "carbohydrates_g": 29.31,
+        "fat_g": 16.41,
+        "saturated_fat_g": 1.54,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 5.56,
+        "polyunsaturated_fat_g": 1.52,
+        "fiber_g": 3.82,
+        "sugar_g": 9.55,
+        "sodium_mg": 1508.24,
+        "cholesterol_mg": null,
+        "potassium_mg": 282.74,
+        "calcium_mg": 150.51,
+        "iron_mg": 3.09,
+        "magnesium_mg": 42.3,
+        "phosphorus_mg": 117.87,
+        "zinc_mg": 1.12,
+        "vitamin_a_mcg": 131,
+        "vitamin_c_mg": 21.44,
+        "vitamin_d_mcg": null,
+        "vitamin_e_mg": 2.64,
+        "vitamin_k_mcg": 228.21,
+        "vitamin_b6_mg": 0.27,
+        "vitamin_b12_mcg": null,
+        "thiamin_mg": 0.2,
+        "riboflavin_mg": 0.17,
+        "niacin_mg": 2.09,
+        "folate_mcg": 89.39,
+        "water_g": 186.63,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 27,
+    "monthly_limit": 50,
+    "daily_remaining": 27,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 23,
+    "detail_limit": 50,
+    "detail_remaining": 27,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}
