@@ -1,6 +1,8 @@
 // tools/import-recipes-api.js
 // Imports recipes from recipe-api.com (needs RECIPE_API_KEY in .env).
 // Run with: node --env-file=.env tools/import-recipes-api.js
+//   (add --go to import, or --from-cache to rebuild recipes.json from tools/cache
+//    without the internet, an API key, or credits)
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -31,7 +33,9 @@ const OUTPUT = "client/data/recipes.json";
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-if (!KEY) {
+const FROM_CACHE = process.argv.includes("--from-cache");
+
+if (!KEY && !FROM_CACHE) {
   console.error(
     "Missing RECIPE_API_KEY. Add it to .env and run with --env-file=.env",
   );
@@ -76,9 +80,22 @@ async function getFullRecipe(id) {
 
 // RecipeAPI full recipe -> CookItUp recipes.json format
 function toRecipe(full) {
-  const names = full.ingredients
-    .flatMap((group) => group.items)
-    .map((item) => item.name.charAt(0).toUpperCase() + item.name.slice(1));
+  const capitalize = (name) => name.charAt(0).toUpperCase() + name.slice(1);
+  const items = full.ingredients.flatMap((group) => group.items);
+  const names = items.map((item) => capitalize(item.name));
+
+  // Amounts for the servings control, keyed by ingredient name. An ingredient
+  // listed twice (salt for the chicken and for the sauce) is added together.
+  // "To taste" items have no quantity and are left out.
+  const amounts = {};
+  for (const item of items) {
+    if (item.quantity == null) continue;
+    const name = capitalize(item.name);
+    const existing = amounts[name];
+    if (!existing) amounts[name] = { quantity: item.quantity, unit: item.unit };
+    else if (existing.unit === item.unit)
+      existing.quantity = Math.round((existing.quantity + item.quantity) * 1000) / 1000;
+  }
 
   return {
     id: `rapi-${full.id}`,
@@ -89,8 +106,34 @@ function toRecipe(full) {
     category: full.category,
     description: full.description,
     ingredients: [...new Set(names)],
+    amounts,
     steps: full.instructions.map((step) => step.text),
   };
+}
+
+// --- Rebuild from cache (--from-cache): re-convert already-imported recipes --
+// Use this after changing toRecipe(). Keeps the same recipes in the same order.
+if (FROM_CACHE) {
+  const existing = JSON.parse(await readFile(OUTPUT, "utf8"));
+  let rebuilt = 0;
+  const all = [];
+  for (const recipe of existing) {
+    if (!recipe.id.startsWith("rapi-")) {
+      all.push(recipe); // hand-written: leave as is
+      continue;
+    }
+    const file = `${CACHE_DIR}/${recipe.id.slice("rapi-".length)}.json`;
+    if (!existsSync(file)) {
+      console.warn(`No cache for ${recipe.name}; keeping it unchanged.`);
+      all.push(recipe);
+      continue;
+    }
+    all.push(toRecipe(JSON.parse(await readFile(file, "utf8")).data));
+    rebuilt++;
+  }
+  await writeFile(OUTPUT, JSON.stringify(all, null, 2) + "\n");
+  console.log(`Rebuilt ${rebuilt} recipes from the cache (${all.length} total). No credits used.`);
+  process.exit(0);
 }
 
 // --- Step 5a: plan which recipes to import (searches only, free) ---------

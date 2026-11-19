@@ -13,6 +13,7 @@ import {
   dietLabel,
   emptyPreferences,
 } from "./dietary.js";
+import { scaleQuantity, formatAmount } from "./utils/servings.js";
 const foodEmojis = {
   avocado: "🥑",
   "baby spinach": "🥬",
@@ -946,9 +947,39 @@ function openEditDialog(id) {
   $("#dialog-title").textContent = "Edit ingredient";
 }
 
+// The recipe open in the dialog and how many servings it's being shown for.
+// Only recipes with ingredient amounts (the imported ones) can be rescaled.
+let servingsView = null;
+const MAX_SERVINGS = 24;
+
+function canScale(recipe) {
+  return Boolean(recipe.servings && recipe.amounts && Object.keys(recipe.amounts).length);
+}
+
+// Re-draws everything that depends on the chosen number of servings, without
+// rebuilding the dialog (so keyboard focus stays on the +/− button).
+function updateServings() {
+  if (!servingsView) return;
+  const { recipe, count } = servingsView;
+  document.querySelectorAll("#recipe-detail [data-amount-for]").forEach((span) => {
+    const amount = recipe.amounts[span.dataset.amountFor];
+    span.textContent = amount
+      ? formatAmount(scaleQuantity(amount.quantity, recipe.servings, count), amount.unit)
+      : "";
+  });
+  $("#servings-value").textContent = count;
+  $("#photo-servings").textContent = `♧ \u00a0${count} ${count === 1 ? "serving" : "servings"}`;
+  if (recipe.calories)
+    $("#servings-total").textContent = `${formatNumber(Math.round(recipe.calories * count))} kcal total`;
+  $('[data-servings-step="-1"]').disabled = count <= 1;
+  $('[data-servings-step="1"]').disabled = count >= MAX_SERVINGS;
+}
+
 function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
+  const scalable = canScale(recipe);
+  servingsView = scalable ? { recipe, count: Number(recipe.servings) } : null;
   const { hits, missing } = recipeMatch(recipe);
   const pantry = availableNames();
   const ingredientsOnHand = recipe.ingredients.filter((item) =>
@@ -977,7 +1008,11 @@ function openRecipe(id) {
           ),
         ].join("")
       : "";
-    return `${mark} ${escapeHtml(ingredient)}${flags}`;
+    // Amount is filled in by updateServings() so it can change with servings.
+    const amount = scalable
+      ? `<span class="ingredient-amount" data-amount-for="${escapeHtml(ingredient)}"></span> `
+      : "";
+    return `${mark} ${amount}${escapeHtml(ingredient)}${flags}`;
   };
   const ingredientList = (ingredients, className = "") =>
     `<ul class="detail-ingredients ${className}">${ingredients
@@ -991,12 +1026,21 @@ function openRecipe(id) {
     : "";
   const servingCount = Number(recipe.servings || 2);
   const calorieCount = Number(recipe.calories || 400);
+  const servingsControl = scalable
+    ? `<div class="servings-control" role="group" aria-labelledby="servings-label">
+          <span class="servings-label" id="servings-label">Servings</span>
+          <button type="button" class="servings-step" data-servings-step="-1" aria-label="Fewer servings">−</button>
+          <output class="servings-value" id="servings-value" aria-live="polite">${servingCount}</output>
+          <button type="button" class="servings-step" data-servings-step="1" aria-label="More servings">+</button>
+          <span class="servings-total" id="servings-total"></span>
+        </div>`
+    : "";
   $("#recipe-detail").innerHTML =
     `<button class="icon-button close-detail" aria-label="Close recipe">×</button>
       <div class="recipe-visual">
         <div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1100&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div>
         <span class="recipe-time-badge">◷ &nbsp;${recipe.time} minutes</span>
-        <div class="recipe-photo-meta"><span>♧ &nbsp;${servingCount} servings</span><span>♨ &nbsp;${formatNumber(calorieCount)} kcal</span></div>
+        <div class="recipe-photo-meta"><span id="photo-servings">♧ &nbsp;${servingCount} servings</span><span>♨ &nbsp;${formatNumber(calorieCount)} kcal per serving</span></div>
       </div>
       <div class="recipe-content">
         <header class="recipe-summary">
@@ -1005,6 +1049,7 @@ function openRecipe(id) {
           <p>${escapeHtml(recipe.description)}</p>
           <p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p>
           ${dietWarning}
+          ${servingsControl}
         </header>
         <section class="recipe-section">
           <h3>Ingredients</h3>
@@ -1016,6 +1061,7 @@ function openRecipe(id) {
           <ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
         </section>
       </div>`;
+  updateServings();
   $("#recipe-dialog").showModal();
 }
 
@@ -1470,6 +1516,22 @@ $("#clear-preferences").addEventListener("click", () => {
   render();
   $("[data-pref-kind]").focus(); // the button is now disabled
   showToast("Preferences cleared.");
+});
+
+// Servings +/− in the recipe dialog. Each click redraws the amounts.
+$("#recipe-dialog").addEventListener("click", (event) => {
+  const step = event.target.closest("[data-servings-step]");
+  if (!step || !servingsView) return;
+  const next = servingsView.count + Number(step.dataset.servingsStep);
+  servingsView.count = Math.min(MAX_SERVINGS, Math.max(1, next));
+  updateServings();
+  // At 1 (or the max) the button just pressed gets disabled; move focus to the
+  // other one so keyboard users aren't dropped back to the top of the page.
+  if (step.disabled)
+    $(`[data-servings-step="${-Number(step.dataset.servingsStep)}"]`).focus();
+});
+$("#recipe-dialog").addEventListener("close", () => {
+  servingsView = null;
 });
 
 const initialPage = location.hash.slice(1);
