@@ -26,7 +26,12 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="app-shell">
       <aside class="sidebar">
-        <a class="sidebar-logo" href="#dashboard" data-page="dashboard" aria-label="CookItUp home">
+        <a
+          class="sidebar-logo"
+          href="#dashboard"
+          data-page="dashboard"
+          aria-label="CookItUp home"
+        >
           <span aria-hidden="true">♨</span>
         </a>
         <nav id="primary-navigation" class="lsb" aria-label="Main navigation"></nav>
@@ -87,21 +92,44 @@
             ></div>
             <div class="carousel-controls">
               <div class="carousel-control-row">
-                <button class="carousel-arrow" id="featured-previous" type="button" aria-label="Previous highlight">‹</button>
+                <button
+                  class="carousel-arrow"
+                  id="featured-previous"
+                  type="button"
+                  aria-label="Previous highlight"
+                >
+                  ‹
+                </button>
                 <div
                   class="carousel-dots"
                   id="featured-dots"
                   role="group"
                   aria-label="Choose a highlight"
                 ></div>
-                <button class="carousel-arrow" id="featured-next" type="button" aria-label="Next highlight">›</button>
+                <button
+                  class="carousel-arrow"
+                  id="featured-next"
+                  type="button"
+                  aria-label="Next highlight"
+                >
+                  ›
+                </button>
               </div>
-              <span class="carousel-status" id="featured-status" aria-live="polite"></span>
+              <span
+                class="carousel-status"
+                id="featured-status"
+                aria-live="polite"
+              ></span>
             </div>
           </section>
           <div class="dashboard-title"><h2>Dashboard</h2></div>
           <div class="dashboard-cards">
-            <article class="dashboard-card wide-card" role="link" tabindex="0" data-go="inventory">
+            <article
+              class="dashboard-card wide-card"
+              role="link"
+              tabindex="0"
+              data-go="inventory"
+            >
               <span class="card-icon">⌑</span
               ><span class="card-badge" id="shopping-badge"
                 >12 Items on List</span
@@ -112,7 +140,12 @@
                 your shopping list, your last update was 5 hours ago.
               </p>
             </article>
-            <article class="dashboard-card wide-card" role="link" tabindex="0" data-go="recipes">
+            <article
+              class="dashboard-card wide-card"
+              role="link"
+              tabindex="0"
+              data-go="recipes"
+            >
               <span class="card-icon">⑂</span
               ><span class="card-badge">0 Meals Planned</span>
               <h3>Meal Plan</h3>
@@ -121,7 +154,12 @@
                 your pantry.
               </p>
             </article>
-            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
+            <article
+              class="dashboard-card"
+              role="link"
+              tabindex="0"
+              data-go="inventory"
+            >
               <span class="card-icon">⟳</span
               ><span class="card-badge" id="expiry-alert-badge">0 Alerts</span>
               <h3>Expiring Soon</h3>
@@ -139,7 +177,12 @@
                 Quickly scan barcodes, type in items, or manually adjust counts.
               </p>
             </article>
-            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
+            <article
+              class="dashboard-card"
+              role="link"
+              tabindex="0"
+              data-go="inventory"
+            >
               <span class="card-icon">▣</span
               ><span class="card-badge" id="inventory-badge">42 Items</span>
               <h3>Inventory</h3>
@@ -148,7 +191,12 @@
                 rack.
               </p>
             </article>
-            <article class="dashboard-card" role="link" tabindex="0" data-go="preferences">
+            <article
+              class="dashboard-card"
+              role="link"
+              tabindex="0"
+              data-go="preferences"
+            >
               <span class="card-icon">⛨</span
               ><span class="card-badge hidden" id="prefs-badge">0 Active</span>
               <h3>Allergies &amp; Preferences</h3>
@@ -157,7 +205,12 @@
                 Allergy).
               </p>
             </article>
-            <article class="dashboard-card" role="link" tabindex="0" data-go="recipes">
+            <article
+              class="dashboard-card"
+              role="link"
+              tabindex="0"
+              data-go="recipes"
+            >
               <span class="card-icon">▤</span
               ><span class="card-badge" id="recipe-badge">14 Available</span>
               <h3>Find Recipes</h3>
@@ -166,7 +219,12 @@
                 waste.
               </p>
             </article>
-            <article class="dashboard-card" role="link" tabindex="0" data-go="inventory">
+            <article
+              class="dashboard-card"
+              role="link"
+              tabindex="0"
+              data-go="inventory"
+            >
               <span class="card-icon">▣</span>
               <h3>Smart Import</h3>
               <p>
@@ -303,7 +361,10 @@
                   Get ideas that fit your way of eating.
                 </p>
               </div>
-              <button class="button secondary setting-action" data-go="preferences">
+              <button
+                class="button secondary setting-action"
+                data-go="preferences"
+              >
                 Manage
               </button>
             </article>
@@ -339,11 +400,30 @@
             <div class="pref-panel-heading">
               <h2 id="allergy-heading">Allergies</h2>
               <p>
-                Recipes with these are hidden and marked in red if you choose
-                to show them.
+                Recipes with these are hidden and marked in red if you choose to
+                show them.
               </p>
             </div>
             <div class="chip-grid" id="allergy-options"></div>
+            <form class="custom-allergy-form" id="custom-allergy-form">
+              <label for="custom-allergy-input">Add another allergy</label>
+              <div class="custom-allergy-row">
+                <input
+                  type="text"
+                  id="custom-allergy-input"
+                  placeholder="e.g. mango"
+                  maxlength="40"
+                  autocomplete="off"
+                />
+                <button type="submit" class="button secondary">Add</button>
+              </div>
+              <p
+                class="form-error"
+                id="custom-allergy-error"
+                aria-live="polite"
+              ></p>
+            </form>
+            <ul class="custom-allergy-list" id="custom-allergy-list"></ul>
           </section>
           <section class="panel pref-panel" aria-labelledby="diet-heading">
             <div class="pref-panel-heading">
@@ -492,7 +572,12 @@
           This ingredient will be removed from your pantry.
         </p>
         <div class="dialog-actions">
-          <button type="submit" class="button secondary" value="cancel" autofocus>
+          <button
+            type="submit"
+            class="button secondary"
+            value="cancel"
+            autofocus
+          >
             Cancel</button
           ><button type="submit" class="button danger" value="confirm">
             Delete
