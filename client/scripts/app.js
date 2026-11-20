@@ -868,6 +868,8 @@ function setPage(page, { moveFocus = false } = {}) {
     else link.removeAttribute("aria-current");
   });
   history.replaceState(null, "", `#${page}`);
+  // Tell the liquid sidebar which page is showing so its bubble follows the router.
+  window.dispatchEvent(new CustomEvent("cookitup:page", { detail: { page } }));
   render();
   if (moveFocus) focusPageHeading();
 }
@@ -1430,7 +1432,7 @@ function savedTheme() {
   }
 }
 
-applyTheme(savedTheme() === "dark" ? "dark" : "light");
+applyTheme(savedTheme() === "light" ? "light" : "dark");
 
 darkModeToggle.addEventListener("change", () => {
   setTheme(darkModeToggle.checked ? "dark" : "light");

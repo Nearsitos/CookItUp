@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4f5f0" />
+    <meta name="theme-color" content="#14171d" />
     <script>
-      // Apply the saved theme before the page paints. Light mode is the
-      // default; the Settings switch controls dark mode explicitly.
+      // Apply the saved theme before the page paints. The dark purple theme is
+      // the default; the Settings switch controls it explicitly.
       (function () {
         var saved = null;
         try {
           saved = localStorage.getItem("cookitup-theme");
         } catch (e) {}
         document.documentElement.dataset.theme =
-          saved === "dark" ? "dark" : "light";
+          saved === "light" ? "light" : "dark";
       })();
     </script>
     <title>CookItUp — Your kitchen dashboard</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/liquid-theme.css" />
     <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/liquid-sidebar.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -27,57 +29,8 @@
         <a class="sidebar-logo" href="#dashboard" data-page="dashboard" aria-label="CookItUp home">
           <span aria-hidden="true">♨</span>
         </a>
-        <nav id="primary-navigation" aria-label="Main navigation">
-          <a
-            class="nav-link active"
-            href="#dashboard"
-            data-page="dashboard"
-            data-tooltip="Dashboard"
-            aria-label="Dashboard"
-            aria-current="page"
-            ><span aria-hidden="true">⊞</span
-            ><span class="nav-text">Dashboard</span></a
-          >
-          <div
-            class="nav-link nav-disabled"
-            role="link"
-            data-tooltip="Profile"
-            aria-label="Profile"
-            aria-disabled="true"
-          >
-            <span aria-hidden="true">♙</span
-            ><span class="nav-text">Profile</span>
-          </div>
-          <div
-            class="nav-link nav-disabled"
-            role="link"
-            data-tooltip="Household"
-            aria-label="Household"
-            aria-disabled="true"
-          >
-            <span aria-hidden="true">♧</span
-            ><span class="nav-text">Household</span>
-          </div>
-          <a
-            class="nav-link"
-            href="#inventory"
-            data-page="inventory"
-            data-tooltip="Inventory"
-            aria-label="Inventory"
-            ><span aria-hidden="true">▣</span
-            ><span class="nav-text">Inventory</span
-            ><span class="nav-count" id="nav-count">0</span></a
-          >
-          <a
-            class="nav-link"
-            href="#settings"
-            data-page="settings"
-            data-tooltip="Settings"
-            aria-label="Settings"
-            ><span aria-hidden="true">⚙</span
-            ><span class="nav-text">Settings</span></a
-          >
-        </nav>
+        <nav id="primary-navigation" class="lsb" aria-label="Main navigation"></nav>
+        <span id="nav-count" hidden>0</span>
         <div class="sidebar-bottom">
           <button
             class="sidebar-theme-toggle"
@@ -105,7 +58,6 @@
             href="#dashboard"
             data-page="dashboard"
             aria-label="CookItUp home"
-            ><span class="brand-mark" aria-hidden="true">♨</span
             ><span>CookItUp</span></a
           >
           <div class="global-search">
