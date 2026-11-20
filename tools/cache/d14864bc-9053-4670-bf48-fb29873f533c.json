@@ -1,0 +1,455 @@
+{
+  "data": {
+    "id": "d14864bc-9053-4670-bf48-fb29873f533c",
+    "name": "Tacos de Rajas con Crema",
+    "description": "Smoky poblano strips and sweet sautéed onions nestle in silky, lightly tangy Mexican crema. Warm corn tortillas cradle the tender filling, bringing toasted corn aroma to every bite.",
+    "category": "Dinner",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "tags": [
+      "Dinner",
+      "Mexican",
+      "Quick",
+      "poblano peppers",
+      "cream",
+      "tacos",
+      "vegetarian"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT5M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings, 3 tacos each",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Gluten-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free"
+      ],
+      "not_suitable_for": [
+        "People with milk allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store filling separately from tortillas in a shallow, covered container at 4°C (40°F) or colder. Refrigerate within 2 hours, or within 1 hour when the ambient temperature exceeds 32°C (90°F).",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended because the crema can separate and the peppers soften.",
+        "duration": null
+      },
+      "reheating": "Reheat the filling gently in a saucepan, stirring until it reaches 74°C (165°F) throughout on a food thermometer. Warm tortillas separately and assemble just before eating. Temperature guidance: [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Oven with broiler",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Broiler-safe rimmed baking sheet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Heatproof bowl with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide griddle",
+        "required": true,
+        "alternative": "Second large skillet"
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cooking spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen towel",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Shallow storage container",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Saucepan",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Food thermometer",
+        "required": false,
+        "alternative": "Required when checking reheated leftovers"
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Poblano Filling",
+        "items": [
+          {
+            "name": "poblano peppers",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "fresh, for roasting",
+            "notes": "Edible flesh target after roasting, peeling and removing stems and seeds. Buy approximately 650–700 g whole poblanos, usually 5–6 medium peppers; expected prepared yield is approximately 500 g.",
+            "substitutions": [],
+            "ingredient_id": "0087267e-c83a-4de6-99d7-244190545302",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "white onion",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "peeled and thinly sliced",
+            "notes": "Prepared weight, approximately 1 large onion.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "mexican crema",
+            "quantity": 240,
+            "unit": "g",
+            "preparation": "full-fat",
+            "notes": "Use Mexican crema made with pasteurized dairy.",
+            "substitutions": [],
+            "ingredient_id": "98006dbf-1358-494e-8483-3601db3ee5c0",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Starting amount for unsalted crema; if the crema tastes salty, add only part of this measured amount initially.",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Tortillas",
+        "items": [
+          {
+            "name": "corn tortillas",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": null,
+            "notes": "12 small tortillas weighing approximately 25 g each. Choose tortillas made without wheat.",
+            "substitutions": [],
+            "ingredient_id": "da963b85-8f0b-4c36-b9b1-c31e17b488ae",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Preheat the broiler to high, approximately 260°C (500°F), with the rack 10–15 cm below the element. Allow about 3 minutes while preparing the peppers.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 260,
+            "fahrenheit": 500
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Cut the washed poblanos lengthwise into broad panels, removing stems, seeds and pale inner ribs. Place the panels skin-side up on the baking sheet in a single layer.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Broil the poblano panels for 7–9 minutes, until most of the skin is blackened and blistered. Watch closely near the end; the flesh should soften without drying out.",
+        "structured": {
+          "action": "BROIL",
+          "temperature": {
+            "celsius": 260,
+            "fahrenheit": 500
+          },
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "Most of the skin is blistered with broad blackened patches.",
+            "tactile": "The panels bend readily when lifted with tongs."
+          }
+        },
+        "tips": [
+          "Prepare and measure the onion, crema and tortillas while the peppers broil."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Rest the hot peppers in the heatproof bowl with its lid on for 5 minutes to loosen their skins. Cook the onions during this interval.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Sauté the sliced onion in the olive oil in the large skillet over medium heat for 6 minutes, stirring frequently, until soft and translucent with a few pale golden edges.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "The onion is translucent with light golden edges.",
+            "tactile": "The slices are soft and flexible."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Peel away the loosened poblano skins when the peppers are cool enough to handle. Leave occasional small flecks of char, but remove broad blackened patches.",
+        "structured": {
+          "action": "PEEL",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Avoid rinsing the peeled peppers, which washes away roasted flavor."
+        ]
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "Slice the peeled poblano flesh into strips approximately 1 cm wide.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Stir the poblano strips, Mexican crema and salt into the softened onions over low heat until evenly combined.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Simmer the filling very gently for 3 minutes, stirring occasionally, until the sauce coats the strips and only small bubbles appear around the edges. Warm the tortillas during this interval.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The crema is glossy and clings to the peppers, with small bubbles at the edges.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep the heat low; a rolling boil can separate the crema."
+        ]
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Warm the tortillas on the dry griddle over medium-high heat in batches, approximately 20–30 seconds per side. Stack them in the clean kitchen towel as they finish to keep them pliable.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The tortillas develop scattered toasted spots.",
+            "tactile": "Each tortilla folds easily without cracking."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "assemble",
+        "text": "Divide the warm poblano filling among the 12 tortillas, allowing 3 tacos per serving. Serve immediately.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The crema looks grainy or separates into oily patches.",
+        "likely_cause": "The filling boiled vigorously or cooked too long.",
+        "prevention": "Use full-fat Mexican crema and maintain only a gentle simmer.",
+        "fix": "Remove the skillet from the heat and stir gently as it cools slightly. Mild separation may improve; severely curdled crema will not become completely smooth."
+      },
+      {
+        "symptom": "The poblano skins are difficult to remove.",
+        "likely_cause": "The skins were insufficiently blistered or the peppers rested uncovered.",
+        "prevention": "Blacken most of the skin and rest the peppers covered immediately after broiling.",
+        "fix": "Scrape away stubborn loose skin with the back of the knife; leave small tender patches rather than tearing away the flesh."
+      }
+    ],
+    "chef_notes": [
+      "Broiling broad pepper panels exposes the skin evenly and avoids repeatedly turning whole peppers.",
+      "Cut onions thinly so they soften during the peppers' covered rest and remain tender inside the tacos.",
+      "Poblano heat varies. Removing seeds and pale inner ribs reduces some heat but does not guarantee mild peppers.",
+      "Mexican crema supplies the defining tang and silky texture; keep its cooking time short.",
+      "Warm tortillas immediately before filling so they stay flexible and carry the sauce without cracking."
+    ],
+    "cultural_context": "Rajas means strips, describing the cut peppers at the center of this Mexican preparation. Poblanos cooked with onions and crema are served as a vegetable dish or tucked into tortillas as a taco filling. Reference: [Creamed Rajas](https://www.epicurious.com/recipes/food/views/creamed-rajas-387019).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 359.05,
+        "protein_g": 5.98,
+        "carbohydrates_g": 48.66,
+        "fat_g": 19.03,
+        "saturated_fat_g": 8.41,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 6.04,
+        "polyunsaturated_fat_g": 2.08,
+        "fiber_g": 7.08,
+        "sugar_g": 6.77,
+        "sodium_mg": 404.33,
+        "cholesterol_mg": 32.4,
+        "potassium_mg": 420.1,
+        "calcium_mg": 83.72,
+        "iron_mg": 1.63,
+        "magnesium_mg": 77.51,
+        "phosphorus_mg": 318.1,
+        "zinc_mg": 1.42,
+        "vitamin_a_mcg": 103.15,
+        "vitamin_c_mg": 97.24,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 1.61,
+        "vitamin_k_mcg": 15.61,
+        "vitamin_b6_mg": 0.54,
+        "vitamin_b12_mcg": 0.13,
+        "thiamin_mg": 0.18,
+        "riboflavin_mg": 0.21,
+        "niacin_mg": 1.84,
+        "folate_mcg": 36.85,
+        "water_g": 237.68,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 15,
+    "monthly_limit": 50,
+    "daily_remaining": 15,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 35,
+    "detail_limit": 50,
+    "detail_remaining": 15,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

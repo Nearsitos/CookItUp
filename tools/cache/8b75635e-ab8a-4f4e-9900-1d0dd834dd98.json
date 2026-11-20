@@ -1,0 +1,510 @@
+{
+  "data": {
+    "id": "8b75635e-ab8a-4f4e-9900-1d0dd834dd98",
+    "name": "Mercimek Çorbası",
+    "description": "This silky Turkish red lentil soup combines sweet onion and carrot with warm cumin. Its golden-orange color and gentle earthy flavor brighten with a squeeze of fresh lemon.",
+    "category": "Lunch",
+    "cuisine": "Turkish",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Turkish",
+      "Quick",
+      "red lentils",
+      "soup",
+      "simmered"
+    ],
+    "meta": {
+      "active_time": "PT12M",
+      "passive_time": "PT18M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": [
+        "People with lentil allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Divide into shallow containers and refrigerate within 2 hours, or within 1 hour above 32°C (90°F). Keep at 4°C (40°F) or below. See [USDA leftover guidance](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety).",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled soup in sealed portions with room for expansion. Store lemon wedges separately. Thaw soup in the refrigerator.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat in a saucepan, stirring frequently, until the soup reaches 74°C (165°F) throughout, checked with a food thermometer. See [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "box grater",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "fine-mesh sieve",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "electric kettle",
+        "required": true,
+        "alternative": "Small covered saucepan for heating the soup water"
+      },
+      {
+        "name": "large saucepan with lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "wooden spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "immersion blender",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "serving bowls",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "shallow storage containers",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Soup",
+        "items": [
+          {
+            "name": "red lentils",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "dried, split and hulled",
+            "notes": "Use split red lentils for the short cooking time; inspect and remove any debris.",
+            "substitutions": [],
+            "ingredient_id": "419e7b3f-ad89-46c9-a968-7c463d11de58",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "onion",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Edible weight after removing the skin and root.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "carrot",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "scrubbed and trimmed",
+            "notes": "Edible weight after removing the ends.",
+            "substitutions": [],
+            "ingredient_id": "9d020677-cb7a-444c-98e3-1a982ae39df4",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cumin",
+            "quantity": 1.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground black pepper",
+            "quantity": 0.3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 1000,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For the soup; heat in the kettle during preparation.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "To Serve",
+        "items": [
+          {
+            "name": "lemon",
+            "quantity": 60,
+            "unit": "g",
+            "preparation": "cut into wedges",
+            "notes": "Edible flesh and juice weight, excluding rind and seeds. Buy approximately 120 g whole lemon for an estimated 60 g edible portion; serve as wedges with the rind attached.",
+            "substitutions": [],
+            "ingredient_id": "8787c956-d31c-4dfa-9c29-db1aae17ca59",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Lentil Rinsing Water, Discarded",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 600,
+            "unit": "g",
+            "preparation": "cold",
+            "notes": "Use to rinse the lentils in a bowl, then discard through a sieve.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Heat the 1000 g soup water in the kettle to boiling, approximately 100°C (212°F) at sea level, while completing the remaining preparation.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Finely dice the onion into pieces about 5 mm across.",
+        "structured": {
+          "action": "DICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Coarsely grate the carrot with the box grater.",
+        "structured": {
+          "action": "GRATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Rinse the lentils in the bowl with the 600 g cold rinsing water.",
+        "structured": {
+          "action": "RINSE",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Drain the lentils through the fine-mesh sieve, discarding the rinsing water.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Cut the lemon into four wedges, removing visible seeds.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Sauté the onion and carrot with the olive oil in the large saucepan over medium heat for 4 minutes, stirring with the wooden spoon until softened without browning.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The onion looks translucent at the edges and the carrot has softened.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Stir in the cumin, black pepper, salt, drained lentils and hot soup water.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Bring the soup to a boil over high heat, approximately 100°C (212°F) at sea level.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT1M30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Simmer gently with the lid partly covering the saucepan for 18 minutes, around 95°C (203°F), until the lentils collapse and the carrot is completely tender. Lower the heat if the soup threatens to boil over.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 95,
+            "fahrenheit": 203
+          },
+          "duration": "PT18M",
+          "doneness_cues": {
+            "visual": "The lentils lose their shape and the soup becomes cloudy and thick.",
+            "tactile": "A lentil pressed with the spoon smears easily without a firm center."
+          }
+        },
+        "tips": [
+          "If the lentils still have firm centers, continue simmering until soft; older lentils can exceed the stated cooking time."
+        ]
+      },
+      {
+        "step_number": 11,
+        "phase": "finish",
+        "text": "With the saucepan off the heat, puree the soup using the immersion blender until smooth. Keep the blade head submerged and stop the motor before lifting it to prevent hot splashes.",
+        "structured": {
+          "action": "PUREE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The soup is uniformly smooth and golden-orange, with no visible vegetable pieces.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "finish",
+        "text": "Serve in four bowls with a lemon wedge alongside each portion for squeezing into the soup.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The blended soup feels grainy.",
+        "likely_cause": "The lentils have not fully softened, or whole lentils were used instead of split lentils.",
+        "prevention": "Use hulled split red lentils and check that they smear easily before blending.",
+        "fix": "Continue simmering gently until completely soft, then blend again. This may extend the total time."
+      },
+      {
+        "symptom": "The soup tastes bitter.",
+        "likely_cause": "The onion or spices scorched during cooking.",
+        "prevention": "Soften the vegetables without browning and add the spices with the water.",
+        "fix": "If scorching is localized, transfer the soup without scraping the bottom. A pervasive burnt flavor cannot be fixed."
+      }
+    ],
+    "chef_notes": [
+      "Grating the carrot helps it soften within the short lentil cooking time.",
+      "Heating the soup water during preparation helps keep the total time within 30 minutes.",
+      "Fully softened lentils provide a creamy texture without flour or dairy.",
+      "Add lemon at the table so its fresh aroma stays vivid and each serving can be adjusted."
+    ],
+    "cultural_context": "Mercimek çorbası is a Turkish lentil soup commonly prepared with red lentils and aromatics. Smooth versions pair the lentils with vegetables such as onion and carrot; preparations vary between households. See this [Turkish red lentil soup reference](https://myturkishrecipes.com/turkish-red-lentil-soup-mercimek-corbasi).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 262.45,
+        "protein_g": 12.76,
+        "carbohydrates_g": 38.36,
+        "fat_g": 7.56,
+        "saturated_fat_g": 1.08,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 4.87,
+        "polyunsaturated_fat_g": 1.28,
+        "fiber_g": 7.09,
+        "sugar_g": 3.86,
+        "sodium_mg": 615.02,
+        "cholesterol_mg": 0,
+        "potassium_mg": 486.39,
+        "calcium_mg": 54.8,
+        "iron_mg": 4.22,
+        "magnesium_mg": 40.72,
+        "phosphorus_mg": 168.84,
+        "zinc_mg": 1.97,
+        "vitamin_a_mcg": 210.66,
+        "vitamin_c_mg": 12.53,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 1.35,
+        "vitamin_k_mcg": 9.82,
+        "vitamin_b6_mg": 0.29,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.3,
+        "riboflavin_mg": 0.08,
+        "niacin_mg": 1.06,
+        "folate_mcg": 114.15,
+        "water_g": 315.86,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 25,
+    "monthly_limit": 50,
+    "daily_remaining": 25,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 25,
+    "detail_limit": 50,
+    "detail_remaining": 25,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

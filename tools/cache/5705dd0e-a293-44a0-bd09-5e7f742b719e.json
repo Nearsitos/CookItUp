@@ -1,0 +1,641 @@
+{
+  "data": {
+    "id": "5705dd0e-a293-44a0-bd09-5e7f742b719e",
+    "name": "Hainanese Chicken Rice",
+    "description": "A revered Southeast Asian staple featuring gently poached, incredibly silky chicken paired with fragrant jasmine rice cooked in rich chicken fat and savory broth, accompanied by a vibrant trinity of dipping sauces.",
+    "category": "Dinner",
+    "cuisine": "Singaporean",
+    "difficulty": "Advanced",
+    "tags": [
+      "Chinese",
+      "Poultry",
+      "Project",
+      "Fresh Ginger",
+      "Jasmine Rice",
+      "Lunar New Year",
+      "Make-Ahead",
+      "Pandan",
+      "Scallion",
+      "Southeast Asian",
+      "Whole Chicken",
+      "Dinner",
+      "Main Course",
+      "Dairy-Free"
+    ],
+    "meta": {
+      "active_time": "PT1H30M",
+      "passive_time": "PT1H30M",
+      "total_time": "PT3H0M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 450
+    },
+    "dietary": {
+      "flags": [
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free"
+      ],
+      "not_suitable_for": [
+        "Individuals with celiac disease or severe gluten allergies, unless specifically using gluten-free dark soy sauce substitutes"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store chicken, rice, and sauces in separate airtight containers.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended as the rice texture deteriorates and the chicken loses its signature silky quality.",
+        "duration": null
+      },
+      "reheating": "Gently steam or microwave the rice with a splash of water until hot. The chicken is best served at room temperature; reheating it will ruin the delicate texture and dry out the meat.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large stockpot",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Meat thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large bowl",
+        "required": true,
+        "alternative": "Clean basin for the ice bath"
+      },
+      {
+        "name": "Wok or frying pan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Rice cooker",
+        "required": true,
+        "alternative": "Medium saucepan with a tight-fitting lid"
+      },
+      {
+        "name": "Blender",
+        "required": true,
+        "alternative": "Food processor or mortar and pestle"
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "The Chicken and Poaching Broth",
+        "items": [
+          {
+            "name": "whole chicken",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "giblets removed",
+            "notes": "about 1500g",
+            "substitutions": [],
+            "ingredient_id": "aa426990-848c-4854-9a36-7bdeca0bb3ef",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": null,
+            "notes": "for exfoliating the skin",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": "thickly sliced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 4,
+            "unit": null,
+            "preparation": "tied into a knot",
+            "notes": "about 40g total",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 4000,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "52e7e8d1-3737-410a-8018-22d0b768cbd5",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Fragrant Chicken Rice",
+        "items": [
+          {
+            "name": "chicken fat",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": "trimmed from the whole chicken cavity",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "6a198672-1dbf-40ef-a06a-fc676547166e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "shallot",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "fdfc0723-3dbf-44af-b667-f5e4bd6005a8",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "jasmine rice",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "rinsed until water runs clear and well-drained",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1cfffbd2-7ea5-4cbc-bc35-c57e12233152",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "pandan leaves",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "tied into a knot",
+            "notes": "about 10g",
+            "substitutions": [],
+            "ingredient_id": "2a299109-5985-4ee1-8cce-8858a09d9f1f",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Chili Sauce",
+        "items": [
+          {
+            "name": "fresh red chilies",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "roughly chopped",
+            "notes": "such as Fresno or long mild red chilies",
+            "substitutions": [],
+            "ingredient_id": "3c3f97d4-c951-43fd-865c-88fa8b445739",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "bird's eye chilies",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "roughly chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "3c3f97d4-c951-43fd-865c-88fa8b445739",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh lime juice",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "531b7deb-b63c-41c9-8c01-b7bec6fcd2d0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Ginger-Scallion Sauce",
+        "items": [
+          {
+            "name": "fresh ginger",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "very finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "very finely sliced, green and pale parts only",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "neutral oil",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "such as peanut, canola, or grapeseed oil",
+            "substitutions": [],
+            "ingredient_id": "a0f5fd8e-28e3-46ca-9b60-49060768c107",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Sweet Soy Sauce",
+        "items": [
+          {
+            "name": "dark soy sauce",
+            "quantity": 45,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "0d724b69-c9e4-4ae4-91f5-a32fde1d4b40",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sesame oil",
+            "quantity": 5,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e74beff5-5295-4a3f-82fb-9f8ef1d5da59",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Garnish and Accompaniments",
+        "items": [
+          {
+            "name": "english cucumber",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "thinly sliced",
+            "notes": "about 200g",
+            "substitutions": [],
+            "ingredient_id": "457adec2-3e06-4efe-a26e-9e6ea9f84924",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh cilantro",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "leaves only",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "90d50243-5217-4e50-836c-b2f624e2b58b",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Trim the large pieces of fat from the cavity opening of the chicken and set aside for cooking the rice. Rub the exterior skin of the chicken vigorously with the 50g of kosher salt to exfoliate away impurities and loose membranes. Rinse the chicken completely inside and out under cold running water until the water runs clear.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Stuff the hollowed cavity of the chicken with the thick ginger slices and the knotted scallions to flavor the meat from the inside out.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Bring a large stockpot of water to a rolling boil. Carefully lower the chicken into the pot, breast-side down. Immediately reduce the heat to low to maintain a gentle sub-simmer at approximately 80°C (175°F). Poach gently for 45 to 50 minutes. The internal temperature at the thickest part of the thigh should reach 74°C (165°F).",
+        "structured": {
+          "action": "POACH",
+          "temperature": {
+            "celsius": 80,
+            "fahrenheit": 176
+          },
+          "duration": "PT50M",
+          "doneness_cues": {
+            "visual": "Juices run clear when the thigh is pierced",
+            "tactile": "Leg joints move freely"
+          }
+        },
+        "tips": [
+          "Never let the water reach a rolling boil while the chicken is in the pot, as violent boiling will tear the delicate skin and result in tough, stringy meat."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Prepare a large bowl with cold water and plenty of ice. Using a large slotted spoon or tongs, carefully lift the chicken from the hot broth, tilting it to drain the hot liquid from the cavity back into the pot. Plunge the entire chicken into the ice bath for 10 minutes to halt the cooking process and quickly firm up the skin, creating a gelatinous texture.",
+        "structured": {
+          "action": "CHILL",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Skin feels taut, smooth, and cold to the touch"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "While the chicken rests in the ice bath, place the reserved chicken fat into a wok or large pan over medium-low heat. Fry gently until the fat has fully rendered and the solid pieces become crispy bits. Remove and discard the solid bits, keeping the liquid liquid gold fat in the pan.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Add the minced garlic, shallot, and ginger to the rendered chicken fat. Saute over medium heat until highly fragrant and deeply aromatic, about 3 minutes, taking care not to let the aromatics brown or burn.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Aromatics are softened and translucent but not browned",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Add the rinsed and well-drained jasmine rice to the wok. Stir continuously to coat every grain in the flavored fat, toasting the rice slightly for about 2 minutes to develop flavor.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Transfer the toasted rice mixture to your rice cooker. Add the 5g kosher salt, the knotted pandan leaves, and enough of the hot, savory chicken poaching broth to reach the standard white rice liquid line for your cooker. Start the standard cooking cycle.",
+        "structured": {
+          "action": "STEAM",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "prep",
+        "text": "To make the chili sauce, place the red chilies, bird's eye chilies (if using), garlic, ginger, sugar, salt, and lime juice into a blender. Add 2 to 3 tablespoons of the hot chicken poaching broth and blend until smooth and vibrant.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "To make the ginger-scallion sauce, combine the finely minced ginger, scallions, and salt in a heatproof bowl. In a small saucepan, heat the neutral oil until just smoking, then carefully pour the hot oil over the aromatics. They will sizzle violently and flash-cook, releasing their essential oils. Stir well to combine.",
+        "structured": {
+          "action": "TEMPER",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "prep",
+        "text": "To make the sweet soy sauce, whisk together the dark soy sauce, sesame oil, sugar, and one tablespoon of hot chicken broth in a small bowl until the sugar is fully dissolved.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "finish",
+        "text": "Remove the chicken from the ice bath and pat the skin completely dry with paper towels. Carve the chicken into bite-sized, bone-in pieces. Arrange the chicken on a platter lined with sliced cucumbers. Serve immediately alongside individual portions of the hot, fragrant rice, small dipping bowls of the three sauces, and a small bowl of the clear chicken broth garnished with fresh cilantro.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The chicken meat is tough, dry, and stringy.",
+        "likely_cause": "The poaching liquid was kept at a rolling boil instead of a gentle sub-simmer, causing the muscle fibers to seize violently.",
+        "prevention": "Monitor the temperature closely with a thermometer to ensure it stays around 80C (175F), and reduce the heat immediately once the chicken is submerged.",
+        "fix": "Cannot be fixed texturally, but slice the meat very thinly against the grain and serve with generous amounts of the rich dipping sauces to add moisture."
+      },
+      {
+        "symptom": "The rice is mushy, broken, or waterlogged.",
+        "likely_cause": "The rice was not drained properly after washing, leading to excess water during cooking, or new-crop rice was used which requires less liquid.",
+        "prevention": "Ensure the rice is exceptionally dry before toasting it in the fat, and slightly reduce the amount of cooking broth if using newly harvested rice.",
+        "fix": "Spread the rice out on a baking sheet to allow steam to escape and moisture to evaporate, though the texture will remain slightly compromised."
+      }
+    ],
+    "chef_notes": [
+      "Exfoliating the chicken with coarse salt is a non-negotiable step; it removes yellow epidermis membranes, resulting in an exceptionally clean, white, and photogenic skin presentation.",
+      "The thermal shock of the ice bath is the culinary secret behind this dish. It rapidly halts residual cooking to keep the breast meat tender, and more importantly, it causes the collagen in the skin to seize and form a snappy, gelatinous texture.",
+      "Do not discard the remaining poaching broth. It is a lightly seasoned, deeply comforting master stock. Skim the excess fat, season it lightly with white pepper and salt, and serve it as a sipping soup alongside the meal.",
+      "Aged jasmine rice is vastly superior for this application compared to new-crop rice. Aged grains are drier and can absorb much more of the rendered chicken fat and savory broth without turning into a mushy porridge."
+    ],
+    "cultural_context": "While it traces its ancestral roots to the Wenchang chicken dish from Hainan island in southern China, Hainanese Chicken Rice evolved significantly upon reaching the Malay Peninsula with early immigrants. Today, it stands as the undisputed national dish of Singapore and a beloved hawker center staple across Southeast Asia. Serving a whole, impeccably prepared bird is deeply symbolic during Lunar New Year feasts, representing family unity, completeness, and prosperity.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 461.59,
+        "protein_g": 2.98,
+        "carbohydrates_g": 20.94,
+        "fat_g": 29.16,
+        "saturated_fat_g": 11.9,
+        "trans_fat_g": null,
+        "monounsaturated_fat_g": 15.01,
+        "polyunsaturated_fat_g": 22.11,
+        "fiber_g": 15.47,
+        "sugar_g": 7.9,
+        "sodium_mg": 6669.71,
+        "cholesterol_mg": 10.63,
+        "potassium_mg": 622.82,
+        "calcium_mg": 208.02,
+        "iron_mg": 13.52,
+        "magnesium_mg": 116.97,
+        "phosphorus_mg": 1328.69,
+        "zinc_mg": 3.17,
+        "vitamin_a_mcg": 25.28,
+        "vitamin_c_mg": 24.48,
+        "vitamin_d_mcg": 0.6,
+        "vitamin_e_mg": 10.75,
+        "vitamin_k_mcg": 58.97,
+        "vitamin_b6_mg": 2.87,
+        "vitamin_b12_mcg": 8.18,
+        "thiamin_mg": 0.28,
+        "riboflavin_mg": 1.01,
+        "niacin_mg": 6.26,
+        "folate_mcg": 312.24,
+        "water_g": 1419.78,
+        "alcohol_g": 16.1,
+        "caffeine_mg": null
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 26,
+    "monthly_limit": 50,
+    "daily_remaining": 26,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 24,
+    "detail_limit": 50,
+    "detail_remaining": 26,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

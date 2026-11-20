@@ -1,0 +1,322 @@
+{
+  "data": {
+    "id": "d652d16f-18b6-4ff6-96c2-e3d820ea6ce9",
+    "name": "Simple Tomato Pasta",
+    "description": "A bright, vibrant pasta dish featuring sweet blistered tomatoes and aromatic garlic, bound together with starchy pasta water into a silky, luscious sauce.",
+    "category": "Dinner",
+    "cuisine": "Italian",
+    "difficulty": "Easy",
+    "tags": [
+      "Quick",
+      "Weeknight Dinner",
+      "Minimalist",
+      "Pantry Staple"
+    ],
+    "meta": {
+      "active_time": "PT10M",
+      "passive_time": "PT10M",
+      "total_time": "PT20M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": 350
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store in an airtight container. Pasta may absorb sauce and soften over time.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended as the pasta will become unpleasantly mushy when thawed.",
+        "duration": null
+      },
+      "reheating": "Reheat gently in a skillet over low heat with a splash of water to revive the emulsion.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large pot",
+        "required": true,
+        "alternative": "Dutch oven"
+      },
+      {
+        "name": "Wide skillet",
+        "required": true,
+        "alternative": "Sauté pan"
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pasta Base",
+        "items": [
+          {
+            "name": "dried spaghetti",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Linguine or bucatini also work well",
+            "substitutions": [],
+            "ingredient_id": "1f8410f5-496e-4ef7-b2eb-aea622903c83",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For heavily seasoning the pasta water",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Tomato Garlic Sauce",
+        "items": [
+          {
+            "name": "extra virgin olive oil",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 3,
+            "unit": null,
+            "preparation": "thinly sliced",
+            "notes": "Approximately 15g total weight",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cherry tomatoes",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "halved",
+            "notes": "Grape tomatoes can be substituted",
+            "substitutions": [],
+            "ingredient_id": "1d174190-f1f3-41c8-aeac-587898aefbf2",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "red pepper flakes",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Adjust to taste for preferred heat level",
+            "substitutions": [],
+            "ingredient_id": "1fb77a4a-045a-49ee-ae5b-d6a776533bb1",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Finishing",
+        "items": [
+          {
+            "name": "fresh basil",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "roughly torn",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "417f8397-9065-4cd6-8820-0ab7363fbb08",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Bring a large pot of water to a rolling boil at 100 degrees Celsius (212 degrees Fahrenheit). Add the kosher salt, then the spaghetti. Cook until just shy of al dente, usually 1 to 2 minutes less than the package instructions. Reserve at least 100ml of starchy pasta water before draining.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT9M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Pasta should offer slight resistance when bitten, with a tiny white dot of uncooked starch remaining in the center."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "While the pasta boils, place a wide skillet over medium heat and add the extra virgin olive oil. Add the thinly sliced garlic and red pepper flakes. Cook gently until the garlic is fragrant and pale golden, taking care not to let it brown, about 2 minutes.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Garlic should be pale gold, not brown.",
+            "tactile": "Garlic will soften slightly in the oil."
+          }
+        },
+        "tips": [
+          "Tilt the pan so the oil and garlic pool in one corner to gently fry without burning."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Increase the heat to medium-high and add the halved cherry tomatoes. Sauté until the tomatoes begin to blister, soften, and release their juices into the oil to form a rustic, bubbly sauce, about 6 minutes.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "Tomatoes should be collapsed with blistered skins and bubbling juices.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "assemble",
+        "text": "Transfer the slightly undercooked pasta directly into the skillet with the tomatoes. Pour in 50ml of the reserved pasta water. Using tongs, toss vigorously over medium-high heat until the starchy water and olive oil emulsify into a glossy sauce that clings to the noodles. Add more pasta water if the pan looks too dry.",
+        "structured": {
+          "action": "EMULSIFY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The liquid at the bottom of the pan should turn creamy and opaque, thoroughly coating the pasta.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "finish",
+        "text": "Remove the skillet from the heat. Fold in the torn fresh basil leaves, toss one final time, and serve immediately.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": [
+          "Adding basil off the heat prevents it from bruising or turning completely black."
+        ]
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Sauce is thin, watery, and pooling at the bottom of the plate.",
+        "likely_cause": "The pasta water and oil did not emulsify, or too much water was added without enough agitation or heat.",
+        "prevention": "Add the pasta water in small splashes and toss aggressively in the pan over medium-high heat to encourage the starches to bind.",
+        "fix": "Return the skillet to medium-high heat and continue tossing vigorously with tongs until the excess water evaporates and the sauce tightens."
+      },
+      {
+        "symptom": "Garlic has a bitter, harsh taste.",
+        "likely_cause": "Garlic was cooked at too high a temperature and burnt before the tomatoes were added.",
+        "prevention": "Start garlic in cold or warm oil and keep the heat moderate. Be ready to add tomatoes immediately to drop the pan temperature.",
+        "fix": "Cannot be fixed. Burnt garlic will flavor the entire oil base. It is best to wipe the pan and start the oil over if the garlic turns dark brown."
+      }
+    ],
+    "chef_notes": [
+      "The secret to this minimal dish is the starchy pasta water. The starch released during boiling acts as a critical binding agent, turning the unmixed olive oil and tomato juices into a cohesive, creamy sauce.",
+      "Do not let the garlic brown. Browning garlic introduces a bitter flavor profile that will easily overpower the delicate, fruity sweetness of fresh cherry tomatoes.",
+      "For the best texture and flavor absorption, always finish cooking your pasta directly in the sauce rather than simply pouring the sauce over dry noodles on a plate.",
+      "Tearing basil rather than chopping it with a knife minimizes bruising and slows oxidation, keeping the edges from turning dark too quickly."
+    ],
+    "cultural_context": "This style of quick, minimalist pasta is deeply rooted in the Italian philosophy of cucina povera, or the 'poor kitchen'. Originating in southern regions like Campania, it relies on coaxing maximum flavor from a few humble, impeccably fresh ingredients rather than using complex techniques or expensive proteins.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 548.37,
+        "protein_g": 24.44,
+        "carbohydrates_g": 75.32,
+        "fat_g": 16.52,
+        "saturated_fat_g": 2.27,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 10.5,
+        "polyunsaturated_fat_g": 2.5,
+        "fiber_g": 4.89,
+        "sugar_g": 5.88,
+        "sodium_mg": 208.81,
+        "cholesterol_mg": 0,
+        "potassium_mg": 245.99,
+        "calcium_mg": 61.62,
+        "iron_mg": 4.52,
+        "magnesium_mg": 70.08,
+        "phosphorus_mg": 177.28,
+        "zinc_mg": 1.92,
+        "vitamin_a_mcg": 13.2,
+        "vitamin_c_mg": 3.24,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 2.06,
+        "vitamin_k_mcg": 29.31,
+        "vitamin_b6_mg": 0.28,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 1.21,
+        "riboflavin_mg": 0.49,
+        "niacin_mg": 7.75,
+        "folate_mcg": 281.63,
+        "water_g": 18.23,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 32,
+    "monthly_limit": 50,
+    "daily_remaining": 32,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 18,
+    "detail_limit": 50,
+    "detail_remaining": 32,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

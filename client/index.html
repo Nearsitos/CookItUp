@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4f5f0" />
+    <meta name="theme-color" content="#14171d" />
     <script>
-      // Apply the saved theme before the page paints. Light mode is the
-      // default; the Settings switch controls dark mode explicitly.
+      // Apply the saved theme before the page paints. The dark purple theme is
+      // the default; the Settings switch controls it explicitly.
       (function () {
         var saved = null;
         try {
           saved = localStorage.getItem("cookitup-theme");
         } catch (e) {}
         document.documentElement.dataset.theme =
-          saved === "dark" ? "dark" : "light";
+          saved === "light" ? "light" : "dark";
       })();
     </script>
     <title>CookItUp — Your kitchen dashboard</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/liquid-theme.css" />
     <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/liquid-sidebar.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -32,57 +34,8 @@
         >
           <span aria-hidden="true">♨</span>
         </a>
-        <nav id="primary-navigation" aria-label="Main navigation">
-          <a
-            class="nav-link active"
-            href="#dashboard"
-            data-page="dashboard"
-            data-tooltip="Dashboard"
-            aria-label="Dashboard"
-            aria-current="page"
-            ><span aria-hidden="true">⊞</span
-            ><span class="nav-text">Dashboard</span></a
-          >
-          <div
-            class="nav-link nav-disabled"
-            role="link"
-            data-tooltip="Profile"
-            aria-label="Profile"
-            aria-disabled="true"
-          >
-            <span aria-hidden="true">♙</span
-            ><span class="nav-text">Profile</span>
-          </div>
-          <div
-            class="nav-link nav-disabled"
-            role="link"
-            data-tooltip="Household"
-            aria-label="Household"
-            aria-disabled="true"
-          >
-            <span aria-hidden="true">♧</span
-            ><span class="nav-text">Household</span>
-          </div>
-          <a
-            class="nav-link"
-            href="#inventory"
-            data-page="inventory"
-            data-tooltip="Inventory"
-            aria-label="Inventory"
-            ><span aria-hidden="true">▣</span
-            ><span class="nav-text">Inventory</span
-            ><span class="nav-count" id="nav-count">0</span></a
-          >
-          <a
-            class="nav-link"
-            href="#settings"
-            data-page="settings"
-            data-tooltip="Settings"
-            aria-label="Settings"
-            ><span aria-hidden="true">⚙</span
-            ><span class="nav-text">Settings</span></a
-          >
-        </nav>
+        <nav id="primary-navigation" class="lsb" aria-label="Main navigation"></nav>
+        <span id="nav-count" hidden>0</span>
         <div class="sidebar-bottom">
           <button
             class="sidebar-theme-toggle"
@@ -110,7 +63,6 @@
             href="#dashboard"
             data-page="dashboard"
             aria-label="CookItUp home"
-            ><span class="brand-mark" aria-hidden="true">♨</span
             ><span>CookItUp</span></a
           >
           <div class="global-search">
@@ -317,25 +269,7 @@
                 </select></label
               >
             </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>INGREDIENT</th>
-                    <th>QUANTITY</th>
-                    <th>CALORIES</th>
-                    <th>SERVING SIZE</th>
-                    <th>EXPIRES</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="inventory-body"></tbody>
-              </table>
-              <div class="empty-state hidden" id="inventory-empty">
-                <span>◌</span><strong>No ingredients found</strong>
-                <p>Try another search or add an ingredient to your pantry.</p>
-              </div>
-            </div>
+            <div class="inventory-grid" id="inventory-grid"></div>
             <div class="table-footer" id="inventory-footer"></div>
           </section>
           <div class="json-note">
@@ -343,8 +277,9 @@
             <div>
               <strong>Your inventory, your data.</strong>
               <p>
-                Ingredients are grouped by food type. Changes save in this
-                browser, and you can import or export your pantry as JSON.
+                Ingredients are grouped by where you store them. Changes save
+                in this browser, and you can import or export your pantry as
+                JSON.
               </p>
             </div>
             <button class="text-button" id="export-json">Export JSON ↓</button
@@ -546,7 +481,7 @@
             list="food-suggestions" /><datalist id="food-suggestions"></datalist
         ></label>
         <label class="field full-field"
-          >Food type<select name="category" id="food-category" required>
+          >Food type (optional)<select name="category" id="food-category">
             <option>Meats &amp; Protein</option>
             <option>Greens</option>
             <option>Grains</option>
@@ -556,17 +491,44 @@
             <option selected>Other</option>
           </select></label
         >
+        <label class="field full-field"
+          >Storage location (optional)<select name="storage" id="food-storage">
+            <option value="fridge">Refrigerated</option>
+            <option value="freezer">Frozen</option>
+            <option value="pantry">Room temperature</option>
+            <option value="other" selected>Other</option>
+          </select></label
+        >
         <div class="form-row">
           <label class="field"
-            >Quantity<input
-              name="quantity"
-              type="number"
-              min="0.1"
-              step="any"
-              value="1"
-              required /></label
+            >Quantity (optional)
+            <div class="quantity-stepper">
+              <button
+                type="button"
+                class="qty-step"
+                data-step="-1"
+                aria-label="Decrease quantity"
+              >
+                −
+              </button>
+              <input
+                name="quantity"
+                type="number"
+                min="0.1"
+                step="any"
+                value="1"
+              />
+              <button
+                type="button"
+                class="qty-step"
+                data-step="1"
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div></label
           ><label class="field"
-            >Serving size (g)<input
+            >Serving size (g) (optional)<input
               name="servingSize"
               type="number"
               min="1"
@@ -575,7 +537,7 @@
           /></label>
         </div>
         <label class="field full-field"
-          >Calories per serving<input
+          >Calories per serving (optional)<input
             name="calories"
             type="number"
             min="0"

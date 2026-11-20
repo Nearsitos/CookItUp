@@ -1,0 +1,431 @@
+{
+  "data": {
+    "id": "9ba7033d-292e-4422-9997-84d6a2b39f56",
+    "name": "Pollo a la Crema With Poblano Strips",
+    "description": "Tender chicken strips simmer with sweet onion and earthy poblano pepper in a silky Mexican crema sauce. Gentle chile warmth and tangy cream make this a comforting dinner ready in 30 minutes.",
+    "category": "Dinner",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "tags": [
+      "Dinner",
+      "Mexican",
+      "Quick",
+      "chicken",
+      "poblano",
+      "crema",
+      "simmered"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT5M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Gluten-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free"
+      ],
+      "not_suitable_for": [
+        "People with a milk allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate in shallow, covered containers within 2 hours of cooking, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Keep at 4°C (40°F) or below. Cooked poultry generally keeps for 3–4 days; this recipe uses a 3-day limit. [FoodSafety.gov storage guidance](https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts).",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled portions in airtight containers at -18°C (0°F) or below. The cream sauce may separate after thawing. Thaw overnight in the refrigerator.",
+        "duration": "P2M"
+      },
+      "reheating": "Warm gently in a saucepan over low heat, stirring frequently, until the chicken and sauce reach 74°C (165°F). Avoid a vigorous boil.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Vegetable cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Separate raw-poultry cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "30 cm deep skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cooking spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plates",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Shallow storage containers",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Saucepan",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Chicken",
+        "items": [
+          {
+            "name": "chicken breast",
+            "quantity": 600,
+            "unit": "g",
+            "preparation": "raw, boneless, skinless",
+            "notes": "Weigh the edible meat after removing any bones, skin and tough tendons. Cut into strips as directed; serve all the chicken with the sauce.",
+            "substitutions": [],
+            "ingredient_id": "0e1245a4-c38f-429f-80d5-388a6490fb2f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": "A moderate starting amount because Mexican crema varies in saltiness.",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic powder",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "177a312f-ef99-4398-9108-98f7a608a245",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 0.5,
+            "unit": "g",
+            "preparation": "ground",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Poblano Cream Sauce",
+        "items": [
+          {
+            "name": "olive oil",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "white onion",
+            "quantity": 160,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Edible weight after removing the papery skin and root end.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "poblano pepper",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "fresh",
+            "notes": "Edible weight after removing stems, seeds and pale inner ribs; leave the green skin on.",
+            "substitutions": [],
+            "ingredient_id": "9cb27b55-96d9-5b75-8a1c-011fd611a9c2",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "mexican crema",
+            "quantity": 240,
+            "unit": "g",
+            "preparation": "full-fat",
+            "notes": "Use plain Mexican crema made with pasteurized dairy.",
+            "substitutions": [],
+            "ingredient_id": "98006dbf-1358-494e-8483-3601db3ee5c0",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "water",
+            "quantity": 60,
+            "unit": "g",
+            "preparation": null,
+            "notes": "For thinning the crema into a sauce; the liquid stays in the dish.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Slice the prepared onion and poblano into strips approximately 3 mm thick on the vegetable cutting board.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Thin, evenly sized vegetable strips.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Slice the chicken across the grain into strips approximately 1 cm thick on the separate raw-poultry cutting board.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Do not rinse raw chicken. Wash hands with soap after handling it, and wash and sanitize the knife, poultry board and contaminated surfaces before they touch cooked food."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Season the chicken in the mixing bowl with the salt, garlic powder and black pepper, distributing the seasonings evenly.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Heat the olive oil in the deep skillet over medium heat until it flows freely and shimmers lightly.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The oil shimmers without smoking.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Sauté the onion and poblano in the oil for 7 minutes, stirring regularly with the cooking spoon, until softened with a few golden edges.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "The onion is translucent and the poblano strips bend easily.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Sauté the seasoned chicken with the vegetables for 4 minutes over medium-high heat, stirring to separate the strips. The chicken will finish cooking in the sauce.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The chicken surfaces turn opaque; this is not the final safety check.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Stir the Mexican crema and water into the chicken and vegetables over low heat until the sauce is evenly combined.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "A smooth, pale sauce surrounds the chicken and vegetables.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Simmer gently for about 5 minutes, until the thickest chicken strips reach an internal temperature of 74°C (165°F), checked with the instant-read thermometer. Maintain only small bubbles around the edges; continue cooking if the chicken has not reached the safe temperature.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 74,
+            "fahrenheit": 165
+          },
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "The sauce lightly coats the chicken and shows small bubbles rather than a rolling boil.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "finish",
+        "text": "Divide all the chicken, vegetables and sauce among four serving plates.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The cream sauce looks grainy or oily.",
+        "likely_cause": "The crema boiled vigorously or was heated too quickly.",
+        "prevention": "Lower the heat before adding the crema and maintain a gentle simmer.",
+        "fix": "Remove the skillet from the heat briefly and stir gently until the sauce comes together as much as possible. If the chicken is below 74°C (165°F), resume gentle cooking until it reaches that temperature. A severely split sauce may remain grainy."
+      },
+      {
+        "symptom": "The chicken is dry.",
+        "likely_cause": "Uneven strips caused smaller pieces to overcook while thicker pieces finished.",
+        "prevention": "Cut consistent 1 cm strips and check their internal temperature promptly.",
+        "fix": "Coat the chicken generously with the sauce and serve immediately. Lost moisture cannot be fully restored."
+      }
+    ],
+    "chef_notes": [
+      "Thinly sliced fresh poblano softens quickly enough for this preparation without a separate roasting and peeling stage.",
+      "Full-fat Mexican crema gives the sauce body and a gentle tang; a rolling boil can damage its smooth texture.",
+      "Slice chicken across the grain for shorter muscle fibers and a more tender bite.",
+      "Use the thermometer reading, rather than color alone, to confirm doneness. Poultry and reheated leftovers must reach 74°C (165°F). [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Pollo con crema is a Mexican chicken preparation with a creamy sauce, and poblano and onion are familiar additions. Mexican crema contributes the characteristic richness and light tang. [Pollo con crema background](https://www.holajalapeno.com/pollo-con-crema-recipes/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 359.15,
+        "protein_g": 35,
+        "carbohydrates_g": 8.91,
+        "fat_g": 21.41,
+        "saturated_fat_g": 8.99,
+        "trans_fat_g": 0.02,
+        "monounsaturated_fat_g": 7.09,
+        "polyunsaturated_fat_g": 1.65,
+        "fiber_g": 1.81,
+        "sugar_g": 3.05,
+        "sodium_mg": 533.12,
+        "cholesterol_mg": 141.9,
+        "potassium_mg": 663.14,
+        "calcium_mg": 22.39,
+        "iron_mg": 0.77,
+        "magnesium_mg": 58.11,
+        "phosphorus_mg": 389.97,
+        "zinc_mg": 1.37,
+        "vitamin_a_mcg": 117.44,
+        "vitamin_c_mg": 67.51,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 2.07,
+        "vitamin_k_mcg": 34.63,
+        "vitamin_b6_mg": 1.45,
+        "vitamin_b12_mcg": 0.44,
+        "thiamin_mg": 0.22,
+        "riboflavin_mg": 0.43,
+        "niacin_mg": 14.83,
+        "folate_mcg": 37.96,
+        "water_g": 251.79,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 49,
+    "monthly_limit": 50,
+    "daily_remaining": 49,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 1,
+    "detail_limit": 50,
+    "detail_remaining": 49,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

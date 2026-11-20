@@ -1,0 +1,468 @@
+{
+  "data": {
+    "id": "25fd26d1-c79c-4d15-a08e-b764338ce2dd",
+    "name": "Japanese Spinach Salad With Toasted Sesame Dressing",
+    "description": "Tender, bright green spinach carries a nutty toasted-sesame dressing with savory soy sauce and gentle sweetness. Coarsely ground seeds give this cool Japanese salad a delicate, pleasantly grainy texture.",
+    "category": "Salad",
+    "cuisine": "Japanese",
+    "difficulty": "Easy",
+    "tags": [
+      "Salad",
+      "Japanese",
+      "Quick",
+      "spinach",
+      "blanched",
+      "sesame dressing",
+      "vegetarian"
+    ],
+    "meta": {
+      "active_time": "PT20M",
+      "passive_time": "PT5M",
+      "total_time": "PT25M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": [
+        "People with sesame allergies",
+        "People with soy allergies",
+        "People with wheat allergies or celiac disease, because regular soy sauce contains wheat"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate promptly in a covered container at 4°C (40°F) or below, within 2 hours of preparation. Best texture is on the day of preparation.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended because the dressed spinach becomes watery after thawing.",
+        "duration": null
+      },
+      "reheating": "Serve cold from the refrigerator; reheating is unnecessary.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large saucepan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mortar and pestle",
+        "required": true,
+        "alternative": "Spice grinder, used in short pulses"
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large cooling bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Colander",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving bowls",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Spinach",
+        "items": [
+          {
+            "name": "spinach",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "washed thoroughly",
+            "notes": "Edible weight of leaves and tender stems after removing roots and damaged leaves.",
+            "substitutions": [],
+            "ingredient_id": "4734440a-226d-4d26-a110-3ed5c3bde93f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Sesame Dressing",
+        "items": [
+          {
+            "name": "sesame seeds",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "whole",
+            "notes": "Toast gently and grind during preparation; all seeds are included in the dressing.",
+            "substitutions": [],
+            "ingredient_id": "0edc9256-6bac-4718-9f80-12351b1bc941",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "soy sauce",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use regular Japanese soy sauce; weigh directly into the dressing.",
+            "substitutions": [],
+            "ingredient_id": "0d724b69-c9e4-4ae4-91f5-a32fde1d4b40",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sugar",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": "granulated",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Blanching Water (Discarded After Cooking)",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 2000,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Plain water used only for blanching; discarded after cooking.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      },
+      {
+        "group_name": "Cooling Water (Discarded After Cooling)",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1500,
+            "unit": "g",
+            "preparation": "refrigerator-cold",
+            "notes": "Plain water used only to cool the spinach; discarded after cooling.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Bring the blanching water to a rolling boil in the large saucepan, approximately 100°C (212°F) at sea level.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Large bubbles continuously break across the water surface.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Prepare the dressing while the water heats to keep the total preparation within 25 minutes."
+        ]
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Toast the sesame seeds in the dry skillet over medium-low heat for 2–3 minutes, stirring with the spoon until fragrant and lightly golden.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The seeds deepen slightly in color without developing dark patches.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "If the seeds are already toasted, warm them only briefly until fragrant."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Cool the toasted sesame seeds in the mortar for 2 minutes.",
+        "structured": {
+          "action": "COOL",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Crush the sesame seeds with the pestle until most are broken and the mixture resembles coarse, slightly oily sand.",
+        "structured": {
+          "action": "CRUSH",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Most seeds are ground, with a few small pieces remaining.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "assemble",
+        "text": "Mix the ground sesame seeds, soy sauce and sugar in the mixing bowl until evenly combined into a thick dressing.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Blanch the spinach in the boiling water for 45–60 seconds, submerging it with the tongs until the leaves wilt and the stems become tender but retain a slight bite.",
+        "structured": {
+          "action": "BLANCH",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Leaves are bright green and fully wilted.",
+            "tactile": "Tender stems bend easily but are not mushy."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "Cool the spinach immediately in the large cooling bowl containing the cold cooling water, using the tongs to transfer it from the saucepan. Leave submerged for about 1 minute, until cool throughout.",
+        "structured": {
+          "action": "COOL",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "The leaves and stems no longer feel warm."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "prep",
+        "text": "Drain the cooled spinach in the colander, discarding the cooling water and blanching water.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "prep",
+        "text": "Squeeze the spinach gently in small handfuls with clean hands until water stops dripping steadily.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "The spinach remains moist and supple without releasing a stream of water."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "Cut the squeezed spinach into approximately 4 cm lengths on the cutting board using the knife.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "assemble",
+        "text": "Toss the spinach with the dressing in the mixing bowl, separating compacted clumps with the tongs until the leaves are evenly coated.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Sesame dressing clings evenly to the spinach with no watery pool underneath.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "finish",
+        "text": "Divide the salad evenly among four serving bowls.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The dressing becomes watery and slides off the spinach.",
+        "likely_cause": "Too much cooling water remains trapped between the leaves.",
+        "prevention": "Squeeze the cooled spinach in small handfuls before cutting and dressing.",
+        "fix": "Drain any pooled liquid and gently toss again. Avoid squeezing dressed spinach, which removes the sesame dressing."
+      },
+      {
+        "symptom": "The sesame dressing tastes bitter.",
+        "likely_cause": "The sesame seeds scorched during toasting.",
+        "prevention": "Use medium-low heat, stir frequently and remove the seeds as soon as they smell nutty.",
+        "fix": "Discard the burnt seeds or dressing and remake the dressing before combining it with the spinach."
+      }
+    ],
+    "chef_notes": [
+      "Grinding the sesame seeds releases their oils and helps the dressing cling to the spinach; leaving every seed whole produces a looser coating.",
+      "A coarse grind preserves a little texture without requiring added sesame oil.",
+      "Keep the tender spinach stems because they provide a pleasant contrast to the soft leaves.",
+      "Dress the spinach shortly before serving for the freshest texture.",
+      "Finished weight depends on how much water is squeezed from the spinach; weigh the completed salad and divide by four if a measured serving weight is needed."
+    ],
+    "cultural_context": "Goma-ae refers to Japanese dishes dressed with ground sesame, and spinach is a familiar example. The preparation also suits other blanched vegetables, including green beans, as described in [Just One Cookbook](https://www.justonecookbook.com/spinach-with-sesame-sauce/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 76.1,
+        "protein_g": 4.56,
+        "carbohydrates_g": 7.61,
+        "fat_g": 4.14,
+        "saturated_fat_g": 0.59,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 1.43,
+        "polyunsaturated_fat_g": 1.82,
+        "fiber_g": 3.12,
+        "sugar_g": 2.46,
+        "sodium_mg": 326.9,
+        "cholesterol_mg": 0,
+        "potassium_mg": 612.72,
+        "calcium_mg": 173.63,
+        "iron_mg": 3.87,
+        "magnesium_mg": 108.66,
+        "phosphorus_mg": 103.65,
+        "zinc_mg": 1.15,
+        "vitamin_a_mcg": 469,
+        "vitamin_c_mg": 28.1,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 2.05,
+        "vitamin_k_mcg": 483,
+        "vitamin_b6_mg": 0.27,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.14,
+        "riboflavin_mg": 0.22,
+        "niacin_mg": 1.16,
+        "folate_mcg": 201.91,
+        "water_g": 94.96,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 37,
+    "monthly_limit": 50,
+    "daily_remaining": 37,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 13,
+    "detail_limit": 50,
+    "detail_remaining": 37,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

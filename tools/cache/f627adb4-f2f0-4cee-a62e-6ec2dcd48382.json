@@ -1,0 +1,443 @@
+{
+  "data": {
+    "id": "f627adb4-f2f0-4cee-a62e-6ec2dcd48382",
+    "name": "Kimchi Jeon",
+    "description": "Chopped fermented kimchi and its tangy brine flavor these savory Korean pancakes. Golden, crisp edges surround a tender center, with scallion freshness and a warm chili bite.",
+    "category": "Snack",
+    "cuisine": "Korean",
+    "difficulty": "Easy",
+    "tags": [
+      "Snack",
+      "Korean",
+      "Quick",
+      "kimchi",
+      "flour",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT0M",
+      "total_time": "PT25M",
+      "overnight_required": false,
+      "yields": "4 snack servings from 2 pancakes",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": [
+        "People with wheat allergy or celiac disease",
+        "People with fish or crustacean shellfish allergies: the specified kimchi contains anchovy fish sauce and salted shrimp",
+        "People with soy allergy if soy is listed on the kimchi label"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate promptly in a shallow container within 2 hours, or within 1 hour above 32°C (90°F). Keep at 4°C (40°F) or below and cover once chilled.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled pancakes with parchment between them in an airtight freezer container at -18°C (0°F). Thaw in the refrigerator before reheating.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat in a dry skillet over medium heat, turning occasionally, until crisp and the center reaches 74°C (165°F), checked with a food thermometer. This follows [FoodSafety.gov guidance for leftovers](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "24 cm nonstick or well-seasoned skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wire rack",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Food thermometer",
+        "required": false,
+        "alternative": "Required when checking the temperature of reheated leftovers."
+      },
+      {
+        "name": "Shallow airtight storage container",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Freezer container",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Parchment paper",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pancake Batter",
+        "items": [
+          {
+            "name": "napa cabbage kimchi",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "well fermented",
+            "notes": "Weigh the edible cabbage and attached seasoning after lifting it from the liquid; do not squeeze. Use kimchi containing anchovy fish sauce and salted shrimp. Reserve brine separately.",
+            "substitutions": [],
+            "ingredient_id": "dd88e4f2-74e0-404c-8e0b-8fc1fd39d771",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "kimchi brine",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use liquid from the same kimchi container.",
+            "substitutions": [],
+            "ingredient_id": "ac7d5182-b868-471e-b341-0906531f5436",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "all-purpose flour",
+            "quantity": 90,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "11e03c79-4bf6-47ed-babb-753b1a9789c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e37d9484-8bf9-4d9a-a6c8-22a597cbb237",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "cold",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Edible weight after removing roots and damaged leaves; use white and green parts.",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "For Pan-Frying",
+        "items": [
+          {
+            "name": "canola oil",
+            "quantity": 28,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Divide into four 7 g portions, using two portions per pancake to coat the skillet and crisp both sides.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Chop the kimchi and scallions into pieces about 5 mm wide on the cutting board.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Mix the flour, cornstarch, sugar, cold water, kimchi brine, chopped kimchi and scallions in the mixing bowl just until no dry flour remains. The batter should loosely coat the vegetables and spread easily with the spoon.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "A loose, chunky batter with no dry flour pockets.",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Stop mixing as soon as the flour is incorporated to avoid a chewy pancake."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Preheat the skillet over medium-high heat for about 2 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Fry half the batter in 7 g oil, spreading it with the spoon into a thin pancake about 20 cm across. Cook for about 4 minutes, until the underside is browned and the edges look set. Lower the heat to medium if the kimchi darkens too quickly.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "Browned underside with set, crisp-looking edges.",
+            "tactile": "The pancake releases when the spatula slides underneath."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Fry the other side for about 3 minutes after turning the pancake with the wide spatula and adding 7 g oil around its edges. The center should be set without a wet flour paste, and both surfaces should have crisp browned patches.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Both sides are browned, with no wet batter visible in the center.",
+            "tactile": "The center feels set and the edges are crisp."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "finish",
+        "text": "Place the first pancake on the wire rack in a single layer while the second pancake cooks.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Fry the remaining batter in 7 g oil, spreading it into another thin 20 cm pancake. Cook for about 4 minutes, until the underside is browned and the edges are set.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "Browned underside and set edges.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Fry the second pancake on its other side for about 3 minutes after turning it and adding the remaining 7 g oil around the edges. Cook until the center is fully set and both sides are crisp.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Crisp browned surfaces with no wet flour paste in the center.",
+            "tactile": "Firmly set center and crisp edges."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "finish",
+        "text": "Cut each pancake into wedges on the cutting board.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "finish",
+        "text": "Serve immediately on the serving plate, allowing half a pancake per snack serving.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The pancake is soft or gummy in the middle.",
+        "likely_cause": "The batter was spread too thickly, the skillet was insufficiently heated, or the pancake was turned before the base set.",
+        "prevention": "Spread each pancake thinly, preheat the skillet and wait for a browned, stable base before turning.",
+        "fix": "Return the pancake to the skillet over medium heat and cook uncovered on both sides until the center is set and the edges crisp."
+      },
+      {
+        "symptom": "The surface burns before the middle cooks.",
+        "likely_cause": "The skillet is too hot for the kimchi seasoning and sugar.",
+        "prevention": "Reduce the heat to medium once browning develops and maintain a thin pancake.",
+        "fix": "Lower the heat and finish cooking the center. Severely blackened, bitter areas cannot be repaired."
+      }
+    ],
+    "chef_notes": [
+      "Well-fermented, pleasantly sour kimchi gives a fuller flavor than freshly made kimchi.",
+      "A small proportion of cornstarch helps the edges crisp while wheat flour gives enough structure for turning.",
+      "Kimchi brine supplies acidity, seasoning and color; added salt is usually unnecessary.",
+      "Keep cooked pancakes in a single layer on a rack because stacking traps steam and softens the crust."
+    ],
+    "cultural_context": "Kimchijeon is a Korean savory pancake that combines fermented kimchi with a flour batter. Chopped-kimchi versions and whole-leaf versions are both documented in Korean home cooking. [Korean kimchi pancake traditions](https://www.maangchi.com/recipe/grandma-kimchijeon).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 146.36,
+        "protein_g": 3.08,
+        "carbohydrates_g": 24.54,
+        "fat_g": 4.03,
+        "saturated_fat_g": 0.34,
+        "trans_fat_g": 0.02,
+        "monounsaturated_fat_g": 2.26,
+        "polyunsaturated_fat_g": 1.23,
+        "fiber_g": 1.74,
+        "sugar_g": 1.81,
+        "sodium_mg": 301.51,
+        "cholesterol_mg": 0,
+        "potassium_mg": 128.65,
+        "calcium_mg": 27.64,
+        "iron_mg": 2.64,
+        "magnesium_mg": 14.75,
+        "phosphorus_mg": 41.2,
+        "zinc_mg": 0.32,
+        "vitamin_a_mcg": 5.5,
+        "vitamin_c_mg": 0.94,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 0.72,
+        "vitamin_k_mcg": 39.07,
+        "vitamin_b6_mg": 0.14,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.19,
+        "riboflavin_mg": 0.24,
+        "niacin_mg": 2.02,
+        "folate_mcg": 75.58,
+        "water_g": 89.14,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 42,
+    "monthly_limit": 50,
+    "daily_remaining": 42,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 8,
+    "detail_limit": 50,
+    "detail_remaining": 42,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

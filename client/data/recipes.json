@@ -8,7 +8,11 @@
     "calories": 310,
     "category": "Breakfast",
     "description": "A quick, fluffy omelet filled with greens and salty feta.",
-    "ingredients": ["Eggs", "Baby spinach", "Feta cheese"],
+    "ingredients": [
+      "Eggs",
+      "Baby spinach",
+      "Feta cheese"
+    ],
     "steps": [
       "Whisk eggs with a pinch of salt and pepper.",
       "Wilt spinach in a lightly oiled pan.",
@@ -25,7 +29,12 @@
     "calories": 425,
     "category": "Dinner",
     "description": "Bright lemon and tangy yogurt make a silky, easy pasta sauce.",
-    "ingredients": ["Pasta", "Greek yogurt", "Lemon", "Feta cheese"],
+    "ingredients": [
+      "Pasta",
+      "Greek yogurt",
+      "Lemon",
+      "Feta cheese"
+    ],
     "steps": [
       "Cook pasta in salted water until al dente; reserve a mug of pasta water.",
       "Stir yogurt with lemon zest and juice.",
@@ -42,7 +51,12 @@
     "calories": 390,
     "category": "Dinner",
     "description": "A cozy one-pan style pasta with juicy tomatoes and tender greens.",
-    "ingredients": ["Pasta", "Tomatoes", "Baby spinach", "Lemon"],
+    "ingredients": [
+      "Pasta",
+      "Tomatoes",
+      "Baby spinach",
+      "Lemon"
+    ],
     "steps": [
       "Cook pasta and reserve a little cooking water.",
       "Chop tomatoes and cook in a pan until saucy.",
@@ -59,7 +73,12 @@
     "calories": 280,
     "category": "Lunch",
     "description": "Creamy avocado, a tangy yogurt drizzle, and bright lemon on toast.",
-    "ingredients": ["Avocado", "Greek yogurt", "Lemon", "Bread"],
+    "ingredients": [
+      "Avocado",
+      "Greek yogurt",
+      "Lemon",
+      "Bread"
+    ],
     "steps": [
       "Toast your favorite bread.",
       "Mash avocado with a squeeze of lemon, salt, and pepper.",
@@ -75,7 +94,12 @@
     "calories": 210,
     "category": "Lunch",
     "description": "A fresh, savory salad with crunchy greens and a lemony finish.",
-    "ingredients": ["Tomatoes", "Baby spinach", "Feta cheese", "Lemon"],
+    "ingredients": [
+      "Tomatoes",
+      "Baby spinach",
+      "Feta cheese",
+      "Lemon"
+    ],
     "steps": [
       "Slice tomatoes and roughly chop spinach.",
       "Crumble feta over the vegetables.",
@@ -91,7 +115,12 @@
     "calories": 245,
     "category": "Snack",
     "description": "A cool, savory bowl with lemon, herbs, and creamy yogurt.",
-    "ingredients": ["Baby spinach", "Greek yogurt", "Lemon", "Avocado"],
+    "ingredients": [
+      "Baby spinach",
+      "Greek yogurt",
+      "Lemon",
+      "Avocado"
+    ],
     "steps": [
       "Whisk yogurt with lemon juice, salt, and pepper.",
       "Chop spinach and avocado.",
@@ -107,14 +136,2937 @@
     "calories": 285,
     "category": "Breakfast",
     "description": "Eggs gently cooked in a quick tomato pan sauce with greens.",
-    "ingredients": ["Eggs", "Tomatoes", "Baby spinach", "Feta cheese"],
+    "ingredients": [
+      "Eggs",
+      "Tomatoes",
+      "Baby spinach",
+      "Feta cheese"
+    ],
     "steps": [
       "Chop and simmer tomatoes in an oiled skillet until soft.",
       "Stir in spinach until just wilted.",
       "Make small wells, crack in eggs, cover, and cook until set.",
       "Top with feta and serve."
     ]
+  },
+  {
+    "id": "rapi-d0de04a5-2e48-4373-b00b-9693140f1ffd",
+    "name": "Jammy Tomato Breakfast Eggs",
+    "time": 35,
+    "servings": 4,
+    "calories": 165,
+    "category": "Breakfast",
+    "description": "Savory eggs poached in a thick, spiced tomato and roasted red pepper sauce with aromatic dried herbs.",
+    "ingredients": [
+      "Dried basil",
+      "Dried chives",
+      "Dried mint",
+      "Dried oregano",
+      "Grapeseed oil",
+      "Red onion",
+      "Garlic",
+      "Roasted red peppers",
+      "Bay leaf",
+      "Red-pepper flakes",
+      "Salt",
+      "Whole peeled tomatoes",
+      "Water",
+      "Egg"
+    ],
+    "amounts": {
+      "Dried basil": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Dried chives": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Dried mint": {
+        "quantity": 1.5,
+        "unit": "g"
+      },
+      "Dried oregano": {
+        "quantity": 1.5,
+        "unit": "g"
+      },
+      "Grapeseed oil": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Red onion": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 2,
+        "unit": null
+      },
+      "Roasted red peppers": {
+        "quantity": 340,
+        "unit": "g"
+      },
+      "Bay leaf": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Red-pepper flakes": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Whole peeled tomatoes": {
+        "quantity": 410,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 240,
+        "unit": "ml"
+      },
+      "Egg": {
+        "quantity": 4,
+        "unit": null
+      }
+    },
+    "steps": [
+      "Combine the dried basil, chives, mint, and oregano in a small bowl. Stir to mix the herbs evenly.",
+      "Heat the oil in a 10-inch skillet over medium-low heat. Sauté the chopped onion and sliced garlic for 2-4 minutes until they are soft.",
+      "Add the roasted red peppers, bay leaf, and red-pepper flakes to the skillet. Season with salt and cook for 2 minutes, stirring until the pepper liquid evaporates.",
+      "Pour the canned tomatoes and their juices into the skillet. Crush the tomatoes into smaller pieces using a spatula.",
+      "Add 240ml of water to the pan. Increase the heat to high and bring the liquid to a simmer.",
+      "Reduce the heat and simmer the sauce for 5 minutes. Stir occasionally until the volume reduces by one-fourth and the sauce thickens.",
+      "Remove the bay leaf. Lower the heat to medium-low.",
+      "Crack the eggs directly into the sauce, keeping them spaced apart. Cover the skillet with a lid.",
+      "Cook for 5-8 minutes. The whites should be fully set while the yolks remain runny.",
+      "Garnish with 2 teaspoons of the prepared herb blend and serve the eggs immediately."
+    ]
+  },
+  {
+    "id": "rapi-6976523d-d837-4136-92e7-11ef91e82e71",
+    "name": "Courgette Tamagoyaki",
+    "time": 30,
+    "servings": 2,
+    "calories": 198,
+    "category": "Breakfast",
+    "description": "Tender golden egg layers wrap around fine green strands of courgette in this gently sweet, savoury Japanese rolled omelette. Thick breakfast slices reveal a delicate spiral and a moist, springy centre.",
+    "ingredients": [
+      "Courgette",
+      "Eggs",
+      "Soy sauce",
+      "Caster sugar",
+      "Sunflower oil"
+    ],
+    "amounts": {
+      "Courgette": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Eggs": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Soy sauce": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Caster sugar": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Sunflower oil": {
+        "quantity": 8,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Finely shred the trimmed courgette using the fine grater. Keep the strands short so they will fit within thin egg layers.",
+      "Squeeze the shredded courgette firmly inside the clean kitchen cloth until no more liquid drips out readily. Discard the expressed liquid.",
+      "Beat the eggs, soy sauce and sugar in the mixing bowl with the fork until the whites are broken up and the sugar dissolves. Avoid whipping in foam.",
+      "Fold the squeezed courgette into the eggs, separating any clumps.",
+      "Preheat the pan over medium-low heat for approximately 2 minutes.",
+      "Fry the first layer: brush the pan with 2 g oil and spread one-quarter of the egg mixture across the base. Cook for approximately 2 minutes, until the underside holds together and the surface is moist but no longer flows.",
+      "Roll the first layer from the far edge towards you using the spatula, making successive folds about 3 cm wide. Position the roll at the far edge of the pan.",
+      "Fry the second layer using another 2 g oil and one-third of the remaining egg mixture. Lift the existing roll slightly so fresh egg runs beneath it. Cook for approximately 2 minutes, until the new layer holds together.",
+      "Roll the existing omelette towards you over the second layer, enclosing it snugly. Position the enlarged roll at the far edge.",
+      "Fry the third layer using another 2 g oil and half the remaining egg mixture. Let some egg run beneath the roll, then cook for approximately 2 minutes, until the layer holds together.",
+      "Roll the omelette towards you over the third layer. Position it at the far edge again.",
+      "Fry the final layer using the remaining 2 g oil and all the remaining egg mixture. Let some egg run beneath the roll, then cook for approximately 2 minutes, until the layer holds together.",
+      "Roll the omelette towards you over the final layer, finishing with the seam underneath.",
+      "Cook the completed roll over low heat for approximately 3 minutes, turning gently to warm its broad sides evenly. Check the centre from one end with the food thermometer; continue cooking until it reaches at least 71°C (160°F) before removing it from the pan.",
+      "Rest the cooked omelette on the chopping board for 3 minutes so the layers settle before slicing.",
+      "Slice the omelette crosswise into six equal pieces with the sharp knife. Serve three slices per person on the serving plate."
+    ]
+  },
+  {
+    "id": "rapi-2e312c4f-be24-4f2a-91bd-04d292fe101f",
+    "name": "Tortang Talong With Rice",
+    "time": 27,
+    "servings": 2,
+    "calories": 349,
+    "category": "Lunch",
+    "description": "Smoky, tender eggplant nestles inside a golden egg coating with lightly crisp edges. Steamed white rice balances the savory omelet and makes this simple Filipino lunch satisfying.",
+    "ingredients": [
+      "Chinese eggplant",
+      "Egg",
+      "Salt",
+      "Ground black pepper",
+      "Canola oil",
+      "Cooked white rice"
+    ],
+    "amounts": {
+      "Chinese eggplant": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Egg": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 1.5,
+        "unit": "g"
+      },
+      "Ground black pepper": {
+        "quantity": 0.3,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Cooked white rice": {
+        "quantity": 300,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Char the whole eggplants directly over two medium gas flames, one per burner, turning frequently with long metal tongs for about 10 minutes. Continue until the skin is blackened all around and the flesh collapses under gentle pressure.",
+      "Cool the eggplants on a large plate for 3 minutes, until comfortable to handle.",
+      "Peel away the charred skins with your fingers, leaving the stems attached and the flesh intact.",
+      "Flatten each peeled eggplant with a fork into a broad fan about 1 cm thick, keeping the flesh connected at the stem.",
+      "Beat the eggs, salt and black pepper together in the shallow dish with the fork until evenly blended.",
+      "Dip both flattened eggplants into the beaten egg, turning gently to coat both sides and working the egg into the fork marks.",
+      "Heat the canola oil in the 30 cm nonstick skillet over medium heat for about 1 minute, until shimmering without smoking.",
+      "Pan-fry both coated eggplants side by side, distributing all remaining beaten egg over their surfaces. Cook for about 3 minutes per side, turning with the wide spatula once the undersides hold together. The egg must be fully set and the thickest egg-coated portion must reach 71°C (160°F), checked with the food thermometer.",
+      "Serve one eggplant omelet on each serving plate with 150 g hot cooked rice. Leave the stems uneaten."
+    ]
+  },
+  {
+    "id": "rapi-cefdec07-dc55-49aa-b361-582ca84c5537",
+    "name": "Khai Jiao Moo Sap with Rice",
+    "time": 28,
+    "servings": 1,
+    "calories": 869,
+    "category": "Lunch",
+    "description": "A golden Thai omelet puffs around tender minced pork, with crisp, lacy edges and savory fish sauce throughout. Fragrant jasmine rice catches the rich juices beneath its airy center.",
+    "ingredients": [
+      "Jasmine rice",
+      "Water",
+      "Eggs",
+      "Ground pork",
+      "Fish sauce",
+      "Ground white pepper",
+      "Canola oil"
+    ],
+    "amounts": {
+      "Jasmine rice": {
+        "quantity": 75,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Eggs": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Ground pork": {
+        "quantity": 40,
+        "unit": "g"
+      },
+      "Fish sauce": {
+        "quantity": 6,
+        "unit": "g"
+      },
+      "Ground white pepper": {
+        "quantity": 0.2,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 140,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Bring the jasmine rice and 120 g water to a gentle boil in the small saucepan over medium-high heat, about 3 minutes.",
+      "Simmer the rice over the lowest heat with the lid tightly closed for 12 minutes, until the water is absorbed. Keep the lid closed throughout cooking.",
+      "Rest the covered rice off the heat for 5 minutes. Prepare the omelet mixture and heat its oil during this rest.",
+      "Mix the pork, fish sauce and white pepper in the mixing bowl with a fork, separating the mince into small, loose pieces. Keep raw pork and its utensils away from the cooked rice and serving plate; wash your hands and clean contaminated surfaces after handling it.",
+      "Beat the eggs into the pork mixture with the whisk for about 45 seconds, until frothy and evenly combined.",
+      "Heat the canola oil in the high-sided frying pan over medium-high heat to 180°C (356°F), checking with the thermometer. The oil should shimmer without smoking.",
+      "Fry the egg mixture by pouring it steadily into the center of the hot oil from just above the pan. Cook for about 2 minutes, then turn with the wide slotted spatula and cook for another 1–2 minutes. Adjust the heat to prevent burning. The thickest center, including the pork, must reach at least 71°C (160°F), checked with the cleaned thermometer inserted sideways; continue cooking if needed.",
+      "Drain the omelet on the slotted spatula over the pan for about 20 seconds, allowing excess oil to drip back into the frying bath.",
+      "Plate the hot jasmine rice and lay the omelet over it. Serve immediately while the edges are crisp and the center is airy."
+    ]
+  },
+  {
+    "id": "rapi-e66fc3d5-043c-44e2-8f66-e0d4ee25a046",
+    "name": "Mee Kati",
+    "time": 30,
+    "servings": 2,
+    "calories": 791,
+    "category": "Breakfast",
+    "description": "Thin rice noodles glisten with creamy coconut sauce, tangy tamarind and savory fermented soybean paste. Tender tofu, fragrant shallots and golden omelet ribbons make a comforting Thai breakfast.",
+    "ingredients": [
+      "Thin rice vermicelli",
+      "Water",
+      "Coconut milk",
+      "Firm tofu",
+      "Thai fermented soybean paste",
+      "Tamarind puree",
+      "Palm sugar",
+      "Shallot",
+      "Garlic",
+      "Canola oil",
+      "Egg",
+      "Garlic chives"
+    ],
+    "amounts": {
+      "Thin rice vermicelli": {
+        "quantity": 140,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 1580,
+        "unit": "g"
+      },
+      "Coconut milk": {
+        "quantity": 250,
+        "unit": "g"
+      },
+      "Firm tofu": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Thai fermented soybean paste": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Tamarind puree": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Palm sugar": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Shallot": {
+        "quantity": 40,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Egg": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Garlic chives": {
+        "quantity": 20,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Soak the rice vermicelli in the large heatproof bowl with the 1500 g soaking water at approximately 50°C (122°F) for 10 minutes, or according to the package, until flexible but still slightly firm. Complete the vegetable preparation while they soak.",
+      "Cut the shallot into thin slices, the garlic into fine pieces, the tofu into 1 cm cubes and the garlic chives into 3 cm lengths using the knife and cutting board.",
+      "Drain the softened noodles thoroughly in the colander, discarding the soaking water.",
+      "Beat the eggs in the small bowl with the fork until the whites and yolks are evenly combined.",
+      "Cook the beaten eggs in the large nonstick skillet with the 5 g omelet oil over medium-low heat, tilting the skillet to form a thin layer. Use the spatula to turn the omelet once its underside sets, and continue until both sides are set and its center reaches 71°C (160°F), about 3 minutes.",
+      "Rest the cooked omelet on the plate while you prepare the sauce.",
+      "Saute the shallot and garlic in the same skillet with the remaining 5 g oil over medium-low heat for 2 minutes, stirring with the spatula until fragrant and softened.",
+      "Stir the coconut milk, fermented soybean paste, tamarind puree, palm sugar, tofu and 80 g sauce water into the aromatics until evenly combined.",
+      "Simmer the sauce gently for 5 minutes, stirring occasionally, until the sugar dissolves and the tofu is hot throughout, reaching 74°C (165°F) in the center of a cube.",
+      "Slice the rested omelet into narrow ribbons on the cutting board while the sauce simmers.",
+      "Fold the drained noodles and garlic chives through the gently simmering sauce for 2–3 minutes with the spatula, until the noodles are tender and evenly coated.",
+      "Divide the sauced noodles and tofu between two serving bowls and arrange the omelet ribbons on top. Serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-01ee4148-44a8-41a1-b2dd-32839677d233",
+    "name": "Bocadillo de Tortilla Francesa",
+    "time": 12,
+    "servings": 1,
+    "calories": 497,
+    "category": "Breakfast",
+    "description": "A warm, tender plain omelet nestles inside a crusty bread roll, bringing together golden eggs, fragrant olive oil and a crisp crust for a simple, satisfying Spanish breakfast.",
+    "ingredients": [
+      "Crusty white bread roll",
+      "Egg",
+      "Olive oil",
+      "Salt"
+    ],
+    "amounts": {
+      "Crusty white bread roll": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Egg": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 0.5,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Split the bread roll lengthwise with the serrated knife on the cutting board, leaving one long edge attached as a hinge.",
+      "Beat the weighed eggs and salt in the mixing bowl with the fork until the whites and yolks are evenly combined.",
+      "Heat the olive oil in the nonstick skillet over medium-low heat for about 1 minute, until it flows easily across the base without smoking.",
+      "Cook the beaten eggs in the skillet for about 2 minutes, gently drawing the set edges inward with the spatula and tilting the skillet so liquid egg fills the gaps.",
+      "Fold the omelet into thirds with the spatula to make an elongated shape that fits the bread.",
+      "Continue cooking over low heat for approximately 1–2 minutes, turning once, until the center reaches 71°C (160°F) on the instant-read thermometer and no liquid egg remains.",
+      "Slide the freshly cooked omelet into the split roll and close the bread gently around it."
+    ]
+  },
+  {
+    "id": "rapi-f627adb4-f2f0-4cee-a62e-6ec2dcd48382",
+    "name": "Kimchi Jeon",
+    "time": 25,
+    "servings": 4,
+    "calories": 146,
+    "category": "Snack",
+    "description": "Chopped fermented kimchi and its tangy brine flavor these savory Korean pancakes. Golden, crisp edges surround a tender center, with scallion freshness and a warm chili bite.",
+    "ingredients": [
+      "Napa cabbage kimchi",
+      "Kimchi brine",
+      "All-purpose flour",
+      "Cornstarch",
+      "Water",
+      "Scallions",
+      "Granulated sugar",
+      "Canola oil"
+    ],
+    "amounts": {
+      "Napa cabbage kimchi": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Kimchi brine": {
+        "quantity": 40,
+        "unit": "g"
+      },
+      "All-purpose flour": {
+        "quantity": 90,
+        "unit": "g"
+      },
+      "Cornstarch": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Granulated sugar": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 28,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Chop the kimchi and scallions into pieces about 5 mm wide on the cutting board.",
+      "Mix the flour, cornstarch, sugar, cold water, kimchi brine, chopped kimchi and scallions in the mixing bowl just until no dry flour remains. The batter should loosely coat the vegetables and spread easily with the spoon.",
+      "Preheat the skillet over medium-high heat for about 2 minutes.",
+      "Fry half the batter in 7 g oil, spreading it with the spoon into a thin pancake about 20 cm across. Cook for about 4 minutes, until the underside is browned and the edges look set. Lower the heat to medium if the kimchi darkens too quickly.",
+      "Fry the other side for about 3 minutes after turning the pancake with the wide spatula and adding 7 g oil around its edges. The center should be set without a wet flour paste, and both surfaces should have crisp browned patches.",
+      "Place the first pancake on the wire rack in a single layer while the second pancake cooks.",
+      "Fry the remaining batter in 7 g oil, spreading it into another thin 20 cm pancake. Cook for about 4 minutes, until the underside is browned and the edges are set.",
+      "Fry the second pancake on its other side for about 3 minutes after turning it and adding the remaining 7 g oil around the edges. Cook until the center is fully set and both sides are crisp.",
+      "Cut each pancake into wedges on the cutting board.",
+      "Serve immediately on the serving plate, allowing half a pancake per snack serving."
+    ]
+  },
+  {
+    "id": "rapi-040ca44d-f100-4e52-90a3-d05fee2bc656",
+    "name": "Osaka-Style Okonomiyaki With Pork Belly",
+    "time": 45,
+    "servings": 2,
+    "calories": 794,
+    "category": "Dinner",
+    "description": "Golden cabbage pancakes have tender, fluffy centers and crisp-edged pork belly. Glossy savory-sweet sauce, creamy mayonnaise and smoky bonito flakes finish this satisfying Japanese dinner.",
+    "ingredients": [
+      "Green cabbage",
+      "Green onions",
+      "Nagaimo",
+      "All-purpose flour",
+      "Dashi",
+      "Eggs",
+      "Salt",
+      "Pork belly",
+      "Canola oil",
+      "Okonomiyaki sauce",
+      "Japanese mayonnaise",
+      "Bonito flakes",
+      "Aonori"
+    ],
+    "amounts": {
+      "Green cabbage": {
+        "quantity": 350,
+        "unit": "g"
+      },
+      "Green onions": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Nagaimo": {
+        "quantity": 60,
+        "unit": "g"
+      },
+      "All-purpose flour": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Dashi": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Eggs": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Pork belly": {
+        "quantity": 160,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Okonomiyaki sauce": {
+        "quantity": 60,
+        "unit": "g"
+      },
+      "Japanese mayonnaise": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Bonito flakes": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Aonori": {
+        "quantity": 1,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Chop the cabbage into pieces about 5 mm wide and finely slice the green onions on the cutting board.",
+      "Finely grate the peeled nagaimo into the mixing bowl.",
+      "Whisk the flour, dashi, eggs and salt into the grated nagaimo just until no dry flour remains.",
+      "Rest the batter for 10 minutes to hydrate the flour.",
+      "Preheat both skillets over medium heat with 5 g oil in each. For a temperature-controlled griddle, use approximately 180°C (356°F).",
+      "Fold the cabbage and green onions into the rested batter with the mixing spoon until lightly coated throughout.",
+      "Shape half the mixture in each skillet into a pancake approximately 18 cm across and 2 cm thick, gently bringing the edges together without compressing the center.",
+      "Arrange 80 g pork belly over each pancake in a single layer with minimal overlap. Use tongs for the raw pork; wash hands and clean the tongs and any surfaces that contact raw meat before handling cooked food.",
+      "Griddle the pancakes undisturbed for about 5 minutes, until the undersides are golden and the edges hold together.",
+      "Cook the pork sides by turning each pancake with two wide spatulas, covering the skillets and reducing the heat to medium-low for about 7 minutes. Clean utensils that touched uncooked batter or pork before using them again.",
+      "Finish cooking uncovered, pork side up, for about 2 minutes. Insert the thermometer horizontally into each pancake: the egg-containing center must reach at least 71°C (160°F), and the thickest pork must reach at least 63°C (145°F). Continue over low heat if needed until both readings are reached.",
+      "Rest the cooked pancakes on serving plates for at least 3 minutes before cutting, following the required rest for the pork.",
+      "Garnish each pancake with half the okonomiyaki sauce, mayonnaise, aonori and bonito flakes, spreading the sauce across the pork and drizzling the mayonnaise over it."
+    ]
+  },
+  {
+    "id": "rapi-6e997e00-890a-4fc9-9322-31af474c3592",
+    "name": "Hu Ta Zi",
+    "time": 30,
+    "servings": 2,
+    "calories": 378,
+    "category": "Breakfast",
+    "description": "These soft Beijing-style zucchini pancakes have delicate golden patches, tender green shreds and a gentle scallion aroma. A sharp garlic-vinegar dip brightens their mild, savory flavor.",
+    "ingredients": [
+      "Zucchini",
+      "Eggs",
+      "All-purpose flour",
+      "Scallions",
+      "Salt",
+      "Ground white pepper",
+      "Canola oil",
+      "Chinese black vinegar",
+      "Light soy sauce",
+      "Garlic"
+    ],
+    "amounts": {
+      "Zucchini": {
+        "quantity": 350,
+        "unit": "g"
+      },
+      "Eggs": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "All-purpose flour": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Ground white pepper": {
+        "quantity": 0.3,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 18,
+        "unit": "g"
+      },
+      "Chinese black vinegar": {
+        "quantity": 24,
+        "unit": "g"
+      },
+      "Light soy sauce": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 5,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Coarsely grate the zucchini directly into the large mixing bowl.",
+      "Mix the salt into the shredded zucchini until evenly distributed.",
+      "Rest the salted zucchini for 5 minutes, keeping all the released liquid in the bowl.",
+      "Mix the minced garlic, black vinegar and light soy sauce in the small dipping bowl.",
+      "Mix the eggs, flour, sliced scallions and white pepper into the zucchini and its liquid just until no dry flour remains. The batter should fall from the spoon in soft, moist mounds that spread with gentle pressure.",
+      "Preheat the skillet over medium heat for about 2 minutes.",
+      "Pan-fry the batter in three batches of two pancakes, using 6 g oil per batch. Spoon one-sixth of the batter per pancake into the skillet and spread each to about 12 cm wide and 6–8 mm thick. Cook for about 3 minutes on the first side and 2 minutes after turning with the spatula. Each pancake must reach 71°C (160°F) in the center, checked by inserting the thermometer sideways. Reduce the heat if the surfaces brown before the centers set.",
+      "Serve three warm pancakes per person on the serving plate with the garlic-vinegar dip alongside."
+    ]
+  },
+  {
+    "id": "rapi-f4f07803-38f3-4e9e-844e-9d42c3e295e9",
+    "name": "Bánh Khọt",
+    "time": 55,
+    "servings": 4,
+    "calories": 418,
+    "category": "Snack",
+    "description": "Golden rice-flour pancakes have crisp edges, tender coconut-scented centers, and juicy shrimp topped with scallions. Lettuce, fragrant herbs, and a tangy lime-fish sauce brighten each savory bite.",
+    "ingredients": [
+      "Rice flour",
+      "Cornstarch",
+      "Unsweetened coconut milk",
+      "Water",
+      "Ground turmeric",
+      "Salt",
+      "Shrimp",
+      "Scallions",
+      "Canola oil",
+      "Fish sauce",
+      "Lime juice",
+      "Granulated sugar",
+      "Garlic",
+      "Thai red chili",
+      "Butter lettuce",
+      "Fresh mint",
+      "Thai basil"
+    ],
+    "amounts": {
+      "Rice flour": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Cornstarch": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Unsweetened coconut milk": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 290,
+        "unit": "g"
+      },
+      "Ground turmeric": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Shrimp": {
+        "quantity": 240,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 48,
+        "unit": "g"
+      },
+      "Fish sauce": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Lime juice": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Granulated sugar": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Thai red chili": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Butter lettuce": {
+        "quantity": 160,
+        "unit": "g"
+      },
+      "Fresh mint": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Thai basil": {
+        "quantity": 15,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Whisk the rice flour, cornstarch, coconut milk, 230 g water, turmeric, and salt in the mixing bowl until smooth. The batter should pour readily in a thin stream.",
+      "Rest the batter for 15 minutes to hydrate the flour.",
+      "Stir the sauce water, fish sauce, lime juice, sugar, garlic, and chili together in the small sauce bowl until the sugar dissolves.",
+      "Arrange the lettuce, mint, and Thai basil on the serving platter before handling the raw shrimp.",
+      "Preheat the bánh khọt pan over medium heat for approximately 4 minutes. The pan should be evenly hot but not smoking.",
+      "Coat the bases and sides of the 12 wells with 24 g oil, distributing it evenly with the pastry brush.",
+      "Stir the rested batter thoroughly to lift any rice flour that has settled at the bottom.",
+      "Portion half the batter evenly among the 12 hot wells with the small ladle, approximately 22 g per well. Leave space for the shrimp and keep the batter below the rims.",
+      "Top each pancake with one shrimp portion and a share of half the scallions, using the small spoon to position the shrimp gently in the batter.",
+      "Cook with the lid on over medium to medium-low heat for 4–5 minutes, until the batter surface sets and the shrimp flesh becomes pearly and opaque throughout. Verify that the thickest shrimp reaches at least 63°C (145°F) with the fine-tip thermometer; continue cooking if needed.",
+      "Cook uncovered for another 2–3 minutes, until the edges are golden and crisp and the centers contain no wet batter. Keep the shrimp facing upward.",
+      "Transfer the pancakes to the wire rack with the thin spatula, keeping them in a single layer.",
+      "Serve the pancakes promptly with the lettuce, herbs, and dipping sauce. Wrap each pancake in lettuce with a few herb leaves before dipping."
+    ]
+  },
+  {
+    "id": "rapi-d3a353ba-c2f2-42de-bc2c-aa36c051afbd",
+    "name": "Australian Pikelets With Butter And Jam",
+    "time": 26,
+    "servings": 16,
+    "calories": 80,
+    "category": "Snack",
+    "description": "These small, golden griddle pancakes have soft, fluffy centres and a gently sweet flavour. A spread of butter melts into their warm surfaces, while strawberry jam adds a bright, fruity finish.",
+    "ingredients": [
+      "Plain wheat flour",
+      "Baking powder",
+      "Caster sugar",
+      "Fine salt",
+      "Whole milk",
+      "Egg",
+      "Unsalted butter",
+      "Strawberry jam"
+    ],
+    "amounts": {
+      "Plain wheat flour": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Baking powder": {
+        "quantity": 6,
+        "unit": "g"
+      },
+      "Caster sugar": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Fine salt": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Whole milk": {
+        "quantity": 170,
+        "unit": "g"
+      },
+      "Egg": {
+        "quantity": 50,
+        "unit": "g"
+      },
+      "Unsalted butter": {
+        "quantity": 44,
+        "unit": "g"
+      },
+      "Strawberry jam": {
+        "quantity": 80,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Weigh all ingredients, keeping the butter for the pan separate from the serving butter.",
+      "Whisk the flour, baking powder, sugar and salt together in the large mixing bowl until evenly distributed.",
+      "Whisk the milk and egg together in the mixing jug until no streaks of egg remain.",
+      "Fold the milk mixture into the dry ingredients with the flexible spatula, stopping as soon as no dry flour remains. The batter should fall from the spatula in thick ribbons; small lumps are fine.",
+      "Rest the batter for 5 minutes to hydrate the flour.",
+      "Preheat the large nonstick frying pan over medium-low heat for about 2 minutes.",
+      "Cook four batches of four pikelets, using 3 g of the pan butter per batch. Spoon approximately 25 g batter per pikelet into the buttered pan, leaving room for each to spread to about 6–7 cm across. Cook for 1½–2 minutes until bubbles open on top and the edges look set, then turn with the thin turner and cook for about 1 minute more. Each pikelet should be golden on both sides with a set centre reaching at least 71°C (160°F), checked by inserting the fine-tip thermometer horizontally into the thickest part. Allow about 12 minutes for all four batches.",
+      "Serve the warm pikelets on the serving plate with the softened butter and strawberry jam, dividing the toppings evenly."
+    ]
+  },
+  {
+    "id": "rapi-25fd26d1-c79c-4d15-a08e-b764338ce2dd",
+    "name": "Japanese Spinach Salad With Toasted Sesame Dressing",
+    "time": 25,
+    "servings": 4,
+    "calories": 76,
+    "category": "Salad",
+    "description": "Tender, bright green spinach carries a nutty toasted-sesame dressing with savory soy sauce and gentle sweetness. Coarsely ground seeds give this cool Japanese salad a delicate, pleasantly grainy texture.",
+    "ingredients": [
+      "Spinach",
+      "Sesame seeds",
+      "Soy sauce",
+      "Sugar",
+      "Water"
+    ],
+    "amounts": {
+      "Spinach": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Sesame seeds": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Soy sauce": {
+        "quantity": 18,
+        "unit": "g"
+      },
+      "Sugar": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 3500,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Bring the blanching water to a rolling boil in the large saucepan, approximately 100°C (212°F) at sea level.",
+      "Toast the sesame seeds in the dry skillet over medium-low heat for 2–3 minutes, stirring with the spoon until fragrant and lightly golden.",
+      "Cool the toasted sesame seeds in the mortar for 2 minutes.",
+      "Crush the sesame seeds with the pestle until most are broken and the mixture resembles coarse, slightly oily sand.",
+      "Mix the ground sesame seeds, soy sauce and sugar in the mixing bowl until evenly combined into a thick dressing.",
+      "Blanch the spinach in the boiling water for 45–60 seconds, submerging it with the tongs until the leaves wilt and the stems become tender but retain a slight bite.",
+      "Cool the spinach immediately in the large cooling bowl containing the cold cooling water, using the tongs to transfer it from the saucepan. Leave submerged for about 1 minute, until cool throughout.",
+      "Drain the cooled spinach in the colander, discarding the cooling water and blanching water.",
+      "Squeeze the spinach gently in small handfuls with clean hands until water stops dripping steadily.",
+      "Cut the squeezed spinach into approximately 4 cm lengths on the cutting board using the knife.",
+      "Toss the spinach with the dressing in the mixing bowl, separating compacted clumps with the tongs until the leaves are evenly coated.",
+      "Divide the salad evenly among four serving bowls."
+    ]
+  },
+  {
+    "id": "rapi-88db0c3c-bd3b-4b0f-b6db-2039f788264a",
+    "name": "Crispy General Tso Tofu with Daikon and Spinach Salad",
+    "time": 60,
+    "servings": 4,
+    "calories": 348,
+    "category": "Dinner",
+    "description": "Crisp, golden-crusted tofu nuggets coated in an intensely glossy, sweet, spicy, and tangy glaze, paired alongside a crunchy daikon radish and tender spinach salad dressed in toasted sesame and rice vinegar.",
+    "ingredients": [
+      "Extra-firm tofu",
+      "Light soy sauce",
+      "Toasted sesame oil",
+      "Cornstarch",
+      "Peanut oil",
+      "Garlic",
+      "Fresh ginger",
+      "Scallions",
+      "Dried red chilies",
+      "Vegetable stock",
+      "Granulated sugar",
+      "Chinese black vinegar",
+      "Dark soy sauce",
+      "Water",
+      "Daikon radish",
+      "Baby spinach",
+      "Rice vinegar",
+      "Salt",
+      "Toasted white sesame seeds"
+    ],
+    "amounts": {
+      "Extra-firm tofu": {
+        "quantity": 560,
+        "unit": "g"
+      },
+      "Light soy sauce": {
+        "quantity": 45,
+        "unit": "ml"
+      },
+      "Toasted sesame oil": {
+        "quantity": 20,
+        "unit": "ml"
+      },
+      "Cornstarch": {
+        "quantity": 55,
+        "unit": "g"
+      },
+      "Peanut oil": {
+        "quantity": 250,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 3,
+        "unit": null
+      },
+      "Fresh ginger": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Scallions": {
+        "quantity": 3,
+        "unit": null
+      },
+      "Dried red chilies": {
+        "quantity": 8,
+        "unit": null
+      },
+      "Vegetable stock": {
+        "quantity": 80,
+        "unit": "ml"
+      },
+      "Granulated sugar": {
+        "quantity": 45,
+        "unit": "g"
+      },
+      "Chinese black vinegar": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Dark soy sauce": {
+        "quantity": 10,
+        "unit": "ml"
+      },
+      "Water": {
+        "quantity": 25,
+        "unit": "ml"
+      },
+      "Daikon radish": {
+        "quantity": 250,
+        "unit": "g"
+      },
+      "Baby spinach": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Rice vinegar": {
+        "quantity": 25,
+        "unit": "ml"
+      },
+      "Salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Toasted white sesame seeds": {
+        "quantity": 5,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Place the drained extra-firm tofu between double layers of paper towels on a cutting board, weight it with a heavy skillet or tofu press, and press for 20 minutes to extract excess water.",
+      "Tear the pressed tofu by hand into irregular, bite-sized pieces roughly 3 centimeters (1.2 inches) in diameter to create jagged edges.",
+      "Transfer the torn tofu pieces to a medium mixing bowl, drizzle with 15 milliliters of light soy sauce and 5 milliliters of toasted sesame oil, and toss gently until the seasoning is absorbed.",
+      "Scatter 45 grams of cornstarch over the seasoned tofu in two batches, tossing gently after each batch until every piece is coated in an even, chalky layer with no wet patches remaining.",
+      "In a small mixing bowl, whisk together 80 milliliters of vegetable stock, 40 grams of granulated sugar, 30 milliliters of Chinese black vinegar, 30 milliliters of light soy sauce, 10 milliliters of dark soy sauce, 10 grams of cornstarch, and 25 milliliters of cold water until the sugar and starch dissolve.",
+      "Peel the daikon radish with a vegetable peeler, cut it into matchsticks 2 millimeters thick using a mandoline slicer or chef knife, and place the matchsticks into a large mixing bowl together with 100 grams of cleaned baby spinach.",
+      "In another small bowl, whisk 25 milliliters of rice vinegar, 15 milliliters of toasted sesame oil, 5 grams of sugar, and 2 grams of salt until the salt dissolves to form the salad dressing.",
+      "Pour 250 milliliters of peanut oil into a deep wok or large frying pan and heat over medium-high heat until the oil reaches 180°C (356°F) on a digital cooking thermometer.",
+      "Add half of the coated tofu pieces to the hot oil in a single uncrowded layer and fry at 180°C (356°F) for 5 to 6 minutes, turning twice, until pale golden and audibly crisp.",
+      "Lift the fried tofu from the oil using a spider strainer, drain it thoroughly on the wire rack set in a baking sheet, and repeat the frying process with the second batch of tofu.",
+      "Pour out the frying oil into a heatproof container leaving 15 milliliters in the wok, set the wok over medium heat at 160°C (320°F), and sauté the minced garlic, grated ginger, minced scallion whites, and whole dried chilies for 45 seconds until fragrant.",
+      "Whisk the prepared sauce mixture once more to suspend settled starch, pour it into the wok with the aromatics, and simmer over medium-high heat at 100°C (212°F) for 2 minutes while stirring constantly until thick and clear.",
+      "Add all of the crispy fried tofu to the simmering sauce and toss vigorously for 30 seconds until every nugget is evenly cloaked in glaze, then immediately remove from the heat.",
+      "Pour the salad dressing over the daikon matchsticks and baby spinach in the large bowl and toss gently for 30 seconds until the leaves and radish shreds are evenly dressed.",
+      "Distribute the dressed daikon and spinach salad among four dinner plates, spoon the hot glazed General Tso tofu alongside, and garnish each plate with sliced scallion greens and toasted sesame seeds before serving immediately."
+    ]
+  },
+  {
+    "id": "rapi-05294ab7-2295-44aa-9663-e633d3e32fb4",
+    "name": "Warm Spanish-Style Potato and Chorizo Spinach Salad",
+    "time": 30,
+    "servings": 4,
+    "calories": 285,
+    "category": "Salad",
+    "description": "A robust and comforting warm salad where crispy, smoky chorizo and tender waxy potatoes meet fresh baby spinach, all tossed in a vibrant pan-drippings vinaigrette.",
+    "ingredients": [
+      "Baby potatoes",
+      "Cured spanish chorizo",
+      "Baby spinach",
+      "Red onion",
+      "Garlic",
+      "Extra virgin olive oil",
+      "Sherry vinegar",
+      "Dijon mustard",
+      "Kosher salt",
+      "Black pepper"
+    ],
+    "amounts": {
+      "Baby potatoes": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Cured spanish chorizo": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Baby spinach": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Red onion": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Garlic": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Extra virgin olive oil": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Sherry vinegar": {
+        "quantity": 20,
+        "unit": "ml"
+      },
+      "Dijon mustard": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Kosher salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Place the halved potatoes in a saucepan and cover completely with cold water. Bring to a boil at 100°C/212°F over high heat, then reduce to a simmer. Cook until easily pierced with a fork, about 10 to 12 minutes. Drain well and set aside.",
+      "While the potatoes cook, use a chef's knife to slice the chorizo, thinly slice the red onion, and mince the garlic. Place the dried baby spinach in a large mixing bowl.",
+      "Heat a dry skillet over medium heat. Add the sliced chorizo and fry until the edges are crispy and the deeply red, paprika-infused oils have released into the pan. Use a slotted spoon to transfer the crispy chorizo to the mixing bowl with the spinach, leaving the rendered fat in the skillet.",
+      "Add the sliced red onion to the rendered chorizo fat in the skillet. Sauté until the onions are softened and slightly translucent. Add the minced garlic and cook for an additional 60 seconds until highly fragrant.",
+      "Remove the skillet from the direct heat source. Immediately pour in the sherry vinegar to deglaze the pan, using a whisk to scrape up any browned bits from the bottom. Whisk in the Dijon mustard, olive oil, kosher salt, and black pepper until a warm, emulsified dressing forms.",
+      "Add the warm boiled potatoes to the mixing bowl with the spinach and chorizo. Pour the warm vinaigrette from the skillet directly over the ingredients. Gently toss everything together until the spinach is glossy and slightly wilted from the heat of the potatoes and dressing. Serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-2f47ff3e-8751-48d0-8f09-2bfcbb20679d",
+    "name": "Vibrant Black Rice and Lentil Spinach Salad",
+    "time": 65,
+    "servings": 4,
+    "calories": 353,
+    "category": "Salad",
+    "description": "A nutrient-dense, visually striking salad pairing nutty black rice and earthy green lentils over crisp baby spinach, tossed in a zesty herb and spice vinaigrette.",
+    "ingredients": [
+      "Black rice",
+      "French green lentils",
+      "Water",
+      "Baby spinach",
+      "Cherry tomatoes",
+      "English cucumber",
+      "Red onion",
+      "Extra virgin olive oil",
+      "Lemon juice",
+      "Garlic",
+      "Fresh parsley",
+      "Fresh mint",
+      "Ground cumin",
+      "Ground coriander",
+      "Kosher salt",
+      "Black pepper"
+    ],
+    "amounts": {
+      "Black rice": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "French green lentils": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 550,
+        "unit": "ml"
+      },
+      "Baby spinach": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Cherry tomatoes": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "English cucumber": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Red onion": {
+        "quantity": 50,
+        "unit": "g"
+      },
+      "Extra virgin olive oil": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Lemon juice": {
+        "quantity": 45,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Fresh parsley": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Fresh mint": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Ground cumin": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Ground coriander": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Kosher salt": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 2,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Place black rice in a fine mesh sieve and rinse under cold water until the water runs clear. Repeat this process with the green lentils in a separate batch.",
+      "In a small saucepan, combine the rinsed black rice, 250ml of water, and a pinch of salt. Bring to a boil at 100°C/212°F, then reduce heat to low, cover, and simmer for 30 minutes until tender and liquid is absorbed.",
+      "In a medium saucepan, bring 300ml of water to a boil. Add the rinsed lentils, reduce heat to a gentle simmer, and cook uncovered for 20 to 25 minutes until tender but firm. Drain any excess water.",
+      "Spread the cooked black rice and lentils onto a baking sheet or wide plate. Let them cool to room temperature for about 15 minutes to prevent wilting the fresh vegetables later.",
+      "While grains are cooling, prepare the vegetables. Halve the cherry tomatoes, dice the English cucumber, finely dice the red onion, and chop the parsley and mint.",
+      "In a small mixing bowl, combine olive oil, lemon juice, minced garlic, ground cumin, ground coriander, kosher salt, and black pepper. Whisk vigorously until the dressing is fully emulsified.",
+      "In a large mixing bowl, combine the cooled rice, lentils, cherry tomatoes, cucumber, red onion, parsley, and mint. Pour the dressing over the top and toss gently until all ingredients are evenly coated.",
+      "Divide the washed baby spinach evenly among four serving plates or bowls. Spoon the dressed grain and vegetable mixture generously over the center of the spinach beds."
+    ]
+  },
+  {
+    "id": "rapi-769b40b6-5580-4cd9-99f1-9309570d47b5",
+    "name": "Slow-Roasted Canned Tomato Pasta",
+    "time": 95,
+    "servings": 4,
+    "calories": 489,
+    "category": "Dinner",
+    "description": "Concentrated San Marzano tomatoes caramelize slowly in olive oil with garlic and chili flakes, yielding a rich, deeply savory sauce tossed with al dente pasta.",
+    "ingredients": [
+      "Canned whole peeled plum tomatoes",
+      "Extra-virgin olive oil",
+      "Garlic",
+      "Crushed red pepper flakes",
+      "Dried oregano",
+      "Fine sea salt",
+      "Granulated sugar",
+      "Black pepper",
+      "Fresh basil",
+      "Dry rigatoni pasta",
+      "Water"
+    ],
+    "amounts": {
+      "Canned whole peeled plum tomatoes": {
+        "quantity": 800,
+        "unit": "g"
+      },
+      "Extra-virgin olive oil": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 6,
+        "unit": null
+      },
+      "Crushed red pepper flakes": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Dried oregano": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Fine sea salt": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Granulated sugar": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Fresh basil": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Dry rigatoni pasta": {
+        "quantity": 340,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 3000,
+        "unit": "ml"
+      }
+    },
+    "steps": [
+      "Preheat the oven to 160°C (325°F) with the oven rack positioned in the center.",
+      "Pour the canned whole peeled plum tomatoes with their juices into the baking dish and crush them gently by hand into rustic, bite-sized pieces.",
+      "Add the extra-virgin olive oil, thinly sliced garlic, crushed red pepper flakes, dried oregano, granulated sugar, black pepper, and 5 g fine sea salt to the baking dish, then stir with a wooden spoon until thoroughly combined.",
+      "Place the baking dish into the oven and roast at 160°C (325°F) for 75 minutes, stirring once halfway through, until the tomatoes are reduced, jammy, and caramelized around the edges.",
+      "Bring 3000 ml of water and 20 g of fine sea salt to a rolling boil over high heat in the large pot.",
+      "Add the dry rigatoni pasta to the boiling water and cook uncovered for 10 minutes, stirring occasionally with a wooden spoon, until al dente.",
+      "Carefully scoop out 120 ml of the starchy pasta cooking water from the large pot using a heatproof measuring cup, then pour the remaining pasta into a colander to drain.",
+      "Transfer the drained pasta back into the warm large pot, scrape in all the roasted tomato sauce from the baking dish, and add 60 ml of the reserved pasta cooking water.",
+      "Cook the mixture over medium heat for 2 minutes, stirring constantly with a wooden spoon to emulsify the olive oil and pasta starch, adding more reserved pasta water 15 ml at a time if the sauce appears dry.",
+      "Remove the pot from heat, fold in the torn fresh basil leaves with the wooden spoon, and taste to adjust seasoning if necessary.",
+      "Divide the dressed pasta and rich slow-roasted tomato sauce among four warm serving bowls using tongs, and serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-d652d16f-18b6-4ff6-96c2-e3d820ea6ce9",
+    "name": "Simple Tomato Pasta",
+    "time": 20,
+    "servings": 2,
+    "calories": 548,
+    "category": "Dinner",
+    "description": "A bright, vibrant pasta dish featuring sweet blistered tomatoes and aromatic garlic, bound together with starchy pasta water into a silky, luscious sauce.",
+    "ingredients": [
+      "Dried spaghetti",
+      "Kosher salt",
+      "Extra virgin olive oil",
+      "Garlic",
+      "Cherry tomatoes",
+      "Red pepper flakes",
+      "Fresh basil"
+    ],
+    "amounts": {
+      "Dried spaghetti": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Kosher salt": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Extra virgin olive oil": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 3,
+        "unit": null
+      },
+      "Cherry tomatoes": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Red pepper flakes": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Fresh basil": {
+        "quantity": 10,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Bring a large pot of water to a rolling boil at 100 degrees Celsius (212 degrees Fahrenheit). Add the kosher salt, then the spaghetti. Cook until just shy of al dente, usually 1 to 2 minutes less than the package instructions. Reserve at least 100ml of starchy pasta water before draining.",
+      "While the pasta boils, place a wide skillet over medium heat and add the extra virgin olive oil. Add the thinly sliced garlic and red pepper flakes. Cook gently until the garlic is fragrant and pale golden, taking care not to let it brown, about 2 minutes.",
+      "Increase the heat to medium-high and add the halved cherry tomatoes. Sauté until the tomatoes begin to blister, soften, and release their juices into the oil to form a rustic, bubbly sauce, about 6 minutes.",
+      "Transfer the slightly undercooked pasta directly into the skillet with the tomatoes. Pour in 50ml of the reserved pasta water. Using tongs, toss vigorously over medium-high heat until the starchy water and olive oil emulsify into a glossy sauce that clings to the noodles. Add more pasta water if the pan looks too dry.",
+      "Remove the skillet from the heat. Fold in the torn fresh basil leaves, toss one final time, and serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-065b4cb0-b862-46db-baad-dc027274afba",
+    "name": "Silky Spanish Chorizo And Tomato Pasta",
+    "time": 20,
+    "servings": 4,
+    "calories": 704,
+    "category": "Dinner",
+    "description": "A rapid, fiercely flavorful weeknight pasta dish harnessing the smoky power of cured Spanish chorizo, caramelized tomato paste, and a glossy, emulsified pan sauce.",
+    "ingredients": [
+      "Dry rigatoni pasta",
+      "Cured spanish chorizo",
+      "Extra virgin olive oil",
+      "Garlic",
+      "Tomato paste",
+      "Smoked paprika",
+      "Red pepper flakes",
+      "Dry white wine",
+      "Reserved pasta water",
+      "Manchego cheese",
+      "Fresh parsley"
+    ],
+    "amounts": {
+      "Dry rigatoni pasta": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Cured spanish chorizo": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Extra virgin olive oil": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 4,
+        "unit": null
+      },
+      "Tomato paste": {
+        "quantity": 50,
+        "unit": "g"
+      },
+      "Smoked paprika": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Red pepper flakes": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Dry white wine": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Reserved pasta water": {
+        "quantity": 120,
+        "unit": "ml"
+      },
+      "Manchego cheese": {
+        "quantity": 40,
+        "unit": "g"
+      },
+      "Fresh parsley": {
+        "quantity": 10,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Bring a large pot of heavily salted water to a rolling boil (100°C/212°F). Cook the pasta 1 minute shy of al dente according to package directions. Scoop out and reserve at least 120ml of the starchy pasta water before draining the noodles.",
+      "Meanwhile, place a deep skillet over medium heat. Add the olive oil and sliced chorizo. Sauté until the chorizo releases its vibrant red, smoky fat and begins to crisp slightly at the edges.",
+      "Add the minced garlic, smoked paprika, and optional red pepper flakes to the skillet. Stir constantly and cook until highly fragrant, being careful not to let the garlic brown.",
+      "Stir in the tomato paste. Cook, stirring frequently, until the paste darkens from bright red to a deep brick color and begins to stick slightly to the bottom of the pan.",
+      "Pour the dry white wine into the skillet to deglaze the pan. Use a wooden spoon or tongs to scrape up any browned bits stuck to the bottom. Let the liquid simmer until reduced by half.",
+      "Add the drained, hot pasta and half of the reserved pasta water to the skillet. Toss vigorously over medium heat until the starchy water and chorizo fat emulsify into a silky, glossy sauce that clings heavily to the noodles. Add more pasta water 15ml at a time if the pan seems dry.",
+      "Remove the skillet from the heat. Portion the pasta into warm bowls, then top generously with the finely grated Manchego cheese and fresh chopped parsley. Serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-fd961128-6726-4b94-8b07-9898d3f51775",
+    "name": "Vibrant Summer Cherry Tomato Pasta",
+    "time": 30,
+    "servings": 4,
+    "calories": 546,
+    "category": "Dinner",
+    "description": "A vibrant, refreshing dish featuring a raw, marinated cherry tomato sauce tossed with warm pasta. Bursting with sweet seasonal tomatoes, fresh basil, garlic, and high-quality olive oil, it is the ultimate expression of summer cooking.",
+    "ingredients": [
+      "Cherry tomatoes",
+      "Garlic",
+      "Fresh basil",
+      "Extra virgin olive oil",
+      "Flaky sea salt",
+      "Black pepper",
+      "Dried short pasta",
+      "Water",
+      "Kosher salt"
+    ],
+    "amounts": {
+      "Cherry tomatoes": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 2,
+        "unit": null
+      },
+      "Fresh basil": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Extra virgin olive oil": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Flaky sea salt": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Dried short pasta": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 4000,
+        "unit": "ml"
+      },
+      "Kosher salt": {
+        "quantity": 40,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Place the halved cherry tomatoes, minced garlic, torn basil, extra virgin olive oil, flaky sea salt, and black pepper into a large mixing bowl. Toss well to combine.",
+      "Let the tomato mixture sit at room temperature for at least 15 minutes. This allows the salt to draw out the natural juices of the tomatoes, creating the base of your sauce.",
+      "Bring the water to a rolling boil in a large pot. Add the kosher salt. The water should be heavily salted like the sea.",
+      "Add the dried short pasta to the boiling water and cook according to the package instructions until al dente.",
+      "Drain the pasta in a colander, reserving a small splash of the starchy pasta water. Do not rinse the pasta.",
+      "Transfer the hot pasta directly into the large mixing bowl with the marinated tomatoes. Toss vigorously to combine, allowing the warmth of the pasta to release the aromatics of the garlic and basil.",
+      "Divide among bowls and garnish with extra fresh basil leaves and a final drizzle of extra virgin olive oil."
+    ]
+  },
+  {
+    "id": "rapi-f68bf64e-e185-4796-8261-3e6f59dadfa0",
+    "name": "Clay Pot Chicken Rice",
+    "time": 60,
+    "servings": 4,
+    "calories": 613,
+    "category": "Dinner",
+    "description": "Fragrant jasmine rice absorbs ginger-scented chicken juices beneath tender chicken, sweet Chinese sausage and earthy shiitake mushrooms. A golden, crisp bottom crust adds a satisfying toasted crunch.",
+    "ingredients": [
+      "Boneless skinless chicken thighs",
+      "Light soy sauce",
+      "Oyster sauce",
+      "Shaoxing wine",
+      "Fresh ginger",
+      "Cornstarch",
+      "Sugar",
+      "Toasted sesame oil",
+      "Ground white pepper",
+      "Jasmine rice",
+      "Water",
+      "Chinese pork sausage",
+      "Fresh shiitake mushrooms",
+      "Canola oil",
+      "Scallions",
+      "Dark soy sauce"
+    ],
+    "amounts": {
+      "Boneless skinless chicken thighs": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Light soy sauce": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Oyster sauce": {
+        "quantity": 18,
+        "unit": "g"
+      },
+      "Shaoxing wine": {
+        "quantity": 12,
+        "unit": "g"
+      },
+      "Fresh ginger": {
+        "quantity": 12,
+        "unit": "g"
+      },
+      "Cornstarch": {
+        "quantity": 6,
+        "unit": "g"
+      },
+      "Sugar": {
+        "quantity": 7,
+        "unit": "g"
+      },
+      "Toasted sesame oil": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Ground white pepper": {
+        "quantity": 0.5,
+        "unit": "g"
+      },
+      "Jasmine rice": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 1635,
+        "unit": "g"
+      },
+      "Chinese pork sausage": {
+        "quantity": 90,
+        "unit": "g"
+      },
+      "Fresh shiitake mushrooms": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 14,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Dark soy sauce": {
+        "quantity": 6,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Rinse the rice in a mixing bowl using three successive 400 g batches of rinsing water, draining each batch through the fine-mesh strainer.",
+      "Soak the drained rice in the unheated clay pot with the 420 g cooking water for 10 minutes while preparing the toppings. Keep this water in the pot.",
+      "Slice the shiitake caps 5 mm thick, the sausage 4 mm thick, the ginger into fine matchsticks and the scallions into thin rings.",
+      "Cut the chicken into pieces approximately 2 cm across and no thicker than 1.5 cm. Do not wash raw chicken; wash hands and clean the knife, cutting board and work surface after handling it.",
+      "Mix the chicken with all remaining Chicken and Marinade ingredients in a mixing bowl until evenly coated.",
+      "Marinate the chicken in the refrigerator at 4°C (40°F) or below for 10 minutes while starting the rice.",
+      "Stir 6 g canola oil into the soaked rice and its cooking water.",
+      "Bring the covered pot gradually to a gentle boil over medium-low heat, allowing approximately 7 minutes. Follow the pot manufacturer's burner restrictions.",
+      "Simmer the rice uncovered over low heat for about 3 minutes, until the water falls just below the grain surface but small bubbling holes remain.",
+      "Arrange the chicken and all its marinade evenly over the rice, distributing the sausage and mushrooms between the chicken pieces. Keep the toppings loose and avoid a thick mound in the center.",
+      "Steam with the lid tightly closed over the lowest steady heat for 18 to 20 minutes. Before crusting, check the thickest chicken pieces and sausage with the food thermometer: both must reach 74°C (165°F), and the rice should be tender. Continue covered cooking if necessary.",
+      "Mix all Finishing Sauce ingredients in a clean bowl until the sugar dissolves, doing this while the chicken steams.",
+      "Drizzle the remaining 8 g canola oil around the inside edge of the pot, replace the lid and toast the bottom rice over medium-low heat for 2 to 3 minutes. Stop when gentle crackling and a nutty aroma develop; sharp smoke indicates burning.",
+      "Rest the covered pot off the heat on a dry heatproof trivet for 5 minutes, using oven mitts to move it.",
+      "Garnish with the finishing sauce and sliced scallions.",
+      "Serve immediately, using a rice paddle to lift portions of chicken and rice with pieces of the golden bottom crust."
+    ]
+  },
+  {
+    "id": "rapi-3a8cc38f-c9e4-4893-9897-9280c2f0f7bd",
+    "name": "Vietnamese Chicken Rice Porridge",
+    "time": 57,
+    "servings": 4,
+    "calories": 293,
+    "category": "Breakfast",
+    "description": "Silky jasmine rice porridge meets tender poached chicken in a clear, savory broth, while fresh ginger, scallion whites, and bright green tops add crisp fragrance.",
+    "ingredients": [
+      "Boneless skinless chicken thighs",
+      "Cooked jasmine rice",
+      "Water",
+      "Fresh ginger",
+      "Scallions",
+      "Fish sauce",
+      "White sugar",
+      "Fine sea salt",
+      "Ground black pepper"
+    ],
+    "amounts": {
+      "Boneless skinless chicken thighs": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Cooked jasmine rice": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 1200,
+        "unit": "ml"
+      },
+      "Fresh ginger": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Fish sauce": {
+        "quantity": 25,
+        "unit": "ml"
+      },
+      "White sugar": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Fine sea salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Ground black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Weigh 500 g of raw chicken thighs and 400 g of fully cooked, cooled jasmine rice. Keep the chicken and rice in separate containers until needed.",
+      "Cut the chicken into evenly sized 3 cm pieces. Use the cutting board and knife for the raw poultry at this stage, keep the chicken and its juices away from all other ingredients, and wash hands after handling it.",
+      "Wash and sanitize the cutting board and knife, then mince the fresh ginger finely.",
+      "Slice the rinsed scallions thinly, placing 20 g of the whites, 5 g of the greens, and 5 g of the greens for garnish into separate piles.",
+      "Combine 1,200 ml of water with 20 ml of fish sauce, the sugar, salt, 10 g of minced ginger, and the 20 g of scallion whites in the saucepan.",
+      "Cover the saucepan and bring the seasoned liquid to a full boil over high heat, about 100°C/212°F.",
+      "Add the chicken, cover, and lower the heat to a gentle simmer at approximately 85-93°C/185-199°F. Poach for 12 minutes, then verify that the thickest piece reaches 74°C/165°F in the center; if necessary, continue in 2-minute increments and recheck.",
+      "Lift the chicken from the saucepan with the tongs, place it in a clean heatproof bowl, and let it rest uncovered for 3 minutes.",
+      "Strain the poaching liquid through the fine-mesh sieve into a clean saucepan, discarding foam and sediment. Reserve 1,000 ml of the strained liquid.",
+      "Shred the rested chicken with two forks, working with the grain and leaving the pieces slightly irregular for a tender, spoonable texture.",
+      "Add the 400 g of cooked jasmine rice and 1,000 ml of reserved broth to the saucepan. Bring the mixture to a gentle simmer, about 95°C/203°F.",
+      "Simmer the porridge uncovered for 12 minutes, stirring with the heatproof spoon every 3 minutes so the rice softens and releases its starch.",
+      "Reduce the heat and continue simmering for 5 minutes at approximately 94°C/201°F, stirring frequently until the porridge thickens and becomes creamy.",
+      "Remove the porridge from the heat. Add the remaining 10 g of minced ginger, 5 g of scallion greens, remaining 5 ml of fish sauce, and black pepper, then stir to distribute them evenly.",
+      "Divide the shredded chicken among 4 serving bowls. Ladle over the hot porridge, scatter with the reserved scallion greens, and serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-081d3fc6-73d3-445b-bab3-83cc12c6de10",
+    "name": "High-Protein Chicken Rice Bowl",
+    "time": 30,
+    "servings": 2,
+    "calories": 481,
+    "category": "Lunch",
+    "description": "A macro-friendly, savory chicken and rice bowl featuring tender seared chicken breast, crisp-tender vibrant broccoli, and fluffy jasmine rice coated in a quick garlic-soy glaze.",
+    "ingredients": [
+      "Jasmine rice",
+      "Water",
+      "Kosher salt",
+      "Chicken breast",
+      "Broccoli",
+      "Olive oil",
+      "Soy sauce",
+      "Honey",
+      "Garlic",
+      "Fresh ginger",
+      "Toasted sesame oil",
+      "Sesame seeds"
+    ],
+    "amounts": {
+      "Jasmine rice": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 150,
+        "unit": "ml"
+      },
+      "Kosher salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Chicken breast": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Broccoli": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Soy sauce": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Honey": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Garlic": {
+        "quantity": 2,
+        "unit": null
+      },
+      "Fresh ginger": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Toasted sesame oil": {
+        "quantity": 5,
+        "unit": "ml"
+      },
+      "Sesame seeds": {
+        "quantity": 5,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Combine the rinsed jasmine rice, water, and kosher salt in the small saucepan. Bring to a rapid boil over high heat, then immediately reduce the heat to the lowest setting. Cover with the tight-fitting lid and simmer for 15 minutes. Remove from heat and let rest covered until assembly.",
+      "While the rice is cooking, prepare the glaze. In a small mixing bowl, whisk together the soy sauce, honey, minced garlic, grated ginger, and toasted sesame oil until fully combined.",
+      "Heat the olive oil in a large skillet over medium-high heat. Once the oil is shimmering (around 190°C/375°F), add the diced chicken breast in a single layer. Sear without moving for 3 minutes to develop a crust, then toss with a spatula and continue cooking until browned and the internal temperature reaches a safe 74°C/165°F.",
+      "Add the broccoli florets directly to the skillet with the chicken, along with a splash of water (about 15ml). Immediately cover the skillet to trap the steam. Cook until the broccoli turns bright green and becomes crisp-tender.",
+      "Remove the lid from the skillet. Pour the prepared glaze over the chicken and broccoli. Toss constantly with a spatula for 1 to 2 minutes as the liquid reduces into a sticky, glossy sauce that coats the ingredients evenly.",
+      "Fluff the rested rice with a fork and divide it evenly between two serving bowls. Top with the glazed chicken and broccoli mixture, pouring any remaining sauce from the skillet over the top. Garnish with sesame seeds."
+    ]
+  },
+  {
+    "id": "rapi-5705dd0e-a293-44a0-bd09-5e7f742b719e",
+    "name": "Hainanese Chicken Rice",
+    "time": 180,
+    "servings": 4,
+    "calories": 462,
+    "category": "Dinner",
+    "description": "A revered Southeast Asian staple featuring gently poached, incredibly silky chicken paired with fragrant jasmine rice cooked in rich chicken fat and savory broth, accompanied by a vibrant trinity of dipping sauces.",
+    "ingredients": [
+      "Whole chicken",
+      "Kosher salt",
+      "Fresh ginger",
+      "Scallions",
+      "Water",
+      "Chicken fat",
+      "Garlic",
+      "Shallot",
+      "Jasmine rice",
+      "Pandan leaves",
+      "Fresh red chilies",
+      "Bird's eye chilies",
+      "Granulated sugar",
+      "Fresh lime juice",
+      "Neutral oil",
+      "Dark soy sauce",
+      "Sesame oil",
+      "English cucumber",
+      "Fresh cilantro"
+    ],
+    "amounts": {
+      "Whole chicken": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Kosher salt": {
+        "quantity": 62,
+        "unit": "g"
+      },
+      "Fresh ginger": {
+        "quantity": 115,
+        "unit": "g"
+      },
+      "Scallions": {
+        "quantity": 4,
+        "unit": null
+      },
+      "Water": {
+        "quantity": 4000,
+        "unit": "ml"
+      },
+      "Chicken fat": {
+        "quantity": 50,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Shallot": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Jasmine rice": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Pandan leaves": {
+        "quantity": 2,
+        "unit": null
+      },
+      "Fresh red chilies": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Bird's eye chilies": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Granulated sugar": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Fresh lime juice": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Neutral oil": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Dark soy sauce": {
+        "quantity": 45,
+        "unit": "ml"
+      },
+      "Sesame oil": {
+        "quantity": 5,
+        "unit": "ml"
+      },
+      "English cucumber": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Fresh cilantro": {
+        "quantity": 10,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Trim the large pieces of fat from the cavity opening of the chicken and set aside for cooking the rice. Rub the exterior skin of the chicken vigorously with the 50g of kosher salt to exfoliate away impurities and loose membranes. Rinse the chicken completely inside and out under cold running water until the water runs clear.",
+      "Stuff the hollowed cavity of the chicken with the thick ginger slices and the knotted scallions to flavor the meat from the inside out.",
+      "Bring a large stockpot of water to a rolling boil. Carefully lower the chicken into the pot, breast-side down. Immediately reduce the heat to low to maintain a gentle sub-simmer at approximately 80°C (175°F). Poach gently for 45 to 50 minutes. The internal temperature at the thickest part of the thigh should reach 74°C (165°F).",
+      "Prepare a large bowl with cold water and plenty of ice. Using a large slotted spoon or tongs, carefully lift the chicken from the hot broth, tilting it to drain the hot liquid from the cavity back into the pot. Plunge the entire chicken into the ice bath for 10 minutes to halt the cooking process and quickly firm up the skin, creating a gelatinous texture.",
+      "While the chicken rests in the ice bath, place the reserved chicken fat into a wok or large pan over medium-low heat. Fry gently until the fat has fully rendered and the solid pieces become crispy bits. Remove and discard the solid bits, keeping the liquid liquid gold fat in the pan.",
+      "Add the minced garlic, shallot, and ginger to the rendered chicken fat. Saute over medium heat until highly fragrant and deeply aromatic, about 3 minutes, taking care not to let the aromatics brown or burn.",
+      "Add the rinsed and well-drained jasmine rice to the wok. Stir continuously to coat every grain in the flavored fat, toasting the rice slightly for about 2 minutes to develop flavor.",
+      "Transfer the toasted rice mixture to your rice cooker. Add the 5g kosher salt, the knotted pandan leaves, and enough of the hot, savory chicken poaching broth to reach the standard white rice liquid line for your cooker. Start the standard cooking cycle.",
+      "To make the chili sauce, place the red chilies, bird's eye chilies (if using), garlic, ginger, sugar, salt, and lime juice into a blender. Add 2 to 3 tablespoons of the hot chicken poaching broth and blend until smooth and vibrant.",
+      "To make the ginger-scallion sauce, combine the finely minced ginger, scallions, and salt in a heatproof bowl. In a small saucepan, heat the neutral oil until just smoking, then carefully pour the hot oil over the aromatics. They will sizzle violently and flash-cook, releasing their essential oils. Stir well to combine.",
+      "To make the sweet soy sauce, whisk together the dark soy sauce, sesame oil, sugar, and one tablespoon of hot chicken broth in a small bowl until the sugar is fully dissolved.",
+      "Remove the chicken from the ice bath and pat the skin completely dry with paper towels. Carve the chicken into bite-sized, bone-in pieces. Arrange the chicken on a platter lined with sliced cucumbers. Serve immediately alongside individual portions of the hot, fragrant rice, small dipping bowls of the three sauces, and a small bowl of the clear chicken broth garnished with fresh cilantro."
+    ]
+  },
+  {
+    "id": "rapi-8b75635e-ab8a-4f4e-9900-1d0dd834dd98",
+    "name": "Mercimek Çorbası",
+    "time": 30,
+    "servings": 4,
+    "calories": 262,
+    "category": "Lunch",
+    "description": "This silky Turkish red lentil soup combines sweet onion and carrot with warm cumin. Its golden-orange color and gentle earthy flavor brighten with a squeeze of fresh lemon.",
+    "ingredients": [
+      "Red lentils",
+      "Onion",
+      "Carrot",
+      "Olive oil",
+      "Ground cumin",
+      "Salt",
+      "Ground black pepper",
+      "Water",
+      "Lemon"
+    ],
+    "amounts": {
+      "Red lentils": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Onion": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Carrot": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Ground cumin": {
+        "quantity": 1.5,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 6,
+        "unit": "g"
+      },
+      "Ground black pepper": {
+        "quantity": 0.3,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 1600,
+        "unit": "g"
+      },
+      "Lemon": {
+        "quantity": 60,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Heat the 1000 g soup water in the kettle to boiling, approximately 100°C (212°F) at sea level, while completing the remaining preparation.",
+      "Finely dice the onion into pieces about 5 mm across.",
+      "Coarsely grate the carrot with the box grater.",
+      "Rinse the lentils in the bowl with the 600 g cold rinsing water.",
+      "Drain the lentils through the fine-mesh sieve, discarding the rinsing water.",
+      "Cut the lemon into four wedges, removing visible seeds.",
+      "Sauté the onion and carrot with the olive oil in the large saucepan over medium heat for 4 minutes, stirring with the wooden spoon until softened without browning.",
+      "Stir in the cumin, black pepper, salt, drained lentils and hot soup water.",
+      "Bring the soup to a boil over high heat, approximately 100°C (212°F) at sea level.",
+      "Simmer gently with the lid partly covering the saucepan for 18 minutes, around 95°C (203°F), until the lentils collapse and the carrot is completely tender. Lower the heat if the soup threatens to boil over.",
+      "With the saucepan off the heat, puree the soup using the immersion blender until smooth. Keep the blade head submerged and stop the motor before lifting it to prevent hot splashes.",
+      "Serve in four bowls with a lemon wedge alongside each portion for squeezing into the soup."
+    ]
+  },
+  {
+    "id": "rapi-1e65a1b1-f9b8-4c9e-8713-6cb495a7817f",
+    "name": "Masala Cauliflower Red Lentil Soup",
+    "time": 65,
+    "servings": 6,
+    "calories": 319,
+    "category": "Soup",
+    "description": "A warming golden soup where tender red lentils break into a creamy base, suspending bite-sized cauliflower florets in a fragrant masala broth finished with cooling coconut milk and bright lemon.",
+    "ingredients": [
+      "Yellow onion",
+      "Garlic",
+      "Fresh ginger",
+      "Green chili (serrano or thai)",
+      "Cumin seeds",
+      "Black mustard seeds",
+      "Ground coriander",
+      "Ground turmeric",
+      "Kashmiri chili powder",
+      "Garam masala",
+      "Neutral oil (such as grapeseed or sunflower)",
+      "Fine sea salt",
+      "Cauliflower",
+      "Red lentils (masoor dal)",
+      "Crushed tomatoes",
+      "Vegetable broth",
+      "Water",
+      "Full-fat coconut milk",
+      "Lemon juice",
+      "Fresh cilantro"
+    ],
+    "amounts": {
+      "Yellow onion": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Garlic": {
+        "quantity": 4,
+        "unit": null
+      },
+      "Fresh ginger": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Green chili (serrano or thai)": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Cumin seeds": {
+        "quantity": 7,
+        "unit": "g"
+      },
+      "Black mustard seeds": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Ground coriander": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Ground turmeric": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Kashmiri chili powder": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Garam masala": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Neutral oil (such as grapeseed or sunflower)": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Fine sea salt": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Cauliflower": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Red lentils (masoor dal)": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Crushed tomatoes": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Vegetable broth": {
+        "quantity": 1000,
+        "unit": "ml"
+      },
+      "Water": {
+        "quantity": 500,
+        "unit": "ml"
+      },
+      "Full-fat coconut milk": {
+        "quantity": 200,
+        "unit": "ml"
+      },
+      "Lemon juice": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Fresh cilantro": {
+        "quantity": 15,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Preheat the oven to 220°C (425°F). Trim the cauliflower and cut into bite-sized florets; transfer the smallest 100 g to a separate bowl for roasting and set the remaining 400 g aside. Dice the onion, mince the garlic and ginger, and finely mince the green chili if using. Combine the crushed tomatoes, vegetable broth, and water in a large measuring jug so they can be added in one pour.",
+      "Toss the reserved 100 g of small florets with 5 ml of the oil and 2 g of salt on a rimmed baking sheet. Spread in a single layer and roast at 220°C/425°F for 18-22 minutes, turning once halfway, until deeply golden and crisp at the tips.",
+      "Meanwhile, heat the remaining 25 ml of oil in a large heavy-bottomed pot over medium heat. Add the cumin and mustard seeds; they will start to sizzle within 30-60 seconds. Swirl the pot once and let the seeds pop freely for 45-60 seconds until the mustard seeds turn grey and the cumin deepens to a rich brown.",
+      "Add the diced onion and a small pinch of the measured salt. Cook, stirring occasionally, for 6-8 minutes until the onion is translucent and lightly golden at the edges. Stir in the garlic, ginger, and green chili and cook for 1 minute more until fragrant and just turning pale gold.",
+      "Sprinkle the ground coriander, turmeric, and Kashmiri chili powder over the aromatics. Stir constantly for 45-60 seconds until the spices smell toasty and the oil separates into a vivid brick-red color.",
+      "Stir in the crushed tomatoes and cook for 2 minutes until they darken and thicken slightly. Add the rinsed red lentils, then pour in the combined broth and water. Bring to a boil, skimming off any pale foam that rises to the surface. Reduce the heat to maintain a gentle simmer, partially cover, and cook for 12 minutes.",
+      "Add the 400 g of cauliflower florets, pushing them just beneath the liquid surface. Continue to simmer uncovered for 12-15 minutes until the cauliflower is fork-tender and the red lentils have completely broken down into a creamy, porridge-like consistency.",
+      "Remove the pot from the heat. Using an immersion blender, pulse 4-6 times until roughly half the soup is smoothly pureed while the rest retains visible texture. Alternatively, ladle 2 cups of the soup into a countertop blender, puree until smooth, and return it to the pot.",
+      "Off the heat, stir in 175 ml of the coconut milk, the garam masala, and the lemon juice. Taste and add more salt as needed; the soup should be gently seasoned with the spices leading and the coconut milk mellowing the heat. The residual heat is enough to warm the coconut milk through without splitting it.",
+      "Ladle the soup into warm bowls. Top each serving with a small mound of the roasted cauliflower florets, a few whole cilantro leaves, a thin drizzle of the reserved coconut milk, and a pinch of toasted cumin seeds. Serve immediately with the reserved lemon wedges alongside."
+    ]
+  },
+  {
+    "id": "rapi-eb8b3b64-bad5-4e8a-98c7-1f3fa44fd86c",
+    "name": "Vibrant Green Slurry Lentil Soup With Browned Shiitakes",
+    "time": 60,
+    "servings": 4,
+    "calories": 378,
+    "category": "Soup",
+    "description": "A comforting, nasal-clearing soup featuring an earthy base of brown and green lentils, brightened by a vibrant slurry of fresh spinach, ginger, chiles, and sweet white miso. Crowned with deeply browned, savory shiitake mushrooms for a nutty finish.",
+    "ingredients": [
+      "Olive oil",
+      "Yellow onion",
+      "Garlic",
+      "Brown lentils",
+      "Green lentils",
+      "Long grain white rice",
+      "Vegetable broth",
+      "Fresh baby spinach",
+      "White miso paste",
+      "Fresh ginger",
+      "Jalapeno pepper",
+      "Serrano pepper",
+      "Fresh lime juice",
+      "Water",
+      "Fresh shiitake mushrooms",
+      "Tamari"
+    ],
+    "amounts": {
+      "Olive oil": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Yellow onion": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Garlic": {
+        "quantity": 4,
+        "unit": null
+      },
+      "Brown lentils": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Green lentils": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Long grain white rice": {
+        "quantity": 50,
+        "unit": "g"
+      },
+      "Vegetable broth": {
+        "quantity": 1200,
+        "unit": "ml"
+      },
+      "Fresh baby spinach": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "White miso paste": {
+        "quantity": 45,
+        "unit": "g"
+      },
+      "Fresh ginger": {
+        "quantity": 20,
+        "unit": "g"
+      },
+      "Jalapeno pepper": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Serrano pepper": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Fresh lime juice": {
+        "quantity": 30,
+        "unit": "ml"
+      },
+      "Water": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Fresh shiitake mushrooms": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Tamari": {
+        "quantity": 10,
+        "unit": "ml"
+      }
+    },
+    "steps": [
+      "Heat olive oil in a large Dutch oven over medium heat, around 175°C/350°F. Add the diced onion and saute until translucent and fragrant, about 5 minutes. Stir in the minced garlic and cook for 1 minute more.",
+      "Add the brown lentils, green lentils, long grain white rice, and vegetable broth to the pot. Bring the mixture to a boil at 100°C/212°F, then immediately reduce the heat to low. Cover the pot and gently simmer for 30 to 35 minutes, or until the lentils and rice are completely tender.",
+      "While the soup simmers, heat the remaining olive oil in a medium skillet over medium-high heat, roughly 190°C/375°F. Add the sliced shiitake mushrooms in a single, even layer. Cook completely undisturbed for 3 to 4 minutes to develop a deep brown crust, then toss and cook for 2 more minutes. Remove from the heat and stir in the tamari.",
+      "In a high-speed blender, combine the baby spinach, white miso paste, peeled ginger, jalapeno, serrano, fresh lime juice, and water. Blend on high speed until completely smooth, scraping down the sides as necessary.",
+      "Once the lentils are tender, remove the Dutch oven entirely from the heat source. Allow the soup to stop simmering, then pour in the green slurry. Mix thoroughly. Do not boil the soup after adding the slurry.",
+      "Ladle the hot soup into serving bowls. Garnish each portion generously with the tamari-glazed browned shiitake mushrooms. Serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-8f1eafa2-4fef-40f4-803e-369e768f443a",
+    "name": "Warming Spiced Sweet Potato and Red Lentil Soup",
+    "time": 40,
+    "servings": 4,
+    "calories": 313,
+    "category": "Soup",
+    "description": "A deeply comforting, velvety soup balancing the natural earthy sweetness of root vegetables with warm, aromatic spices. Perfectly thick and nourishing, offering a smooth texture with a gentle, lingering heat.",
+    "ingredients": [
+      "Olive oil",
+      "Yellow onion",
+      "Garlic",
+      "Fresh ginger",
+      "Ground cumin",
+      "Ground coriander",
+      "Ground turmeric",
+      "Red chilli flakes",
+      "Sweet potato",
+      "Red split lentils",
+      "Vegetable stock",
+      "Salt",
+      "Black pepper",
+      "Lemon juice"
+    ],
+    "amounts": {
+      "Olive oil": {
+        "quantity": 15,
+        "unit": "ml"
+      },
+      "Yellow onion": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Garlic": {
+        "quantity": 3,
+        "unit": null
+      },
+      "Fresh ginger": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Ground cumin": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Ground coriander": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Ground turmeric": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Red chilli flakes": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Sweet potato": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Red split lentils": {
+        "quantity": 150,
+        "unit": "g"
+      },
+      "Vegetable stock": {
+        "quantity": 1000,
+        "unit": "ml"
+      },
+      "Lemon juice": {
+        "quantity": 15,
+        "unit": "ml"
+      }
+    },
+    "steps": [
+      "Heat the olive oil in a large saucepan or Dutch oven over a medium heat until shimmering.",
+      "Add the diced onion to the pan and cook for 5 to 7 minutes, stirring occasionally, until softened and translucent.",
+      "Stir in the minced garlic, grated ginger, cumin, coriander, turmeric, and chilli flakes. Cook for 1 minute until highly fragrant.",
+      "Add the cubed sweet potato and rinsed red lentils to the pan, tossing them in the spiced onion mixture. Pour in the hot vegetable stock and bring the liquid to a rolling boil at 100 degrees Celsius or 212 degrees Fahrenheit.",
+      "Reduce the heat to medium-low, partially cover the pan with a lid, and allow the soup to bubble gently for 20 to 25 minutes.",
+      "Remove the pan from the heat. Carefully submerge the immersion blender into the liquid and process until completely smooth and velvety.",
+      "Taste the soup and stir in salt, freshly ground black pepper, and the fresh lemon juice if using. Ladle into warm bowls to serve."
+    ]
+  },
+  {
+    "id": "rapi-5f51bd4a-f1f0-47f3-9d81-b36bac338279",
+    "name": "Turkish Red Lentil Soup",
+    "time": 45,
+    "servings": 4,
+    "calories": 393,
+    "category": "Soup",
+    "description": "A velvety, comforting soup featuring earthy red lentils, aromatic vegetables, and a vibrant finish of dried mint and fresh lemon. A staple of Turkish home cooking that is deeply nourishing and warming.",
+    "ingredients": [
+      "Olive oil",
+      "Yellow onion",
+      "Carrot",
+      "Gold potato",
+      "Garlic",
+      "Tomato paste",
+      "Red lentils",
+      "Vegetable broth",
+      "Ground cumin",
+      "Fine sea salt",
+      "Black pepper",
+      "Dried mint",
+      "Aleppo pepper",
+      "Lemon"
+    ],
+    "amounts": {
+      "Olive oil": {
+        "quantity": 60,
+        "unit": "ml"
+      },
+      "Yellow onion": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Carrot": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Gold potato": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Garlic": {
+        "quantity": 3,
+        "unit": null
+      },
+      "Tomato paste": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Red lentils": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Vegetable broth": {
+        "quantity": 1000,
+        "unit": "ml"
+      },
+      "Ground cumin": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Fine sea salt": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Dried mint": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Aleppo pepper": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Lemon": {
+        "quantity": 1,
+        "unit": null
+      }
+    },
+    "steps": [
+      "Wash the red lentils thoroughly in a fine-mesh sieve under cold running water until the water runs completely clear, removing any dust or debris.",
+      "Heat 30ml of olive oil in a Dutch oven over medium heat. Add the chopped onion, carrot, and potato, and cook until the onions soften and become translucent, about 5 to 7 minutes.",
+      "Stir in the minced garlic and tomato paste. Cook for 1 minute until the tomato paste darkens slightly and becomes highly aromatic.",
+      "Add the rinsed red lentils, vegetable broth, cumin, salt, and black pepper. Stir well to combine and bring the mixture to a boil at 100°C/212°F.",
+      "Reduce the heat to low, cover the pot with a lid, and simmer gently for 20 to 25 minutes. Check occasionally and stir to prevent the lentils from sticking to the bottom.",
+      "Remove the pot from the heat. Carefully use an immersion blender to puree the soup until perfectly smooth and velvety. If the soup is too thick, stir in up to 100ml of hot water until the desired consistency is reached.",
+      "In a small skillet, heat the remaining 30ml of olive oil over medium-low heat. Stir in the dried mint and Aleppo pepper. Cook for 30 seconds until the spices sizzle and release their fragrance, being careful not to burn the mint.",
+      "Ladle the hot soup into bowls. Drizzle the warm mint and pepper oil over the top of each bowl, and serve immediately with fresh lemon wedges on the side for squeezing."
+    ]
+  },
+  {
+    "id": "rapi-c81a9f38-49f6-4a18-b205-7fda542fd384",
+    "name": "Philadelphia Sushi Rolls",
+    "time": 100,
+    "servings": 2,
+    "calories": 997,
+    "category": "Dinner",
+    "description": "Smoky salmon, tangy cream cheese and crisp cucumber nestle inside tender, lightly vinegared rice and savory nori. Each bite balances creamy richness, refreshing crunch and gentle sweetness.",
+    "ingredients": [
+      "Japanese short-grain white rice",
+      "Water",
+      "Rice vinegar",
+      "Granulated sugar",
+      "Fine salt",
+      "Smoked salmon",
+      "Cream cheese",
+      "Cucumber",
+      "Nori"
+    ],
+    "amounts": {
+      "Japanese short-grain white rice": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 2060,
+        "unit": "g"
+      },
+      "Rice vinegar": {
+        "quantity": 45,
+        "unit": "g"
+      },
+      "Granulated sugar": {
+        "quantity": 18,
+        "unit": "g"
+      },
+      "Fine salt": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Smoked salmon": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Cream cheese": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Cucumber": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Nori": {
+        "quantity": 12,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Rinse the rice in the medium bowl with the 1500 g rinsing water, using three successive portions. Swirl gently with your fingers and pour away each portion; the final water should be much less cloudy.",
+      "Drain the rice in the fine-mesh strainer for 1 minute.",
+      "Soak the drained rice in the saucepan with the 360 g cooking water for 30 minutes. Keep this water for cooking.",
+      "Bring the rice and its soaking water to a gentle boil over medium heat, about 5 minutes.",
+      "Simmer the rice with the lid tightly closed over the lowest heat for 15 minutes. Keep the lid closed throughout.",
+      "Rest the saucepan off the heat, still covered, for 10 minutes so the rice finishes steaming.",
+      "Stir the rice vinegar, sugar and salt together in the small mixing bowl until the crystals dissolve, about 2 minutes.",
+      "Fold the hot rice and vinegar mixture together in the wide shallow bowl using the rice paddle. Use gentle cutting and turning movements to distribute the seasoning without crushing the grains.",
+      "Cool the rice in a shallow layer for about 10 minutes, until barely warm and no longer steaming. Do not refrigerate it before rolling.",
+      "Cut the cucumber and cream cheese into long strips about 8 mm thick and the cooked smoked salmon into narrow pieces on a clean cutting board. Use commercially prepared, fully cooked salmon; if smoking salmon yourself, it must previously have reached an internal temperature of 63°C (145°F). Keep the fillings at 4°C (40°F) or below until assembly.",
+      "Assemble one roll on the bamboo mat with a nori sheet shiny side down and its longer edge facing you. With lightly moistened fingers, spread one-quarter of the rice evenly over it, leaving a 2 cm strip bare along the far edge. Arrange 50 g salmon, 30 g cream cheese and 30 g cucumber in a horizontal line across the lower third. Repeat this assembly before rolling each remaining sheet; allow about 6 minutes of assembly time for all four.",
+      "Roll the filled nori away from you using the mat, keeping the filling tucked inside and lifting the mat clear as you advance. Lightly moisten the bare edge and finish with the seam underneath. Apply gentle, even pressure to form a cylinder. Repeat the assembly and rolling sequence for the remaining three rolls, allowing about 5 minutes of rolling time in total.",
+      "Slice each roll into eight pieces with the sharp knife, using gentle drawing strokes. Wipe the blade with the clean, lightly dampened cloth between cuts.",
+      "Serve the 32 pieces immediately on the serving platter, dividing them into two dinner portions."
+    ]
+  },
+  {
+    "id": "rapi-a13dda00-1b45-4b8c-8801-001aad20837a",
+    "name": "Air Fryer Salmon",
+    "time": 25,
+    "servings": 2,
+    "calories": 453,
+    "category": "Lunch",
+    "description": "Tender salmon fillets develop lightly browned edges beneath a fragrant coating of lemon zest, garlic and black pepper. Fresh lemon juice adds a bright finish to the rich, flaky fish.",
+    "ingredients": [
+      "Salmon fillets",
+      "Olive oil",
+      "Garlic",
+      "Lemon zest",
+      "Salt",
+      "Black pepper",
+      "Lemon juice"
+    ],
+    "amounts": {
+      "Salmon fillets": {
+        "quantity": 360,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 6,
+        "unit": "g"
+      },
+      "Lemon zest": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Black pepper": {
+        "quantity": 0.6,
+        "unit": "g"
+      },
+      "Lemon juice": {
+        "quantity": 15,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Preheat the air fryer to 200°C (392°F) for 3 minutes.",
+      "Pat the salmon thoroughly dry with paper towels on the preparation plate.",
+      "Mix the olive oil, garlic, lemon zest, salt and black pepper in the small bowl with the spoon.",
+      "Spread all the seasoning mixture thinly over the tops, sides and undersides of both salmon fillets using the spoon.",
+      "Arrange the fillets in the air-fryer basket with their flatter sides down and at least 2 cm of space between them.",
+      "Air-fry at 200°C (392°F) for approximately 8–12 minutes without flipping. Begin checking at 8 minutes with the instant-read thermometer inserted sideways into the thickest part of each fillet. Continue cooking until both centers reach 63°C (145°F); the edges should be lightly browned and the flesh should separate into moist flakes.",
+      "Transfer the cooked fillets to clean serving plates with a clean fish spatula.",
+      "Drizzle the lemon juice evenly over both portions just before serving."
+    ]
+  },
+  {
+    "id": "rapi-191f8f7d-2443-4904-84be-09c992a961b8",
+    "name": "Grilled Salmon Ochazuke With Sencha",
+    "time": 25,
+    "servings": 2,
+    "calories": 568,
+    "category": "Lunch",
+    "description": "Tender flakes of grilled salmon crown warm Japanese rice with crisp nori and toasted sesame. Hot sencha brings a grassy aroma and gentle astringency to this light, savory bowl.",
+    "ingredients": [
+      "Salmon",
+      "Canola oil",
+      "Salt",
+      "Cooked short-grain white rice",
+      "Brewed green tea",
+      "Nori",
+      "Sesame seeds"
+    ],
+    "amounts": {
+      "Salmon": {
+        "quantity": 240,
+        "unit": "g"
+      },
+      "Canola oil": {
+        "quantity": 4,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Cooked short-grain white rice": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "Brewed green tea": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Nori": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Sesame seeds": {
+        "quantity": 6,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Preheat the grill pan over medium heat for about 4 minutes.",
+      "Coat the salmon evenly with the oil and salt on the plate for raw salmon. Wash your hands after handling the fish, and keep the raw-fish plate away from the rice, toppings and cooked salmon.",
+      "Grill the salmon for approximately 4–5 minutes per side, turning with the fish spatula, until the thickest part reaches 63°C (145°F). Wash the spatula after its last contact with undercooked fish before using it to remove the cooked salmon.",
+      "If using refrigerated rice, reheat it in the microwave-safe bowl under its vented lid, using short intervals and stirring between them, until it reaches 74°C (165°F) throughout, approximately 3–4 minutes. Freshly cooked rice can be used while still hot.",
+      "Warm the brewed sencha in the small saucepan to approximately 80°C (176°F), without boiling.",
+      "Flake the cooked salmon into bite-size pieces with the fork on the clean plate, checking for and removing any remaining pin bones.",
+      "Divide the hot rice between the serving bowls and arrange equal portions of salmon, nori and sesame seeds over each.",
+      "Pour half the hot green tea around the rice in each bowl and serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-caa63406-7fad-49fe-9f69-7b9cc3b6c1c2",
+    "name": "New York-Style Smoked Salmon Bagel",
+    "time": 10,
+    "servings": 2,
+    "calories": 539,
+    "category": "Breakfast",
+    "description": "A toasted, chewy bagel layered with tangy whipped cream cheese, silky cold-smoked salmon, briny capers, crisp red onion, and fragrant fresh dill. Bright, savory, and ready in minutes for a satisfying breakfast.",
+    "ingredients": [
+      "New york-style bagel",
+      "Full-fat cream cheese",
+      "Cold-smoked salmon",
+      "Capers",
+      "Red onion",
+      "Fresh dill",
+      "Lemon",
+      "Flaky sea salt",
+      "Freshly ground black pepper"
+    ],
+    "amounts": {
+      "New york-style bagel": {
+        "quantity": 2,
+        "unit": null
+      },
+      "Full-fat cream cheese": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Cold-smoked salmon": {
+        "quantity": 120,
+        "unit": "g"
+      },
+      "Capers": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Red onion": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Fresh dill": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Lemon": {
+        "quantity": 1,
+        "unit": null
+      },
+      "Flaky sea salt": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Freshly ground black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "If the bagels are not pre-sliced, place each one on a cutting board and, using a sharp knife held parallel to the work surface, slice horizontally through the center to create two even halves. Set aside.",
+      "Peel the red onion. Cut it in half from root to tip, lay one half flat, and slice it as thinly as possible into half-moons; you will need about 15 g (roughly 2 tablespoons) per sandwich. Set aside.",
+      "Place 100 g of cold cream cheese in a small mixing bowl. Using a hand whisk or fork, beat vigorously for 30-60 seconds until the cream cheese is smooth, aerated, and spreadable, with a soft whipped texture.",
+      "Toast all four bagel halves cut-side up in a toaster until the cut surface is golden and the interior is warmed through, about 2-3 minutes. If using an oven, place halves cut-side up on a sheet pan at 200°C (400°F) for 4-5 minutes.",
+      "Place the four toasted bagel halves on the cutting board, cut-side up. Using a small offset spatula, spread 25 g of the whipped cream cheese in an even layer over the cut surface of each half, using all 100 g total.",
+      "Lay 60 g of smoked salmon on the cream cheese of each bottom bagel half, draping and folding the slices so they cover the surface and slightly overhang the edges. The total amount of salmon used across both sandwiches is 120 g.",
+      "Divide the thinly sliced red onion (about 15 g) over the salmon on each bottom half, followed by 4 g of drained capers per sandwich. Season lightly with flaky sea salt and a few grinds of black pepper, if using.",
+      "Tuck 1 g of fresh dill fronds on top of the onion and capers on each sandwich. Place the top bagel half over the fillings, press gently to set, and serve immediately with a lemon wedge on the side for squeezing over just before eating."
+    ]
+  },
+  {
+    "id": "rapi-b41093b5-deee-4f53-be56-32ebc466b332",
+    "name": "Tacos de Huitlacoche",
+    "time": 28,
+    "servings": 4,
+    "calories": 190,
+    "category": "Lunch",
+    "description": "Soft corn tortillas cradle a juicy, inky filling of earthy huitlacoche, sweet onion and mellow garlic. Serrano chile brings gentle heat, while fresh epazote adds its distinctive herbal aroma.",
+    "ingredients": [
+      "Huitlacoche",
+      "White onion",
+      "Garlic",
+      "Serrano chile",
+      "Fresh epazote",
+      "Sunflower oil",
+      "Salt",
+      "Corn tortillas"
+    ],
+    "amounts": {
+      "Huitlacoche": {
+        "quantity": 450,
+        "unit": "g"
+      },
+      "White onion": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Serrano chile": {
+        "quantity": 12,
+        "unit": "g"
+      },
+      "Fresh epazote": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Sunflower oil": {
+        "quantity": 18,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Corn tortillas": {
+        "quantity": 200,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Dice the onion finely on the cutting board.",
+      "Mince the garlic and serrano chile with the chef's knife.",
+      "Chop the huitlacoche into roughly 1–2 cm pieces.",
+      "Chop the epazote leaves and tender tips finely.",
+      "Heat the sunflower oil in the large skillet over medium heat for about 1 minute.",
+      "Sauté the onion and serrano in the oil for 4 minutes, stirring with the spatula.",
+      "Sauté the garlic with the onion and chile for 30 seconds.",
+      "Sauté the huitlacoche, epazote and salt with the aromatics over medium-high heat for 8 minutes, stirring gently and keeping the skillet uncovered.",
+      "Warm the tortillas on a comal over medium-high heat in batches, turning with tongs after approximately 20–30 seconds per side. Keep the warmed tortillas wrapped in a clean kitchen towel on the serving plate.",
+      "Divide the hot filling evenly among the 8 warm tortillas and fold each tortilla around its filling."
+    ]
+  },
+  {
+    "id": "rapi-d14864bc-9053-4670-bf48-fb29873f533c",
+    "name": "Tacos de Rajas con Crema",
+    "time": 30,
+    "servings": 4,
+    "calories": 359,
+    "category": "Dinner",
+    "description": "Smoky poblano strips and sweet sautéed onions nestle in silky, lightly tangy Mexican crema. Warm corn tortillas cradle the tender filling, bringing toasted corn aroma to every bite.",
+    "ingredients": [
+      "Poblano peppers",
+      "White onion",
+      "Olive oil",
+      "Mexican crema",
+      "Salt",
+      "Corn tortillas"
+    ],
+    "amounts": {
+      "Poblano peppers": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "White onion": {
+        "quantity": 200,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Mexican crema": {
+        "quantity": 240,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Corn tortillas": {
+        "quantity": 300,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Preheat the broiler to high, approximately 260°C (500°F), with the rack 10–15 cm below the element. Allow about 3 minutes while preparing the peppers.",
+      "Cut the washed poblanos lengthwise into broad panels, removing stems, seeds and pale inner ribs. Place the panels skin-side up on the baking sheet in a single layer.",
+      "Broil the poblano panels for 7–9 minutes, until most of the skin is blackened and blistered. Watch closely near the end; the flesh should soften without drying out.",
+      "Rest the hot peppers in the heatproof bowl with its lid on for 5 minutes to loosen their skins. Cook the onions during this interval.",
+      "Sauté the sliced onion in the olive oil in the large skillet over medium heat for 6 minutes, stirring frequently, until soft and translucent with a few pale golden edges.",
+      "Peel away the loosened poblano skins when the peppers are cool enough to handle. Leave occasional small flecks of char, but remove broad blackened patches.",
+      "Slice the peeled poblano flesh into strips approximately 1 cm wide.",
+      "Stir the poblano strips, Mexican crema and salt into the softened onions over low heat until evenly combined.",
+      "Simmer the filling very gently for 3 minutes, stirring occasionally, until the sauce coats the strips and only small bubbles appear around the edges. Warm the tortillas during this interval.",
+      "Warm the tortillas on the dry griddle over medium-high heat in batches, approximately 20–30 seconds per side. Stack them in the clean kitchen towel as they finish to keep them pliable.",
+      "Divide the warm poblano filling among the 12 tortillas, allowing 3 tacos per serving. Serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-a38ea930-7c10-4730-a772-211326d22704",
+    "name": "Cochinita Pibil Tacos With Homemade Achiote Paste",
+    "time": 425,
+    "servings": 8,
+    "calories": 570,
+    "category": "Breakfast",
+    "description": "Tender pork glows brick red beneath a fragrant achiote and sour-orange sauce. Banana leaves lend a delicate herbal aroma, while warm corn tortillas and crisp pickled red onion balance the rich filling.",
+    "ingredients": [
+      "Pork shoulder",
+      "Ground annatto",
+      "Sour orange juice",
+      "Garlic",
+      "Salt",
+      "Dried mexican oregano",
+      "Ground cumin",
+      "Ground black pepper",
+      "Ground cinnamon",
+      "Ground cloves",
+      "Red onion",
+      "Habanero pepper",
+      "Corn tortillas",
+      "Banana leaves"
+    ],
+    "amounts": {
+      "Pork shoulder": {
+        "quantity": 1200,
+        "unit": "g"
+      },
+      "Ground annatto": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Sour orange juice": {
+        "quantity": 350,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 25,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 17,
+        "unit": "g"
+      },
+      "Dried mexican oregano": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Ground cumin": {
+        "quantity": 2,
+        "unit": "g"
+      },
+      "Ground black pepper": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Ground cinnamon": {
+        "quantity": 0.5,
+        "unit": "g"
+      },
+      "Ground cloves": {
+        "quantity": 0.3,
+        "unit": "g"
+      },
+      "Red onion": {
+        "quantity": 240,
+        "unit": "g"
+      },
+      "Habanero pepper": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Corn tortillas": {
+        "quantity": 600,
+        "unit": "g"
+      },
+      "Banana leaves": {
+        "quantity": 2,
+        "unit": null
+      }
+    },
+    "steps": [
+      "Blend the ground annatto, garlic, salt, oregano, cumin, black pepper, cinnamon, cloves and 75 g of the marinade's sour orange juice in the small blender until a thick, smooth achiote paste forms.",
+      "Blend the remaining 175 g marinade juice into the achiote paste until evenly combined.",
+      "Cut the pork shoulder into approximately 6 cm chunks on the cutting board. Do not wash raw pork. After handling it, wash hands and thoroughly clean the knife, board and any surfaces touched by raw meat before preparing the onion topping.",
+      "Marinate the pork in all of the achiote mixture in the large covered nonreactive container for 2 hours in the refrigerator at 4°C/40°F or below. Keep the container below ready-to-eat foods. All marinade will cook with the pork.",
+      "Slice the red onion into thin half-moons on the cleaned cutting board while the pork marinates.",
+      "Mince the habanero finely. Avoid touching your eyes and wash your hands thoroughly after handling it.",
+      "Mix the onion, habanero, 100 g sour orange juice and 3 g salt in the small nonreactive bowl until the onion is evenly coated.",
+      "Chill the covered onion mixture at 4°C/40°F or below until serving, allowing at least 1 hour for pickling. This waiting time overlaps the pork preparation and roasting.",
+      "Preheat the oven to 150°C/300°F during the final 20 minutes of marinating.",
+      "Warm each banana leaf in the dry skillet over medium heat, moving it with tongs for approximately 15 to 30 seconds per section, until flexible. Avoid scorching.",
+      "Assemble the roasting parcel in the oven-safe pot: overlap the banana leaves across the bottom with generous overhang, place the pork and all marinade inside, fold the leaves over the filling and fit the lid tightly.",
+      "Roast the covered pork at 150°C/300°F for approximately 4 hours, checking tenderness after 3 hours 30 minutes. The thickest pieces should reach approximately 93°C/200°F and separate easily under a fork. Whole-cut pork must reach at least 63°C/145°F followed by a 3-minute rest for safety; this preparation cooks substantially further for tenderness. If still firm, continue covered in 20-minute increments.",
+      "Rest the pork in the covered pot for 20 minutes outside the oven.",
+      "Remove the banana leaves with tongs, allowing their clinging cooking juices to drip back into the pot. Discard the leaves.",
+      "Shred all the pork with two forks directly into its cooking juices, leaving some larger, tender pieces.",
+      "Warm the tortillas in batches in the dry skillet over medium heat for approximately 20 to 30 seconds per side. Keep the warmed tortillas folded inside the clean kitchen towel.",
+      "Assemble 24 tacos by dividing the pork, cooking juices, pickled onions and their tart dressing evenly among the warm tortillas. Serve 3 tacos per person immediately."
+    ]
+  },
+  {
+    "id": "rapi-2be2ee7c-ad61-4466-9f9d-6f6afb9aa7d3",
+    "name": "Chorizo and Potato Tacos",
+    "time": 30,
+    "servings": 4,
+    "calories": 586,
+    "category": "Dinner",
+    "description": "Warm corn tortillas cradle spicy, crumbled Mexican chorizo and tender potato cubes with lightly golden edges. Fresh onion, cilantro and lime bring crunch and brightness to the rich filling.",
+    "ingredients": [
+      "Yellow potatoes",
+      "Fresh mexican pork chorizo",
+      "White onion",
+      "Sunflower oil",
+      "Fine salt",
+      "Corn tortillas",
+      "Cilantro",
+      "Lime juice",
+      "Water"
+    ],
+    "amounts": {
+      "Yellow potatoes": {
+        "quantity": 500,
+        "unit": "g"
+      },
+      "Fresh mexican pork chorizo": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "White onion": {
+        "quantity": 100,
+        "unit": "g"
+      },
+      "Sunflower oil": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Fine salt": {
+        "quantity": 1,
+        "unit": "g"
+      },
+      "Corn tortillas": {
+        "quantity": 300,
+        "unit": "g"
+      },
+      "Cilantro": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Lime juice": {
+        "quantity": 30,
+        "unit": "g"
+      },
+      "Water": {
+        "quantity": 1200,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Bring the water to a boil in the covered saucepan over high heat. Prepare the vegetables while it heats.",
+      "Dice the potatoes into uniform 1 cm cubes on the cutting board.",
+      "Finely chop the onion and cilantro, keeping them separate. Reserve 40 g of the onion for topping.",
+      "Simmer the potatoes in the boiling water, uncovered, for 7–9 minutes, until a knife enters a cube easily but the cubes still hold their shape. Cook the chorizo during this time.",
+      "Sauté the chorizo and remaining 60 g onion with the sunflower oil in the large skillet over medium-high heat for 8–10 minutes. Break the chorizo into small crumbles with the spatula and stir frequently. Cook until the pork reaches at least 71°C (160°F), checking several thick clusters with the thermometer without touching the pan.",
+      "Drain the tender potatoes in the colander, discarding the cooking water. Let steam escape for 1 minute so the surfaces dry.",
+      "Pan-fry the drained potatoes and salt with the cooked chorizo for 4 minutes over medium-high heat. Spread the filling across the skillet and turn gently with the spatula, allowing brief pauses between turns.",
+      "Warm the tortillas on the dry comal over medium-high heat for approximately 20–30 seconds per side, working in batches that fit without overlapping. Turn with tongs and keep the warmed tortillas wrapped in the clean kitchen towel.",
+      "Divide the hot filling among the 12 tortillas on serving plates. Top with the reserved onion, cilantro and lime juice, then serve immediately."
+    ]
+  },
+  {
+    "id": "rapi-eff062e6-7099-4097-ae3b-dd9cfab2165f",
+    "name": "Tacos de Nopales",
+    "time": 30,
+    "servings": 2,
+    "calories": 335,
+    "category": "Lunch",
+    "description": "Tender cactus strips mingle with sweet onions, juicy tomatoes and bright serrano heat inside warm corn tortillas. Fresh cilantro and lime sharpen the savory filling, balancing its gentle tang and earthy flavor.",
+    "ingredients": [
+      "Nopales",
+      "White onion",
+      "Roma tomato",
+      "Serrano pepper",
+      "Garlic",
+      "Olive oil",
+      "Salt",
+      "Corn tortillas",
+      "Cilantro",
+      "Lime juice"
+    ],
+    "amounts": {
+      "Nopales": {
+        "quantity": 400,
+        "unit": "g"
+      },
+      "White onion": {
+        "quantity": 80,
+        "unit": "g"
+      },
+      "Roma tomato": {
+        "quantity": 180,
+        "unit": "g"
+      },
+      "Serrano pepper": {
+        "quantity": 10,
+        "unit": "g"
+      },
+      "Garlic": {
+        "quantity": 5,
+        "unit": "g"
+      },
+      "Olive oil": {
+        "quantity": 15,
+        "unit": "g"
+      },
+      "Salt": {
+        "quantity": 3,
+        "unit": "g"
+      },
+      "Corn tortillas": {
+        "quantity": 180,
+        "unit": "g"
+      },
+      "Cilantro": {
+        "quantity": 8,
+        "unit": "g"
+      },
+      "Lime juice": {
+        "quantity": 15,
+        "unit": "g"
+      }
+    },
+    "steps": [
+      "Slice the cleaned nopales into strips approximately 5 mm wide and 4 cm long on the cutting board.",
+      "Dice the onion into 5 mm pieces and the tomatoes into 1 cm pieces, keeping them separate.",
+      "Finely chop the serrano, garlic and cilantro, keeping the cilantro separate for finishing.",
+      "Heat the olive oil in the wide skillet over medium-high heat for approximately 1 minute, aiming for a pan surface near 180°C (356°F); the oil should shimmer without smoking.",
+      "Sauté the cactus strips with 2 g salt for 8–10 minutes, uncovered, turning occasionally with the spatula. Continue until the released liquid has mostly evaporated and the strips are tender with a slight bite.",
+      "Sauté the onion, serrano and garlic with the cactus over medium heat for 3 minutes, stirring frequently, until the onion softens and the garlic smells fragrant.",
+      "Sauté the tomatoes and remaining 1 g salt with the cactus mixture for 4 minutes, until the tomatoes soften and their juices lightly coat the strips without pooling.",
+      "During the final 3 minutes of the filling's cooking time, warm the tortillas in pairs on a dry comal or second skillet over medium heat, approximately 180°C (356°F), for about 30 seconds per side. Use tongs to turn them.",
+      "Mix the lime juice and cilantro into the filling off the heat for about 30 seconds.",
+      "Divide the filling evenly among the six warm tortillas, folding each around the cactus strips for immediate serving."
+    ]
   }
 ]
-
-

@@ -1,0 +1,493 @@
+{
+  "data": {
+    "id": "6976523d-d837-4136-92e7-11ef91e82e71",
+    "name": "Courgette Tamagoyaki",
+    "description": "Tender golden egg layers wrap around fine green strands of courgette in this gently sweet, savoury Japanese rolled omelette. Thick breakfast slices reveal a delicate spiral and a moist, springy centre.",
+    "category": "Breakfast",
+    "cuisine": "Japanese",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Breakfast",
+      "Japanese",
+      "courgette",
+      "eggs",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT27M",
+      "passive_time": "PT3M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Dairy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergy",
+        "People with soy allergy",
+        "People with wheat allergy or coeliac disease because the soy sauce contains wheat"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate leftovers promptly in a shallow, covered container at 4°C (40°F) or below, within 2 hours of cooking.",
+        "duration": "P2D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled portions in an airtight container. Thaw overnight in the refrigerator; the courgette may release moisture and soften the layers.",
+        "duration": "P1M"
+      },
+      "reheating": "Microwave refrigerated slices in a covered, microwave-safe dish in short bursts until their centres reach 74°C (165°F). Check with a food thermometer.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scales",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine grater",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen cloth",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small nonstick tamagoyaki pan, approximately 13 × 18 cm",
+        "required": true,
+        "alternative": "A 20 cm nonstick frying pan; fold the curved sides inward when rolling."
+      },
+      {
+        "name": "Silicone pastry brush",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Flexible spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chopping board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Sharp knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Courgette Omelette",
+        "items": [
+          {
+            "name": "courgette",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "washed, ends trimmed, skin on",
+            "notes": "Edible weight after trimming, before shredding and squeezing.",
+            "substitutions": [],
+            "ingredient_id": "c34b610f-8869-4d77-a9b3-e01849d703b5",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "eggs",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "shells removed",
+            "notes": "Approximately 4 large eggs; weigh the contents without shells.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "soy sauce",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use Japanese soy sauce.",
+            "substitutions": [],
+            "ingredient_id": "0d724b69-c9e4-4ae4-91f5-a32fde1d4b40",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "caster sugar",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sunflower oil",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Divide into four 2 g portions for brushing the pan before each egg layer.",
+            "substitutions": [],
+            "ingredient_id": "2bba572f-a72b-4a66-b9d4-ed999bc704ef",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Finely shred the trimmed courgette using the fine grater. Keep the strands short so they will fit within thin egg layers.",
+        "structured": {
+          "action": "SHRED",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Squeeze the shredded courgette firmly inside the clean kitchen cloth until no more liquid drips out readily. Discard the expressed liquid.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "The shreds feel damp but do not drip when compressed."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Beat the eggs, soy sauce and sugar in the mixing bowl with the fork until the whites are broken up and the sugar dissolves. Avoid whipping in foam.",
+        "structured": {
+          "action": "BEAT",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Fold the squeezed courgette into the eggs, separating any clumps.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Preheat the pan over medium-low heat for approximately 2 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "The egg should sizzle gently when added, without immediately browning."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Fry the first layer: brush the pan with 2 g oil and spread one-quarter of the egg mixture across the base. Cook for approximately 2 minutes, until the underside holds together and the surface is moist but no longer flows.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The layer is pale yellow, with no pool of liquid egg.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "assemble",
+        "text": "Roll the first layer from the far edge towards you using the spatula, making successive folds about 3 cm wide. Position the roll at the far edge of the pan.",
+        "structured": {
+          "action": "ROLL",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Fry the second layer using another 2 g oil and one-third of the remaining egg mixture. Lift the existing roll slightly so fresh egg runs beneath it. Cook for approximately 2 minutes, until the new layer holds together.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "assemble",
+        "text": "Roll the existing omelette towards you over the second layer, enclosing it snugly. Position the enlarged roll at the far edge.",
+        "structured": {
+          "action": "ROLL",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Fry the third layer using another 2 g oil and half the remaining egg mixture. Let some egg run beneath the roll, then cook for approximately 2 minutes, until the layer holds together.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "assemble",
+        "text": "Roll the omelette towards you over the third layer. Position it at the far edge again.",
+        "structured": {
+          "action": "ROLL",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "cook",
+        "text": "Fry the final layer using the remaining 2 g oil and all the remaining egg mixture. Let some egg run beneath the roll, then cook for approximately 2 minutes, until the layer holds together.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "assemble",
+        "text": "Roll the omelette towards you over the final layer, finishing with the seam underneath.",
+        "structured": {
+          "action": "ROLL",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "cook",
+        "text": "Cook the completed roll over low heat for approximately 3 minutes, turning gently to warm its broad sides evenly. Check the centre from one end with the food thermometer; continue cooking until it reaches at least 71°C (160°F) before removing it from the pan.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 71,
+            "fahrenheit": 160
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The egg is fully set with no liquid escaping.",
+            "tactile": "The roll feels gently springy and holds its shape."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 15,
+        "phase": "finish",
+        "text": "Rest the cooked omelette on the chopping board for 3 minutes so the layers settle before slicing.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 16,
+        "phase": "finish",
+        "text": "Slice the omelette crosswise into six equal pieces with the sharp knife. Serve three slices per person on the serving plate.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The layers tear or slide apart during rolling.",
+        "likely_cause": "The courgette contains excess moisture, the shreds are too long, or the egg layer has not set enough.",
+        "prevention": "Shred finely, squeeze thoroughly and let each layer become stable before rolling.",
+        "fix": "Fold the torn section into the centre with the spatula and enclose it in the next layer. Cook the completed roll to at least 71°C (160°F)."
+      },
+      {
+        "symptom": "The outside browns before the centre is cooked.",
+        "likely_cause": "The heat is too high for the thickening roll.",
+        "prevention": "Use medium-low heat for the layers and low heat for the final cooking.",
+        "fix": "Reduce the heat and turn the roll regularly until the centre reaches 71°C (160°F)."
+      }
+    ],
+    "chef_notes": [
+      "Squeezing the courgette prevents released vegetable water from separating the egg layers.",
+      "Redistribute the courgette with the fork before each pour so every layer contains a similar amount.",
+      "A slightly untidy first fold is harmless: the following layers form the outer shape.",
+      "The final centre temperature must reach 71°C (160°F); reheated leftovers must reach 74°C (165°F). [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "Tamagoyaki is a Japanese omelette made by repeatedly rolling thin layers of seasoned egg, commonly served at breakfast and in bento. [Tamagoyaki background](https://www.justonecookbook.com/tamagoyaki/). Finely shredded courgette gives this variation green flecks and vegetable sweetness while preserving the layered preparation.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 197.86,
+        "protein_g": 13.41,
+        "carbohydrates_g": 4.9,
+        "fat_g": 13.69,
+        "saturated_fat_g": 3.58,
+        "trans_fat_g": 0.05,
+        "monounsaturated_fat_g": 4.45,
+        "polyunsaturated_fat_g": 4.59,
+        "fiber_g": 0.52,
+        "sugar_g": 4.13,
+        "sodium_mg": 283.27,
+        "cholesterol_mg": 372,
+        "potassium_mg": 279.43,
+        "calcium_mg": 64.85,
+        "iron_mg": 1.97,
+        "magnesium_mg": 22.85,
+        "phosphorus_mg": 221.15,
+        "zinc_mg": 1.47,
+        "vitamin_a_mcg": 165,
+        "vitamin_c_mg": 8.95,
+        "vitamin_d_mcg": 2,
+        "vitamin_e_mg": 2.76,
+        "vitamin_k_mcg": 2.67,
+        "vitamin_b6_mg": 0.26,
+        "vitamin_b12_mcg": 0.89,
+        "thiamin_mg": 0.06,
+        "riboflavin_mg": 0.51,
+        "niacin_mg": 0.35,
+        "folate_mcg": 59.35,
+        "water_g": 125.38,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 47,
+    "monthly_limit": 50,
+    "daily_remaining": 47,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 3,
+    "detail_limit": 50,
+    "detail_remaining": 47,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "data": {
+    "id": "769b40b6-5580-4cd9-99f1-9309570d47b5",
+    "name": "Slow-Roasted Canned Tomato Pasta",
+    "description": "Concentrated San Marzano tomatoes caramelize slowly in olive oil with garlic and chili flakes, yielding a rich, deeply savory sauce tossed with al dente pasta.",
+    "category": "Dinner",
+    "cuisine": "Italian",
+    "difficulty": "Easy",
+    "tags": [
+      "Italian",
+      "Pastas",
+      "Vegetables",
+      "Canned Tomato",
+      "Hot Sauce",
+      "Pasta",
+      "Dinner",
+      "Lunch",
+      "Quick",
+      "Weeknight"
+    ],
+    "meta": {
+      "active_time": "PT20M",
+      "passive_time": "PT1H15M",
+      "total_time": "PT1H35M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 340
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Cool and store leftovers in an airtight container within 2 hours of cooking.",
+        "duration": "P4D"
+      },
+      "freezer": {
+        "notes": "Freeze the slow-roasted sauce separately from pasta in a freezer-safe container for best texture.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat refrigerated leftovers in a saucepan over medium-low heat, stirring frequently and adding 15 ml to 30 ml of water if needed, until steaming hot and reaching a minimum internal temperature of 74°C (165°F) measured with a food thermometer.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Oven",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Baking dish",
+        "required": true,
+        "alternative": "Rimmed roasting pan or Dutch oven"
+      },
+      {
+        "name": "Large pot",
+        "required": true,
+        "alternative": "Dutch oven or pasta pot"
+      },
+      {
+        "name": "Colander",
+        "required": true,
+        "alternative": "Fine mesh strainer"
+      },
+      {
+        "name": "Wooden spoon",
+        "required": true,
+        "alternative": "Heatproof silicone spatula"
+      },
+      {
+        "name": "Heatproof measuring cup",
+        "required": true,
+        "alternative": "Ladle"
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": "Pasta fork"
+      },
+      {
+        "name": "Food thermometer",
+        "required": true,
+        "alternative": "Instant-read digital probe"
+      },
+      {
+        "name": "Serving bowls",
+        "required": true,
+        "alternative": "Dinner plates"
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Slow-Roasted Tomato Sauce",
+        "items": [
+          {
+            "name": "canned whole peeled plum tomatoes",
+            "quantity": 800,
+            "unit": "g",
+            "preparation": null,
+            "notes": "two 400g cans, preferably San Marzano style with canned juice included",
+            "substitutions": [
+              "canned crushed tomatoes"
+            ],
+            "ingredient_id": "dbb5c02b-5dab-419d-a749-5c1e9b5cb455",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "extra-virgin olive oil",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "use robust, fruity olive oil",
+            "substitutions": [],
+            "ingredient_id": "83b881a0-c973-4731-bda5-85255cb21bd3",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 6,
+            "unit": null,
+            "preparation": "thinly sliced",
+            "notes": "about 30g whole head purchase weight; yields 28g edible peeled garlic cloves",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "crushed red pepper flakes",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "adjust to taste between 1g for mild warmth and 3g for noticeable heat",
+            "substitutions": [],
+            "ingredient_id": "fc0b80e8-d1dc-4e69-a42d-0789346d4eb8",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried oregano",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "687f54eb-e811-4e5e-ac2e-e2735458480c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine sea salt",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": "helps balance acidity from canned tomato varieties",
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": "freshly cracked",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh basil",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "leaves torn",
+            "notes": "about 20g fresh bunch purchase weight; yields 15g edible leaves after discarding tough stems",
+            "substitutions": [],
+            "ingredient_id": "417f8397-9065-4cd6-8820-0ab7363fbb08",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pasta and Assembly",
+        "items": [
+          {
+            "name": "dry rigatoni pasta",
+            "quantity": 340,
+            "unit": "g",
+            "preparation": null,
+            "notes": "bronze-cut dried pasta shapes work best to grip roasted sauce",
+            "substitutions": [
+              "dry penne pasta",
+              "dry spaghetti",
+              "dry fusilli pasta"
+            ],
+            "ingredient_id": "96b12572-a516-4060-acab-6aec8105c3d6",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 3000,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "for boiling pasta",
+            "substitutions": [],
+            "ingredient_id": "85d075d9-0c0f-4609-8090-0242f89f18ce",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine sea salt",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": "for seasoning the pasta boiling water",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Preheat the oven to 160°C (325°F) with the oven rack positioned in the center.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 160,
+            "fahrenheit": 320
+          },
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Pour the canned whole peeled plum tomatoes with their juices into the baking dish and crush them gently by hand into rustic, bite-sized pieces.",
+        "structured": {
+          "action": "CRUSH",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Tomatoes broken into coarse, jagged chunks with sauce evenly distributed",
+            "tactile": "Soft and yielding without large solid cores"
+          }
+        },
+        "tips": [
+          "Crush tomatoes directly in the baking dish to minimize cleanup and retain every drop of tomato juice."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Add the extra-virgin olive oil, thinly sliced garlic, crushed red pepper flakes, dried oregano, granulated sugar, black pepper, and 5 g fine sea salt to the baking dish, then stir with a wooden spoon until thoroughly combined.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Place the baking dish into the oven and roast at 160°C (325°F) for 75 minutes, stirring once halfway through, until the tomatoes are reduced, jammy, and caramelized around the edges.",
+        "structured": {
+          "action": "ROAST",
+          "temperature": {
+            "celsius": 160,
+            "fahrenheit": 320
+          },
+          "duration": "PT1H15M",
+          "doneness_cues": {
+            "visual": "Tomatoes darken to deep ruby red with caramelized edges and sizzling oil",
+            "tactile": "Thick and jammy texture when pressed with a spoon"
+          }
+        },
+        "tips": [
+          "Stirring halfway prevents garlic slices from scorching on the exposed surface."
+        ]
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Bring 3000 ml of water and 20 g of fine sea salt to a rolling boil over high heat in the large pot.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Vigorous, rapid bubbles breaking steadily across the entire water surface",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Add the dry rigatoni pasta to the boiling water and cook uncovered for 10 minutes, stirring occasionally with a wooden spoon, until al dente.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "Pasta has plumped noticeably with no opaque white ring inside the core",
+            "tactile": "Firm and toothsome with a slight pleasant bite at the center"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Carefully scoop out 120 ml of the starchy pasta cooking water from the large pot using a heatproof measuring cup, then pour the remaining pasta into a colander to drain.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": [
+          "Never rinse cooked pasta under tap water; the exterior surface starches are essential to bind the sauce."
+        ]
+      },
+      {
+        "step_number": 8,
+        "phase": "assemble",
+        "text": "Transfer the drained pasta back into the warm large pot, scrape in all the roasted tomato sauce from the baking dish, and add 60 ml of the reserved pasta cooking water.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Cook the mixture over medium heat for 2 minutes, stirring constantly with a wooden spoon to emulsify the olive oil and pasta starch, adding more reserved pasta water 15 ml at a time if the sauce appears dry.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Sauce turns glossy, thickened, and evenly clings to every ridged pasta piece",
+            "tactile": "Sauce flows smoothly without pooling as liquid water in the pot base"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "finish",
+        "text": "Remove the pot from heat, fold in the torn fresh basil leaves with the wooden spoon, and taste to adjust seasoning if necessary.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "finish",
+        "text": "Divide the dressed pasta and rich slow-roasted tomato sauce among four warm serving bowls using tongs, and serve immediately.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The tomato sauce tastes overly acidic and harsh",
+        "likely_cause": "Certain canned tomato brands contain added citric acid or use unripe harvest fruit",
+        "prevention": "Choose canned whole peeled plum tomatoes packed solely in tomato juice without added citric acid",
+        "fix": "Stir in an additional 2 g to 4 g of granulated sugar or 15 ml of extra-virgin olive oil into the warm sauce"
+      },
+      {
+        "symptom": "The edges of the tomatoes charred or blackened during roasting",
+        "likely_cause": "Oven hot spots or tomatoes spread too thinly against the baking dish perimeter",
+        "prevention": "Ensure the tomatoes sit in an even layer and stir halfway through the roasting cycle",
+        "fix": "Use a spoon to lift away and discard any bitter black fragments before folding sauce into pasta"
+      },
+      {
+        "symptom": "Sauce remains watery and slips off the pasta noodles",
+        "likely_cause": "Too much reserved pasta water was added or the mixture was not agitated over active heat to emulsify",
+        "prevention": "Add reserved pasta water in small increments and stir vigorously over medium heat",
+        "fix": "Simmer the pasta and sauce mixture over medium heat for an additional 1 to 2 minutes while stirring constantly until excess moisture evaporates and starch thickens"
+      }
+    ],
+    "chef_notes": [
+      "Slow roasting canned tomatoes mimics the complex sweetness of sun-dried fruit without dehydrating them completely, driving off harsh moisture while intensifying natural glutamates.",
+      "Do not drain off the canning liquid before roasting; as the tomato water cooks down, its dissolved pectins and sugars caramelize into fond on the bottom of the dish.",
+      "Finishing the boiled pasta directly inside the hot sauce with a splash of starchy cooking water creates a stable emulsion between water and oil, yielding a restaurant-style silky glaze.",
+      "Bronze-die cut pasta shapes like rigatoni or paccheri have a coarse, floury exterior texture that binds significantly better to slow-roasted sauces than smooth teflon-extruded pasta."
+    ],
+    "cultural_context": "In southern Italian culinary tradition, home cooks bake summer tomatoes in terracotta dishes alongside local olive oil, garlic, and wild herbs to create sweet, concentrated confits known as pomodori al forno. This recipe adapts that heritage technique to canned whole peeled tomatoes, allowing cooks outside Italy or outside the harvest season to capture intense midsummer brightness from humble pantry goods. Paired with hearty durum wheat pasta, it honors the Italian ethos of transforming simple, affordable ingredients into a luxurious meal through patient heat application.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 489.05,
+        "protein_g": 13.32,
+        "carbohydrates_g": 74.64,
+        "fat_g": 15.76,
+        "saturated_fat_g": 2.4,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 11.19,
+        "polyunsaturated_fat_g": 2.32,
+        "fiber_g": 5.14,
+        "sugar_g": 8.4,
+        "sodium_mg": 2472.28,
+        "cholesterol_mg": 0,
+        "potassium_mg": 638.38,
+        "calcium_mg": 131.01,
+        "iron_mg": 4.24,
+        "magnesium_mg": 95.3,
+        "phosphorus_mg": 216.06,
+        "zinc_mg": 1.58,
+        "vitamin_a_mcg": 82.79,
+        "vitamin_c_mg": 20.66,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 3.03,
+        "vitamin_k_mcg": 39.52,
+        "vitamin_b6_mg": 0.45,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.18,
+        "riboflavin_mg": 0.19,
+        "niacin_mg": 3.03,
+        "folate_mcg": 41.82,
+        "water_g": 954.92,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 33,
+    "monthly_limit": 50,
+    "daily_remaining": 33,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 17,
+    "detail_limit": 50,
+    "detail_remaining": 33,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

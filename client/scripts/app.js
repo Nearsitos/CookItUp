@@ -13,22 +13,69 @@ import {
   dietLabel,
   emptyPreferences,
 } from "./dietary.js";
+import { scaleQuantity, formatAmount } from "./utils/servings.js";
 const foodEmojis = {
-  avocado: "◉",
-  "baby spinach": "❧",
-  eggs: "◯",
-  "feta cheese": "▧",
-  "greek yogurt": "◌",
-  lemon: "◉",
-  pasta: "≋",
-  tomatoes: "◎",
-  onion: "◎",
-  rice: "⁙",
-  chicken: "◈",
-  garlic: "✣",
-  bread: "▱",
-  default: "◇",
+  avocado: "🥑",
+  "baby spinach": "🥬",
+  spinach: "🥬",
+  eggs: "🥚",
+  egg: "🥚",
+  "feta cheese": "🧀",
+  cheese: "🧀",
+  "greek yogurt": "🥣",
+  yogurt: "🥣",
+  lemon: "🍋",
+  pasta: "🍝",
+  tomatoes: "🍅",
+  tomato: "🍅",
+  onion: "🧅",
+  rice: "🍚",
+  chicken: "🍗",
+  beef: "🥩",
+  garlic: "🧄",
+  bread: "🍞",
+  "olive oil": "🫒",
+  honey: "🍯",
+  default: "🧺",
 };
+// Rough calories/serving-size guesses for common ingredients, used to
+// prefill the add-ingredient form while the user is still typing the name.
+// These are ballpark figures, not nutrition facts — the user can always
+// overwrite them, and anything not in this list is simply left blank.
+const nutritionGuesses = {
+  avocado: { calories: 160, servingSize: 100 },
+  "baby spinach": { calories: 23, servingSize: 100 },
+  spinach: { calories: 23, servingSize: 100 },
+  eggs: { calories: 72, servingSize: 50 },
+  egg: { calories: 72, servingSize: 50 },
+  "feta cheese": { calories: 264, servingSize: 100 },
+  "greek yogurt": { calories: 97, servingSize: 100 },
+  yogurt: { calories: 97, servingSize: 100 },
+  lemon: { calories: 29, servingSize: 100 },
+  pasta: { calories: 131, servingSize: 100 },
+  rice: { calories: 130, servingSize: 100 },
+  tomatoes: { calories: 18, servingSize: 100 },
+  tomato: { calories: 18, servingSize: 100 },
+  onion: { calories: 40, servingSize: 100 },
+  garlic: { calories: 149, servingSize: 100 },
+  bread: { calories: 265, servingSize: 100 },
+  chicken: { calories: 165, servingSize: 100 },
+  beef: { calories: 250, servingSize: 100 },
+  butter: { calories: 717, servingSize: 100 },
+  milk: { calories: 42, servingSize: 100 },
+  cheese: { calories: 350, servingSize: 100 },
+  "olive oil": { calories: 884, servingSize: 100 },
+  honey: { calories: 304, servingSize: 100 },
+};
+function guessNutrition(name) {
+  const key = normalized(name);
+  if (!key) return null;
+  if (nutritionGuesses[key]) return nutritionGuesses[key];
+  const match = Object.keys(nutritionGuesses).find((candidate) =>
+    key.includes(candidate),
+  );
+  return match ? nutritionGuesses[match] : null;
+}
 const $ = (selector) => document.querySelector(selector);
 const state = {
   inventory: [],
@@ -51,6 +98,41 @@ const inventoryCategories = [
   "Seasonings",
   "Other",
 ];
+// Where an ingredient is physically kept. This is a second, independent
+// grouping from food type (inventoryCategories above) — the inventory page
+// groups by storage location, while the add/edit dialog's "Food type" select
+// still drives recipe matching and the emoji/keyword heuristics.
+const storageLocations = [
+  { id: "fridge", label: "Refrigerated", icon: "fridge" },
+  { id: "freezer", label: "Frozen", icon: "freezer" },
+  { id: "pantry", label: "Room temperature", icon: "pantry" },
+  { id: "other", label: "Other", icon: "other" },
+];
+function storageLocation(item) {
+  const explicit = storageLocations.find(
+    (location) => location.id === normalized(item?.storage),
+  );
+  if (explicit) return explicit.id;
+  const name = normalized(typeof item === "string" ? item : item.name);
+  if (/\bfrozen\b/.test(name)) return "freezer";
+  const category = inventoryCategory(item);
+  if (["Dairy", "Meats & Protein", "Greens", "Produce"].includes(category))
+    return "fridge";
+  if (["Grains", "Seasonings"].includes(category)) return "pantry";
+  return "other";
+}
+// Thin outline icons (not emoji) that identify each storage card at a
+// glance. They inherit color from the card via `currentColor`.
+const storageIcons = {
+  fridge:
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="8" y1="5" x2="8" y2="7"></line><line x1="8" y1="13" x2="8" y2="15"></line></svg>',
+  freezer:
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="4" y1="7" x2="20" y2="17"></line><line x1="20" y1="7" x2="4" y2="17"></line></svg>',
+  pantry:
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line></svg>',
+  other:
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 L11 3 H19 V11 L11 19 Z"></path><circle cx="15" cy="7" r="1.4" fill="currentColor" stroke="none"></circle></svg>',
+};
 const fallbackInventory = [
   {
     id: "food-1",
@@ -580,6 +662,18 @@ function expiryBadge(item) {
   }
   const days = daysUntil(item.expiryDate);
   return `<span class="expiry-badge expiry-badge--${expiryStatus(days)}">${expiryLabel(days)}</span>`;
+// Compact version for the inventory cards: only "soon" and "expired" show a
+// badge, so a fresh (the common case) item stays a single quiet line.
+function expiryBadgeCompact(item) {
+  if (!item.expiryDate) return "";
+  const status = expiryStatus(daysUntil(item.expiryDate));
+  if (status !== "soon" && status !== "expired") return "";
+  return `<span class="expiry-badge expiry-badge--${status}">${expiryLabel(daysUntil(item.expiryDate))}</span>`;
+}
+// Splits "2 piece" into a bigger number and a smaller unit word.
+function splitQty(quantity, unit) {
+  const num = formatNumber(quantity);
+  return unit ? `${num}<small>${escapeHtml(unit)}</small>` : num;
 }
 
 // Items in stock that have expired or expire within 3 days.
@@ -608,6 +702,10 @@ function renderExpiryCard() {
 }
 
 function renderInventory() {
+  // The grid is about to be rebuilt, so any row a swipe gesture still
+  // references is going away — forget it rather than hold a detached node.
+  openSwipeRow = null;
+  swipeRow = null;
   const search = normalized(state.search);
   const items = state.inventory
     .filter((item) =>
@@ -629,33 +727,56 @@ function renderInventory() {
         ? b.name.localeCompare(a.name)
         : a.name.localeCompare(b.name);
     });
-  const groups = inventoryCategories
-    .map((category) => ({
-      category,
-      items: items.filter((item) => inventoryCategory(item) === category),
-    }))
-    .filter((group) => group.items.length);
-  // When sorting by expiry, put the category with the most expired item at
-  // the top (each group's items are already sorted, so [0] is its oldest).
-  if (state.sort === "expiry") {
-    groups.sort((a, b) =>
-      compareExpiry(a.items[0].expiryDate, b.items[0].expiryDate),
-    );
-  }
-  $("#inventory-body").innerHTML = groups
-    .map(
-      ({ category, items: categoryItems }) =>
-        `<tr class="inventory-category-row"><th colspan="6" scope="rowgroup"><span>${category}</span><span class="category-count">${categoryItems.length} ${categoryItems.length === 1 ? "item" : "items"}</span></th></tr>${categoryItems
-          .map(
-            (item) =>
-              `<tr data-food-id="${escapeHtml(item.id)}"><td><span class="table-food"><span class="food-emoji">${emojiFor(item.name)}</span>${escapeHtml(item.name)}</span></td><td>${formatNumber(item.quantity)} ${escapeHtml(item.unit || "qty")}</td><td>${formatOptional(item.calories, "kcal")}</td><td>${formatOptional(item.servingSize, "g")}</td><td>${expiryBadge(item)}</td><td><button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button><button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button></td></tr>`,
-          )
-          .join("")}`,
-    )
+  // Cards stay in a fixed fridge/freezer/pantry/other order — sorting only
+  // reorders the ingredients inside each card, not the cards themselves.
+  const groups = storageLocations.map((location) => ({
+    location,
+    items: items.filter((item) => storageLocation(item) === location.id),
+  }));
+  $("#inventory-grid").innerHTML = groups
+    .map(({ location, items: locationItems }) => {
+      const rows = locationItems
+        .map(
+          (item) =>
+            `<div class="storage-row" data-food-id="${escapeHtml(item.id)}">
+              <div class="storage-row-swipe-actions" aria-hidden="true">
+                <button type="button" class="storage-swipe-edit" data-edit="${escapeHtml(item.id)}">Edit</button>
+                <button type="button" class="storage-swipe-delete" data-remove="${escapeHtml(item.id)}">Delete</button>
+              </div>
+              <div class="storage-row-content">
+                <button type="button" class="storage-row-name" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">
+                  <span class="storage-row-emoji">${emojiFor(item.name)}</span>
+                  <span>${escapeHtml(item.name)}</span>
+                </button>
+                <div class="storage-row-expiry">${expiryBadgeCompact(item)}</div>
+                <div class="storage-row-qty">${splitQty(item.quantity, item.unit)}</div>
+                <div class="storage-row-actions">
+                  <button class="edit-item" data-edit="${escapeHtml(item.id)}" aria-label="Edit ${escapeHtml(item.name)}">✎</button>
+                  <button class="delete-item" data-remove="${escapeHtml(item.id)}" aria-label="Remove ${escapeHtml(item.name)}">×</button>
+                </div>
+              </div>
+            </div>`,
+        )
+        .join("");
+      const empty = locationItems.length
+        ? ""
+        : `<p class="storage-card-empty">${search ? "No matches" : "No items yet"}</p>`;
+      return `<section class="storage-card storage-card--${location.id}">
+        <div class="storage-card-bar"></div>
+        <div class="storage-card-header">
+          <div class="storage-card-title">
+            <span class="storage-card-icon">${storageIcons[location.icon]}</span>
+            <h2>${escapeHtml(location.label)}</h2>
+          </div>
+          <span class="storage-card-count">${locationItems.length} items</span>
+        </div>
+        <div class="storage-card-items">${rows}${empty}</div>
+        <button type="button" class="storage-card-add" data-add-storage="${location.id}">+ Add ingredient</button>
+      </section>`;
+    })
     .join("");
-  $("#inventory-empty").classList.toggle("hidden", items.length > 0);
   $("#inventory-footer").textContent =
-    `Showing ${items.length} of ${state.inventory.length} ingredients in ${groups.length} ${groups.length === 1 ? "category" : "categories"}`;
+    `Showing ${items.length} of ${state.inventory.length} ingredients`;
 }
 function renderRecipes() {
   const query = normalized($("#recipe-search").value);
@@ -814,6 +935,8 @@ function setPage(page, { moveFocus = false } = {}) {
     else link.removeAttribute("aria-current");
   });
   history.replaceState(null, "", `#${page}`);
+  // Tell the liquid sidebar which page is showing so its bubble follows the router.
+  window.dispatchEvent(new CustomEvent("cookitup:page", { detail: { page } }));
   render();
   if (moveFocus) focusPageHeading();
 }
@@ -824,9 +947,12 @@ function focusPageHeading() {
   heading.focus();
   scrollTo({ top: 0 });
 }
-function openAddDialog() {
+function openAddDialog(storageId) {
   editingItemId = null;
   $("#ingredient-form").reset();
+  $('[name="calories"]').classList.remove("is-estimated");
+  $('[name="servingSize"]').classList.remove("is-estimated");
+  if (storageId) $("#food-storage").value = storageId;
   $("#ingredient-submit").textContent = "Add ingredient";
   $("#form-error").textContent = "";
   $("#ingredient-dialog").showModal();
@@ -877,9 +1003,13 @@ function openEditDialog(id) {
   editingItemId = id;
 
   $("#food-name").value = item.name;
+  $("#food-category").value = inventoryCategory(item);
+  $("#food-storage").value = storageLocation(item);
   $('[name="quantity"]').value = item.quantity;
   $('[name="servingSize"]').value = item.servingSize ?? "";
+  $('[name="servingSize"]').classList.remove("is-estimated");
   $('[name="calories"]').value = item.calories ?? "";
+  $('[name="calories"]').classList.remove("is-estimated");
   $('[name="expiryDate"]').value = item.expiryDate ?? "";
   $("#ingredient-submit").textContent = "Save changes";
   $("#form-error").textContent = "";
@@ -888,9 +1018,39 @@ function openEditDialog(id) {
   $("#dialog-title").textContent = "Edit ingredient";
 }
 
+// The recipe open in the dialog and how many servings it's being shown for.
+// Only recipes with ingredient amounts (the imported ones) can be rescaled.
+let servingsView = null;
+const MAX_SERVINGS = 24;
+
+function canScale(recipe) {
+  return Boolean(recipe.servings && recipe.amounts && Object.keys(recipe.amounts).length);
+}
+
+// Re-draws everything that depends on the chosen number of servings, without
+// rebuilding the dialog (so keyboard focus stays on the +/− button).
+function updateServings() {
+  if (!servingsView) return;
+  const { recipe, count } = servingsView;
+  document.querySelectorAll("#recipe-detail [data-amount-for]").forEach((span) => {
+    const amount = recipe.amounts[span.dataset.amountFor];
+    span.textContent = amount
+      ? formatAmount(scaleQuantity(amount.quantity, recipe.servings, count), amount.unit)
+      : "";
+  });
+  $("#servings-value").textContent = count;
+  $("#photo-servings").textContent = `♧ \u00a0${count} ${count === 1 ? "serving" : "servings"}`;
+  if (recipe.calories)
+    $("#servings-total").textContent = `${formatNumber(Math.round(recipe.calories * count))} kcal total`;
+  $('[data-servings-step="-1"]').disabled = count <= 1;
+  $('[data-servings-step="1"]').disabled = count >= MAX_SERVINGS;
+}
+
 function openRecipe(id) {
   const recipe = state.recipes.find((item) => item.id === id);
   if (!recipe) return;
+  const scalable = canScale(recipe);
+  servingsView = scalable ? { recipe, count: Number(recipe.servings) } : null;
   const { hits, missing } = recipeMatch(recipe);
   const pantry = availableNames();
   const ingredientsOnHand = recipe.ingredients.filter((item) =>
@@ -919,7 +1079,11 @@ function openRecipe(id) {
           ),
         ].join("")
       : "";
-    return `${mark} ${escapeHtml(ingredient)}${flags}`;
+    // Amount is filled in by updateServings() so it can change with servings.
+    const amount = scalable
+      ? `<span class="ingredient-amount" data-amount-for="${escapeHtml(ingredient)}"></span> `
+      : "";
+    return `${mark} ${amount}${escapeHtml(ingredient)}${flags}`;
   };
   const ingredientList = (ingredients, className = "") =>
     `<ul class="detail-ingredients ${className}">${ingredients
@@ -933,12 +1097,21 @@ function openRecipe(id) {
     : "";
   const servingCount = Number(recipe.servings || 2);
   const calorieCount = Number(recipe.calories || 400);
+  const servingsControl = scalable
+    ? `<div class="servings-control" role="group" aria-labelledby="servings-label">
+          <span class="servings-label" id="servings-label">Servings</span>
+          <button type="button" class="servings-step" data-servings-step="-1" aria-label="Fewer servings">−</button>
+          <output class="servings-value" id="servings-value" aria-live="polite">${servingCount}</output>
+          <button type="button" class="servings-step" data-servings-step="1" aria-label="More servings">+</button>
+          <span class="servings-total" id="servings-total"></span>
+        </div>`
+    : "";
   $("#recipe-detail").innerHTML =
     `<button class="icon-button close-detail" aria-label="Close recipe">×</button>
       <div class="recipe-visual">
         <div class="detail-photo" style="background-image:url('${recipe.image || "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1100&q=85"}')" role="img" aria-label="${escapeHtml(recipe.name)}"></div>
         <span class="recipe-time-badge">◷ &nbsp;${recipe.time} minutes</span>
-        <div class="recipe-photo-meta"><span>♧ &nbsp;${servingCount} servings</span><span>♨ &nbsp;${formatNumber(calorieCount)} kcal</span></div>
+        <div class="recipe-photo-meta"><span id="photo-servings">♧ &nbsp;${servingCount} servings</span><span>♨ &nbsp;${formatNumber(calorieCount)} kcal per serving</span></div>
       </div>
       <div class="recipe-content">
         <header class="recipe-summary">
@@ -947,6 +1120,7 @@ function openRecipe(id) {
           <p>${escapeHtml(recipe.description)}</p>
           <p class="match-caption">You have ${hits.length} of ${recipe.ingredients.length} ingredients${missing ? ` · ${missing} still to get` : " · ready to cook"}.</p>
           ${dietWarning}
+          ${servingsControl}
         </header>
         <section class="recipe-section">
           <h3>Ingredients</h3>
@@ -958,6 +1132,7 @@ function openRecipe(id) {
           <ol class="detail-steps">${recipe.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
         </section>
       </div>`;
+  updateServings();
   $("#recipe-dialog").showModal();
 }
 
@@ -976,6 +1151,8 @@ document.addEventListener("click", (event) => {
     setPage("inventory");
     openAddDialog();
   }
+  const addToStorage = event.target.closest("[data-add-storage]");
+  if (addToStorage) openAddDialog(addToStorage.dataset.addStorage);
   const recipeCard = event.target.closest("[data-recipe]");
   if (recipeCard) openRecipe(recipeCard.dataset.recipe);
   const edit = event.target.closest("[data-edit]");
@@ -1049,6 +1226,100 @@ $("#inventory-sort").addEventListener("change", (event) => {
   state.sort = event.target.value;
   renderInventory();
 });
+
+// --- Mobile swipe-to-reveal -------------------------------------------
+// Narrow screens hide a row's edit/delete icons (app.css, 760px) and reveal
+// them on a left swipe instead, like Gmail/Mail. A mouse never fires touch
+// events, so this never engages on desktop even though the listeners are
+// always attached.
+const SWIPE_REVEAL = 112; // matches the two 56px buttons in .storage-row-swipe-actions
+let swipeRow = null;
+let swipeContent = null;
+let swipeStartX = 0;
+let swipeStartY = 0;
+let swipeStartOffset = 0;
+let swipeOffset = 0;
+let swipeDeciding = true;
+let swipeIsHorizontal = false;
+let openSwipeRow = null;
+
+function setSwipeOffset(content, offset, { animate = false } = {}) {
+  content.style.transition = animate ? "transform 0.18s ease" : "";
+  content.style.transform = offset ? `translateX(${offset}px)` : "";
+}
+function closeOpenSwipeRow() {
+  if (!openSwipeRow) return;
+  setSwipeOffset(openSwipeRow.querySelector(".storage-row-content"), 0, {
+    animate: true,
+  });
+  openSwipeRow = null;
+}
+
+const inventoryGrid = $("#inventory-grid");
+inventoryGrid.addEventListener(
+  "touchstart",
+  (event) => {
+    if (!window.matchMedia("(max-width: 760px)").matches) return;
+    const row = event.target.closest(".storage-row");
+    if (!row) return;
+    swipeRow = row;
+    swipeContent = row.querySelector(".storage-row-content");
+    swipeStartX = event.touches[0].clientX;
+    swipeStartY = event.touches[0].clientY;
+    swipeStartOffset = row === openSwipeRow ? -SWIPE_REVEAL : 0;
+    swipeOffset = swipeStartOffset;
+    swipeDeciding = true;
+    swipeIsHorizontal = false;
+  },
+  { passive: true },
+);
+inventoryGrid.addEventListener(
+  "touchmove",
+  (event) => {
+    if (!swipeRow) return;
+    const touch = event.touches[0];
+    const dx = touch.clientX - swipeStartX;
+    const dy = touch.clientY - swipeStartY;
+    if (swipeDeciding) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+      swipeIsHorizontal = Math.abs(dx) > Math.abs(dy);
+      swipeDeciding = false;
+      if (!swipeIsHorizontal) {
+        swipeRow = null;
+        return;
+      }
+      if (openSwipeRow && openSwipeRow !== swipeRow) closeOpenSwipeRow();
+    }
+    event.preventDefault();
+    swipeOffset = Math.max(-SWIPE_REVEAL, Math.min(0, swipeStartOffset + dx));
+    setSwipeOffset(swipeContent, swipeOffset);
+  },
+  { passive: false },
+);
+inventoryGrid.addEventListener("touchend", () => {
+  if (!swipeRow || !swipeIsHorizontal) {
+    swipeRow = null;
+    return;
+  }
+  const open = swipeOffset < -SWIPE_REVEAL / 2;
+  setSwipeOffset(swipeContent, open ? -SWIPE_REVEAL : 0, { animate: true });
+  openSwipeRow = open ? swipeRow : null;
+  swipeRow = null;
+});
+// Tapping away from an open swipe row closes it first, the same way Mail
+// and Gmail swallow the first tap outside an open row.
+document.addEventListener(
+  "click",
+  (event) => {
+    if (openSwipeRow && !openSwipeRow.contains(event.target)) {
+      closeOpenSwipeRow();
+      event.stopPropagation();
+      event.preventDefault();
+    }
+  },
+  true,
+);
+
 $("#recipe-search").addEventListener("input", renderRecipes);
 $("#global-search").addEventListener("keydown", (event) => {
   if (event.key !== "Enter") return;
@@ -1073,7 +1344,7 @@ $("#refresh-recipes").addEventListener("click", () => {
   renderRecipes();
   showToast("Ideas refreshed from your pantry.");
 });
-$("#open-add").addEventListener("click", openAddDialog);
+$("#open-add").addEventListener("click", () => openAddDialog());
 $("#close-dialog").addEventListener("click", () =>
   $("#ingredient-dialog").close(),
 );
@@ -1125,6 +1396,7 @@ $("#ingredient-form").addEventListener("submit", (event) => {
       id: `food-${Date.now()}`,
       name,
       category: $("#food-category").value,
+      storage: form.get("storage"),
       quantity: Number(form.get("quantity")),
       calories: optionalNumber(form.get("calories")),
       servingSize: optionalNumber(form.get("servingSize")),
@@ -1181,6 +1453,7 @@ $("#import-json").addEventListener("change", async (event) => {
       id: String(item.id || `import-${Date.now()}-${index}`),
       name: String(item.name).trim(),
       category: inventoryCategory(item),
+      storage: storageLocation(item),
       quantity: Number(item.quantity),
       calories: Number(item.calories),
       servingSize: Number(item.servingSize),
@@ -1216,6 +1489,39 @@ $("#food-suggestions").innerHTML = [
   .join("");
 $("#food-name").addEventListener("input", (event) => {
   $("#food-category").value = inventoryCategory(event.target.value);
+  $("#food-storage").value = storageLocation(event.target.value);
+  // Prefill a calorie/serving-size guess for a recognized name, but only
+  // into fields the user hasn't already touched themselves.
+  const guess = guessNutrition(event.target.value);
+  if (guess) {
+    const caloriesField = $('[name="calories"]');
+    const servingField = $('[name="servingSize"]');
+    if (!caloriesField.value) {
+      caloriesField.value = guess.calories;
+      caloriesField.classList.add("is-estimated");
+    }
+    if (!servingField.value) {
+      servingField.value = guess.servingSize;
+      servingField.classList.add("is-estimated");
+    }
+  }
+});
+// Once the user types into an auto-filled field themselves, it's their
+// number now, not a guess — drop the "estimated" styling.
+["calories", "servingSize"].forEach((field) => {
+  $(`[name="${field}"]`).addEventListener("input", (event) => {
+    event.target.classList.remove("is-estimated");
+  });
+});
+// The native number-input spinner is too small to tap reliably, so the
+// quantity field gets its own +/- buttons instead.
+document.querySelectorAll(".qty-step").forEach((button) => {
+  button.addEventListener("click", () => {
+    const input = button.parentElement.querySelector('[name="quantity"]');
+    const min = Number(input.min) || 0.1;
+    const next = Math.max(min, Number(input.value || 0) + Number(button.dataset.step));
+    input.value = Math.round(next * 10) / 10;
+  });
 });
 // --- Dark mode -------------------------------------------------------------
 // The inline script in index.html sets data-theme on load; this keeps the
@@ -1249,7 +1555,7 @@ function savedTheme() {
   }
 }
 
-applyTheme(savedTheme() === "dark" ? "dark" : "light");
+applyTheme(savedTheme() === "light" ? "light" : "dark");
 
 darkModeToggle.addEventListener("change", () => {
   setTheme(darkModeToggle.checked ? "dark" : "light");
@@ -1327,6 +1633,22 @@ $("#custom-allergy-list").addEventListener("click", (event) => {
   savePreferences();
   render();
   $("#custom-allergy-input").focus();
+});
+
+// Servings +/− in the recipe dialog. Each click redraws the amounts.
+$("#recipe-dialog").addEventListener("click", (event) => {
+  const step = event.target.closest("[data-servings-step]");
+  if (!step || !servingsView) return;
+  const next = servingsView.count + Number(step.dataset.servingsStep);
+  servingsView.count = Math.min(MAX_SERVINGS, Math.max(1, next));
+  updateServings();
+  // At 1 (or the max) the button just pressed gets disabled; move focus to the
+  // other one so keyboard users aren't dropped back to the top of the page.
+  if (step.disabled)
+    $(`[data-servings-step="${-Number(step.dataset.servingsStep)}"]`).focus();
+});
+$("#recipe-dialog").addEventListener("close", () => {
+  servingsView = null;
 });
 
 const initialPage = location.hash.slice(1);

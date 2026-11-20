@@ -1,0 +1,425 @@
+{
+  "data": {
+    "id": "d0de04a5-2e48-4373-b00b-9693140f1ffd",
+    "name": "Jammy Tomato Breakfast Eggs",
+    "description": "Savory eggs poached in a thick, spiced tomato and roasted red pepper sauce with aromatic dried herbs.",
+    "category": "Breakfast",
+    "cuisine": "Nigerian",
+    "difficulty": "Easy",
+    "tags": [
+      "Nigerian",
+      "One-Pan",
+      "High-Protein",
+      "Spicy"
+    ],
+    "meta": {
+      "active_time": "PT10M",
+      "passive_time": "PT25M",
+      "total_time": "PT35M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 325
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Gluten-Free",
+        "Dairy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Best consumed immediately; eggs will toughen upon reheating.",
+        "duration": "P2D"
+      },
+      "freezer": {
+        "notes": "Not recommended for freezing.",
+        "duration": null
+      },
+      "reheating": "Gently warm the sauce in a pan over low heat until steaming.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Small bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "10-inch skillet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spatula",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Spice Blend",
+        "items": [
+          {
+            "name": "dried basil",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b8e7f2da-8acf-4d15-b5a7-141d3726ff08",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried chives",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c1e2787d-95ba-4696-86b8-32a6658a0ac7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried mint",
+            "quantity": 1.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "17abecc0-a2a0-4478-8486-57b46e4305c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried oregano",
+            "quantity": 1.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "marjoram"
+            ],
+            "ingredient_id": "687f54eb-e811-4e5e-ac2e-e2735458480c",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Eggs and Sauce",
+        "items": [
+          {
+            "name": "grapeseed oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "olive oil"
+            ],
+            "ingredient_id": "00f43166-1b77-4e77-9e30-e912a59d118a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red onion",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "sliced",
+            "notes": "about 6g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "roasted red peppers",
+            "quantity": 340,
+            "unit": "g",
+            "preparation": "drained and chopped",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8c4f8af4-14ec-4b21-8e25-e2e592f9144d",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "bay leaf",
+            "quantity": 1,
+            "unit": null,
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "eab2ef3a-7a0e-4188-b746-645b795ada1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red-pepper flakes",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "approximately 1 teaspoon",
+            "substitutions": [],
+            "ingredient_id": "fc0b80e8-d1dc-4e69-a42d-0789346d4eb8",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "adjust to taste",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "whole peeled tomatoes",
+            "quantity": 410,
+            "unit": "g",
+            "preparation": null,
+            "notes": "include all juices from the can",
+            "substitutions": [],
+            "ingredient_id": "15f7fcd0-6094-4322-90b3-d25eae059040",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 240,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "egg",
+            "quantity": 4,
+            "unit": null,
+            "preparation": null,
+            "notes": "about 200g total",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Combine the dried basil, chives, mint, and oregano in a small bowl. Stir to mix the herbs evenly.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Heat the oil in a 10-inch skillet over medium-low heat. Sauté the chopped onion and sliced garlic for 2-4 minutes until they are soft.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Add the roasted red peppers, bay leaf, and red-pepper flakes to the skillet. Season with salt and cook for 2 minutes, stirring until the pepper liquid evaporates.",
+        "structured": {
+          "action": "ADD",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Pour the canned tomatoes and their juices into the skillet. Crush the tomatoes into smaller pieces using a spatula.",
+        "structured": {
+          "action": "PUREE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Add 240ml of water to the pan. Increase the heat to high and bring the liquid to a simmer.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Reduce the heat and simmer the sauce for 5 minutes. Stir occasionally until the volume reduces by one-fourth and the sauce thickens.",
+        "structured": {
+          "action": "REDUCE",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Sauce is thickened and reduced to 75% of original volume",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Remove the bay leaf. Lower the heat to medium-low.",
+        "structured": {
+          "action": "MEASURE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Crack the eggs directly into the sauce, keeping them spaced apart. Cover the skillet with a lid.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Cook for 5-8 minutes. The whites should be fully set while the yolks remain runny.",
+        "structured": {
+          "action": "POACH",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "Egg whites are opaque and firm; yolks are still soft",
+            "tactile": "Yolks should feel springy but liquid when pressed lightly"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "finish",
+        "text": "Garnish with 2 teaspoons of the prepared herb blend and serve the eggs immediately.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Egg yolks are hard and overcooked",
+        "likely_cause": "The skillet was covered for too long or the heat was too high.",
+        "prevention": "Check the eggs at the 5-minute mark and remove from heat as soon as whites are set.",
+        "fix": "Cannot be fixed; serve as hard-cooked eggs."
+      },
+      {
+        "symptom": "Sauce is too watery",
+        "likely_cause": "The sauce was not reduced enough before adding the eggs.",
+        "prevention": "Ensure the sauce has thickened and reduced significantly in step 6.",
+        "fix": "Remove eggs carefully and simmer sauce longer, though eggs may overcook."
+      }
+    ],
+    "chef_notes": [
+      "For a deeper flavor, roast your own red peppers instead of using jarred. Charring them over an open flame or under a broiler will impart a wonderful smoky depth.",
+      "Don't overcrowd the skillet when adding the eggs. This ensures they poach evenly and don't stick together, allowing for perfect individual yolks.",
+      "The thickness of your sauce is crucial for poaching. If it's too thin, the eggs might spread too much. If it's too thick, the eggs may not cook through properly. Aim for a consistency that coats the back of a spoon.",
+      "Taste and adjust the salt and red-pepper flakes before adding the eggs. The sauce should be well-seasoned as it forms the primary flavor for the dish.",
+      "Serve with crusty bread for dipping into the rich sauce and runny yolks – it's an essential part of the experience!"
+    ],
+    "cultural_context": "This dish draws inspiration from Nigerian flavors, particularly the use of rich, spiced tomato bases common in many West African stews and sauces. While not a traditional dish with a long history, it incorporates elements like roasted peppers and aromatic herbs that are widely appreciated across various cuisines, adapted here for a breakfast setting.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 164.5,
+        "protein_g": 8.86,
+        "carbohydrates_g": 13.78,
+        "fat_g": 9.17,
+        "saturated_fat_g": 2.06,
+        "trans_fat_g": 0.02,
+        "monounsaturated_fat_g": 2.51,
+        "polyunsaturated_fat_g": 3.87,
+        "fiber_g": 4.29,
+        "sugar_g": 7.61,
+        "sodium_mg": 278.65,
+        "cholesterol_mg": 186,
+        "potassium_mg": 592.65,
+        "calcium_mg": 85.6,
+        "iron_mg": 2.68,
+        "magnesium_mg": 43.19,
+        "phosphorus_mg": 163.51,
+        "zinc_mg": 1.22,
+        "vitamin_a_mcg": 294.14,
+        "vitamin_c_mg": 130.59,
+        "vitamin_d_mcg": 1,
+        "vitamin_e_mg": 3.8,
+        "vitamin_k_mcg": 28.1,
+        "vitamin_b6_mg": 0.51,
+        "vitamin_b12_mcg": 0.45,
+        "thiamin_mg": 0.13,
+        "riboflavin_mg": 0.37,
+        "niacin_mg": 1.66,
+        "folate_mcg": 87.86,
+        "water_g": 296.92,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 48,
+    "monthly_limit": 50,
+    "daily_remaining": 48,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 2,
+    "detail_limit": 50,
+    "detail_remaining": 48,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}
