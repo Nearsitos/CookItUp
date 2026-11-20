@@ -324,21 +324,9 @@ function loadPreferences() {
       Array.isArray(list)
         ? list.filter((id) => options.some((option) => option.id === id))
         : [];
-    const cleanCustom = (list) =>
-      Array.isArray(list)
-        ? [
-            ...new Set(
-              list
-                .filter((entry) => typeof entry === "string")
-                .map((entry) => entry.trim().toLowerCase())
-                .filter((entry) => entry.length > 0),
-            ),
-          ]
-        : [];
     return {
       diets: known(saved?.diets, DIETS),
       allergies: known(saved?.allergies, ALLERGENS),
-      customAllergies: cleanCustom(saved?.customAllergies),
     };
   } catch {
     return emptyPreferences();
@@ -352,21 +340,16 @@ function savePreferences() {
   }
 }
 function preferenceCount() {
-  return (
-    state.prefs.diets.length +
-    state.prefs.allergies.length +
-    (state.prefs.customAllergies || []).length
-  );
+  return state.prefs.diets.length + state.prefs.allergies.length;
 }
 function preferenceSummary() {
   const parts = [];
   if (state.prefs.diets.length)
     parts.push(state.prefs.diets.map(dietLabel).join(", "));
-  const avoiding = [
-    ...state.prefs.allergies.map((id) => allergenLabel(id).toLowerCase()),
-    ...(state.prefs.customAllergies || []),
-  ];
-  if (avoiding.length) parts.push(`avoiding ${avoiding.join(", ")}`);
+  if (state.prefs.allergies.length)
+    parts.push(
+      `avoiding ${state.prefs.allergies.map((id) => allergenLabel(id).toLowerCase()).join(", ")}`,
+    );
   const text = parts.join(" · ");
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
@@ -385,32 +368,17 @@ function inventoryCategory(item) {
   );
   if (explicit) return explicit;
   const name = normalized(typeof item === "string" ? item : item.name);
-  if (
-    /\b(chicken|beef|pork|turkey|bacon|sausage|fish|salmon|tuna|shrimp|meat|egg|eggs)\b/.test(
-      name,
-    )
-  )
+  if (/\b(chicken|beef|pork|turkey|bacon|sausage|fish|salmon|tuna|shrimp|meat|egg|eggs)\b/.test(name))
     return "Meats & Protein";
   if (/\b(spinach|lettuce|kale|arugula|chard|collard|greens)\b/.test(name))
     return "Greens";
-  if (
-    /\b(pasta|rice|quinoa|oats|bread|flour|barley|couscous|grain|cereal)\b/.test(
-      name,
-    )
-  )
+  if (/\b(pasta|rice|quinoa|oats|bread|flour|barley|couscous|grain|cereal)\b/.test(name))
     return "Grains";
-  if (/\b(cheese|milk|yogurt|butter|cream|dairy)\b/.test(name)) return "Dairy";
-  if (
-    /\b(salt|black pepper|white pepper|peppercorn|spice|seasoning|garlic|basil|oregano|paprika|cumin|thyme|rosemary|cilantro|parsley|chili|oil|vinegar|sauce)\b/.test(
-      name,
-    )
-  )
+  if (/\b(cheese|milk|yogurt|butter|cream|dairy)\b/.test(name))
+    return "Dairy";
+  if (/\b(salt|black pepper|white pepper|peppercorn|spice|seasoning|garlic|basil|oregano|paprika|cumin|thyme|rosemary|cilantro|parsley|chili|oil|vinegar|sauce)\b/.test(name))
     return "Seasonings";
-  if (
-    /\b(avocado|tomato|tomatoes|lemon|lime|onion|potato|carrot|apple|banana|pepper|peppers|broccoli|cucumber|fruit|vegetable)\b/.test(
-      name,
-    )
-  )
+  if (/\b(avocado|tomato|tomatoes|lemon|lime|onion|potato|carrot|apple|banana|pepper|peppers|broccoli|cucumber|fruit|vegetable)\b/.test(name))
     return "Produce";
   return "Other";
 }
@@ -553,10 +521,7 @@ function renderHeroCarousel() {
   syncHeroControls();
   resetHeroAutoplayProgress();
 }
-function selectHeroSlide(
-  index,
-  { resetProgress = true, userInitiated = false } = {},
-) {
+function selectHeroSlide(index, { resetProgress = true, userInitiated = false } = {}) {
   const track = $("#featured-track");
   if (!track) return;
   state.heroSlide = Math.max(0, Math.min(2, index));
@@ -591,9 +556,7 @@ function updateHeroProgress(reset = false) {
       fill.style.width = "0%";
     });
     fills[state.heroSlide]?.getBoundingClientRect();
-    fills.forEach((fill) => {
-      fill.style.transition = "";
-    });
+    fills.forEach((fill) => { fill.style.transition = ""; });
   } else {
     fills.forEach((fill, index) => {
       fill.style.width = index === state.heroSlide ? `${percent}%` : "0%";
@@ -612,14 +575,11 @@ function startHeroAutoplay() {
       document.hidden ||
       state.page !== "dashboard" ||
       window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    )
-      return;
+    ) return;
     heroElapsedSeconds += 1;
     updateHeroProgress();
     if (heroElapsedSeconds >= HERO_AUTOPLAY_SECONDS) {
-      selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, {
-        resetProgress: false,
-      });
+      selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, { resetProgress: false });
       resetHeroAutoplayProgress();
     }
   }, 1000);
@@ -656,12 +616,6 @@ function syncHeroControls() {
     `${slideLabels[state.heroSlide]} · ${state.heroSlide + 1} of ${slideLabels.length}`;
 }
 
-function expiryBadge(item) {
-  if (!item.expiryDate) {
-    return `<span class="expiry-badge expiry-badge--none">No date</span>`;
-  }
-  const days = daysUntil(item.expiryDate);
-  return `<span class="expiry-badge expiry-badge--${expiryStatus(days)}">${expiryLabel(days)}</span>`;
 // Compact version for the inventory cards: only "soon" and "expired" show a
 // badge, so a fresh (the common case) item stays a single quiet line.
 function expiryBadgeCompact(item) {
@@ -701,6 +655,7 @@ function renderExpiryCard() {
     : "Nothing is expiring soon. Add expiry dates to keep track.";
 }
 
+
 function renderInventory() {
   // The grid is about to be rebuilt, so any row a swipe gesture still
   // references is going away — forget it rather than hold a detached node.
@@ -713,10 +668,7 @@ function renderInventory() {
     )
     .sort((a, b) => {
       if (state.sort === "expiry") {
-        return (
-          compareExpiry(a.expiryDate, b.expiryDate) ||
-          a.name.localeCompare(b.name)
-        );
+        return compareExpiry(a.expiryDate, b.expiryDate) || a.name.localeCompare(b.name);
       }
       if (state.sort === "calories") {
         if (a.calories == null) return 1;
@@ -853,20 +805,7 @@ function buildPreferenceOptions() {
     option("diets", item, `<small>${escapeHtml(item.hint)}</small>`),
   ).join("");
 }
-function renderCustomAllergies() {
-  $("#custom-allergy-list").innerHTML = state.prefs.customAllergies
-    .map(
-      (term) =>
-        `<li class="custom-allergy">
-          <span>${escapeHtml(term)}</span>
-          <button type="button" class="delete-item" data-remove-allergy="${escapeHtml(term)}" aria-label="Remove ${escapeHtml(term)}">×</button>
-         </li>`,
-    )
-    .join("");
-}
-
 function renderPreferences() {
-  renderCustomAllergies();
   document.querySelectorAll("[data-pref-kind]").forEach((input) => {
     input.checked = state.prefs[input.dataset.prefKind].includes(input.value);
   });
@@ -895,11 +834,6 @@ function optionalNumber(raw) {
   if (raw === "" || raw === null || raw === undefined) return null;
   const value = Number(raw);
   return Number.isFinite(value) ? value : null;
-}
-function formatOptional(value, unit) {
-  return value === null || value === undefined
-    ? "—"
-    : `${formatNumber(value)} ${unit}`;
 }
 function escapeHtml(value) {
   return String(value).replace(
@@ -985,10 +919,7 @@ function confirmRemove(button) {
       saveInventory();
       render();
       const remaining = document.querySelectorAll("[data-remove]");
-      (
-        remaining[Math.min(index, remaining.length - 1)] ||
-        $("#inventory-search")
-      ).focus();
+      (remaining[Math.min(index, remaining.length - 1)] || $("#inventory-search")).focus();
       showToast("Ingredient removed from your pantry.");
     },
     { once: true },
@@ -1145,8 +1076,7 @@ document.addEventListener("click", (event) => {
   const go = event.target.closest("[data-go]");
   if (go) setPage(go.dataset.go, { moveFocus: true });
   const slide = event.target.closest("[data-slide]");
-  if (slide)
-    selectHeroSlide(Number(slide.dataset.slide), { userInitiated: true });
+  if (slide) selectHeroSlide(Number(slide.dataset.slide), { userInitiated: true });
   if (event.target.closest('[data-action="add-ingredient"]')) {
     setPage("inventory");
     openAddDialog();
@@ -1173,14 +1103,10 @@ $("#featured-track").addEventListener("scroll", updateHeroDots, {
   passive: true,
 });
 $("#featured-previous").addEventListener("click", () => {
-  selectHeroSlide((state.heroSlide - 1 + HERO_SLIDE_COUNT) % HERO_SLIDE_COUNT, {
-    userInitiated: true,
-  });
+  selectHeroSlide((state.heroSlide - 1 + HERO_SLIDE_COUNT) % HERO_SLIDE_COUNT, { userInitiated: true });
 });
 $("#featured-next").addEventListener("click", () => {
-  selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, {
-    userInitiated: true,
-  });
+  selectHeroSlide((state.heroSlide + 1) % HERO_SLIDE_COUNT, { userInitiated: true });
 });
 startHeroAutoplay();
 // Cards that act as links or buttons (role="link"/"button" with tabindex)
@@ -1191,18 +1117,14 @@ startHeroAutoplay();
 document.addEventListener("keydown", (event) => {
   if (
     event.key === "Enter" &&
-    event.target.matches(
-      '.switch input[type="checkbox"], .chip input[type="checkbox"]',
-    )
+    event.target.matches('.switch input[type="checkbox"], .chip input[type="checkbox"]')
   ) {
     event.preventDefault();
     event.target.click(); // toggles it and fires the usual change event
   }
 });
 document.addEventListener("keydown", (event) => {
-  const control = event.target.closest(
-    '[tabindex="0"][role="button"], [tabindex="0"][role="link"]',
-  );
+  const control = event.target.closest('[tabindex="0"][role="button"], [tabindex="0"][role="link"]');
   if (!control || control !== event.target) return;
   const isButton = control.getAttribute("role") === "button";
   if (event.key === "Enter" || (isButton && event.key === " ")) {
@@ -1365,22 +1287,24 @@ $("#ingredient-form").addEventListener("submit", (event) => {
     return;
   }
 
-  if (editingItemId) {
-    const item = state.inventory.find((item) => item.id === editingItemId);
-    item.name = name;
-    item.quantity = Number(form.get("quantity"));
-    item.calories = optionalNumber(form.get("calories"));
-    item.servingSize = optionalNumber(form.get("servingSize"));
-    item.expiryDate = expiryDate;
+if(editingItemId) {
+  const item = state.inventory.find((item) => item.id === editingItemId);
+  item.name = name;
+  item.category = $("#food-category").value;
+  item.storage = form.get("storage");
+  item.quantity = Number(form.get("quantity"));
+  item.calories = optionalNumber(form.get("calories"));
+  item.servingSize = optionalNumber(form.get("servingSize"));
+  item.expiryDate = expiryDate;
 
-    editingItemId = null;
-    saveInventory();
-    $("#ingredient-dialog").close();
-    event.currentTarget.reset();
-    render();
-    showToast(`${name} updated.`);
-    return;
-  }
+  editingItemId = null;
+  saveInventory();
+  $("#ingredient-dialog").close();
+  event.currentTarget.reset();
+  render();
+  showToast(`${name} updated.`);
+  return;
+}
 
   const existing = state.inventory.find(
     (item) => normalized(item.name) === normalized(name),
@@ -1539,8 +1463,7 @@ function applyTheme(theme, { animate = false } = {}) {
   root.dataset.theme = theme;
   darkModeToggle.checked = theme === "dark";
   sidebarThemeToggle.classList.toggle("is-dark", theme === "dark");
-  const nextThemeLabel =
-    theme === "dark" ? "Turn on light mode" : "Turn on dark mode";
+  const nextThemeLabel = theme === "dark" ? "Turn on light mode" : "Turn on dark mode";
   sidebarThemeToggle.setAttribute("aria-label", nextThemeLabel);
   sidebarThemeToggle.title = nextThemeLabel;
   const bg = getComputedStyle(root).getPropertyValue("--bg").trim();
@@ -1571,9 +1494,7 @@ function setTheme(theme) {
 }
 
 sidebarThemeToggle.addEventListener("click", () => {
-  setTheme(
-    document.documentElement.dataset.theme === "dark" ? "light" : "dark",
-  );
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
 });
 
 buildPreferenceOptions();
@@ -1598,42 +1519,6 @@ $("#clear-preferences").addEventListener("click", () => {
   $("[data-pref-kind]").focus(); // the button is now disabled
   showToast("Preferences cleared.");
 });
-$("#custom-allergy-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const input = $("#custom-allergy-input");
-  const error = $("#custom-allergy-error");
-  const term = input.value.trim().toLowerCase();
-
-  if (!term) {
-    error.textContent = "Type an allergy first.";
-    return;
-  }
-
-  if (state.prefs.customAllergies.includes(term)) {
-    error.textContent = `${term} is already on your list.`;
-    return;
-  }
-
-  state.prefs.customAllergies.push(term);
-  savePreferences();
-  render();
-  input.value = "";
-  error.textContent = "";
-  input.focus();
-});
-
-$("#custom-allergy-list").addEventListener("click", (event) => {
-  const button = event.target.closest("[data-remove-allergy]");
-  if (!button) return; // the click wasn't on a × button
-
-  const term = button.dataset.removeAllergy;
-  state.prefs.customAllergies = state.prefs.customAllergies.filter(
-    (item) => item !== term,
-  );
-  savePreferences();
-  render();
-  $("#custom-allergy-input").focus();
-});
 
 // Servings +/− in the recipe dialog. Each click redraws the amounts.
 $("#recipe-dialog").addEventListener("click", (event) => {
@@ -1653,10 +1538,10 @@ $("#recipe-dialog").addEventListener("close", () => {
 
 const initialPage = location.hash.slice(1);
 loadData().then(() => {
-  if (
-    ["dashboard", "inventory", "recipes", "settings", "preferences"].includes(
+  if (["dashboard", "inventory", "recipes", "settings", "preferences"].includes(
       initialPage,
-    )
-  )
+    ))
     setPage(initialPage);
 });
+
+
