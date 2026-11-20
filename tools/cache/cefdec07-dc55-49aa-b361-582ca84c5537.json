@@ -1,0 +1,415 @@
+{
+  "data": {
+    "id": "cefdec07-dc55-49aa-b361-582ca84c5537",
+    "name": "Khai Jiao Moo Sap with Rice",
+    "description": "A golden Thai omelet puffs around tender minced pork, with crisp, lacy edges and savory fish sauce throughout. Fragrant jasmine rice catches the rich juices beneath its airy center.",
+    "category": "Lunch",
+    "cuisine": "Thai",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Thai",
+      "Quick",
+      "eggs",
+      "pork",
+      "rice",
+      "fried"
+    ],
+    "meta": {
+      "active_time": "PT13M",
+      "passive_time": "PT15M",
+      "total_time": "PT28M",
+      "overnight_required": false,
+      "yields": "1 serving",
+      "yield_count": 1,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Dairy-Free"
+      ],
+      "not_suitable_for": [
+        "People with egg allergies",
+        "People with fish allergies"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Transfer leftovers to shallow containers and refrigerate promptly, ideally within 1 hour for the rice. Keep at 4°C (40°F) or below and eat within 24 hours.",
+        "duration": "P1D"
+      },
+      "freezer": {
+        "notes": "Cool promptly and freeze the rice and omelet in separate airtight containers. The omelet loses some crispness after freezing. Thaw in the refrigerator.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat the rice covered in a microwave and the omelet in a skillet until both reach 74°C (165°F) throughout. Reheat only once.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small saucepan with a tight-fitting lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fork",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "18 cm high-sided frying pan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Thermometer suitable for frying oil and food",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide slotted spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Shallow airtight storage containers",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Microwave with a microwave-safe covered dish",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Jasmine Rice",
+        "items": [
+          {
+            "name": "jasmine rice",
+            "quantity": 75,
+            "unit": "g",
+            "preparation": "dry",
+            "notes": "Use white jasmine rice; the cooking time does not apply to brown rice.",
+            "substitutions": [],
+            "ingredient_id": "675433a3-24ab-4e6c-ba46-08501861900f",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "water",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Cooking water for the rice; keep the saucepan tightly covered during simmering.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pork Omelet",
+        "items": [
+          {
+            "name": "eggs",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "raw, shells removed",
+            "notes": "Approximately 2 large eggs; weigh the contents without shells.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground pork",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "raw, finely minced",
+            "notes": "Use boneless pork mince, preferably about 15–20% fat.",
+            "substitutions": [],
+            "ingredient_id": "7c9593dc-0d72-4a81-94f5-f94cdc55099f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fish sauce",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use fish sauce made from fish and salt, with or without sugar.",
+            "substitutions": [],
+            "ingredient_id": "c49d0fb1-76dd-4870-aca3-981bb58b5ab2",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground white pepper",
+            "quantity": 0.2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "cdc9ddd1-ed48-431b-a39c-171f424578c9",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Frying Oil Bath",
+        "items": [
+          {
+            "name": "canola oil",
+            "quantity": 140,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use as a shallow frying bath in the small pan. Lift the cooked omelet out of the oil; leave the remaining oil in the pan to cool before disposal.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Bring the jasmine rice and 120 g water to a gentle boil in the small saucepan over medium-high heat, about 3 minutes.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Bubbles rise across the surface.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Simmer the rice over the lowest heat with the lid tightly closed for 12 minutes, until the water is absorbed. Keep the lid closed throughout cooking.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT12M",
+          "doneness_cues": {
+            "visual": "No standing water remains when the lid is opened after resting.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "finish",
+        "text": "Rest the covered rice off the heat for 5 minutes. Prepare the omelet mixture and heat its oil during this rest.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "The rice grains are tender throughout."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Mix the pork, fish sauce and white pepper in the mixing bowl with a fork, separating the mince into small, loose pieces. Keep raw pork and its utensils away from the cooked rice and serving plate; wash your hands and clean contaminated surfaces after handling it.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The pork is evenly seasoned with no large clumps.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Beat the eggs into the pork mixture with the whisk for about 45 seconds, until frothy and evenly combined.",
+        "structured": {
+          "action": "BEAT",
+          "temperature": null,
+          "duration": "PT45S",
+          "doneness_cues": {
+            "visual": "Small bubbles cover the surface, and the pork is dispersed through the eggs.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Heat the canola oil in the high-sided frying pan over medium-high heat to 180°C (356°F), checking with the thermometer. The oil should shimmer without smoking.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The oil shimmers and remains free of smoke.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Fry the egg mixture by pouring it steadily into the center of the hot oil from just above the pan. Cook for about 2 minutes, then turn with the wide slotted spatula and cook for another 1–2 minutes. Adjust the heat to prevent burning. The thickest center, including the pork, must reach at least 71°C (160°F), checked with the cleaned thermometer inserted sideways; continue cooking if needed.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "Both sides are golden, the edges are crisp, and no liquid egg remains.",
+            "tactile": "The center is set and lightly springy."
+          }
+        },
+        "tips": [
+          "Keep the omelet spread across the pan rather than folding it, so the minced pork cooks evenly.",
+          "Cook ground pork and egg dishes to at least 71°C (160°F), following [FoodSafety.gov minimum-temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+        ]
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Drain the omelet on the slotted spatula over the pan for about 20 seconds, allowing excess oil to drip back into the frying bath.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT20S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "assemble",
+        "text": "Plate the hot jasmine rice and lay the omelet over it. Serve immediately while the edges are crisp and the center is airy.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The omelet is flat and greasy.",
+        "likely_cause": "The oil was too cool, or the egg mixture was insufficiently aerated.",
+        "prevention": "Beat until frothy and verify that the oil reaches 180°C (356°F) before adding the eggs.",
+        "fix": "Drain thoroughly and serve immediately. The original airy structure cannot be restored."
+      },
+      {
+        "symptom": "The exterior browns before the center reaches 71°C (160°F).",
+        "likely_cause": "The heat is too high, or the pork remains in large clumps.",
+        "prevention": "Disperse the pork finely and keep the omelet flat rather than folded.",
+        "fix": "Lower the heat and continue frying, turning as needed, until the thickest center reaches at least 71°C (160°F)."
+      }
+    ],
+    "chef_notes": [
+      "Have the rice ready before frying; the omelet tastes best immediately after leaving the oil.",
+      "Small, evenly dispersed pieces of pork preserve the airy egg structure and cook more evenly than dense clumps.",
+      "Frothy eggs and hot oil work together to create the characteristic puffed center and lacy edges.",
+      "Avoid pressing the omelet flat with the spatula, which compresses its delicate interior."
+    ],
+    "cultural_context": "Khai jiao moo sap is a familiar Thai comfort food and made-to-order street-food dish featuring minced pork cooked into beaten eggs. Frying in generous hot oil creates its distinctive golden exterior, and serving it over rice makes a complete meal. [Thai pork omelet background](https://www.eatingthaifood.com/thai-omelet-recipe-kai-jeow-moo-sab/)",
+    "nutrition": {
+      "per_serving": {
+        "calories": 868.55,
+        "protein_g": 25.47,
+        "carbohydrates_g": 61.22,
+        "fat_g": 57.35,
+        "saturated_fat_g": 8.25,
+        "trans_fat_g": 0.25,
+        "monounsaturated_fat_g": 32.4,
+        "polyunsaturated_fat_g": 14.36,
+        "fiber_g": 1.03,
+        "sugar_g": 0.68,
+        "sodium_mg": 648.76,
+        "cholesterol_mg": 399.2,
+        "potassium_mg": 339.28,
+        "calcium_mg": 89.71,
+        "iron_mg": 2.78,
+        "magnesium_mg": 49.03,
+        "phosphorus_mg": 349.42,
+        "zinc_mg": 2.89,
+        "vitamin_a_mcg": 160.24,
+        "vitamin_c_mg": 0.07,
+        "vitamin_d_mcg": 2.16,
+        "vitamin_e_mg": 8.47,
+        "vitamin_k_mcg": 29.9,
+        "vitamin_b6_mg": 0.53,
+        "vitamin_b12_mcg": 1.21,
+        "thiamin_mg": 0.22,
+        "riboflavin_mg": 0.64,
+        "niacin_mg": 3.98,
+        "folate_mcg": 56.88,
+        "water_g": 234.97,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 45,
+    "monthly_limit": 50,
+    "daily_remaining": 45,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 5,
+    "detail_limit": 50,
+    "detail_remaining": 45,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

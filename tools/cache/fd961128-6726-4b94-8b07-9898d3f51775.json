@@ -1,0 +1,356 @@
+{
+  "data": {
+    "id": "fd961128-6726-4b94-8b07-9898d3f51775",
+    "name": "Vibrant Summer Cherry Tomato Pasta",
+    "description": "A vibrant, refreshing dish featuring a raw, marinated cherry tomato sauce tossed with warm pasta. Bursting with sweet seasonal tomatoes, fresh basil, garlic, and high-quality olive oil, it is the ultimate expression of summer cooking.",
+    "category": "Dinner",
+    "cuisine": "Italian",
+    "difficulty": "Easy",
+    "tags": [
+      "Italian",
+      "Pastas",
+      "Pasta",
+      "Tomato",
+      "Dinner",
+      "Quick",
+      "Appetizer",
+      "Summer",
+      "Vegetarian",
+      "Vegan",
+      "Dairy-Free"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT15M",
+      "total_time": "PT30M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 350
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store pasta and sauce separately if possible to maintain the best texture. If combined, the pasta will absorb the juices over time.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Fresh tomato sauce does not freeze well; the tomatoes will become mushy upon thawing.",
+        "duration": null
+      },
+      "reheating": "Best enjoyed at room temperature or gently warmed on the stove over low heat. Do not microwave vigorously.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large pot",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Colander",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Fresh Produce",
+        "items": [
+          {
+            "name": "cherry tomatoes",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "halved or quartered depending on size",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "9b1ba403-e30b-4bf6-a554-e2f420005653",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 2,
+            "unit": null,
+            "preparation": "finely minced",
+            "notes": "about 10g total",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh basil",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "torn",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "417f8397-9065-4cd6-8820-0ab7363fbb08",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pantry & Seasoning",
+        "items": [
+          {
+            "name": "extra virgin olive oil",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "flaky sea salt",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "plus extra for pasta water",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "freshly cracked",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Pasta",
+        "items": [
+          {
+            "name": "dried short pasta",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": null,
+            "notes": "penne, fusilli, or farfalle work best",
+            "substitutions": [
+              "gluten-free pasta"
+            ],
+            "ingredient_id": "9acd8d49-8848-4e5f-90e4-33b9b31f83c9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "water",
+            "quantity": 4000,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "for boiling the pasta",
+            "substitutions": [],
+            "ingredient_id": "52e7e8d1-3737-410a-8018-22d0b768cbd5",
+            "nutrition_source": null
+          },
+          {
+            "name": "kosher salt",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": null,
+            "notes": "for boiling the pasta",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Place the halved cherry tomatoes, minced garlic, torn basil, extra virgin olive oil, flaky sea salt, and black pepper into a large mixing bowl. Toss well to combine.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Let the tomato mixture sit at room temperature for at least 15 minutes. This allows the salt to draw out the natural juices of the tomatoes, creating the base of your sauce.",
+        "structured": {
+          "action": "MARINATE",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Bring the water to a rolling boil in a large pot. Add the kosher salt. The water should be heavily salted like the sea.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the dried short pasta to the boiling water and cook according to the package instructions until al dente.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": "PT11M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": "Pasta should offer a slight resistance when bitten into"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "finish",
+        "text": "Drain the pasta in a colander, reserving a small splash of the starchy pasta water. Do not rinse the pasta.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Transfer the hot pasta directly into the large mixing bowl with the marinated tomatoes. Toss vigorously to combine, allowing the warmth of the pasta to release the aromatics of the garlic and basil.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "finish",
+        "text": "Divide among bowls and garnish with extra fresh basil leaves and a final drizzle of extra virgin olive oil.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The dish tastes bland and the sauce feels dry",
+        "likely_cause": "Underseasoned tomatoes, under-ripe tomatoes, or low-quality olive oil",
+        "prevention": "Use peak-season summer tomatoes, generously salt the tomatoes during the marination phase, and use the best quality extra virgin olive oil available.",
+        "fix": "Add an extra pinch of flaky sea salt, a splash of high-quality olive oil, and a tiny squeeze of fresh lemon juice to brighten the flavors right before serving."
+      }
+    ],
+    "chef_notes": [
+      "The success of this dish entirely depends on the quality of your ingredients. Use the ripest, sweetest cherry tomatoes you can find.",
+      "Tossing hot pasta with the raw tomato mixture slightly warms the sauce and helps the starch from the pasta bind with the tomato juices and olive oil to create a light emulsion.",
+      "Do not refrigerate the tomatoes before using them; cold temperatures dull their flavor and alter their texture.",
+      "To easily customize this dish, consider adding fresh mozzarella pearls, toasted pine nuts, capers, or a splash of balsamic glaze."
+    ],
+    "cultural_context": "Often referred to as Pasta alla Checca in Rome, this style of raw tomato and herb sauce is an Italian summer staple. It was born out of the necessity to utilize abundant summer garden yields without heating up the kitchen for extended periods.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 546.12,
+        "protein_g": 15.78,
+        "carbohydrates_g": 79.14,
+        "fat_g": 18.16,
+        "saturated_fat_g": 2.83,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 10.96,
+        "polyunsaturated_fat_g": 1.62,
+        "fiber_g": 4.55,
+        "sugar_g": 6.94,
+        "sodium_mg": 594.63,
+        "cholesterol_mg": 0,
+        "potassium_mg": 829.38,
+        "calcium_mg": 61.47,
+        "iron_mg": 2.97,
+        "magnesium_mg": 112.29,
+        "phosphorus_mg": 378.32,
+        "zinc_mg": 2.9,
+        "vitamin_a_mcg": 19.93,
+        "vitamin_c_mg": 2.13,
+        "vitamin_d_mcg": null,
+        "vitamin_e_mg": 2.23,
+        "vitamin_k_mcg": 41.02,
+        "vitamin_b6_mg": 0.05,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.01,
+        "riboflavin_mg": 0.01,
+        "niacin_mg": 0.09,
+        "folate_mcg": 5.26,
+        "water_g": 8.44,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 30,
+    "monthly_limit": 50,
+    "daily_remaining": 30,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 20,
+    "detail_limit": 50,
+    "detail_remaining": 30,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "data": {
+    "id": "f4f07803-38f3-4e9e-844e-9d42c3e295e9",
+    "name": "Bánh Khọt",
+    "description": "Golden rice-flour pancakes have crisp edges, tender coconut-scented centers, and juicy shrimp topped with scallions. Lettuce, fragrant herbs, and a tangy lime-fish sauce brighten each savory bite.",
+    "category": "Snack",
+    "cuisine": "Vietnamese",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Snack",
+      "Vietnamese",
+      "rice flour",
+      "shrimp",
+      "pan-fried"
+    ],
+    "meta": {
+      "active_time": "PT40M",
+      "passive_time": "PT15M",
+      "total_time": "PT55M",
+      "overnight_required": false,
+      "yields": "4 snack servings, 6 pancakes each",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": [
+        "People with crustacean shellfish allergies (shrimp)",
+        "People with fish allergies (fish sauce)",
+        "People with coconut allergies (coconut milk)"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store cooked pancakes, dipping sauce, and washed herbs separately in covered containers at 4°C (40°F) or below. Refrigerate pancakes in a shallow container within 2 hours of cooking, or within 1 hour when the surrounding temperature exceeds 32°C (90°F). The pancakes soften during storage.",
+        "duration": "P2D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled pancakes in a single layer, then transfer to an airtight freezer container. Keep at -18°C (0°F) or below. Freeze pancakes without lettuce, herbs, or dipping sauce.",
+        "duration": "P1M"
+      },
+      "reheating": "Reheat pancakes on a baking tray in an oven preheated to 190°C (375°F), approximately 8–12 minutes from refrigerated or 15–20 minutes from frozen, until the centers and shrimp reach 74°C (165°F). Verify with a food thermometer; timing varies with pancake thickness. Leftover seafood requires the leftover reheating temperature. [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small sauce bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife and cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "12-well bánh khọt pan with lid, approximately 5 cm wide shallow wells",
+        "required": true,
+        "alternative": "A similarly sized shallow pancake mold pan with a fitting lid; deeper molds require shallower filling and may change the yield."
+      },
+      {
+        "name": "Pastry brush",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small ladle",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Thin spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine-tip food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wire cooling rack",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving platter",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Oven and baking tray",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Shallow storage containers",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Rice-Flour Batter",
+        "items": [
+          {
+            "name": "rice flour",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use finely milled white rice flour, not glutinous or sweet rice flour.",
+            "substitutions": [],
+            "ingredient_id": "fa485141-bb6d-40c3-8313-fd740db37966",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e37d9484-8bf9-4d9a-a6c8-22a597cbb237",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "unsweetened coconut milk",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": "well stirred",
+            "notes": "Use full-fat canned coconut milk.",
+            "substitutions": [],
+            "ingredient_id": "53e56c35-d71b-4412-b515-887383944ce6",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "water",
+            "quantity": 230,
+            "unit": "g",
+            "preparation": "room temperature",
+            "notes": "For the batter.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground turmeric",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1ee1ad9b-8638-45be-82a4-683925a61d05",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Shrimp, Scallions, and Pan Oil",
+        "items": [
+          {
+            "name": "shrimp",
+            "quantity": 240,
+            "unit": "g",
+            "preparation": "raw, peeled, deveined, and tails removed",
+            "notes": "Edible flesh weight after removing heads, shells, and tails. Choose approximately 24 small shrimp, or divide larger shrimp into 24 similarly sized portions. Thaw frozen shrimp in the refrigerator before use.",
+            "substitutions": [],
+            "ingredient_id": "a6bf7ab3-9b88-4c5b-a2fa-966c40a0e5a7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "trimmed and finely sliced",
+            "notes": "Use the white and green parts; weight excludes roots.",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 48,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Divide between 24 pancakes to coat the bases and sides of the wells, using 24 g per 12-pancake batch.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Nước Chấm Dipping Sauce",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 60,
+            "unit": "g",
+            "preparation": "warm",
+            "notes": "For the dipping sauce.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fish sauce",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Choose a gluten-free fish sauce made from fish and salt, with no wheat-containing additions.",
+            "substitutions": [],
+            "ingredient_id": "c49d0fb1-76dd-4870-aca3-981bb58b5ab2",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lime juice",
+            "quantity": 30,
+            "unit": "g",
+            "preparation": "freshly squeezed",
+            "notes": "Juice weight only; exclude peel and seeds.",
+            "substitutions": [],
+            "ingredient_id": "531b7deb-b63c-41c9-8c01-b7bec6fcd2d0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "peeled and finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "thai red chili",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "stem removed, finely minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "324e43e0-e261-494b-b87f-60cb786b8014",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Lettuce and Herbs",
+        "items": [
+          {
+            "name": "butter lettuce",
+            "quantity": 160,
+            "unit": "g",
+            "preparation": "leaves separated, washed, and dried",
+            "notes": "Edible leaf weight, excluding the core.",
+            "substitutions": [],
+            "ingredient_id": "ff5bbe19-cc44-4f1d-a5e7-0133958f9934",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh mint",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "washed and dried",
+            "notes": "Leaf weight, excluding tough stems.",
+            "substitutions": [],
+            "ingredient_id": "8691c40e-bc2c-4c9f-a257-9069b4d04c76",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "thai basil",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "washed and dried",
+            "notes": "Leaf weight, excluding tough stems.",
+            "substitutions": [],
+            "ingredient_id": "c64f5eca-d776-408b-884c-ee15a9225418",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Whisk the rice flour, cornstarch, coconut milk, 230 g water, turmeric, and salt in the mixing bowl until smooth. The batter should pour readily in a thin stream.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Smooth, pale-yellow batter without dry flour pockets.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Rest the batter for 15 minutes to hydrate the flour.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Stir the sauce water, fish sauce, lime juice, sugar, garlic, and chili together in the small sauce bowl until the sugar dissolves.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Arrange the lettuce, mint, and Thai basil on the serving platter before handling the raw shrimp.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep raw shrimp and its juices away from the herbs and dipping sauce. Wash hands with soap and water after handling shrimp, and clean utensils and surfaces before they touch cooked food."
+        ]
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Preheat the bánh khọt pan over medium heat for approximately 4 minutes. The pan should be evenly hot but not smoking.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Coat the bases and sides of the 12 wells with 24 g oil, distributing it evenly with the pastry brush.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "Stir the rested batter thoroughly to lift any rice flour that has settled at the bottom.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "assemble",
+        "text": "Portion half the batter evenly among the 12 hot wells with the small ladle, approximately 22 g per well. Leave space for the shrimp and keep the batter below the rims.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Small bubbles appear immediately around the batter edges.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "assemble",
+        "text": "Top each pancake with one shrimp portion and a share of half the scallions, using the small spoon to position the shrimp gently in the batter.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Cook with the lid on over medium to medium-low heat for 4–5 minutes, until the batter surface sets and the shrimp flesh becomes pearly and opaque throughout. Verify that the thickest shrimp reaches at least 63°C (145°F) with the fine-tip thermometer; continue cooking if needed.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 63,
+            "fahrenheit": 145
+          },
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Shrimp flesh is pearly and fully opaque, and the batter surface is set rather than liquid.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Cook uncovered for another 2–3 minutes, until the edges are golden and crisp and the centers contain no wet batter. Keep the shrimp facing upward.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Golden rims pull slightly away from the wells.",
+            "tactile": "The bases feel firm and release with gentle pressure from the spatula."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "finish",
+        "text": "Transfer the pancakes to the wire rack with the thin spatula, keeping them in a single layer.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "For the second batch, repeat steps 6–12 using the remaining oil, batter, shrimp, and scallions. Stir the batter again before portioning."
+        ]
+      },
+      {
+        "step_number": 13,
+        "phase": "finish",
+        "text": "Serve the pancakes promptly with the lettuce, herbs, and dipping sauce. Wrap each pancake in lettuce with a few herb leaves before dipping.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Pancakes are pale, soft, or stick to the wells.",
+        "likely_cause": "The pan was insufficiently preheated, the wells were unevenly oiled, or the pancakes were lifted before a crust formed.",
+        "prevention": "Preheat the pan evenly, brush oil up the sides, and wait for golden edges that release easily.",
+        "fix": "Continue cooking uncovered over medium heat in 1-minute intervals, then loosen the edges gently with the thin spatula."
+      },
+      {
+        "symptom": "The bases brown while the centers remain wet or the shrimp remain translucent.",
+        "likely_cause": "The heat is too high, the wells are overfilled, or the shrimp portions are too thick.",
+        "prevention": "Use small shrimp portions and a shallow layer of batter; reduce the heat after the initial sizzle.",
+        "fix": "Reduce to low heat and cover until the batter sets and the shrimp are pearly and opaque throughout and reach at least 63°C (145°F). Briefly uncover to restore crisp edges. Discard any pancakes with blackened, bitter bases."
+      }
+    ],
+    "chef_notes": [
+      "Fine ordinary rice flour produces a lighter, crisper shell than glutinous rice flour, which makes the centers sticky.",
+      "Rice flour settles quickly. Stir before each batch so the final pancakes have the same texture as the first.",
+      "A lid helps the shrimp and upper batter cook while the bases fry; the uncovered finish lets moisture escape.",
+      "Serve in batches when possible. Stacking hot pancakes traps steam and softens their crisp edges."
+    ],
+    "cultural_context": "Bánh khọt is a southern Vietnamese specialty closely associated with the coastal city of Vũng Tàu, where small rice-flour cakes are cooked in individual molds and commonly topped with shrimp. Lettuce, fresh herbs, and nước chấm accompany the cakes, providing freshness and acidity alongside their crisp, savory richness. [NGON Vietnam](https://ngon-vietnam.com/banh-khot/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 418.23,
+        "protein_g": 16.36,
+        "carbohydrates_g": 45.45,
+        "fat_g": 19.41,
+        "saturated_fat_g": 6.79,
+        "trans_fat_g": 0.05,
+        "monounsaturated_fat_g": 8.1,
+        "polyunsaturated_fat_g": 3.76,
+        "fiber_g": 2.64,
+        "sugar_g": 7.94,
+        "sodium_mg": 866.43,
+        "cholesterol_mg": 96.6,
+        "potassium_mg": 441.65,
+        "calcium_mg": 91.36,
+        "iron_mg": 2.73,
+        "magnesium_mg": 75.26,
+        "phosphorus_mg": 219.62,
+        "zinc_mg": 1.53,
+        "vitamin_a_mcg": 120.75,
+        "vitamin_c_mg": 8.11,
+        "vitamin_d_mcg": 0.06,
+        "vitamin_e_mg": 3.33,
+        "vitamin_k_mcg": 96.37,
+        "vitamin_b6_mg": 0.37,
+        "vitamin_b12_mcg": 0.7,
+        "thiamin_mg": 0.11,
+        "riboflavin_mg": 0.07,
+        "niacin_mg": 2.69,
+        "folate_mcg": 62.55,
+        "water_g": 211.4,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 39,
+    "monthly_limit": 50,
+    "daily_remaining": 39,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 11,
+    "detail_limit": 50,
+    "detail_remaining": 39,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

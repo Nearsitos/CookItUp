@@ -1,0 +1,402 @@
+{
+  "data": {
+    "id": "a13dda00-1b45-4b8c-8801-001aad20837a",
+    "name": "Air Fryer Salmon",
+    "description": "Tender salmon fillets develop lightly browned edges beneath a fragrant coating of lemon zest, garlic and black pepper. Fresh lemon juice adds a bright finish to the rich, flaky fish.",
+    "category": "Lunch",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "American",
+      "Quick",
+      "salmon",
+      "lemon",
+      "air fryer"
+    ],
+    "meta": {
+      "active_time": "PT10M",
+      "passive_time": "PT15M",
+      "total_time": "PT25M",
+      "overnight_required": false,
+      "yields": "2 servings",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free",
+        "Low-Carb"
+      ],
+      "not_suitable_for": [
+        "People with fish allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Refrigerate leftovers in a shallow, covered container within 2 hours of cooking, or within 1 hour when the surrounding temperature exceeds 32°C (90°F). Store at 4°C (40°F) or below.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled portions in an airtight freezer container at -18°C (0°F) or below for best quality. Thaw overnight in the refrigerator.",
+        "duration": "P2M"
+      },
+      "reheating": "Air-fry refrigerated portions at 160°C (320°F), checking after 4 minutes and continuing until the center reaches 74°C (165°F). Reheated salmon may be firmer than freshly cooked salmon.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Air fryer with a basket large enough for two separated fillets",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Paper towels",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Preparation plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fish spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plates",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Shallow airtight storage container",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Salmon and Seasoning",
+        "items": [
+          {
+            "name": "salmon fillets",
+            "quantity": 360,
+            "unit": "g",
+            "preparation": "boneless, skinless, fully thawed",
+            "notes": "Two fillets weighing 180 g each, approximately 2.5 cm thick. Weight is edible flesh after skin and bones are removed.",
+            "substitutions": [],
+            "ingredient_id": "a865649b-5d8f-4c22-b13b-81902cb59891",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": "peeled and finely grated",
+            "notes": "Weigh after removing the papery skin.",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "lemon zest",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "finely grated",
+            "notes": "Use only the yellow outer peel of a washed lemon, avoiding the bitter white pith.",
+            "substitutions": [],
+            "ingredient_id": "0ee86256-a574-4b02-badf-4ce67c46b177",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 0.6,
+            "unit": "g",
+            "preparation": "freshly ground",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Lemon Finish",
+        "items": [
+          {
+            "name": "lemon juice",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "freshly squeezed",
+            "notes": "Weigh the juice without seeds.",
+            "substitutions": [],
+            "ingredient_id": "84822702-05df-495b-91a5-3fe45e48c8d9",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Preheat the air fryer to 200°C (392°F) for 3 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 200,
+            "fahrenheit": 392
+          },
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Pat the salmon thoroughly dry with paper towels on the preparation plate.",
+        "structured": {
+          "action": "PAT_DRY",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Do not rinse raw fish. Wash hands with soap and water after handling it, and clean surfaces and utensils that touch it. Keep the serving plates separate from the raw-fish preparation plate."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Mix the olive oil, garlic, lemon zest, salt and black pepper in the small bowl with the spoon.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Spread all the seasoning mixture thinly over the tops, sides and undersides of both salmon fillets using the spoon.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep the garlic in a thin, even layer so protruding pieces do not scorch."
+        ]
+      },
+      {
+        "step_number": 5,
+        "phase": "assemble",
+        "text": "Arrange the fillets in the air-fryer basket with their flatter sides down and at least 2 cm of space between them.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Air-fry at 200°C (392°F) for approximately 8–12 minutes without flipping. Begin checking at 8 minutes with the instant-read thermometer inserted sideways into the thickest part of each fillet. Continue cooking until both centers reach 63°C (145°F); the edges should be lightly browned and the flesh should separate into moist flakes.",
+        "structured": {
+          "action": "ROAST",
+          "temperature": {
+            "celsius": 200,
+            "fahrenheit": 392
+          },
+          "duration": "PT12M",
+          "doneness_cues": {
+            "visual": "Lightly browned edges and opaque flesh that separates into flakes.",
+            "tactile": "The center yields gently and separates under light pressure."
+          }
+        },
+        "tips": [
+          "Temperature determines doneness; thickness and air-fryer performance can change the cooking time.",
+          "The minimum temperature for fish is 63°C (145°F), and reheated leftovers must reach 74°C (165°F). [FoodSafety.gov temperature guidance](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+        ]
+      },
+      {
+        "step_number": 7,
+        "phase": "finish",
+        "text": "Transfer the cooked fillets to clean serving plates with a clean fish spatula.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Drizzle the lemon juice evenly over both portions just before serving.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The salmon is dry or chalky.",
+        "likely_cause": "The fillets cooked beyond the required temperature, or one fillet was substantially thinner than the other.",
+        "prevention": "Choose similarly thick portions and begin checking their centers at 8 minutes. Remove each fillet once it reaches 63°C (145°F).",
+        "fix": "Lost moisture cannot be restored. Flake the salmon and distribute the lemon finish over it to improve eating quality."
+      },
+      {
+        "symptom": "The garlic darkens before the salmon is cooked through.",
+        "likely_cause": "Garlic was left in coarse pieces or piled thickly on the surface.",
+        "prevention": "Finely grate the garlic and spread the seasoning in a thin layer.",
+        "fix": "Reduce the air fryer to 180°C (356°F) and continue cooking until the thickest part reaches 63°C (145°F)."
+      }
+    ],
+    "chef_notes": [
+      "Fillet thickness affects cooking time more than weight alone; evenly cut center portions are easier to cook consistently.",
+      "Drying the surface and leaving space around each fillet encourage light browning.",
+      "Lemon zest supplies citrus aroma during cooking, while the juice added afterward keeps the finish bright.",
+      "Leaving the fillets in place during cooking helps preserve their shape and delicate flakes."
+    ],
+    "cultural_context": "This recipe reflects contemporary American home cooking, using an air fryer for a quick salmon lunch. Lemon, garlic and black pepper provide a familiar seafood seasoning combination that suits the fish's richness.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 452.95,
+        "protein_g": 36.08,
+        "carbohydrates_g": 1.86,
+        "fat_g": 33.67,
+        "saturated_fat_g": 4.85,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 17.69,
+        "polyunsaturated_fat_g": 9.9,
+        "fiber_g": 0.27,
+        "sugar_g": 0.26,
+        "sodium_mg": 471.61,
+        "cholesterol_mg": 144,
+        "potassium_mg": 837.28,
+        "calcium_mg": 21.44,
+        "iron_mg": 0.67,
+        "magnesium_mg": 48.68,
+        "phosphorus_mg": 414.39,
+        "zinc_mg": 0.77,
+        "vitamin_a_mcg": 46.91,
+        "vitamin_c_mg": 5.13,
+        "vitamin_d_mcg": 12.6,
+        "vitamin_e_mg": 3.26,
+        "vitamin_k_mcg": 4.45,
+        "vitamin_b6_mg": 0.96,
+        "vitamin_b12_mcg": 9.54,
+        "thiamin_mg": 0.22,
+        "riboflavin_mg": 0.21,
+        "niacin_mg": 13.18,
+        "folate_mcg": 14.37,
+        "water_g": 124.74,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 19,
+    "monthly_limit": 50,
+    "daily_remaining": 19,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 31,
+    "detail_limit": 50,
+    "detail_remaining": 19,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

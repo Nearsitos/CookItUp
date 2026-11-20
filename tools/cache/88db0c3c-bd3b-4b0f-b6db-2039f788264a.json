@@ -1,0 +1,693 @@
+{
+  "data": {
+    "id": "88db0c3c-bd3b-4b0f-b6db-2039f788264a",
+    "name": "Crispy General Tso Tofu with Daikon and Spinach Salad",
+    "description": "Crisp, golden-crusted tofu nuggets coated in an intensely glossy, sweet, spicy, and tangy glaze, paired alongside a crunchy daikon radish and tender spinach salad dressed in toasted sesame and rice vinegar.",
+    "category": "Dinner",
+    "cuisine": "Chinese-American",
+    "difficulty": "Intermediate",
+    "tags": [
+      "vegan",
+      "tofu",
+      "stir-fry",
+      "chinese-american",
+      "spicy",
+      "sweet",
+      "main course"
+    ],
+    "meta": {
+      "active_time": "PT35M",
+      "passive_time": "PT25M",
+      "total_time": "PT1H",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 265
+    },
+    "dietary": {
+      "flags": [
+        "Vegan",
+        "Vegetarian",
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store the glazed tofu and salad in separate airtight containers. The cornstarch crust will soften over time.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freezing the prepared dish is not recommended because the glaze breaks down and daikon radish turns watery upon thawing.",
+        "duration": null
+      },
+      "reheating": "Reheat leftover tofu in an oven or air fryer at 190°C (375°F) for 6 to 8 minutes until hot throughout and reaching a safe internal temperature of 74°C (165°F). Do not reheat the salad.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Tofu press",
+        "required": false,
+        "alternative": "Flat cutting board with paper towels and a heavy skillet"
+      },
+      {
+        "name": "Chef knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Vegetable peeler",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mandoline slicer",
+        "required": false,
+        "alternative": "Chef knife for manual julienning"
+      },
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Medium mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Deep wok or large frying pan",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spider strainer",
+        "required": true,
+        "alternative": "Slotted metal spoon"
+      },
+      {
+        "name": "Wire rack set in baking sheet",
+        "required": true,
+        "alternative": "Plate lined with paper towels"
+      },
+      {
+        "name": "Digital cooking thermometer",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Tofu Preparation",
+        "items": [
+          {
+            "name": "extra-firm tofu",
+            "quantity": 560,
+            "unit": "g",
+            "preparation": "drained and pressed",
+            "notes": "purchase weight 560g; edible yield approximately 480g after pressing out excess liquid",
+            "substitutions": [
+              "super-firm vacuum-packed tofu"
+            ],
+            "ingredient_id": "8f454271-8676-4706-8e95-eb9359717dcf",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "light soy sauce",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": null,
+            "substitutions": [
+              "tamari for gluten-free"
+            ],
+            "ingredient_id": "0d724b69-c9e4-4ae4-91f5-a32fde1d4b40",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "toasted sesame oil",
+            "quantity": 5,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e74beff5-5295-4a3f-82fb-9f8ef1d5da59",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": 45,
+            "unit": "g",
+            "preparation": "dry powder",
+            "notes": null,
+            "substitutions": [
+              "potato starch"
+            ],
+            "ingredient_id": "e37d9484-8bf9-4d9a-a6c8-22a597cbb237",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "peanut oil",
+            "quantity": 250,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": "for shallow frying; approximate edible absorption is 30ml",
+            "substitutions": [
+              "canola oil",
+              "vegetable oil"
+            ],
+            "ingredient_id": "6c24d91d-f876-4fa6-82c7-0cd20d2a55b7",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "General Tso Sauce",
+        "items": [
+          {
+            "name": "garlic",
+            "quantity": 3,
+            "unit": null,
+            "preparation": "finely minced",
+            "notes": "about 15g edible yield after peeling",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "peeled and finely grated",
+            "notes": "about 10g edible yield after peeling",
+            "substitutions": [],
+            "ingredient_id": "dbb24464-f43c-459f-a3ce-07b403946522",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "scallions",
+            "quantity": 3,
+            "unit": null,
+            "preparation": "trimmed and divided",
+            "notes": "about 45g total; whites minced for sauce, greens sliced for garnish",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried red chilies",
+            "quantity": 8,
+            "unit": null,
+            "preparation": "whole dried",
+            "notes": "about 4g total; Tien Tsin or arbol chilies",
+            "substitutions": [
+              "dried red pepper flakes (3g)"
+            ],
+            "ingredient_id": "90c3450c-374b-43be-a23c-245984d69cee",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "vegetable stock",
+            "quantity": 80,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": null,
+            "substitutions": [
+              "water"
+            ],
+            "ingredient_id": "71d7bf5e-cf58-4bfc-984d-d7d0e9a299b7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 40,
+            "unit": "g",
+            "preparation": "dry granulated",
+            "notes": null,
+            "substitutions": [
+              "maple syrup (35ml)"
+            ],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "chinese black vinegar",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": "Chinkiang vinegar",
+            "substitutions": [
+              "unseasoned rice vinegar mixed with 5ml balsamic vinegar"
+            ],
+            "ingredient_id": "73529d22-81b7-42a4-8fe3-726348f8ea38",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "light soy sauce",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": null,
+            "substitutions": [
+              "tamari for gluten-free"
+            ],
+            "ingredient_id": "0d724b69-c9e4-4ae4-91f5-a32fde1d4b40",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dark soy sauce",
+            "quantity": 10,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": "provides deep color and rich body",
+            "substitutions": [
+              "mushroom dark soy sauce"
+            ],
+            "ingredient_id": "0d2f3cfb-7355-4a6e-ada0-4ade36eba41b",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": "dry powder",
+            "notes": "for sauce thickening",
+            "substitutions": [],
+            "ingredient_id": "e37d9484-8bf9-4d9a-a6c8-22a597cbb237",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 25,
+            "unit": "ml",
+            "preparation": "cold liquid",
+            "notes": "to mix with sauce cornstarch",
+            "substitutions": [],
+            "ingredient_id": "85d075d9-0c0f-4609-8090-0242f89f18ce",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Daikon and Spinach Salad",
+        "items": [
+          {
+            "name": "daikon radish",
+            "quantity": 250,
+            "unit": "g",
+            "preparation": "raw unpeeled",
+            "notes": "purchase weight 250g; edible yield approximately 200g after peeling and trimming ends",
+            "substitutions": [],
+            "ingredient_id": "66c5dd69-fd71-4b2c-8c31-b240a5712b58",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "baby spinach",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "washed and thoroughly dried",
+            "notes": "100g edible yield",
+            "substitutions": [],
+            "ingredient_id": "a0841ac1-be12-4634-b6ce-e2c7b6fcafc2",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "rice vinegar",
+            "quantity": 25,
+            "unit": "ml",
+            "preparation": "unseasoned liquid",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "562980f3-390c-4750-8b76-8c7387725c52",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "toasted sesame oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": "liquid",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e74beff5-5295-4a3f-82fb-9f8ef1d5da59",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "dry granulated",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": "fine sea salt",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Garnish",
+        "items": [
+          {
+            "name": "toasted white sesame seeds",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": "toasted",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "194df579-797d-4916-924f-d40adc31ec78",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Place the drained extra-firm tofu between double layers of paper towels on a cutting board, weight it with a heavy skillet or tofu press, and press for 20 minutes to extract excess water.",
+        "structured": {
+          "action": "PRESS",
+          "temperature": null,
+          "duration": "PT20M",
+          "doneness_cues": null
+        },
+        "tips": [
+          "Thorough pressing removes core moisture so the exterior fries brittle instead of steaming."
+        ]
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Tear the pressed tofu by hand into irregular, bite-sized pieces roughly 3 centimeters (1.2 inches) in diameter to create jagged edges.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Rough, uneven tofu chunks with craggy surfaces",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Hand-torn edges capture far more cornstarch and sauce than flat knife cuts."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Transfer the torn tofu pieces to a medium mixing bowl, drizzle with 15 milliliters of light soy sauce and 5 milliliters of toasted sesame oil, and toss gently until the seasoning is absorbed.",
+        "structured": {
+          "action": "SEASON",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Scatter 45 grams of cornstarch over the seasoned tofu in two batches, tossing gently after each batch until every piece is coated in an even, chalky layer with no wet patches remaining.",
+        "structured": {
+          "action": "DREDGE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Uniform, matte white coating over all sides of each tofu piece",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "In a small mixing bowl, whisk together 80 milliliters of vegetable stock, 40 grams of granulated sugar, 30 milliliters of Chinese black vinegar, 30 milliliters of light soy sauce, 10 milliliters of dark soy sauce, 10 grams of cornstarch, and 25 milliliters of cold water until the sugar and starch dissolve.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Peel the daikon radish with a vegetable peeler, cut it into matchsticks 2 millimeters thick using a mandoline slicer or chef knife, and place the matchsticks into a large mixing bowl together with 100 grams of cleaned baby spinach.",
+        "structured": {
+          "action": "JULIENNE",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "In another small bowl, whisk 25 milliliters of rice vinegar, 15 milliliters of toasted sesame oil, 5 grams of sugar, and 2 grams of salt until the salt dissolves to form the salad dressing.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Pour 250 milliliters of peanut oil into a deep wok or large frying pan and heat over medium-high heat until the oil reaches 180°C (356°F) on a digital cooking thermometer.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": null,
+          "doneness_cues": {
+            "visual": "Oil shimmers smoothly and a test pinch of starch sizzles actively without burning",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Add half of the coated tofu pieces to the hot oil in a single uncrowded layer and fry at 180°C (356°F) for 5 to 6 minutes, turning twice, until pale golden and audibly crisp.",
+        "structured": {
+          "action": "FRY",
+          "temperature": {
+            "celsius": 180,
+            "fahrenheit": 356
+          },
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "Pale golden brown exterior with a firm crust",
+            "tactile": "Rigid and crisp when tapped with metal tongs"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "cook",
+        "text": "Lift the fried tofu from the oil using a spider strainer, drain it thoroughly on the wire rack set in a baking sheet, and repeat the frying process with the second batch of tofu.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Pour out the frying oil into a heatproof container leaving 15 milliliters in the wok, set the wok over medium heat at 160°C (320°F), and sauté the minced garlic, grated ginger, minced scallion whites, and whole dried chilies for 45 seconds until fragrant.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": {
+            "celsius": 160,
+            "fahrenheit": 320
+          },
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Aromatics turn pale golden and chilies darken slightly without charring",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 12,
+        "phase": "cook",
+        "text": "Whisk the prepared sauce mixture once more to suspend settled starch, pour it into the wok with the aromatics, and simmer over medium-high heat at 100°C (212°F) for 2 minutes while stirring constantly until thick and clear.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Large glossy bubbles form and the glaze cleanly coats the back of a spoon",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "assemble",
+        "text": "Add all of the crispy fried tofu to the simmering sauce and toss vigorously for 30 seconds until every nugget is evenly cloaked in glaze, then immediately remove from the heat.",
+        "structured": {
+          "action": "TOSS",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": "Glossy red-brown lacquer adhering smoothly to all tofu nooks and crannies",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "assemble",
+        "text": "Pour the salad dressing over the daikon matchsticks and baby spinach in the large bowl and toss gently for 30 seconds until the leaves and radish shreds are evenly dressed.",
+        "structured": {
+          "action": "TOSS",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 15,
+        "phase": "finish",
+        "text": "Distribute the dressed daikon and spinach salad among four dinner plates, spoon the hot glazed General Tso tofu alongside, and garnish each plate with sliced scallion greens and toasted sesame seeds before serving immediately.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Tofu exterior becomes gummy or soft shortly after coating in sauce",
+        "likely_cause": "The tofu was left sitting in the warm wok too long or tossed with sauce well before eating",
+        "prevention": "Coat the tofu in the sauce immediately before dishing up, and do not let it sit in residual pan heat",
+        "fix": "Cannot be fixed once fully absorbed; serve immediately to enjoy the remaining texture"
+      },
+      {
+        "symptom": "Sauce thickens into a dull, clumpy paste before coating the tofu",
+        "likely_cause": "The cornstarch settled to the bottom of the bowl and seized in hot oil without sufficient stirring",
+        "prevention": "Whisk the sauce liquid right before pouring into the wok and stir continuously during boiling",
+        "fix": "Whisk in 30 to 45 milliliters of hot vegetable stock over low heat until the glaze thins to a smooth sheen"
+      },
+      {
+        "symptom": "Daikon and spinach salad releases pools of liquid onto the plate",
+        "likely_cause": "Salad was dressed too early, causing salt and vinegar to extract water from the raw daikon cells",
+        "prevention": "Combine the vegetables and dressing only within two minutes of serving",
+        "fix": "Lift the vegetables out of the accumulated liquid with tongs and transfer to a dry serving plate"
+      }
+    ],
+    "chef_notes": [
+      "Tearing the tofu block into jagged pieces by hand rather than slicing with a chef knife increases surface roughness, which creates pockets for cornstarch to cling to and produces an exceptional crunch.",
+      "Maintain the shallow frying oil temperature between 175°C and 180°C (347°F and 356°F). Dropping below this range leads to greasy, oil-logged tofu, while exceeding it scorches the delicate starch shell.",
+      "Authentic Chinese black vinegar provides a woodsy, malty tang that balances the sweetness far better than distilled white vinegar. If substituting rice vinegar, consider adding a dash of balsamic vinegar to simulate that depth.",
+      "Always dress the daikon and spinach salad at the very last second. Daikon contains substantial water content that releases rapidly once exposed to salt and acid."
+    ],
+    "cultural_context": "General Tso's chicken was originated in the 1950s by Hunanese master chef Peng Chang-kuei in Taiwan, named in honor of the nineteenth-century military general Zuo Zongtang. During the 1970s, Chinese-American restaurateurs in New York modified the Hunan profile by introducing a crisp batter and a sweeter, glossy cornstarch glaze, cementing its place as a staple of Chinese-American banquets. This vegan interpretation honors the signature interplay of pungent garlic, ginger, dried chili heat, and caramelized vinegar while pairing it with a clean, cool daikon salad rooted in traditional contrasts of yin and yang.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 347.52,
+        "protein_g": 14.81,
+        "carbohydrates_g": 33.24,
+        "fat_g": 18.84,
+        "saturated_fat_g": null,
+        "trans_fat_g": null,
+        "monounsaturated_fat_g": null,
+        "polyunsaturated_fat_g": null,
+        "fiber_g": null,
+        "sugar_g": null,
+        "sodium_mg": null,
+        "cholesterol_mg": null,
+        "potassium_mg": null,
+        "calcium_mg": null,
+        "iron_mg": null,
+        "magnesium_mg": null,
+        "phosphorus_mg": null,
+        "zinc_mg": 1.69,
+        "vitamin_a_mcg": null,
+        "vitamin_c_mg": null,
+        "vitamin_d_mcg": null,
+        "vitamin_e_mg": null,
+        "vitamin_k_mcg": null,
+        "vitamin_b6_mg": null,
+        "vitamin_b12_mcg": null,
+        "thiamin_mg": null,
+        "riboflavin_mg": null,
+        "niacin_mg": null,
+        "folate_mcg": null,
+        "water_g": null,
+        "alcohol_g": null,
+        "caffeine_mg": null
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 36,
+    "monthly_limit": 50,
+    "daily_remaining": 36,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 14,
+    "detail_limit": 50,
+    "detail_remaining": 36,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

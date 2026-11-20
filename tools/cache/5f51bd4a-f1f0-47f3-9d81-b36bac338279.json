@@ -1,0 +1,453 @@
+{
+  "data": {
+    "id": "5f51bd4a-f1f0-47f3-9d81-b36bac338279",
+    "name": "Turkish Red Lentil Soup",
+    "description": "A velvety, comforting soup featuring earthy red lentils, aromatic vegetables, and a vibrant finish of dried mint and fresh lemon. A staple of Turkish home cooking that is deeply nourishing and warming.",
+    "category": "Soup",
+    "cuisine": "Turkish",
+    "difficulty": "Easy",
+    "tags": [
+      "Turkish",
+      "Soup",
+      "Lentils",
+      "Vegetarian",
+      "Easy",
+      "Vegan",
+      "Gluten-Free",
+      "Comfort Food",
+      "Winter"
+    ],
+    "meta": {
+      "active_time": "PT15M",
+      "passive_time": "PT30M",
+      "total_time": "PT45M",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 350
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store in an airtight container. Soup will thicken as it cools; thin with a little water when reheating.",
+        "duration": "P4D"
+      },
+      "freezer": {
+        "notes": "Freeze in individual portions. Thaw overnight in the refrigerator before reheating.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat gently on the stovetop over medium heat, stirring frequently. Add a splash of water if too thick.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Dutch oven or large heavy-bottomed pot",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Immersion blender",
+        "required": true,
+        "alternative": "Standard countertop blender"
+      },
+      {
+        "name": "Small skillet",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Soup Base",
+        "items": [
+          {
+            "name": "olive oil",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": "divided",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "yellow onion",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "roughly chopped",
+            "notes": "approximately 150g",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "carrot",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "peeled and roughly chopped",
+            "notes": "approximately 100g",
+            "substitutions": [],
+            "ingredient_id": "9d020677-cb7a-444c-98e3-1a982ae39df4",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "gold potato",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "peeled and roughly chopped",
+            "notes": "approximately 150g",
+            "substitutions": [],
+            "ingredient_id": "5bf06478-4785-465e-9842-f70a24e22054",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 3,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "approximately 15g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "tomato paste",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "41400e7f-7a06-42d2-a625-072c380d60b2",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Lentils and Liquid",
+        "items": [
+          {
+            "name": "red lentils",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "rinsed until water runs clear",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "6fcd314d-ff4a-4f7a-8164-7621ee0d94e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "vegetable broth",
+            "quantity": 1000,
+            "unit": "ml",
+            "preparation": "low sodium preferred",
+            "notes": null,
+            "substitutions": [
+              "water"
+            ],
+            "ingredient_id": "624c665f-ba9e-4934-afc4-5580e395913a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground cumin",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine sea salt",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": "adjust to taste depending on broth salinity",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black pepper",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c25dc1c9-4ea7-403c-976e-ab1d06578b7a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Mint Oil and Garnish",
+        "items": [
+          {
+            "name": "olive oil",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "dried mint",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "a55f18a7-6ba1-4fa7-8bde-b8d2e2d13e84",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "aleppo pepper",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "paprika mixed with a pinch of cayenne"
+            ],
+            "ingredient_id": "1f6019e9-c5ca-4eda-a3f9-e8df6535e5eb",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "lemon",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "cut into wedges",
+            "notes": "approximately 45ml juice",
+            "substitutions": [],
+            "ingredient_id": "8787c956-d31c-4dfa-9c29-db1aae17ca59",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Wash the red lentils thoroughly in a fine-mesh sieve under cold running water until the water runs completely clear, removing any dust or debris.",
+        "structured": {
+          "action": "STRAIN",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Heat 30ml of olive oil in a Dutch oven over medium heat. Add the chopped onion, carrot, and potato, and cook until the onions soften and become translucent, about 5 to 7 minutes.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Onions are soft and translucent",
+            "tactile": "Carrots are beginning to soften slightly"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Stir in the minced garlic and tomato paste. Cook for 1 minute until the tomato paste darkens slightly and becomes highly aromatic.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Tomato paste coats the vegetables and deepens in color",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the rinsed red lentils, vegetable broth, cumin, salt, and black pepper. Stir well to combine and bring the mixture to a boil at 100°C/212°F.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": {
+            "celsius": 100,
+            "fahrenheit": 212
+          },
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Reduce the heat to low, cover the pot with a lid, and simmer gently for 20 to 25 minutes. Check occasionally and stir to prevent the lentils from sticking to the bottom.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT25M",
+          "doneness_cues": {
+            "visual": "Lentils have burst and absorbed much of the liquid",
+            "tactile": "Vegetables mash easily against the side of the pot"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Remove the pot from the heat. Carefully use an immersion blender to puree the soup until perfectly smooth and velvety. If the soup is too thick, stir in up to 100ml of hot water until the desired consistency is reached.",
+        "structured": {
+          "action": "PUREE",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Smooth, uniform, bright golden-orange liquid",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "finish",
+        "text": "In a small skillet, heat the remaining 30ml of olive oil over medium-low heat. Stir in the dried mint and Aleppo pepper. Cook for 30 seconds until the spices sizzle and release their fragrance, being careful not to burn the mint.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Oil turns slightly reddish-green with gentle bubbling",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "serve",
+        "text": "Ladle the hot soup into bowls. Drizzle the warm mint and pepper oil over the top of each bowl, and serve immediately with fresh lemon wedges on the side for squeezing.",
+        "structured": {
+          "action": "PLATE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Soup is too thick and resembles a porridge",
+        "likely_cause": "Red lentils absorbed more liquid than expected, or too much water evaporated during simmering",
+        "prevention": "Ensure the lid is tight fitting to minimize evaporation, and measure lentils precisely",
+        "fix": "Stir in boiling water or hot vegetable broth, 50ml at a time, until the proper velvety soup consistency is restored"
+      },
+      {
+        "symptom": "Soup tastes flat or overly earthy",
+        "likely_cause": "Insufficient acid or salt to balance the starchiness of the potatoes and lentils",
+        "prevention": "Use a well-seasoned broth and ensure fresh lemon is served alongside",
+        "fix": "Squeeze half a lemon directly into the pot and add an extra pinch of fine sea salt"
+      },
+      {
+        "symptom": "Mint oil topping tastes bitter",
+        "likely_cause": "The dried mint and spices were heated too long or at too high a temperature, causing them to burn",
+        "prevention": "Only heat the oil briefly over medium-low heat and remove it immediately once it becomes fragrant",
+        "fix": "Cannot be fixed. Discard the burnt oil and quickly make a new batch"
+      }
+    ],
+    "chef_notes": [
+      "Red lentils (kırmızı mercimek) do not require soaking, but washing them thoroughly is non-negotiable. Rinsing removes the dusty residue that can make the final soup foamy and muddy.",
+      "The potato in this recipe acts as a natural thickener and emulsifier, giving the pureed soup a creamy texture without the need for dairy.",
+      "Do not skip the lemon juice at the end. The bright acidity of the lemon cuts through the earthy, heavy notes of the lentils and elevates the entire flavor profile.",
+      "For a richer, non-vegan variation, substitute the olive oil used for the mint topping with unsalted butter. The browned milk solids pair beautifully with the dried mint."
+    ],
+    "cultural_context": "Mercimek Çorbası is ubiquitous across Turkey, served in every setting from home kitchens to local tradesmen restaurants known as lokantas. It is traditionally eaten at all times of the day, including breakfast, and is considered a fundamental comfort food. The signature drizzle of spiced, mint-infused oil over the top is a hallmark of Turkish soup presentation.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 392.69,
+        "protein_g": 15.03,
+        "carbohydrates_g": 48.86,
+        "fat_g": 16.77,
+        "saturated_fat_g": 2.42,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 11.34,
+        "polyunsaturated_fat_g": 2.27,
+        "fiber_g": 8.83,
+        "sugar_g": 5,
+        "sodium_mg": 1275.77,
+        "cholesterol_mg": 0,
+        "potassium_mg": 773.61,
+        "calcium_mg": 92.15,
+        "iron_mg": 7.28,
+        "magnesium_mg": 58.49,
+        "phosphorus_mg": 205.23,
+        "zinc_mg": 2.26,
+        "vitamin_a_mcg": 252.73,
+        "vitamin_c_mg": 18.39,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": 2.38,
+        "vitamin_k_mcg": 13,
+        "vitamin_b6_mg": 0.48,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.37,
+        "riboflavin_mg": 0.14,
+        "niacin_mg": 1.83,
+        "folate_mcg": 125.69,
+        "water_g": 350.53,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 21,
+    "monthly_limit": 50,
+    "daily_remaining": 21,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 29,
+    "detail_limit": 50,
+    "detail_remaining": 21,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

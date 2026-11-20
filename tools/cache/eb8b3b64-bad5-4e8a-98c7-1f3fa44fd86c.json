@@ -1,0 +1,458 @@
+{
+  "data": {
+    "id": "eb8b3b64-bad5-4e8a-98c7-1f3fa44fd86c",
+    "name": "Vibrant Green Slurry Lentil Soup With Browned Shiitakes",
+    "description": "A comforting, nasal-clearing soup featuring an earthy base of brown and green lentils, brightened by a vibrant slurry of fresh spinach, ginger, chiles, and sweet white miso. Crowned with deeply browned, savory shiitake mushrooms for a nutty finish.",
+    "category": "Soup",
+    "cuisine": "Fusion",
+    "difficulty": "Easy",
+    "tags": [
+      "Brown Lentil",
+      "Budget",
+      "Great Leftovers",
+      "Green Lentil",
+      "Jalapeño",
+      "Miso",
+      "Rice",
+      "Serrano",
+      "Soup",
+      "Spinach",
+      "Stovetop",
+      "Dinner",
+      "Lunch",
+      "Quick",
+      "Weeknight",
+      "Main Course",
+      "Dairy-Free",
+      "Healthy",
+      "Vegan",
+      "Vegetarian"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT35M",
+      "total_time": "PT1H",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": 450
+    },
+    "dietary": {
+      "flags": [
+        "Vegan",
+        "Vegetarian",
+        "Dairy-Free",
+        "Gluten-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store the green slurry separately from the hot soup if possible to preserve its vibrant green color.",
+        "duration": "P4D"
+      },
+      "freezer": {
+        "notes": "The lentil base freezes beautifully. The fresh slurry and shiitake topping are best made fresh.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat the lentil base gently on the stovetop until simmering, then stir in the green slurry off the heat to preserve flavor and color.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Large Dutch oven",
+        "required": true,
+        "alternative": "Heavy-bottomed soup pot"
+      },
+      {
+        "name": "High-speed blender",
+        "required": true,
+        "alternative": "Food processor"
+      },
+      {
+        "name": "Medium skillet",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Lentil Soup Base",
+        "items": [
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "yellow onion",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "diced",
+            "notes": "about 150g",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "garlic",
+            "quantity": 4,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 12g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "brown lentils",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "rinsed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "9d0cf008-6bd6-4b89-8d98-88621c6f81e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "green lentils",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "rinsed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "9d0cf008-6bd6-4b89-8d98-88621c6f81e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "long grain white rice",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": "rinsed",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b671f3cd-cdec-4182-8911-82a06a22815a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "vegetable broth",
+            "quantity": 1200,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "624c665f-ba9e-4934-afc4-5580e395913a",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Green Slurry",
+        "items": [
+          {
+            "name": "fresh baby spinach",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "4734440a-226d-4d26-a110-3ed5c3bde93f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "white miso paste",
+            "quantity": 45,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "yellow miso paste"
+            ],
+            "ingredient_id": "46697260-96ba-4751-83c0-b40aebb81229",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "jalapeno pepper",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "roughly chopped",
+            "notes": "about 15g, keep seeds for maximum heat",
+            "substitutions": [],
+            "ingredient_id": "28f54199-5672-4d2a-9f41-4e4e5cbfa93f",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "serrano pepper",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "roughly chopped",
+            "notes": "about 10g, keep seeds for maximum heat",
+            "substitutions": [],
+            "ingredient_id": "6a646318-3d5c-494b-97fe-6869490329d6",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh lime juice",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "531b7deb-b63c-41c9-8c01-b7bec6fcd2d0",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 60,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "add more by the tablespoon if blender struggles",
+            "substitutions": [],
+            "ingredient_id": "52e7e8d1-3737-410a-8018-22d0b768cbd5",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Browned Shiitakes",
+        "items": [
+          {
+            "name": "fresh shiitake mushrooms",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": "sliced, tough stems discarded",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "127ce8a8-238d-40e6-a4b0-c58c42a7c745",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "olive oil",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e9f370c4-07c8-4d8d-8a9f-0edea38db44c",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "tamari",
+            "quantity": 10,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [
+              "soy sauce",
+              "coconut aminos"
+            ],
+            "ingredient_id": "ab99a024-9474-40da-abfb-36a47a65232b",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "cook",
+        "text": "Heat olive oil in a large Dutch oven over medium heat, around 175°C/350°F. Add the diced onion and saute until translucent and fragrant, about 5 minutes. Stir in the minced garlic and cook for 1 minute more.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": {
+            "celsius": 175,
+            "fahrenheit": 347
+          },
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "Onions are translucent, garlic is lightly golden but not brown",
+            "tactile": "Onions are softened"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Add the brown lentils, green lentils, long grain white rice, and vegetable broth to the pot. Bring the mixture to a boil at 100°C/212°F, then immediately reduce the heat to low. Cover the pot and gently simmer for 30 to 35 minutes, or until the lentils and rice are completely tender.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": {
+            "celsius": 90,
+            "fahrenheit": 194
+          },
+          "duration": "PT35M",
+          "doneness_cues": {
+            "visual": "Lentils have expanded and broth has thickened",
+            "tactile": "Lentils crush easily against the roof of your mouth"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "While the soup simmers, heat the remaining olive oil in a medium skillet over medium-high heat, roughly 190°C/375°F. Add the sliced shiitake mushrooms in a single, even layer. Cook completely undisturbed for 3 to 4 minutes to develop a deep brown crust, then toss and cook for 2 more minutes. Remove from the heat and stir in the tamari.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": {
+            "celsius": 190,
+            "fahrenheit": 374
+          },
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": "Mushrooms have a deep, caramelized brown crust on the edges",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "In a high-speed blender, combine the baby spinach, white miso paste, peeled ginger, jalapeno, serrano, fresh lime juice, and water. Blend on high speed until completely smooth, scraping down the sides as necessary.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Vibrant, uniform green liquid with no visible chunks of ginger or pepper",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "If your blender struggles to catch the spinach, add an extra splash of water to get the blades moving."
+        ]
+      },
+      {
+        "step_number": 5,
+        "phase": "finish",
+        "text": "Once the lentils are tender, remove the Dutch oven entirely from the heat source. Allow the soup to stop simmering, then pour in the green slurry. Mix thoroughly. Do not boil the soup after adding the slurry.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": [
+          "Adding the slurry off the heat preserves the bright green chlorophyll of the spinach and the delicate probiotic qualities of the miso."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "assemble",
+        "text": "Ladle the hot soup into serving bowls. Garnish each portion generously with the tamari-glazed browned shiitake mushrooms. Serve immediately.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": null
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The green soup has turned a dull, brownish-olive color",
+        "likely_cause": "The green slurry was added while the soup was boiling or the soup was returned to the heat after mixing",
+        "prevention": "Always add the spinach slurry completely off the heat, and do not let it boil when reheating leftovers",
+        "fix": "Cannot be fixed, but the flavor will remain excellent"
+      },
+      {
+        "symptom": "Shiitake mushrooms are grey and soggy instead of browned",
+        "likely_cause": "The pan was too crowded or the mushrooms were stirred too quickly before a crust could form",
+        "prevention": "Sear mushrooms in a single layer, in batches if necessary, and leave them undisturbed for the first few minutes",
+        "fix": "Turn up the heat slightly and cook off any excess moisture, though texture may be compromised"
+      },
+      {
+        "symptom": "Soup is uncomfortably spicy",
+        "likely_cause": "Variability in the heat level of fresh chiles",
+        "prevention": "Remove the seeds and white ribs from the jalapeno and serrano peppers before blending for a milder heat",
+        "fix": "Stir in a spoonful of coconut milk or plain dairy-free yogurt to individual bowls to mellow the spice"
+      }
+    ],
+    "chef_notes": [
+      "White miso brings a sweet, mild umami that perfectly balances the sharp, nasal-clearing heat of the serrano and jalapeno peppers without overwhelming the dish.",
+      "Adding a small amount of rice directly to the lentil soup base is a classic technique to introduce natural starchiness, giving the broth a velvety, comforting body.",
+      "Preserving the slurry's vibrant color relies heavily on thermal management. Exposing the spinach and miso to a rolling boil destroys the delicate chlorophyll and the active enzymes in the miso.",
+      "Searing mushrooms properly requires patience. Moisture is the enemy of browning, so ensuring your pan is hot enough and refusing the urge to stir immediately is critical for that nutty flavor."
+    ],
+    "cultural_context": "This recipe represents a modern, health-forward fusion approach, marrying the comforting, starchy foundation of classic rustic lentil soups with the bright, sharp flavors of Asian and Latin American cuisines. The combination of miso and fresh ginger alongside potent chiles creates an intensely revitalizing profile designed to clear the sinuses and warm the body.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 378.31,
+        "protein_g": 18.3,
+        "carbohydrates_g": 58.1,
+        "fat_g": 9.45,
+        "saturated_fat_g": 1.39,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 5.77,
+        "polyunsaturated_fat_g": 1.5,
+        "fiber_g": 8.93,
+        "sugar_g": 6.61,
+        "sodium_mg": 1508.7,
+        "cholesterol_mg": 0,
+        "potassium_mg": 878.43,
+        "calcium_mg": 91.79,
+        "iron_mg": 5.35,
+        "magnesium_mg": 81.66,
+        "phosphorus_mg": 265.58,
+        "zinc_mg": 2.88,
+        "vitamin_a_mcg": 222.68,
+        "vitamin_c_mg": 25.78,
+        "vitamin_d_mcg": 0.15,
+        "vitamin_e_mg": 2.3,
+        "vitamin_k_mcg": 192.69,
+        "vitamin_b6_mg": 0.65,
+        "vitamin_b12_mcg": 0.01,
+        "thiamin_mg": 0.59,
+        "riboflavin_mg": 0.35,
+        "niacin_mg": 3.96,
+        "folate_mcg": 330.82,
+        "water_g": 440.3,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 23,
+    "monthly_limit": 50,
+    "daily_remaining": 23,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 27,
+    "detail_limit": 50,
+    "detail_remaining": 23,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

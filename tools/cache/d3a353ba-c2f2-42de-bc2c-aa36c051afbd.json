@@ -1,0 +1,442 @@
+{
+  "data": {
+    "id": "d3a353ba-c2f2-42de-bc2c-aa36c051afbd",
+    "name": "Australian Pikelets With Butter And Jam",
+    "description": "These small, golden griddle pancakes have soft, fluffy centres and a gently sweet flavour. A spread of butter melts into their warm surfaces, while strawberry jam adds a bright, fruity finish.",
+    "category": "Snack",
+    "cuisine": "Australian",
+    "difficulty": "Easy",
+    "tags": [
+      "Snack",
+      "Australian",
+      "Quick",
+      "pancakes",
+      "griddle",
+      "jam"
+    ],
+    "meta": {
+      "active_time": "PT21M",
+      "passive_time": "PT5M",
+      "total_time": "PT26M",
+      "overnight_required": false,
+      "yields": "16 pikelets",
+      "yield_count": 16,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian"
+      ],
+      "not_suitable_for": [
+        "People with wheat allergy or coeliac disease",
+        "People with milk allergy",
+        "People with egg allergy"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store plain pikelets separately from the toppings. Cool briefly on a wire rack, then refrigerate in an airtight container within 2 hours, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Keep at 4°C (40°F) or below.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze cooled, plain pikelets in an airtight container with parchment between layers. Thaw in the refrigerator.",
+        "duration": "P2M"
+      },
+      "reheating": "Microwave plain pikelets on a microwave-safe plate in short bursts until the centre reaches 74°C (165°F). Add butter and jam after reheating.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scales",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing jug",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Whisk",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Flexible spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large nonstick frying pan",
+        "required": true,
+        "alternative": "Flat griddle"
+      },
+      {
+        "name": "Portioning spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Thin turner",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine-tip food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Butter knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wire cooling rack",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Airtight storage container",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Parchment paper",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Microwave-safe plate",
+        "required": false,
+        "alternative": null
+      },
+      {
+        "name": "Microwave",
+        "required": false,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Pikelet Batter",
+        "items": [
+          {
+            "name": "plain wheat flour",
+            "quantity": 150,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c44eca83-374b-437f-b52e-979b3beacb3a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "baking powder",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "c119cded-8cf7-4a52-80b8-03c25d8efa50",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "caster sugar",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine salt",
+            "quantity": 1,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "whole milk",
+            "quantity": 170,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "0d4b43bc-f9a5-4b03-8dbb-9ddc3e1ae2f5",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "egg",
+            "quantity": 50,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Weigh without the shell; approximately 1 large egg.",
+            "substitutions": [],
+            "ingredient_id": "312649b9-51fd-4715-89b3-e3c2833752a0",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "For The Pan",
+        "items": [
+          {
+            "name": "unsalted butter",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Divide into four 3 g portions for greasing the pan between batches.",
+            "substitutions": [],
+            "ingredient_id": "eaea8246-f7e7-43d0-98b1-6e668894fea1",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "To Serve",
+        "items": [
+          {
+            "name": "unsalted butter",
+            "quantity": 32,
+            "unit": "g",
+            "preparation": "softened",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "eaea8246-f7e7-43d0-98b1-6e668894fea1",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "strawberry jam",
+            "quantity": 80,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b6511c9b-b093-41d4-a78d-d05284d8fb74",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Weigh all ingredients, keeping the butter for the pan separate from the serving butter.",
+        "structured": {
+          "action": "MEASURE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Whisk the flour, baking powder, sugar and salt together in the large mixing bowl until evenly distributed.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Whisk the milk and egg together in the mixing jug until no streaks of egg remain.",
+        "structured": {
+          "action": "WHISK",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Fold the milk mixture into the dry ingredients with the flexible spatula, stopping as soon as no dry flour remains. The batter should fall from the spatula in thick ribbons; small lumps are fine.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Thick, spoonable batter with no pockets of dry flour.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Rest the batter for 5 minutes to hydrate the flour.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Preheat the large nonstick frying pan over medium-low heat for about 2 minutes.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Cook four batches of four pikelets, using 3 g of the pan butter per batch. Spoon approximately 25 g batter per pikelet into the buttered pan, leaving room for each to spread to about 6–7 cm across. Cook for 1½–2 minutes until bubbles open on top and the edges look set, then turn with the thin turner and cook for about 1 minute more. Each pikelet should be golden on both sides with a set centre reaching at least 71°C (160°F), checked by inserting the fine-tip thermometer horizontally into the thickest part. Allow about 12 minutes for all four batches.",
+        "structured": {
+          "action": "FRY",
+          "temperature": null,
+          "duration": "PT12M",
+          "doneness_cues": {
+            "visual": "Golden surfaces, set edges and a centre without wet batter.",
+            "tactile": "The centre springs back gently when lightly pressed."
+          }
+        },
+        "tips": [
+          "Reduce the heat if the underside browns before bubbles appear on top.",
+          "Do not press the pikelets down after turning."
+        ]
+      },
+      {
+        "step_number": 8,
+        "phase": "finish",
+        "text": "Serve the warm pikelets on the serving plate with the softened butter and strawberry jam, dividing the toppings evenly.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The pikelets are dark underneath but wet in the middle.",
+        "likely_cause": "The pan is too hot or the batter portions are too large.",
+        "prevention": "Use medium-low heat and approximately 25 g batter per pikelet.",
+        "fix": "Lower the heat and continue cooking, turning as needed, until the centres are set and reach 71°C (160°F). Severely burnt surfaces cannot be fixed."
+      },
+      {
+        "symptom": "The pikelets are dense or rubbery.",
+        "likely_cause": "The batter was mixed excessively or the baking powder has lost its strength.",
+        "prevention": "Use fresh baking powder and stop folding as soon as the dry flour disappears.",
+        "fix": "The cooked texture cannot be reversed; serve warm with the butter and jam."
+      }
+    ],
+    "chef_notes": [
+      "Keep portions small and consistent so the centres cook before the surfaces become too dark.",
+      "A few small batter lumps are preferable to prolonged mixing, which develops gluten and toughens the crumb.",
+      "Butter should foam gently in the pan. If it quickly turns dark, reduce the heat before adding batter.",
+      "Use a clean thermometer probe to check the centre: egg dishes should reach 71°C (160°F), and reheated leftovers should reach 74°C (165°F). [FoodSafety.gov minimum temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+    ],
+    "cultural_context": "In Australia, pikelets are small, fluffy pancakes enjoyed as snacks, lunchbox treats and at breakfast. Their compact size and affinity for sweet toppings distinguish this familiar style of griddle pancake. [Australian pikelet reference](https://www.coles.com.au/recipes-inspiration/recipes/pikelet-recipe).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 79.74,
+        "protein_g": 1.73,
+        "carbohydrates_g": 11.52,
+        "fat_g": 2.97,
+        "saturated_fat_g": 1.7,
+        "trans_fat_g": 0.1,
+        "monounsaturated_fat_g": 0.85,
+        "polyunsaturated_fat_g": 0.21,
+        "fiber_g": 0.29,
+        "sugar_g": 4.26,
+        "sodium_mg": 73.51,
+        "cholesterol_mg": 18.6,
+        "potassium_mg": 32.74,
+        "calcium_mg": 38.3,
+        "iron_mg": 0.22,
+        "magnesium_mg": 3.96,
+        "phosphorus_mg": 34.71,
+        "zinc_mg": 0.15,
+        "vitamin_a_mcg": 28.7,
+        "vitamin_c_mg": 1.1,
+        "vitamin_d_mcg": 0.2,
+        "vitamin_e_mg": 0.13,
+        "vitamin_k_mcg": 0.26,
+        "vitamin_b6_mg": 0.02,
+        "vitamin_b12_mcg": 0.08,
+        "thiamin_mg": 0.02,
+        "riboflavin_mg": 0.04,
+        "niacin_mg": 0.14,
+        "folate_mcg": 5.12,
+        "water_g": 16.12,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 38,
+    "monthly_limit": 50,
+    "daily_remaining": 38,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 12,
+    "detail_limit": 50,
+    "detail_remaining": 38,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

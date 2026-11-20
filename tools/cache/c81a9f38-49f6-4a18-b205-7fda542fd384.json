@@ -1,0 +1,550 @@
+{
+  "data": {
+    "id": "c81a9f38-49f6-4a18-b205-7fda542fd384",
+    "name": "Philadelphia Sushi Rolls",
+    "description": "Smoky salmon, tangy cream cheese and crisp cucumber nestle inside tender, lightly vinegared rice and savory nori. Each bite balances creamy richness, refreshing crunch and gentle sweetness.",
+    "category": "Dinner",
+    "cuisine": "American",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Dinner",
+      "American",
+      "smoked salmon",
+      "cream cheese",
+      "rice",
+      "nori",
+      "rolled"
+    ],
+    "meta": {
+      "active_time": "PT35M",
+      "passive_time": "PT1H5M",
+      "total_time": "PT1H40M",
+      "overnight_required": false,
+      "yields": "2 dinner servings, 4 rolls cut into 32 pieces",
+      "yield_count": 2,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Pescatarian",
+        "Egg-Free"
+      ],
+      "not_suitable_for": [
+        "People with fish allergy",
+        "People with milk allergy",
+        "Pregnant people, adults aged 65 or older and people with weakened immune systems should avoid refrigerated smoked seafood served without further cooking."
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Best eaten immediately. Refrigerate leftovers promptly in a shallow airtight container at 4°C (40°F) or below and eat within 24 hours, or sooner if the salmon package requires it. Discard after more than 2 hours at room temperature, or 1 hour above 32°C (90°F). Rice firms and nori softens during storage.",
+        "duration": "P1D"
+      },
+      "freezer": {
+        "notes": "Freezing is not recommended because cucumber releases water and cream cheese can become grainy.",
+        "duration": null
+      },
+      "reheating": "Serve properly refrigerated leftovers cold. If reheating, heat throughout to 74°C (165°F); the rolls will lose their fresh texture.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Digital kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Medium bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine-mesh strainer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small heavy saucepan with tight-fitting lid",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small mixing bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Wide shallow nonreactive bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Rice paddle",
+        "required": true,
+        "alternative": "Silicone spatula"
+      },
+      {
+        "name": "Bamboo sushi mat",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Sharp knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Small water bowl",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen cloth",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving platter",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Sushi Rice",
+        "items": [
+          {
+            "name": "japanese short-grain white rice",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "uncooked",
+            "notes": "Use ordinary Japanese short-grain rice, not sweet or glutinous rice.",
+            "substitutions": [],
+            "ingredient_id": "24663b2d-5fab-4384-8385-1532a901babd",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 360,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Fresh water for soaking and cooking the drained rice; do not discard.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "rice vinegar",
+            "quantity": 45,
+            "unit": "g",
+            "preparation": "unseasoned",
+            "notes": "Choose rice vinegar without added sugar or salt.",
+            "substitutions": [],
+            "ingredient_id": "9e04d46c-271d-4bea-86ca-fa9064ec542d",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "granulated sugar",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fine salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Rolls",
+        "items": [
+          {
+            "name": "smoked salmon",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "chilled, fully cooked and ready to eat",
+            "notes": "Use plain hot-smoked salmon labeled fully cooked and ready to eat. Weight is edible flesh after removing skin and bones.",
+            "substitutions": [],
+            "ingredient_id": "cafd5a17-4771-4c97-aaba-c6a77672b876",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "cream cheese",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": "cold",
+            "notes": "Use a firm block made with pasteurized milk.",
+            "substitutions": [],
+            "ingredient_id": "7545859b-2d8e-527d-88f5-d4b1d2029fe6",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cucumber",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": "washed and trimmed",
+            "notes": "Edible weight after removing the ends and watery seed core; leave the tender skin on.",
+            "substitutions": [],
+            "ingredient_id": "d98b65b9-709e-4931-a386-b2705cc93bc2",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "nori",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": "roasted, plain",
+            "notes": "Use four full sushi sheets, approximately 19 by 21 cm, choosing sheets totaling about 12 g.",
+            "substitutions": [],
+            "ingredient_id": "3890dd9a-ad61-4ea2-9531-36b2f82aeefa",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Rice Rinsing Water, Discarded",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1500,
+            "unit": "g",
+            "preparation": "cold",
+            "notes": "Use in three portions to rinse the rice; discard each portion.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      },
+      {
+        "group_name": "Water for Moistening Hands and Knife",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Place in a small bowl for lightly wetting hands, the nori seam and the knife-cleaning cloth. Discard the remainder.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Rinse the rice in the medium bowl with the 1500 g rinsing water, using three successive portions. Swirl gently with your fingers and pour away each portion; the final water should be much less cloudy.",
+        "structured": {
+          "action": "RINSE",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The final rinse water is lightly cloudy rather than milky.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Drain the rice in the fine-mesh strainer for 1 minute.",
+        "structured": {
+          "action": "DRAIN",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Soak the drained rice in the saucepan with the 360 g cooking water for 30 minutes. Keep this water for cooking.",
+        "structured": {
+          "action": "SOAK",
+          "temperature": null,
+          "duration": "PT30M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Bring the rice and its soaking water to a gentle boil over medium heat, about 5 minutes.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "Bubbles break across the water surface.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Simmer the rice with the lid tightly closed over the lowest heat for 15 minutes. Keep the lid closed throughout.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Rest the saucepan off the heat, still covered, for 10 minutes so the rice finishes steaming.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "No pooled water remains when the lid is opened.",
+            "tactile": "The grains are tender through the center and hold their shape."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "prep",
+        "text": "Stir the rice vinegar, sugar and salt together in the small mixing bowl until the crystals dissolve, about 2 minutes.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "assemble",
+        "text": "Fold the hot rice and vinegar mixture together in the wide shallow bowl using the rice paddle. Use gentle cutting and turning movements to distribute the seasoning without crushing the grains.",
+        "structured": {
+          "action": "FOLD",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The grains look glossy and evenly seasoned.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "prep",
+        "text": "Cool the rice in a shallow layer for about 10 minutes, until barely warm and no longer steaming. Do not refrigerate it before rolling.",
+        "structured": {
+          "action": "COOL",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": "Visible steam has stopped.",
+            "tactile": "The rice feels barely warm rather than hot."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "prep",
+        "text": "Cut the cucumber and cream cheese into long strips about 8 mm thick and the cooked smoked salmon into narrow pieces on a clean cutting board. Use commercially prepared, fully cooked salmon; if smoking salmon yourself, it must previously have reached an internal temperature of 63°C (145°F). Keep the fillings at 4°C (40°F) or below until assembly.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Keep ready-to-eat fillings and their utensils separate from raw seafood and raw meat."
+        ]
+      },
+      {
+        "step_number": 11,
+        "phase": "assemble",
+        "text": "Assemble one roll on the bamboo mat with a nori sheet shiny side down and its longer edge facing you. With lightly moistened fingers, spread one-quarter of the rice evenly over it, leaving a 2 cm strip bare along the far edge. Arrange 50 g salmon, 30 g cream cheese and 30 g cucumber in a horizontal line across the lower third. Repeat this assembly before rolling each remaining sheet; allow about 6 minutes of assembly time for all four.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT6M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Use the rice gently; pressing it into a dense layer makes the rolls heavy."
+        ]
+      },
+      {
+        "step_number": 12,
+        "phase": "assemble",
+        "text": "Roll the filled nori away from you using the mat, keeping the filling tucked inside and lifting the mat clear as you advance. Lightly moisten the bare edge and finish with the seam underneath. Apply gentle, even pressure to form a cylinder. Repeat the assembly and rolling sequence for the remaining three rolls, allowing about 5 minutes of rolling time in total.",
+        "structured": {
+          "action": "ROLL",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": "The seam is closed and the filling stays inside the ends.",
+            "tactile": "The roll feels firm enough to lift without squeezing."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "finish",
+        "text": "Slice each roll into eight pieces with the sharp knife, using gentle drawing strokes. Wipe the blade with the clean, lightly dampened cloth between cuts.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The pieces retain a round shape with distinct filling layers.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "finish",
+        "text": "Serve the 32 pieces immediately on the serving platter, dividing them into two dinner portions.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The roll splits or the filling squeezes out.",
+        "likely_cause": "The filling is piled too high, the sealing edge is covered with rice, or the mat is squeezed too firmly.",
+        "prevention": "Divide the rice and fillings evenly among four full sheets and leave the far edge bare.",
+        "fix": "Before slicing, gently reopen the roll, redistribute its filling into a narrower line and reroll. If the nori has torn extensively, serve the rice and fillings together in a bowl."
+      },
+      {
+        "symptom": "The rice smears and the rolls flatten during slicing.",
+        "likely_cause": "The rice is still hot, the blade is sticky, or the knife is being pushed straight downward.",
+        "prevention": "Cool the rice until barely warm and clean the sharp blade between cuts.",
+        "fix": "Clean and lightly dampen the knife, then use a gentle drawing stroke while supporting the roll."
+      }
+    ],
+    "chef_notes": [
+      "Season the rice while it is hot so the vinegar mixture distributes evenly; cool it before adding the chilled fillings.",
+      "Firm block cream cheese makes a defined center and is easier to handle than whipped cream cheese.",
+      "Removing the cucumber's watery seed core helps the nori retain its structure.",
+      "The stated total includes rinsing, a 30-minute soak, cooking, a covered rest, cooling and assembly performed sequentially."
+    ],
+    "cultural_context": "Philadelphia rolls belong to the American tradition of adapting Japanese rolled sushi to local tastes. Smoked salmon and cream cheese create the familiar rich center, while cucumber adds freshness; this version uses a nori exterior.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 997.2,
+        "protein_g": 41.55,
+        "carbohydrates_g": 138.34,
+        "fat_g": 29.97,
+        "saturated_fat_g": 14.03,
+        "trans_fat_g": 0.71,
+        "monounsaturated_fat_g": 7.04,
+        "polyunsaturated_fat_g": 4.13,
+        "fiber_g": 6.66,
+        "sugar_g": 13.76,
+        "sodium_mg": 1695.29,
+        "cholesterol_mg": 84.92,
+        "potassium_mg": 885.1,
+        "calcium_mg": 103.4,
+        "iron_mg": 2.4,
+        "magnesium_mg": 100.81,
+        "phosphorus_mg": 560.08,
+        "zinc_mg": 2.9,
+        "vitamin_a_mcg": 353.8,
+        "vitamin_c_mg": 14.28,
+        "vitamin_d_mcg": 11,
+        "vitamin_e_mg": 3.27,
+        "vitamin_k_mcg": 34.93,
+        "vitamin_b6_mg": 0.86,
+        "vitamin_b12_mcg": 7.62,
+        "thiamin_mg": 0.6,
+        "riboflavin_mg": 0.54,
+        "niacin_mg": 12.81,
+        "folate_mcg": 146.6,
+        "water_g": 369.76,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 20,
+    "monthly_limit": 50,
+    "daily_remaining": 20,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 30,
+    "detail_limit": 50,
+    "detail_remaining": 20,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

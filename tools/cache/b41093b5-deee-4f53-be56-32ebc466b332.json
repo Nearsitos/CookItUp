@@ -1,0 +1,435 @@
+{
+  "data": {
+    "id": "b41093b5-deee-4f53-be56-32ebc466b332",
+    "name": "Tacos de Huitlacoche",
+    "description": "Soft corn tortillas cradle a juicy, inky filling of earthy huitlacoche, sweet onion and mellow garlic. Serrano chile brings gentle heat, while fresh epazote adds its distinctive herbal aroma.",
+    "category": "Lunch",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "tags": [
+      "Lunch",
+      "Mexican",
+      "Quick",
+      "huitlacoche",
+      "corn tortillas",
+      "epazote",
+      "sautéed"
+    ],
+    "meta": {
+      "active_time": "PT28M",
+      "passive_time": "PT0M",
+      "total_time": "PT28M",
+      "overnight_required": false,
+      "yields": "4 servings, 2 tacos each",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Dairy-Free",
+        "Egg-Free",
+        "Nut-Free",
+        "Peanut-Free",
+        "Soy-Free"
+      ],
+      "not_suitable_for": []
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Store filling separately from tortillas in shallow, covered containers at 4°C (40°F) or below. Refrigerate within 2 hours of cooking, or within 1 hour when the ambient temperature exceeds 32°C (90°F).",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze the cooled filling separately in an airtight container for best quality. Thaw overnight in the refrigerator.",
+        "duration": "P2M"
+      },
+      "reheating": "Reheat the filling in a skillet over medium-low heat, stirring until it reaches 74°C (165°F) throughout, checked with a food thermometer. Warm tortillas separately before filling. Temperature guidance: [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures).",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large skillet, approximately 28 cm wide",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Spatula",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Comal",
+        "required": true,
+        "alternative": "A second dry skillet"
+      },
+      {
+        "name": "Tongs",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Clean kitchen towel",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Serving plate",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Food thermometer",
+        "required": false,
+        "alternative": "Required if reheating leftovers"
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Huitlacoche Filling",
+        "items": [
+          {
+            "name": "huitlacoche",
+            "quantity": 450,
+            "unit": "g",
+            "preparation": "fresh, cleaned and detached from the cob",
+            "notes": "Weigh the edible huitlacoche after removing any cob fragments.",
+            "substitutions": [],
+            "ingredient_id": "d1192dbd-992d-4b2a-976e-5e845ab88f23",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "white onion",
+            "quantity": 100,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Weight excludes the peel and root end.",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 8,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Weigh after removing the papery skins.",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "serrano chile",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": "stem removed",
+            "notes": "For milder heat, remove the seeds and inner ribs before weighing.",
+            "substitutions": [],
+            "ingredient_id": "6e51da9c-9ac0-4d7e-b80a-5732de620d6b",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh epazote",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": "washed and dried",
+            "notes": "Use leaves and tender tips; weigh after removing tough stems.",
+            "substitutions": [],
+            "ingredient_id": "69b46b6e-54ce-4b41-999d-626701a275fa",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sunflower oil",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2bba572f-a72b-4a66-b9d4-ed999bc704ef",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "salt",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Tortillas",
+        "items": [
+          {
+            "name": "corn tortillas",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use 8 small tortillas weighing approximately 25 g each, made from corn masa, water and lime, without wheat or added animal fat.",
+            "substitutions": [],
+            "ingredient_id": "e4851c10-fac7-49df-940b-b3674f3bb451",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Dice the onion finely on the cutting board.",
+        "structured": {
+          "action": "DICE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "Small, evenly sized pieces.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Mince the garlic and serrano chile with the chef's knife.",
+        "structured": {
+          "action": "MINCE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Wash your hands after handling the chile and avoid touching your eyes."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Chop the huitlacoche into roughly 1–2 cm pieces.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Chop the epazote leaves and tender tips finely.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Heat the sunflower oil in the large skillet over medium heat for about 1 minute.",
+        "structured": {
+          "action": "PREHEAT",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "The oil flows freely and shimmers slightly without smoking.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Sauté the onion and serrano in the oil for 4 minutes, stirring with the spatula.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "The onion becomes translucent with little browning.",
+            "tactile": "The onion softens."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Sauté the garlic with the onion and chile for 30 seconds.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT30S",
+          "doneness_cues": {
+            "visual": "The garlic remains pale.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Sauté the huitlacoche, epazote and salt with the aromatics over medium-high heat for 8 minutes, stirring gently and keeping the skillet uncovered.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "The filling turns glossy and dark, with no puddle of liquid remaining.",
+            "tactile": "The huitlacoche is tender and moist, with some distinct pieces."
+          }
+        },
+        "tips": [
+          "Lower the heat if the filling starts sticking before the huitlacoche softens.",
+          "If liquid remains, cook for up to 2 additional minutes."
+        ]
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Warm the tortillas on a comal over medium-high heat in batches, turning with tongs after approximately 20–30 seconds per side. Keep the warmed tortillas wrapped in a clean kitchen towel on the serving plate.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": "A few light toasted spots appear.",
+            "tactile": "The tortillas are hot and pliable rather than crisp."
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "assemble",
+        "text": "Divide the hot filling evenly among the 8 warm tortillas and fold each tortilla around its filling.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M30S",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Serve immediately, allowing 2 tacos per person."
+        ]
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The filling is watery and makes the tortillas soggy.",
+        "likely_cause": "The huitlacoche released more moisture than the skillet could evaporate.",
+        "prevention": "Use a wide skillet, cook uncovered and avoid crowding the filling.",
+        "fix": "Cook uncovered over medium-high heat for 1–2 additional minutes, stirring gently, until pooled liquid evaporates."
+      },
+      {
+        "symptom": "The tortillas split when folded.",
+        "likely_cause": "The tortillas are cold or became dry from excessive heating.",
+        "prevention": "Warm them briefly and keep them wrapped until assembly.",
+        "fix": "Rewarm briefly and fold while soft; use a second tortilla underneath any that have already split."
+      }
+    ],
+    "chef_notes": [
+      "Leave some huitlacoche pieces intact to preserve its tender texture.",
+      "Use fresh epazote sparingly; its strong herbal aroma should complement the earthy filling.",
+      "Aim for a juicy filling with no free liquid, since excessive reduction dulls its texture.",
+      "Warm tortillas just before assembly so they remain flexible and retain their toasted corn aroma."
+    ],
+    "cultural_context": "Huitlacoche is an edible fungus that grows on maize and is especially associated with central Mexican cooking. Cooking it with onion, garlic and epazote and serving it in corn tortillas is an established preparation described by [México en mi Cocina](https://www.mexicoenmicocina.com/huitlacoche/).",
+    "nutrition": {
+      "per_serving": {
+        "calories": 189.71,
+        "protein_g": 6.79,
+        "carbohydrates_g": 30.22,
+        "fat_g": 6.19,
+        "saturated_fat_g": 0.7,
+        "trans_fat_g": 0.01,
+        "monounsaturated_fat_g": 1.21,
+        "polyunsaturated_fat_g": 3.72,
+        "fiber_g": 4.33,
+        "sugar_g": 3.87,
+        "sodium_mg": 304.09,
+        "cholesterol_mg": 0,
+        "potassium_mg": 493.23,
+        "calcium_mg": 102.82,
+        "iron_mg": 1.39,
+        "magnesium_mg": 47.2,
+        "phosphorus_mg": 265.9,
+        "zinc_mg": 1.14,
+        "vitamin_a_mcg": 1.43,
+        "vitamin_c_mg": 6.21,
+        "vitamin_d_mcg": 0.23,
+        "vitamin_e_mg": 2.04,
+        "vitamin_k_mcg": 13.03,
+        "vitamin_b6_mg": 0.3,
+        "vitamin_b12_mcg": 0.05,
+        "thiamin_mg": 0.17,
+        "riboflavin_mg": 0.5,
+        "niacin_mg": 4.9,
+        "folate_mcg": 83.24,
+        "water_g": 152.89,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 16,
+    "monthly_limit": 50,
+    "daily_remaining": 16,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 34,
+    "detail_limit": 50,
+    "detail_remaining": 16,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

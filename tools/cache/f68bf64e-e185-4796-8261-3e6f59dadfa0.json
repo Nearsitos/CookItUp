@@ -1,0 +1,673 @@
+{
+  "data": {
+    "id": "f68bf64e-e185-4796-8261-3e6f59dadfa0",
+    "name": "Clay Pot Chicken Rice",
+    "description": "Fragrant jasmine rice absorbs ginger-scented chicken juices beneath tender chicken, sweet Chinese sausage and earthy shiitake mushrooms. A golden, crisp bottom crust adds a satisfying toasted crunch.",
+    "category": "Dinner",
+    "cuisine": "Chinese",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Dinner",
+      "Chinese",
+      "chicken",
+      "rice",
+      "Chinese sausage",
+      "clay pot"
+    ],
+    "meta": {
+      "active_time": "PT20M",
+      "passive_time": "PT40M",
+      "total_time": "PT1H",
+      "overnight_required": false,
+      "yields": "4 servings",
+      "yield_count": 4,
+      "serving_size_g": null
+    },
+    "dietary": {
+      "flags": [
+        "Dairy-Free",
+        "Egg-Free"
+      ],
+      "not_suitable_for": [
+        "People with soy allergy",
+        "People with wheat allergy or celiac disease",
+        "People with sesame allergy",
+        "People with mollusk allergy because oyster sauce contains oysters"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Transfer leftovers promptly into shallow containers and refrigerate within 2 hours, or within 1 hour when the ambient temperature exceeds 32°C (90°F). Store at 4°C (40°F) or below. Do not leave rice cooling in the clay pot.",
+        "duration": "P3D"
+      },
+      "freezer": {
+        "notes": "Freeze promptly cooled portions in airtight containers at -18°C (0°F) or below. Thaw in the refrigerator. The crust softens during storage.",
+        "duration": "P2M"
+      },
+      "reheating": "Reheat covered in a microwave-safe container, stirring midway, until the rice, chicken and sausage reach 74°C (165°F) throughout. Check several places with a food thermometer. Reheat only the portion needed.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Stovetop-safe clay pot with tight-fitting lid",
+        "required": true,
+        "alternative": "A heavy saucepan with a tight-fitting lid works, although the crust develops differently."
+      },
+      {
+        "name": "Compatible stovetop",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Kitchen scale",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing bowls",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine-mesh strainer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Mixing spoon",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Instant-read food thermometer",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Oven mitts",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Dry heatproof trivet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Rice paddle",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Chicken and Marinade",
+        "items": [
+          {
+            "name": "boneless skinless chicken thighs",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": "trimmed",
+            "notes": "Edible meat weight, excluding bones and skin.",
+            "substitutions": [],
+            "ingredient_id": "75bd8e67-6b79-515e-bf4d-d7a887c5b8cd",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "light soy sauce",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "842fbf4e-86a9-487d-bc27-8ee03b469b2e",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "oyster sauce",
+            "quantity": 18,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "f6dc3673-ea10-41e9-b5d4-0bd87242aadb",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "shaoxing wine",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "df66c02b-6505-4b83-ac6f-46557defcaf9",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": "peeled",
+            "notes": "Weight after peeling.",
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cornstarch",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e37d9484-8bf9-4d9a-a6c8-22a597cbb237",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "sugar",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "toasted sesame oil",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "e74beff5-5295-4a3f-82fb-9f8ef1d5da59",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground white pepper",
+            "quantity": 0.5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "cdc9ddd1-ed48-431b-a39c-171f424578c9",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Rice and Toppings",
+        "items": [
+          {
+            "name": "jasmine rice",
+            "quantity": 300,
+            "unit": "g",
+            "preparation": "dry",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b671f3cd-cdec-4182-8911-82a06a22815a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 420,
+            "unit": "g",
+            "preparation": "room temperature",
+            "notes": "Cooking water; the rice soaks in this water and cooks in the same water.",
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "chinese pork sausage",
+            "quantity": 90,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use lap cheong. Weight excludes any packaging or nonedible casing; follow the package's preparation instructions.",
+            "substitutions": [],
+            "ingredient_id": "fb1f7627-ae7f-4385-b551-b4e340e4ff2a",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fresh shiitake mushrooms",
+            "quantity": 120,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Edible cap weight after removing tough stems.",
+            "substitutions": [],
+            "ingredient_id": "e7e6cc2f-ffa2-43ba-acef-771c72dbaed0",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "canola oil",
+            "quantity": 14,
+            "unit": "g",
+            "preparation": null,
+            "notes": "Use 6 g with the rice and 8 g around the pot edge to develop the crust.",
+            "substitutions": [],
+            "ingredient_id": "8ae7a481-5870-47ef-a47e-b30b610c6c5a",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "scallions",
+            "quantity": 20,
+            "unit": "g",
+            "preparation": "trimmed",
+            "notes": "Edible weight after removing roots.",
+            "substitutions": [],
+            "ingredient_id": "dcfaf926-661e-4117-aeea-145370b787f7",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Finishing Sauce",
+        "items": [
+          {
+            "name": "light soy sauce",
+            "quantity": 12,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "842fbf4e-86a9-487d-bc27-8ee03b469b2e",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "dark soy sauce",
+            "quantity": 6,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "5d22ce73-ee86-409b-be21-df932c9632d5",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "sugar",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "8ae7f905-b311-4f45-9527-5e3840369506",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "56f313bb-9571-44c8-aa24-45a63b0d2b1e",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Rice Rinsing Water, Discarded",
+        "items": [
+          {
+            "name": "water",
+            "quantity": 1200,
+            "unit": "g",
+            "preparation": "cold",
+            "notes": "Use in three 400 g batches to rinse the rice; discard after each rinse.",
+            "substitutions": [],
+            "ingredient_id": null,
+            "nutrition_source": null
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Rinse the rice in a mixing bowl using three successive 400 g batches of rinsing water, draining each batch through the fine-mesh strainer.",
+        "structured": {
+          "action": "RINSE",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": "The final rinse water is less cloudy.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 2,
+        "phase": "prep",
+        "text": "Soak the drained rice in the unheated clay pot with the 420 g cooking water for 10 minutes while preparing the toppings. Keep this water in the pot.",
+        "structured": {
+          "action": "SOAK",
+          "temperature": null,
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Use a pot approximately 22 cm wide with a capacity of at least 2.5 liters. Prepare it for use according to its manufacturer's instructions."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "prep",
+        "text": "Slice the shiitake caps 5 mm thick, the sausage 4 mm thick, the ginger into fine matchsticks and the scallions into thin rings.",
+        "structured": {
+          "action": "SLICE",
+          "temperature": null,
+          "duration": "PT4M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 4,
+        "phase": "prep",
+        "text": "Cut the chicken into pieces approximately 2 cm across and no thicker than 1.5 cm. Do not wash raw chicken; wash hands and clean the knife, cutting board and work surface after handling it.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "prep",
+        "text": "Mix the chicken with all remaining Chicken and Marinade ingredients in a mixing bowl until evenly coated.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT2M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 6,
+        "phase": "prep",
+        "text": "Marinate the chicken in the refrigerator at 4°C (40°F) or below for 10 minutes while starting the rice.",
+        "structured": {
+          "action": "MARINATE",
+          "temperature": {
+            "celsius": 4,
+            "fahrenheit": 39
+          },
+          "duration": "PT10M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Stir 6 g canola oil into the soaked rice and its cooking water.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Bring the covered pot gradually to a gentle boil over medium-low heat, allowing approximately 7 minutes. Follow the pot manufacturer's burner restrictions.",
+        "structured": {
+          "action": "BOIL",
+          "temperature": null,
+          "duration": "PT7M",
+          "doneness_cues": {
+            "visual": "Steady steam escapes around the lid and the water bubbles gently.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 9,
+        "phase": "cook",
+        "text": "Simmer the rice uncovered over low heat for about 3 minutes, until the water falls just below the grain surface but small bubbling holes remain.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "The rice surface appears pitted and damp, with little free water.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 10,
+        "phase": "assemble",
+        "text": "Arrange the chicken and all its marinade evenly over the rice, distributing the sausage and mushrooms between the chicken pieces. Keep the toppings loose and avoid a thick mound in the center.",
+        "structured": {
+          "action": "ASSEMBLE",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 11,
+        "phase": "cook",
+        "text": "Steam with the lid tightly closed over the lowest steady heat for 18 to 20 minutes. Before crusting, check the thickest chicken pieces and sausage with the food thermometer: both must reach 74°C (165°F), and the rice should be tender. Continue covered cooking if necessary.",
+        "structured": {
+          "action": "STEAM",
+          "temperature": {
+            "celsius": 74,
+            "fahrenheit": 165
+          },
+          "duration": "PT20M",
+          "doneness_cues": {
+            "visual": "Chicken is opaque throughout and the rice has no visible pools of liquid.",
+            "tactile": "Rice grains are tender without a hard center."
+          }
+        },
+        "tips": [
+          "The listed temperature is the internal food target, not a burner setting. Cooking time varies with the pot and burner.",
+          "Temperature guidance follows [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)."
+        ]
+      },
+      {
+        "step_number": 12,
+        "phase": "prep",
+        "text": "Mix all Finishing Sauce ingredients in a clean bowl until the sugar dissolves, doing this while the chicken steams.",
+        "structured": {
+          "action": "MIX",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 13,
+        "phase": "cook",
+        "text": "Drizzle the remaining 8 g canola oil around the inside edge of the pot, replace the lid and toast the bottom rice over medium-low heat for 2 to 3 minutes. Stop when gentle crackling and a nutty aroma develop; sharp smoke indicates burning.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT3M",
+          "doneness_cues": {
+            "visual": "Rice at the accessible edge begins turning golden.",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 14,
+        "phase": "finish",
+        "text": "Rest the covered pot off the heat on a dry heatproof trivet for 5 minutes, using oven mitts to move it.",
+        "structured": {
+          "action": "REST",
+          "temperature": null,
+          "duration": "PT5M",
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 15,
+        "phase": "finish",
+        "text": "Garnish with the finishing sauce and sliced scallions.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 16,
+        "phase": "finish",
+        "text": "Serve immediately, using a rice paddle to lift portions of chicken and rice with pieces of the golden bottom crust.",
+        "structured": {
+          "action": "SERVE",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": []
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "The bottom burns before the rice is tender.",
+        "likely_cause": "The burner is too strong or the lid allows too much steam to escape.",
+        "prevention": "Use the lowest steady heat during steaming and delay crusting until the rice is tender and the chicken is safely cooked.",
+        "fix": "Stop heating and transfer the unburned upper portion to a heavy saucepan, leaving the blackened layer behind. Cover and finish gently; verify the chicken and sausage reach 74°C (165°F). Burned flavor in the crust cannot be removed."
+      },
+      {
+        "symptom": "The chicken remains below 74°C (165°F).",
+        "likely_cause": "Chicken pieces are too thick or crowded, or the heat is insufficient.",
+        "prevention": "Keep pieces no thicker than 1.5 cm and distribute them evenly over the rice.",
+        "fix": "Keep the lid closed and continue over low heat, checking every 3 minutes until the chicken and sausage reach 74°C (165°F). Do not begin crusting while the chicken is undercooked."
+      },
+      {
+        "symptom": "The rice is tender but the bottom crust is pale.",
+        "likely_cause": "Moisture remains at the base or the final heat is too low.",
+        "prevention": "Wait until visible liquid has disappeared before the brief crusting stage.",
+        "fix": "Continue over medium-low heat in 30-second intervals, stopping as soon as gentle crackling and a toasted aroma develop."
+      }
+    ],
+    "chef_notes": [
+      "Fresh shiitake caps provide earthy flavor without a lengthy rehydration step, keeping preparation within one hour.",
+      "A thin cornstarch coating helps the chicken stay succulent and lightly thickens its juices as they season the rice.",
+      "Keep the rice undisturbed during cooking so the bottom layer stays in contact with the pot and forms a coherent crust.",
+      "Avoid sudden temperature changes: never place a hot clay pot on a cold or wet surface, and use only cookware approved for your stovetop."
+    ],
+    "cultural_context": "Clay pot rice, often called bo zai fan, is associated with Cantonese cooking, with meat and other toppings steaming above the rice so their juices season the grains. Its prized toasted bottom crust is called faan ziu in Cantonese. [Made With Lau](https://www.madewithlau.com/recipes/clay-pot-rice)",
+    "nutrition": {
+      "per_serving": {
+        "calories": 612.72,
+        "protein_g": 29.11,
+        "carbohydrates_g": 70.16,
+        "fat_g": 22.75,
+        "saturated_fat_g": 6.7,
+        "trans_fat_g": 0.15,
+        "monounsaturated_fat_g": 9.07,
+        "polyunsaturated_fat_g": 4.06,
+        "fiber_g": 2.05,
+        "sugar_g": 4.98,
+        "sodium_mg": 916.66,
+        "cholesterol_mg": 113.38,
+        "potassium_mg": 571.75,
+        "calcium_mg": 41.91,
+        "iron_mg": 2.01,
+        "magnesium_mg": 62.06,
+        "phosphorus_mg": 323.55,
+        "zinc_mg": 2.94,
+        "vitamin_a_mcg": 14,
+        "vitamin_c_mg": 1.75,
+        "vitamin_d_mcg": 0.23,
+        "vitamin_e_mg": 1.18,
+        "vitamin_k_mcg": 18.64,
+        "vitamin_b6_mg": 0.74,
+        "vitamin_b12_mcg": 0.99,
+        "thiamin_mg": 0.16,
+        "riboflavin_mg": 0.35,
+        "niacin_mg": 8.34,
+        "folate_mcg": 20.28,
+        "water_g": 242.21,
+        "alcohol_g": 0.48,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 29,
+    "monthly_limit": 50,
+    "daily_remaining": 29,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 21,
+    "detail_limit": 50,
+    "detail_remaining": 29,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}

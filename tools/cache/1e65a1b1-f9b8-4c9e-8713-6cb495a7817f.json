@@ -1,0 +1,592 @@
+{
+  "data": {
+    "id": "1e65a1b1-f9b8-4c9e-8713-6cb495a7817f",
+    "name": "Masala Cauliflower Red Lentil Soup",
+    "description": "A warming golden soup where tender red lentils break into a creamy base, suspending bite-sized cauliflower florets in a fragrant masala broth finished with cooling coconut milk and bright lemon.",
+    "category": "Soup",
+    "cuisine": "Indian",
+    "difficulty": "Easy",
+    "tags": [
+      "Soup",
+      "Vegetarian",
+      "Cauliflower",
+      "Lentils",
+      "Masala",
+      "Indian",
+      "One-Pot",
+      "Comfort Food",
+      "Make-Ahead",
+      "Warming"
+    ],
+    "meta": {
+      "active_time": "PT25M",
+      "passive_time": "PT40M",
+      "total_time": "PT1H5M",
+      "overnight_required": false,
+      "yields": "6 servings",
+      "yield_count": 6,
+      "serving_size_g": 400
+    },
+    "dietary": {
+      "flags": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free"
+      ],
+      "not_suitable_for": [
+        "Coconut allergy (substitute cashew cream)",
+        "Solanaceae or nightshade sensitivity (omit tomatoes and chili)"
+      ]
+    },
+    "storage": {
+      "refrigerator": {
+        "notes": "Cool to room temperature within 2 hours of cooking, then transfer to an airtight container.",
+        "duration": "P5D"
+      },
+      "freezer": {
+        "notes": "Cool completely before freezing in a freezer-safe container. Add fresh roasted cauliflower garnish after reheating for best texture.",
+        "duration": "P3M"
+      },
+      "reheating": "Reheat gently on the stovetop over medium-low heat, stirring occasionally, until heated through to 74°C/165°F. Add a splash of water or broth if the soup has thickened in storage.",
+      "does_not_keep": false
+    },
+    "equipment": [
+      {
+        "name": "Chef's knife",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Cutting board",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Fine mesh strainer",
+        "required": true,
+        "alternative": "colander lined with cheesecloth"
+      },
+      {
+        "name": "Rimmed baking sheet",
+        "required": true,
+        "alternative": null
+      },
+      {
+        "name": "Large heavy-bottomed pot",
+        "required": true,
+        "alternative": "Dutch oven"
+      },
+      {
+        "name": "Immersion blender",
+        "required": true,
+        "alternative": "Countertop blender (work in batches)"
+      },
+      {
+        "name": "Wooden spoon or heatproof spatula",
+        "required": true,
+        "alternative": null
+      }
+    ],
+    "ingredients": [
+      {
+        "group_name": "Aromatics",
+        "items": [
+          {
+            "name": "yellow onion",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "diced",
+            "notes": "about 150g",
+            "substitutions": [],
+            "ingredient_id": "a41c8927-b981-495e-ac59-c5e9b583c1c9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garlic",
+            "quantity": 4,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 16g",
+            "substitutions": [],
+            "ingredient_id": "30109e1e-d8e8-4f76-a6f4-82ac5b071fde",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh ginger",
+            "quantity": 25,
+            "unit": "g",
+            "preparation": "peeled and minced",
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "d57750c1-f582-4793-8aea-40d9d3ac3677",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "green chili (serrano or thai)",
+            "quantity": 1,
+            "unit": null,
+            "preparation": "minced",
+            "notes": "about 5g; skip for a milder soup",
+            "substitutions": [],
+            "ingredient_id": "6a646318-3d5c-494b-97fe-6869490329d6",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Whole spices (tadka)",
+        "items": [
+          {
+            "name": "cumin seeds",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "black mustard seeds",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "23fe8c94-6d5d-4fa6-9d97-4b92dc48ee26",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "Ground spices",
+        "items": [
+          {
+            "name": "ground coriander",
+            "quantity": 5,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "225e04a2-508a-4752-ac80-1f8437a6c970",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "ground turmeric",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "1ee1ad9b-8638-45be-82a4-683925a61d05",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "kashmiri chili powder",
+            "quantity": 3,
+            "unit": "g",
+            "preparation": null,
+            "notes": "mild chili powder used mostly for color; substitute 2g sweet paprika plus 1g cayenne for similar hue with sharper heat",
+            "substitutions": [],
+            "ingredient_id": "f4c3bdd7-6528-40d2-84b3-a6325df15e8e",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "garam masala",
+            "quantity": 4,
+            "unit": "g",
+            "preparation": null,
+            "notes": "added at the end to preserve its delicate aromatics",
+            "substitutions": [],
+            "ingredient_id": "71e63f61-8498-458c-9fdb-cb76a7f15723",
+            "nutrition_source": "Aggregated Public Data"
+          }
+        ]
+      },
+      {
+        "group_name": "Soup base",
+        "items": [
+          {
+            "name": "neutral oil (such as grapeseed or sunflower)",
+            "quantity": 30,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "divided: 5ml for roasting the garnish, 25ml for the soup base. Substitute ghee for a richer, traditional flavor (still vegetarian).",
+            "substitutions": [],
+            "ingredient_id": "02e84b00-eb26-4be5-b564-62a74e1c8412",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "fine sea salt",
+            "quantity": 10,
+            "unit": "g",
+            "preparation": null,
+            "notes": "divided: 8g for the soup base, 2g for the roasted garnish, plus more to taste",
+            "substitutions": [],
+            "ingredient_id": "2631739c-2de4-4389-a6e3-ed3d06d0406f",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cauliflower",
+            "quantity": 500,
+            "unit": "g",
+            "preparation": "cut into bite-sized florets",
+            "notes": "from 1 medium head about 700g whole before trimming; reserve the smallest 100g for roasting and use the remaining 400g in the soup base",
+            "substitutions": [],
+            "ingredient_id": "2d9d5068-77e7-4dfc-b24b-8e6a6275cb33",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "red lentils (masoor dal)",
+            "quantity": 200,
+            "unit": "g",
+            "preparation": "rinsed and drained",
+            "notes": "rinsed under cool water in a fine mesh strainer until the water runs clear",
+            "substitutions": [],
+            "ingredient_id": "6fcd314d-ff4a-4f7a-8164-7621ee0d94e3",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "crushed tomatoes",
+            "quantity": 400,
+            "unit": "g",
+            "preparation": null,
+            "notes": "one standard 400g can",
+            "substitutions": [],
+            "ingredient_id": "bbe59e3d-54e4-4d20-b185-878510049317",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "vegetable broth",
+            "quantity": 1000,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "71d7bf5e-cf58-4bfc-984d-d7d0e9a299b7",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "water",
+            "quantity": 500,
+            "unit": "ml",
+            "preparation": null,
+            "notes": null,
+            "substitutions": [],
+            "ingredient_id": "de973e91-f602-4c8c-b99f-9aaf5b5ac726",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      },
+      {
+        "group_name": "To finish and garnish",
+        "items": [
+          {
+            "name": "full-fat coconut milk",
+            "quantity": 200,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "divided: about 175ml stirred into the soup off the heat, the remaining 25ml for drizzling over each serving",
+            "substitutions": [
+              "Cashew cream: blend 80g raw cashews soaked in 200ml hot water for 15 minutes, then strain"
+            ],
+            "ingredient_id": "13259666-afaa-41cf-813d-de8cad6ad576",
+            "nutrition_source": "Aggregated Public Data"
+          },
+          {
+            "name": "lemon juice",
+            "quantity": 15,
+            "unit": "ml",
+            "preparation": null,
+            "notes": "freshly squeezed, about 1 lemon; reserve the spent halves for serving wedges",
+            "substitutions": [],
+            "ingredient_id": "84822702-05df-495b-91a5-3fe45e48c8d9",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "fresh cilantro",
+            "quantity": 15,
+            "unit": "g",
+            "preparation": "leaves and tender stems, roughly chopped",
+            "notes": "reserve a few whole leaves for the final garnish",
+            "substitutions": [],
+            "ingredient_id": "90d50243-5217-4e50-836c-b2f624e2b58b",
+            "nutrition_source": "USDA FoodData Central"
+          },
+          {
+            "name": "cumin seeds",
+            "quantity": 2,
+            "unit": "g",
+            "preparation": null,
+            "notes": "dry-toasted in a small pan until fragrant, then sprinkled over the finished bowls",
+            "substitutions": [],
+            "ingredient_id": "b9c9e3cb-61b7-4bbc-87c0-7858d42d7935",
+            "nutrition_source": "USDA FoodData Central"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "phase": "prep",
+        "text": "Preheat the oven to 220°C (425°F). Trim the cauliflower and cut into bite-sized florets; transfer the smallest 100 g to a separate bowl for roasting and set the remaining 400 g aside. Dice the onion, mince the garlic and ginger, and finely mince the green chili if using. Combine the crushed tomatoes, vegetable broth, and water in a large measuring jug so they can be added in one pour.",
+        "structured": {
+          "action": "CHOP",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Cutting florets to a uniform 3-4 cm ensures the main batch cooks evenly.",
+          "Pre-measuring the combined liquids minimizes splashing when adding them to the hot pot."
+        ]
+      },
+      {
+        "step_number": 2,
+        "phase": "cook",
+        "text": "Toss the reserved 100 g of small florets with 5 ml of the oil and 2 g of salt on a rimmed baking sheet. Spread in a single layer and roast at 220°C/425°F for 18-22 minutes, turning once halfway, until deeply golden and crisp at the tips.",
+        "structured": {
+          "action": "ROAST",
+          "temperature": {
+            "celsius": 220,
+            "fahrenheit": 428
+          },
+          "duration": "PT20M",
+          "doneness_cues": {
+            "visual": "Deep golden brown with charred edges; florets visibly shrink and pull away from the stem",
+            "tactile": "Crisp at the edges when lifted with tongs, still holding their shape"
+          }
+        },
+        "tips": [
+          "Crowding the pan steams the florets; use a second tray if needed to keep them in a single layer."
+        ]
+      },
+      {
+        "step_number": 3,
+        "phase": "cook",
+        "text": "Meanwhile, heat the remaining 25 ml of oil in a large heavy-bottomed pot over medium heat. Add the cumin and mustard seeds; they will start to sizzle within 30-60 seconds. Swirl the pot once and let the seeds pop freely for 45-60 seconds until the mustard seeds turn grey and the cumin deepens to a rich brown.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Mustard seeds lighten from black to grey; cumin darkens slightly without smoking",
+            "tactile": "Active popping and crackling subsides"
+          }
+        },
+        "tips": [
+          "Stay attentive - whole seeds burn in seconds past the fragrant stage and turn the dish bitter."
+        ]
+      },
+      {
+        "step_number": 4,
+        "phase": "cook",
+        "text": "Add the diced onion and a small pinch of the measured salt. Cook, stirring occasionally, for 6-8 minutes until the onion is translucent and lightly golden at the edges. Stir in the garlic, ginger, and green chili and cook for 1 minute more until fragrant and just turning pale gold.",
+        "structured": {
+          "action": "SAUTÉ",
+          "temperature": null,
+          "duration": "PT8M",
+          "doneness_cues": {
+            "visual": "Onion turns translucent with golden edges; garlic does not brown",
+            "tactile": "Onion yields easily when pressed against the pot with a spoon"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 5,
+        "phase": "cook",
+        "text": "Sprinkle the ground coriander, turmeric, and Kashmiri chili powder over the aromatics. Stir constantly for 45-60 seconds until the spices smell toasty and the oil separates into a vivid brick-red color.",
+        "structured": {
+          "action": "TOAST",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Oil separates and turns bright golden-red, coating the aromatics",
+            "tactile": "Fragrant toasted-spice aroma; paste leaves the bottom of the pot briefly when stirred"
+          }
+        },
+        "tips": [
+          "If the spices begin to stick, splash in a teaspoon of the measured broth to deglaze before continuing."
+        ]
+      },
+      {
+        "step_number": 6,
+        "phase": "cook",
+        "text": "Stir in the crushed tomatoes and cook for 2 minutes until they darken and thicken slightly. Add the rinsed red lentils, then pour in the combined broth and water. Bring to a boil, skimming off any pale foam that rises to the surface. Reduce the heat to maintain a gentle simmer, partially cover, and cook for 12 minutes.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT14M",
+          "doneness_cues": {
+            "visual": "Surface breaks with lazy bubbles rather than a rolling boil; foam dissipates",
+            "tactile": null
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 7,
+        "phase": "cook",
+        "text": "Add the 400 g of cauliflower florets, pushing them just beneath the liquid surface. Continue to simmer uncovered for 12-15 minutes until the cauliflower is fork-tender and the red lentils have completely broken down into a creamy, porridge-like consistency.",
+        "structured": {
+          "action": "SIMMER",
+          "temperature": null,
+          "duration": "PT15M",
+          "doneness_cues": {
+            "visual": "Cauliflower pieces look slightly translucent at the edges; lentils have lost their individual shape",
+            "tactile": "Floret pierces easily with the tip of a knife; lentils mash fully when pressed against the pot wall"
+          }
+        },
+        "tips": []
+      },
+      {
+        "step_number": 8,
+        "phase": "cook",
+        "text": "Remove the pot from the heat. Using an immersion blender, pulse 4-6 times until roughly half the soup is smoothly pureed while the rest retains visible texture. Alternatively, ladle 2 cups of the soup into a countertop blender, puree until smooth, and return it to the pot.",
+        "structured": {
+          "action": "BLEND",
+          "temperature": null,
+          "duration": "PT1M",
+          "doneness_cues": {
+            "visual": "Soup is mostly cohesive and creamy with some intact cauliflower pieces remaining",
+            "tactile": null
+          }
+        },
+        "tips": [
+          "Pureeing entirely makes the soup heavy; aim for a creamy broken-down base with about 30-40 percent intact florets for textural contrast."
+        ]
+      },
+      {
+        "step_number": 9,
+        "phase": "finish",
+        "text": "Off the heat, stir in 175 ml of the coconut milk, the garam masala, and the lemon juice. Taste and add more salt as needed; the soup should be gently seasoned with the spices leading and the coconut milk mellowing the heat. The residual heat is enough to warm the coconut milk through without splitting it.",
+        "structured": {
+          "action": "STIR",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "If the soup has cooled significantly during blending, return it to a low flame just until the coconut milk is incorporated, then remove immediately."
+        ]
+      },
+      {
+        "step_number": 10,
+        "phase": "finish",
+        "text": "Ladle the soup into warm bowls. Top each serving with a small mound of the roasted cauliflower florets, a few whole cilantro leaves, a thin drizzle of the reserved coconut milk, and a pinch of toasted cumin seeds. Serve immediately with the reserved lemon wedges alongside.",
+        "structured": {
+          "action": "GARNISH",
+          "temperature": null,
+          "duration": null,
+          "doneness_cues": {
+            "visual": null,
+            "tactile": null
+          }
+        },
+        "tips": [
+          "For a more substantial meal, pair with warm naan or steamed basmati rice."
+        ]
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "Soup tastes bitter or harsh",
+        "likely_cause": "Whole seeds were allowed to burn past the fragrant stage, or ground spices were toasted over heat that was too high or for too long",
+        "prevention": "Bloom spices over medium heat, watch closely, and remove from heat the moment they smell toasty",
+        "fix": "Cannot be fixed - burnt-spice bitterness infuses the entire batch. The pot must be wiped clean and the dish restarted from the aromatics stage."
+      },
+      {
+        "symptom": "Coconut milk separates into curds and clear oil",
+        "likely_cause": "Coconut milk was added while the soup was boiling or cooked at high heat after addition",
+        "prevention": "Always remove the pot from the heat before stirring in the coconut milk",
+        "fix": "Whisk vigorously with a spoon or pulse briefly with the immersion blender to re-emulsify the fat. The appearance will be slightly less silky, but flavor is unaffected."
+      },
+      {
+        "symptom": "Lentils remain firm after the full simmer time",
+        "likely_cause": "Older lentils or a simmer temperature that ran too cool",
+        "prevention": "Use lentils from a source with good turnover and maintain a steady gentle simmer throughout",
+        "fix": "Continue simmering uncovered for an additional 10-15 minutes, or lean into a more thorough blending to break down the remaining texture."
+      },
+      {
+        "symptom": "Soup is too thin or watery",
+        "likely_cause": "Not simmered uncovered long enough to reduce, or too much liquid added for the lentil absorption",
+        "prevention": "Measure liquids carefully and finish uncovered until the desired thickness is reached",
+        "fix": "Simmer uncovered for 5-10 minutes to reduce further, or blend a larger portion of the soup so the broken-down lentils thicken the body."
+      }
+    ],
+    "chef_notes": [
+      "Blooming whole cumin and mustard seeds in hot oil (the tadka technique) releases aromatic compounds that ground spices alone cannot match. If you only have ground cumin, bloom it for just 20 to 30 seconds to avoid bitterness.",
+      "A two-stage blend - partial rather than full pureeing - gives the soup body from the broken-down lentils while preserving visible cauliflower texture, a hallmark of well-textured vegetable soups.",
+      "Always add coconut milk off the heat. Its fat content splits into curds and clear oil when boiled, ruining the silky mouthfeel and visual appeal.",
+      "The reserved roasted florets pull double duty as garnish and textural element; their crisp edges and concentrated umami lift a simple lentil soup into something more substantial.",
+      "Acid is essential at the end. The lemon juice balances earthy turmeric and warm garam masala, lifting the entire flavor profile. Taste before serving and adjust with another squeeze if the soup feels flat."
+    ],
+    "cultural_context": "Masala-style lentil soups draw from India's deep dal tradition, where small pots of spiced lentils are simmered daily across the subcontinent. Adding cauliflower (phool gobhi) to lentil preparations reflects Mughal-era influences that brought Persian and Central Asian vegetable cookery into everyday Indian kitchens, where hearty lentil bases commonly serve as vehicles for seasonal vegetables. The technique of blooming whole spices in hot oil, called tadka or chaunk, finishes each pot with an aromatic flourish that defines home-style Indian cooking.",
+    "nutrition": {
+      "per_serving": {
+        "calories": 318.63,
+        "protein_g": 12.97,
+        "carbohydrates_g": 39.47,
+        "fat_g": 14.6,
+        "saturated_fat_g": 7.85,
+        "trans_fat_g": 0,
+        "monounsaturated_fat_g": 1.88,
+        "polyunsaturated_fat_g": 3.66,
+        "fiber_g": 8.75,
+        "sugar_g": null,
+        "sodium_mg": 1303.97,
+        "cholesterol_mg": 0,
+        "potassium_mg": 924.34,
+        "calcium_mg": 109.12,
+        "iron_mg": 5.84,
+        "magnesium_mg": 77.27,
+        "phosphorus_mg": 222.48,
+        "zinc_mg": 2.15,
+        "vitamin_a_mcg": 49.78,
+        "vitamin_c_mg": 53.06,
+        "vitamin_d_mcg": 0,
+        "vitamin_e_mg": null,
+        "vitamin_k_mcg": null,
+        "vitamin_b6_mg": null,
+        "vitamin_b12_mcg": 0,
+        "thiamin_mg": 0.34,
+        "riboflavin_mg": 0.19,
+        "niacin_mg": 2.44,
+        "folate_mcg": 137.95,
+        "water_g": 440.69,
+        "alcohol_g": 0,
+        "caffeine_mg": 0
+      },
+      "sources": [
+        "Aggregated Public Data",
+        "USDA FoodData Central"
+      ]
+    }
+  },
+  "usage": {
+    "monthly_remaining": 24,
+    "monthly_limit": 50,
+    "daily_remaining": 24,
+    "daily_limit": 50,
+    "plan_key": "free",
+    "plan_name": "Evaluation",
+    "period_type": "evaluation",
+    "detail_used": 26,
+    "detail_limit": 50,
+    "detail_remaining": 24,
+    "generation_used": 0,
+    "generation_limit": 1,
+    "generation_remaining": 1,
+    "generation_overage_remaining": 0,
+    "reset_at": null,
+    "upgrade_url": "https://recipe-api.com/pricing"
+  }
+}
