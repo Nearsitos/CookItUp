@@ -72,31 +72,24 @@ const INGREDIENT_TAGS = {
 // Fallback for anything not listed above. Word boundaries keep "eggplant"
 // from counting as eggs.
 const TAG_KEYWORDS = {
-  dairy:
-    /\b(milk|cheese|feta|parmesan|mozzarella|cheddar|yogh?urt|butter|cream|ghee)\b/,
+  dairy: /\b(milk|cheese|feta|parmesan|mozzarella|cheddar|yogh?urt|butter|cream|ghee)\b/,
   eggs: /\beggs?\b|mayonnaise|\bmayo\b/,
-  gluten:
-    /\bsoy sauce\b|\b(wheat|flour|bread|pasta|spaghetti|noodles?|couscous|barley|rye|tortillas?|crackers?|breadcrumbs?|seitan)\b/,
+  gluten: /\bsoy sauce\b|\b(wheat|flour|bread|pasta|spaghetti|noodles?|couscous|barley|rye|tortillas?|crackers?|breadcrumbs?|seitan)\b/,
   meat: /\b(chicken|beef|pork|bacon|ham|turkey|lamb|sausages?|steak|salami|chorizo|prosciutto|duck|veal)\b/,
   fish: /\b(fish|salmon|tuna|cod|tilapia|trout|sardines?|anchov(y|ies)|halibut|mackerel)\b/,
-  shellfish:
-    /\b(shrimp|prawns?|crab|lobster|clams?|mussels?|oysters?|scallops?)\b/,
+  shellfish: /\b(shrimp|prawns?|crab|lobster|clams?|mussels?|oysters?|scallops?)\b/,
   peanuts: /\bpeanuts?\b/,
-  "tree-nuts":
-    /\b(almonds?|cashews?|walnuts?|pecans?|pistachios?|hazelnuts?|macadamias?)\b/,
+  "tree-nuts": /\b(almonds?|cashews?|walnuts?|pecans?|pistachios?|hazelnuts?|macadamias?)\b/,
   soy: /\b(soy|soya|tofu|tempeh|edamame|miso)\b/,
   sesame: /\b(sesame|tahini)\b/,
   honey: /\bhoney\b/,
 };
 
 // Plant-based look-alikes that would otherwise trip the dairy keywords.
-const NOT_DAIRY =
-  /\b(almond|oat|soy|coconut|rice|cashew) (milk|yogh?urt|cream)\b|\b(peanut|almond|cashew|cocoa|apple) butter\b/;
+const NOT_DAIRY = /\b(almond|oat|soy|coconut|rice|cashew) (milk|yogh?urt|cream)\b|\b(peanut|almond|cashew|cocoa|apple) butter\b/;
 
 function ingredientTags(name) {
-  const key = String(name || "")
-    .trim()
-    .toLowerCase();
+  const key = String(name || "").trim().toLowerCase();
   if (key in INGREDIENT_TAGS) return new Set(INGREDIENT_TAGS[key]);
   const tags = new Set();
   for (const [tag, pattern] of Object.entries(TAG_KEYWORDS)) {
@@ -107,7 +100,7 @@ function ingredientTags(name) {
 }
 
 export function emptyPreferences() {
-  return { diets: [], allergies: [], customAllergies: [] };
+  return { diets: [], allergies: [] };
 }
 
 // Checks one recipe against the user's preferences.
@@ -120,15 +113,8 @@ export function checkRecipe(recipe, prefs) {
 
   for (const ingredient of recipe.ingredients) {
     const tags = ingredientTags(ingredient);
-    const name = ingredient.toLowerCase();
-    const customHits = (prefs.customAllergies || []).filter((term) =>
-      name.includes(term),
-    );
     const note = {
-      allergens: [
-        ...prefs.allergies.filter((allergy) => tags.has(allergy)),
-        ...customHits,
-      ],
+      allergens: prefs.allergies.filter((allergy) => tags.has(allergy)),
       diets: prefs.diets.filter((dietId) =>
         DIETS.find((item) => item.id === dietId)?.excludes.some((tag) =>
           tags.has(tag),
